@@ -1,0 +1,12 @@
+<ion-header><app-title [title]="selectedItem.content.title | translate"></app-title></ion-header>
+
+<ion-content>
+<ion-card>
+<ion-card-header>
+{{ selectedItem.content.audio[0].title | translate }}
+</ion-card-header>
+  <ion-card-content>
+  {{ selectedItem.content.audio[0].transcriptId | translate }}
+</ion-card-content>
+</ion-card>
+</ion-content>

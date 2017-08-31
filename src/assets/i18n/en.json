@@ -1,0 +1,111 @@
+{
+
+  "audioBtnPlay": "Play Audio",
+  "shareBtn": "Share",
+  "backBtn": "Back",
+  "transcript_link": "Audio Transcript",
+
+  "about": "About",
+  "apptitle": "ML Tour",
+  "weather": "Weather",
+  "clouds": "Clouds",
+  "severeweather": "Severe Weather",
+  "studyweather": "How we study weather",
+  "forecasting": "Forecasting",
+  "tornado": "Tornado",
+  "weatherclimate": "Weather and Climate",
+  "microburst": "Microburst",
+  "chaos": "Chaos",
+  "climate": "Climate",
+  "pastclimate": "Past Climate",
+  "studyclimate": "How we study climate",
+  "greenhousegases":"Greenhouse Gases",
+  "climatechange": "How climate is changing",
+  "choosefuture": "Choose our future",
+  "climatestories": "Climate Stories",
+  "futureclimate": "Future Climate",
+  "solutions": "Solutions",
+  "sun-earth": "Sun-Earth Connections",
+  "historymodeling": "History/Modeling",
+  "sunfeatures": "Features of the Sun",
+  "atmosphere": "Atmosphere",
+  "mural": "Mural",
+  "dropsonde": "Dropsonde",
+  "supercomputers": "Supercomputers",
+  "cray": "Cray",
+  "architecture": "architecture",
+  "mesalab": "Mesa Lab",
+  "aq": "Air Quality",
+  "ozonepm": "Ozone and Particulate Matter",
+  "ozonegarden": "Ozone Garden",
+  "trail": "Weather Trail",
+  "overview": "Overview",
+
+ "content_weather_title":"Weather",
+ "content_climate_title":"Climate",
+ "content_atmosphere_title":"Atmosphere",
+ "content_sun_earth_title":"Sun-Earth",
+ "content_supercomputers_title":"Supercomputers",
+ "content_architecture_title":"Architecture",
+
+  "content_cloud_title": "Clouds",
+  "content_cloud_description": "<p>Clouds form when air rises from the Earth’s surface. As this air rises, it cools, water vapor condenses on tiny particles in the atmosphere, and forms clouds. Check out the touchscreen under the windows to learn more about clouds, and look outside to identify the clouds you can see in the sky. </p>",
+  "audio_cloud_title": "About Clouds",
+  "audio_cloud_description": "What are clouds made of?",
+  "audio_cloud_transcript": "That's what makes life fun. That you can make these decisions. That you can create the world that you want. This painting comes right out of your heart. Talent is a pursued interest. That is to say, anything you practice you can do. The only thing worse than yellow snow is green snow. When things happen - enjoy them. They're little gifts. We want to use a lot pressure while using no pressure at all. Just take out whatever you don't want. It'll change your entire perspective. Clouds are free. They just float around the sky all day and have fun. Trees cover up a multitude of sins. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. This is a happy place, little squirrels live here and play. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush. And just raise cain. You can't make a mistake. Anything that happens you can learn to use - and make something beautiful out of it. Let's put some happy little clouds in our world. Clouds are free they come and go as they please. Let your heart be your guide. When you buy that first tube of paint it gives you an artist license. Let's have a nice tree right here. I was blessed with a very steady hand; and it comes in very handy when you're doing these little delicate things.",
+
+
+
+
+  "content_severe_weather_title": "Severe Weather",
+  "content_severe_weather_description": "<p>Severe weather includes tornadoes, thunderstorms, flooding, snowstorms, hurricanes, and severe winds. These dramatic events can impact human health and the economy.  Since 1980, the U.S. has had over 200 weather or climate related weather events that each caused damages reaching or exceeding one billion dollars.</p>",
+  "audio_severe_weather_title": "",
+  "audio_severe_weather_description": "?",
+  "audio_severe_weather_transcript": "",
+
+
+  "content_study_weather_title": "Instruments that Study Weather",
+  "content_study_weather_description": "<p>Anemometers are instruments that measure the speed of wind. Some anemometers also include a weather vane which shows which direction the wind is blowing. The highest wind speed ever recorded here at the NCAR Mesa Lab was a 147 mph gust on January 23, 1971.</p>",
+  "audio_study_weather_title": "",
+  "audio_study_weather_description": "?",
+  "audio_study_weather_transcript": "",
+
+
+  "content_microburst_title": "Microburst",
+  "content_microburst_description": "<p>Microbursts are strong, vertical winds that suddenly form underneath thunderstorms. These downdrafts can have speeds over 100 mph. Microbursts are very dangerous for airplanes during takeoff or landing. To address this safety issue, in the 1980s NCAR scientists developed a microburst detection system that makes air travel much safer.</p>",
+  "audio_microburst_title": "",
+  "audio_microburst_description": "?",
+  "audio_microburst_transcript": "",
+
+
+
+  "content_past_climate_title": "Studying Past Climates",
+  "content_past_climate_description": "<p>How can we learn what Earth’s climate was like in ancient times before humans began writing about it? Some natural features provide clues about climates of the past. Tree rings of different widths tell us about growing conditions from year to year. Was it dry or wet? Cool or hot?</p>",
+  "audio_past_climate_title": "",
+  "audio_past_climate_description": "?",
+  "audio_past_climate_transcript": "",
+
+
+
+  "content_greenhouse_gases_title": "Studying Greenhouse Gases",
+  "content_greenhouse_gases_description": "<p>Charles David Keeling began measuring carbon dioxide (CO2) levels on Hawaii’s Mauna Loa Observatory in 1958. These measurements make up the Keeling Curve, which shows that CO2 values have increased from 330 to over 400 parts per million (ppm). Greenhouse gases such as CO2 trap heat in the atmosphere and warm the Earth’s temperature.</p>",
+  "audio_greenhouse_gases_title": "",
+  "audio_greenhouse_gases_description": "?",
+  "audio_greenhouse_gases_transcript": "",
+
+
+
+  "content_atmosphere_mural_title": "",
+  "content_atmosphere_mural_description": "<p></p>",
+  "audio_atmosphere_mural_title": "",
+  "audio_atmosphere_mural_description": "?",
+  "audio_atmosphere_mural_transcript": "",
+
+
+
+  "content_dropsonde_title": "",
+  "content_dropsonde_description": "<p></p>",
+  "audio_dropsonde_title": "",
+  "audio_dropsonde_description": "?",
+  "audio_dropsonde_transcript": ""
+}

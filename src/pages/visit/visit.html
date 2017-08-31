@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Visitor Information
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <img src="assets/images/ncar.png">
+    <ion-card-content>The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free. For more information, please view our <a href="https://scied.ucar.edu/visit">visit page</a>.</ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="pin" item-start large></ion-icon>
+      Address
+    </ion-card-header>
+    <ion-card-content>
+        1850 Table Mesa Drive<br/>Boulder, Colorado 80305
+        <p><button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
+      <ion-icon name="navigate"></ion-icon>
+      View Directions
+    </button></p>
+  </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="clock" large item-start></ion-icon>
+      Visitor Center Hours
+    </ion-card-header>
+    <ion-card-content>
+
+        Weekdays: 8:00 am - 5:00 pm
+    <br/>
+        Weekends: 9:00 am - 4:00 pm
+    <br/>
+        Holidays: 9:00 am - 4:00 pm
+<p>The visitor center is open every day except for two annual shut down days in the spring and fall.  Check our <a href="https://scied.ucar.edu/visit">visit page</a> for updates when these shut downs are scheduled.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="clock" large item-start></ion-icon>
+    Tours
+    </ion-card-header>
+    <ion-card-content>
+
+        Public tours, MWF: 12:00 pm
+        <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
+        <ion-icon name="information-circle"></ion-icon>
+  View Tour Information
+      </button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="pizza" large item-start></ion-icon>
+      Cafeteria Hours
+    </ion-card-header>
+  <ion-card-content>
+        Breakfast, 8:00 am - 9:30 am
+    <br/>
+        Lunch, 11:30 - 1:30 pm
+    <p>
+      The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

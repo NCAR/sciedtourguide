@@ -1,0 +1,53 @@
+<ion-header>
+  <app-title [title]="selectedItem.content.title | translate"></app-title>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img [src]="selectedItem.content.img[0].path" />
+
+    <ion-card-content>
+      <ion-row no-padding>
+        <ion-col col-12>
+          <ion-card-title [innerHtml]="selectedItem.content.title | translate"></ion-card-title>
+        </ion-col>
+      </ion-row>
+      <ion-row no-padding>
+        <ion-col col-12>
+          <div [innerHtml]="selectedItem.content.description | translate"></div>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+    <ion-card-content class="audio">
+      <audio-track #audio *ngFor="let track of myTracks" [track]="track" (onFinish)="onTrackFinished($event)">
+        <div class="audioInfo"><strong>{{track.title | translate}}</strong> <em>{{track.description | translate}}</em></div>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2 class="audio-icon"><img src="assets/images/audio.png"/></ion-col>
+            <ion-col col-10>
+              <ion-item>
+                <audio-track-progress-bar dark duration progress [audioTrack]="audio"></audio-track-progress-bar>
+
+                <ion-thumbnail item-start>
+                  <audio-track-play dark [audioTrack]="audio">
+                    <ion-spinner></ion-spinner>
+                  </audio-track-play>
+                </ion-thumbnail>
+              </ion-item>
+
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-12>
+              <button class="transcript_link" ion-button clear (click)="openTranscript($event, selectedItem)" icon-right>{{ 'transcript_link' | translate}}
+                <ion-icon name="paper"></ion-icon></button>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+      </audio-track>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,18 @@
+# Specifies files to intentionally ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+www/
+hooks/
+platforms/
+plugins/
+resources/android/
+resources/ios/
+res/
+src/declarations.d.ts
+src/manifest.json
+src/service-worker.js
+*.swp
+.DS_Store
+Thumbs.db
+.tmp
