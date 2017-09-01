@@ -1,3 +1,118 @@
 page-transcript {
-  
+
+  audio-track-play .button-inner {
+    width: 20px;
+    height: 20px;
+  }
+
+  .md audio-track ion-thumbnail audio-track-play button {
+    min-width: 20px !important;
+    min-height: 20px !important;
+  }
+
+  audio-track {
+    audio-track-progress-bar {
+      padding:10px 0px;
+    }
+    .label-md {
+      margin:0;
+      padding:15px;
+    }
+    .audioInfo {
+      padding-left: 5px;
+    }
+
+
+    [col-2] {
+      padding: 0;
+    }
+
+    .grid {
+      padding: 0;
+    }
+
+    .item-md {
+      padding-right: 0;
+      padding-left: 5px;
+    }
+
+    ion-thumbnail audio-track-play {
+      min-width: 20px !important;
+      min-height: 20px !important;
+      margin: 20px 15px 10px !important;
+    }
+
+    audio-track audio-track-progress-bar time + input[type="range"],
+    audio-track-progress-bar input[type="range"] + time {
+      margin-left: 5px;
+    }
+  }
+
+  .audio,
+  .audio .item-ios {
+    background-color: #efefef;
+  }
+
+  .audio {
+    audio-track audio-track-progress-bar input[type="range"] {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+
+    ion-thumbnail {
+      min-height: auto;
+      min-width: 28px;
+    }
+
+    .button-ios,
+    .item-ios {
+      padding-left: 0;
+    }
+
+    audio-track {
+      ion-thumbnail audio-track-play {
+        margin-top: 0;
+      }
+
+      audio-track-progress-bar input[type=range] {
+        margin-top: 16px;
+        margin-bottom: 18px;
+      }
+
+      .item-os,
+      .item-os ion-thumbname[item-end] {
+        margin-right: 0;
+      }
+      .item-md {
+        background-color:transparent;
+      }
+    }
+  }
+
+  .item-avatar {
+    width: 100% !important;
+    height: 100% !important;
+    width: 100px !important;
+    //any size
+    height: 100px !important; //any size
+  }
+
+  .item-md ion-avatar[item-left],
+  .item-md ion-avatar[item-start],
+  .item-md ion-thumbnail[item-left],
+  .item-md ion-thumbnail[item-start] {
+    margin-right: 5px;
+  }
+
+  .nearby_title {
+    text-align: center;
+  }
+
+  .runningTime {
+    font-size: 14px;
+  }
+
+  .audio-icon img {
+    margin-top: 8px;
+  }
 }
