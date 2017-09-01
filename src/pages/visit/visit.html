@@ -1,12 +1,8 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Visitor Information
-    </ion-title>
-  </ion-navbar>
+  <app-title [title]="pageTitle | translate"></app-title>
 </ion-header>
 
-<ion-content>
+<ion-content *ngIf="!selectedItem">
   <ion-card>
 
     <img src="assets/images/ncar.png">
@@ -19,12 +15,12 @@
       Address
     </ion-card-header>
     <ion-card-content>
-        1850 Table Mesa Drive<br/>Boulder, Colorado 80305
-        <p><button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
+      1850 Table Mesa Drive<br/>Boulder, Colorado 80305
+      <p><button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
       <ion-icon name="navigate"></ion-icon>
       View Directions
     </button></p>
-  </ion-card-content>
+    </ion-card-content>
   </ion-card>
   <ion-card>
     <ion-card-header>
@@ -33,24 +29,22 @@
     </ion-card-header>
     <ion-card-content>
 
-        Weekdays: 8:00 am - 5:00 pm
-    <br/>
-        Weekends: 9:00 am - 4:00 pm
-    <br/>
-        Holidays: 9:00 am - 4:00 pm
-<p>The visitor center is open every day except for two annual shut down days in the spring and fall.  Check our <a href="https://scied.ucar.edu/visit">visit page</a> for updates when these shut downs are scheduled.</p>
+      Weekdays: 8:00 am - 5:00 pm
+      <br/> Weekends: 9:00 am - 4:00 pm
+      <br/> Holidays: 9:00 am - 4:00 pm
+      <p>The visitor center is open every day except for two annual shut down days in the spring and fall. Check our <a href="https://scied.ucar.edu/visit">visit page</a> for updates when these shut downs are scheduled.</p>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header>
       <ion-icon name="clock" large item-start></ion-icon>
-    Tours
+      Tours
     </ion-card-header>
     <ion-card-content>
 
-        Public tours, MWF: 12:00 pm
-        <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
+      Public tours, MWF: 12:00 pm
+      <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
         <ion-icon name="information-circle"></ion-icon>
   View Tour Information
       </button>
@@ -62,13 +56,71 @@
       <ion-icon name="pizza" large item-start></ion-icon>
       Cafeteria Hours
     </ion-card-header>
-  <ion-card-content>
-        Breakfast, 8:00 am - 9:30 am
-    <br/>
-        Lunch, 11:30 - 1:30 pm
-    <p>
-      The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>
+    <ion-card-content>
+      Breakfast, 8:00 am - 9:30 am
+      <br/> Lunch, 11:30 - 1:30 pm
+      <p>
+        The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/images/accessible.jpg" class="custom_icon" /> Accessibility
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <button ion-item (click)="openPage($event, 'parking')">
+        Parking
+      </button>
+        <button ion-item (click)="openPage($event, 'elevators')">
+          Elevators
+        </button>
+        <button ion-item (click)="openPage($event, 'restrooms')">
+            Restrooms
+          </button>
+
+      </ion-list>
+
+      <p>Addition information about our accessibility accomodations can be found on our website.
+        <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/accessibility-ncar-mesa-lab-visitor-center')">
+      View accessibility information</button></p>
     </ion-card-content>
   </ion-card>
 
+</ion-content>
+
+<ion-content *ngIf="selectedItem == 'parking'">
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>{{pageTitle | translate}}</ion-card-title>
+      <p>NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.
+      </p>
+      <p>
+
+        <ion-card-title>Front driveway access</ion-card-title>
+        <p>This is a secure driveway and entrance, therefore one must call NCAR (303.497.1139) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance</p>
+        <ion-card-title>Accessible rear entrance</ion-card-title>
+        <p>The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance.
+          (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press "G" for Ground Level,
+          and it will transport you to the first floor of our Visitor Center.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-content *ngIf="selectedItem == 'elevators'">
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>{{pageTitle | translate}}</ion-card-title>
+      <p>All exhibits and public areas are accessible by elevator</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-content *ngIf="selectedItem == 'restrooms'">
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>{{pageTitle | translate}}</ion-card-title>
+      <p>A wheelchair accessible restroom is available on the second floor in the Climate Future exhibit area. </p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

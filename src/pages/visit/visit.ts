@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController} from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
 import { TranslateService } from 'ng2-translate';
 import { SharedVars } from '../../providers/shared-vars';
 
@@ -8,9 +8,29 @@ import { SharedVars } from '../../providers/shared-vars';
   templateUrl: 'visit.html'
 })
 export class VisitPage {
-  constructor(private navCtrl: NavController, private translate:TranslateService,public sharedVars:SharedVars) {
-    sharedVars.trackView('Terms of Use');
+  selectedItem:any;
+  pageTitle:any;
+  constructor(private navCtrl: NavController, private navParams: NavParams, private translate:TranslateService, public sharedVars:SharedVars) {
+    this.selectedItem = navParams.get('item');
+    sharedVars.trackView('Visitor Information');
+
+
+    switch(this.selectedItem) {
+      case 'parking':
+      case 'elevators':
+      case 'restrooms':
+        this.pageTitle = this.selectedItem;
+        break;
+      default:
+        this.pageTitle = 'visitor';
+
+    }
 
   }
+  openPage(event, item) {
+    this.navCtrl.push(VisitPage, {
+      item: item
+    });
 
+  }
 }
