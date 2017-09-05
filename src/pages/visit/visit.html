@@ -6,84 +6,70 @@
   <ion-card>
 
     <img src="assets/images/ncar.png">
-    <ion-card-content>The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free. For more information, please view our <a href="https://scied.ucar.edu/visit">visit page</a>.</ion-card-content>
+    <ion-card-content [innerHTML]="'visitor_intro' | translate"></ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header>
       <ion-icon name="pin" item-start large></ion-icon>
-      Address
+      {{'visitor_address_title' | translate}}
     </ion-card-header>
-    <ion-card-content>
-      1850 Table Mesa Drive<br/>Boulder, Colorado 80305
+    <ion-card-content [innerHtml]= "'visitor_address_content' | translate">
       <p><button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
       <ion-icon name="navigate"></ion-icon>
-      View Directions
+      {{'visitor_address_content_button_text' | translate }}
     </button></p>
     </ion-card-content>
   </ion-card>
   <ion-card>
     <ion-card-header>
       <ion-icon name="clock" large item-start></ion-icon>
-      Visitor Center Hours
+      {{ 'visitor_hours_title' | translate }}
     </ion-card-header>
-    <ion-card-content>
-
-      Weekdays: 8:00 am - 5:00 pm
-      <br/> Weekends: 9:00 am - 4:00 pm
-      <br/> Holidays: 9:00 am - 4:00 pm
-      <p>The visitor center is open every day except for two annual shut down days in the spring and fall. Check our <a href="https://scied.ucar.edu/visit">visit page</a> for updates when these shut downs are scheduled.</p>
+    <ion-card-content [innerHtml]="'visitor_hours_content' | translate ">
     </ion-card-content>
   </ion-card>
 
   <ion-card>
     <ion-card-header>
       <ion-icon name="clock" large item-start></ion-icon>
-      Tours
+      {{ 'visitor_tours_title' | translate }}
     </ion-card-header>
-    <ion-card-content>
-
-      Public tours, MWF: 12:00 pm
+    <ion-card-content [innerHtml]="'visitor_tours_content' | translate">
       <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
         <ion-icon name="information-circle"></ion-icon>
-  View Tour Information
+        {{ 'visitor_tours_content_button_text' | translate }}
       </button>
     </ion-card-content>
   </ion-card>
-
   <ion-card>
     <ion-card-header>
       <ion-icon name="pizza" large item-start></ion-icon>
-      Cafeteria Hours
+      {{'visitor_cafeteria_title' | translate}}
     </ion-card-header>
-    <ion-card-content>
-      Breakfast, 8:00 am - 9:30 am
-      <br/> Lunch, 11:30 - 1:30 pm
-      <p>
-        The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>
+    <ion-card-content [innerHtml]="'visitor_cafeteria_content' | translate">
     </ion-card-content>
   </ion-card>
   <ion-card>
     <ion-card-header>
-      <img src="assets/images/accessible.jpg" class="custom_icon" /> Accessibility
+      <img src="assets/images/accessible.jpg" class="custom_icon" /> {{ 'visitor_accessibility_title' | translate}}
     </ion-card-header>
     <ion-card-content>
       <ion-list>
         <button ion-item (click)="openPage($event, 'parking')">
-        Parking
+         {{ 'visitor_accessibility_parking' | translate}}
       </button>
         <button ion-item (click)="openPage($event, 'elevators')">
-          Elevators
+           {{ 'visitor_accessibility_elevators' | translate}}
         </button>
         <button ion-item (click)="openPage($event, 'restrooms')">
-            Restrooms
+             {{ 'visitor_accessibility_restrooms' | translate}}
           </button>
 
       </ion-list>
 
-      <p>Addition information about our accessibility accomodations can be found on our website.
-        <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/accessibility-ncar-mesa-lab-visitor-center')">
-      View accessibility information</button></p>
+      <p [innerHtml]="'visitor_accessibility_content' | translate"></p>
+       <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/accessibility-ncar-mesa-lab-visitor-center')">{{'visitor_accessibility_content_button_text'| translate}}</button>
     </ion-card-content>
   </ion-card>
 
@@ -93,16 +79,11 @@
   <ion-card>
     <ion-card-content>
       <ion-card-title>{{pageTitle | translate}}</ion-card-title>
-      <p>NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.
-      </p>
-      <p>
-
-        <ion-card-title>Front driveway access</ion-card-title>
-        <p>This is a secure driveway and entrance, therefore one must call NCAR (303.497.1139) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance</p>
-        <ion-card-title>Accessible rear entrance</ion-card-title>
-        <p>The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance.
-          (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press "G" for Ground Level,
-          and it will transport you to the first floor of our Visitor Center.</p>
+      <p [innerHtml]="'visitor_accessiblity_parking_intro'| translate"></p>
+        <ion-card-title [innerHtml]="'visitor_accessibility_parking_title1' | translate"></ion-card-title>
+        <p [innerHtml]="'visitor_accessibility_parking_content1' | translate"></p>
+        <ion-card-title [innerHtml]="'visitor_accessibility_parking_title2' | translate"></ion-card-title>
+        <p [innerHtml]="'visitor_accessibility_parking_content2' | translate"></p>
     </ion-card-content>
   </ion-card>
 </ion-content>
@@ -111,7 +92,7 @@
   <ion-card>
     <ion-card-content>
       <ion-card-title>{{pageTitle | translate}}</ion-card-title>
-      <p>All exhibits and public areas are accessible by elevator</p>
+      <p [innerHtml]="'visitor_accessibility_elevators_intro' | translate"></p>
     </ion-card-content>
   </ion-card>
 </ion-content>
@@ -120,7 +101,7 @@
   <ion-card>
     <ion-card-content>
       <ion-card-title>{{pageTitle | translate}}</ion-card-title>
-      <p>A wheelchair accessible restroom is available on the second floor in the Climate Future exhibit area. </p>
+      <p [innerHtml]="'visitor_accessibility_restrooms_intro' | translate"></p>
     </ion-card-content>
   </ion-card>
 </ion-content>
