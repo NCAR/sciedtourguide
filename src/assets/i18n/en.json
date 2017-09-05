@@ -114,12 +114,13 @@
   "audio_dropsonde_transcript": "",
 
 
-  "visitor_intro": "The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free. For more information, please view our <a href=\"https://scied.ucar.edu/visit\">visit page</a>.",
+  "visitor_intro": "The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free.",
+  "visitor_intro_button_text":"Visitor website",
   "visitor_address_title": "Address",
   "visitor_address_content": "1850 Table Mesa Drive<br/>Boulder, Colorado 80305",
   "visitor_address_content_button_text":"View directions",
   "visitor_hours_title": "Visitor Center Hours",
-  "visitor_hours_content":"Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The visitor center is open every day except for two annual shut down days in the spring and fall. Check our <a href=\"https://scied.ucar.edu/visit\">visit page</a> for updates when these shut downs are scheduled.</p>",
+  "visitor_hours_content":"Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The visitor center is open every day except for two annual shut down days in the spring and fall. View our visitor website for updates when these shut downs are scheduled.</p>",
   "visitor_tours_title": "Tours",
   "visitor_tours_content": "Public tours, MWF: 12:00 pm",
   "visitor_tours_content_button_text":"View tour information",

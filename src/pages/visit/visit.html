@@ -6,7 +6,11 @@
   <ion-card>
 
     <img src="assets/images/ncar.png">
-    <ion-card-content [innerHTML]="'visitor_intro' | translate"></ion-card-content>
+    <ion-card-content><p [innerHTML]="'visitor_intro' | translate"></p>
+      <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit')">
+        <ion-icon name="information-circle"></ion-icon>
+        {{ 'visitor_intro_button_text' | translate }}
+      </button></ion-card-content>
   </ion-card>
 
   <ion-card>
@@ -14,11 +18,12 @@
       <ion-icon name="pin" item-start large></ion-icon>
       {{'visitor_address_title' | translate}}
     </ion-card-header>
-    <ion-card-content [innerHtml]= "'visitor_address_content' | translate">
-      <p><button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
+    <ion-card-content>
+      <p [innerHtml]= "'visitor_address_content' | translate"></p>
+      <button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
       <ion-icon name="navigate"></ion-icon>
       {{'visitor_address_content_button_text' | translate }}
-    </button></p>
+    </button>
     </ion-card-content>
   </ion-card>
   <ion-card>
@@ -35,7 +40,7 @@
       <ion-icon name="clock" large item-start></ion-icon>
       {{ 'visitor_tours_title' | translate }}
     </ion-card-header>
-    <ion-card-content [innerHtml]="'visitor_tours_content' | translate">
+    <ion-card-content><p [innerHtml]="'visitor_tours_content' | translate"></p>
       <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
         <ion-icon name="information-circle"></ion-icon>
         {{ 'visitor_tours_content_button_text' | translate }}
