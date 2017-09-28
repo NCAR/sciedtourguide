@@ -2,6 +2,6 @@
 <ion-content padding>
   <ion-item-group *ngFor="let sections of menu_list">
       <ion-item-divider color="light">{{sections.name | translate }}</ion-item-divider>
-        <ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits)">{{exhibits.name | translate }}</ion-item>
+        <ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits)" tappable>{{exhibits.name | translate }}</ion-item>
   </ion-item-group>
 </ion-content>

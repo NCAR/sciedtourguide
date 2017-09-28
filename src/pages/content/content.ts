@@ -15,13 +15,14 @@ import { TranscriptPage } from '../transcript/transcript';
 export class ContentPage {
 
   selectedItem: any;
+  specialBtn:string;
 
 
   constructor(private sharedDataService: SharedDataService, private navCtrl: NavController, private navParams: NavParams, private translate: TranslateService, public sharedVars: SharedVars) {
     this.selectedItem = navParams.get('item');
+    this.specialBtn = 'audioBtn';
 
-
-  } 
+  }
   goHome() {
     this.navCtrl.setRoot(TabsPage);
   }

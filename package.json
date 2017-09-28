@@ -1,8 +1,8 @@
 {
-  "name": "ionic-hello-world",
-  "version": "0.0.0",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "sciedtour",
+  "version": "1.0.0",
+  "author": "UCAR Center for Science Education",
+  "homepage": "http://scied.ucar.edu",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -57,5 +57,5 @@
       "locator": "ios"
     }
   ],
-  "description": "sciedtour: An Ionic project"
+  "description": "Mesa Lab Tour Application"
 }
