@@ -2,10 +2,13 @@
   <app-title [title]="selectedItem.content.title | translate" [specialButton]="specialBtn" [selectedItem]="selectedItem"></app-title>
 </ion-header>
 
-<ion-content>
+<ion-content elastic-header>
+  <div class="background-image" [style.backgroundImage]="'url('+selectedItem.content.img[0].path+')'"></div>
+
+<div class="main-content">
 
   <ion-card>
-    <img [src]="selectedItem.content.img[0].path" />
+    <!--//img [src]="selectedItem.content.img[0].path" //-->
     <!--//ion-fab right top>
     <button ion-fab color="secondary" class="transcript_link" (click)="openTranscript($event, selectedItem)" icon-right>
         <img src="assets/images/audio_white.png"/>
@@ -28,5 +31,5 @@
     </ion-card-content>
 
   </ion-card>
-
+</div>
 </ion-content>

@@ -8,12 +8,15 @@ import { SharedDataService } from '../providers/shared-data-service';
 import { TranslateModule,TranslateStaticLoader,TranslateLoader } from 'ng2-translate/ng2-translate';
 
 import { ExhibitsListPage } from '../pages/exhibitslist/exhibitslist';
+import { PostcardPage } from '../pages/postcard/postcard';
 import { VisitPage } from '../pages/visit/visit';
 import { HomePage } from '../pages/home/home';
 import { ContentPage } from '../pages/content/content';
 import { TranscriptPage } from '../pages/transcript/transcript';
 import { TabsPage } from '../pages/tabs/tabs';
-import { TitleComponent } from './title.component';
+import { TitleComponent } from '../components/titlebar/title.component';
+
+import { ElasticHeader}  from '../components/elastic-header/elastic-header';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,12 +37,14 @@ export function myCustomAudioProviderFactory() {
   declarations: [
     MyApp,
     ExhibitsListPage,
+    PostcardPage,
     VisitPage,
     HomePage,
     ContentPage,
     TranscriptPage,
     TabsPage,
-    TitleComponent
+    TitleComponent,
+    ElasticHeader
   ],
   imports: [
     BrowserModule,
@@ -56,6 +61,7 @@ export function myCustomAudioProviderFactory() {
   entryComponents: [
     MyApp,
     ExhibitsListPage,
+    PostcardPage,
     VisitPage,
     HomePage,
     ContentPage,

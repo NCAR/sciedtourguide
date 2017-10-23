@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NavController} from 'ionic-angular';
-
-import { TranscriptPage } from '../pages/transcript/transcript';
+import { TranscriptPage } from '../../pages/transcript/transcript';
 
 @Component({
   selector: 'app-title',

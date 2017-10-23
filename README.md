@@ -29,8 +29,9 @@ Xcode version: Xcode 8.3.2 Build version 8E2002
 * copy repo files into project
 * install cordova-plugin-google-analytics 1.8.3 (https://ionicframework.com/docs/native/google-analytics/)
 * install cordova-plugin-inappbrowser 1.7.1 (https://ionicframework.com/docs/native/in-app-browser/)
-* install cordova-plugin-file 4.3.3 (https://ionicframework.com/docs/native/file/)
 * install cordova-plugin-media 3.0.1 (https://ionicframework.com/docs/native/media/)
+* install cordova-plugin-camera 2.4.1 (https://ionicframework.com/docs/native/camera/)=
+* install social-sharing 5.2.1 (http://ionicframework.com/docs/native/social-sharing/)
 
 
 ## Maintainers/Sponsors
