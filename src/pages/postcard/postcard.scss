@@ -1,6 +1,24 @@
 page-postcard {
-  div.postcard_content {
-    border:1px solid red;
+  .img_container {
+    text-align: center;
+    img {
+      margin-left:auto;
+      margin-right:auto;
+      border:1px solid black;
+    }
+  }
+  form {
+    .message {
+        width:100%;
+    }
+    .text_color {
+      width:25%;
+      height:50px;
+      display:block;
+    }
+  }
+  div.postcardContainer {
+      background-color:green;
   }
   div.steps_container {
     background-color:#ccc;
@@ -28,10 +46,7 @@ page-postcard {
       }
     }
   }
-  .preview {
-    max-height: 30%;
-    height:30%;
-  }
+
   .label[stacked] {
     font-size: 2rem;
   }

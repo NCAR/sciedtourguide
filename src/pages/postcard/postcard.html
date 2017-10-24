@@ -4,39 +4,40 @@
 
 <ion-content>
 
-  <div class="steps_container" *ngIf="base64Image">
+  <div class="img_container" *ngIf="base64Image && postcardMessageText">
+      <img [src]="base64Image" class="preview" [text]="postcard.value.message" [color]="postcard.value.color" [bkg]="postcard.value.bkg_img" draw-text crossOrigin id="finalPostcard">
+  </div>
+  <div class="steps_container">
     <div class="steps">
       <div class="intro">You are on step: </div>
-      <div class="step one" [ngClass]="{'active' : (base64Image && !showEditTextBox)}">1</div>
-      <div class="step two" [ngClass]="{'active' : (showEditTextBox && !postcardMessageText)}">2</div>
+      <div class="step one" [ngClass]="{'active' : (!base64Image)}">1</div>
+      <div class="step two" [ngClass]="{'active' : (base64Image && !postcardMessageText)}">2</div>
       <div class="step three" [ngClass]="{'active' : postcardMessageText}">3</div>
     </div>
   </div>
-  <div padding class="postcard_content" [style.max-height]="contentHeight">
+  <div padding class="postcard_content">
     <div *ngIf="!base64Image">
       <p>First take a picture</p>
       <button *ngIf="!base64Image" ion-button (click)="takePicture()" icon-right>{{'take_picture' | translate }} <ion-icon name="camera"></ion-icon></button>
     </div>
 
-    <div *ngIf="base64Image && !showEditTextBox">
-      <p>Great shot!  Is this the picture you want to use?</p>
-      <img [src]="base64Image" class="preview"  [style.max-height]="pictureHeight"/>
-
-      <button ion-button (click)="takePicture()" icon-right>{{'retake_picture' | translate }} <ion-icon name="camera"></ion-icon></button>
-      <button ion-button (click)="editText()" icon-right>{{'postcard_write' | translate}} <ion-icon name="camera"></ion-icon></button>
+    <div *ngIf="base64Image && !postcardBkgImage">
+      <p>Next, select a background image</p>
+        <img [src]="img" *ngFor="let img of bkg_imgs" (click)="selectBkgImg(img)">
     </div>
 
-    <div *ngIf="showEditTextBox && !postcardMessageText">
+    <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText">
       <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">
         <ion-label stacked>Message</ion-label>
-        <ion-textarea formControlName="message" placeholder="Write your postcard message!"></ion-textarea>
+        <ion-textarea formControlName="message" placeholder="Write your postcard message!" class="message" [attr.maxlength]="140"></ion-textarea>
+        <ion-label inline >Select a text color</ion-label>
+        <input formControlName="color" [(colorPicker)]="color" (colorPickerChange)="updateColor(color)" [style.background]="postcard.value.color" [cpOKButton]="true" [cpOKButtonText]="'Select'" [cpOutputFormat]="'hex'" class="text_color"/>
         <button ion-button type="submit" [disabled]="!postcard.valid">Review Postcard</button>
       </form>
     </div>
 
     <div *ngIf="postcardMessageText">
       <ion-card>
-        <img [src]="base64Image" class="preview" [text]="postcard.value.message" draw-text crossOrigin id="finalPostcard">
         <ion-row no-padding>
           <ion-col>
             <button ion-button (click)="sendEmail()">{{ 'send_email' | translate }}</button>
