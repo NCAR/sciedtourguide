@@ -4,7 +4,7 @@ import { SharedVars } from '../../providers/shared-vars';
 import { TranslateService } from 'ng2-translate';
 import { NavController, NavParams} from 'ionic-angular';
 import { Platform } from 'ionic-angular';
-import {Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 import { TabsPage } from '../tabs/tabs';
 import { Camera, CameraOptions } from '@ionic-native/camera';
@@ -22,11 +22,11 @@ export class PostcardPage {
   postcardMessageText:Boolean = false;
   showEditTextBox:Boolean = false;
   private postcard: FormGroup;
+  checkExist;
+  image = 'http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png';
+  imgElm:HTMLImageElement;
 
   constructor( private formBuilder: FormBuilder, private platform:Platform, private camera: Camera, private sharingVar: SocialSharing, private sharedDataService: SharedDataService, private navCtrl: NavController, private navParams: NavParams, private translate: TranslateService, public sharedVars: SharedVars) {
-    var footer = 50;
-    var header = 50;
-    var stepsContainer = 60;
 
 // todo need to reset base64 on tab tab (return to home)
     this.options = {
@@ -39,7 +39,7 @@ export class PostcardPage {
       mediaType: this.camera.MediaType.PICTURE
     }
     this.postcard = this.formBuilder.group({
-          message: ['', Validators.required],
+          message: ['test', Validators.required],
         });
 
     this.platform.ready().then(() => {
@@ -49,6 +49,7 @@ export class PostcardPage {
 reviewPostcard() {
   this.postcardMessageText = true;
 }
+
   takePicture(){
     this.camera.getPicture(this.options).then((imageData) => {
         // imageData is a base64 encoded string
@@ -66,13 +67,28 @@ reviewPostcard() {
   }
 
   otherShare(){
-  this.sharingVar.share(this.postcard.value.message,"Postcard: Greetings from the NCAR Visitor Center!",this.base64Image,"http://scied.ucar.edu/apps/cloud-guide")
-  .then(()=>{
 
-    },
-    ()=>{
+  this.checkExist = setInterval(() => {
+  console.log('yes');
+  console.log(this.imgElm);
+    this.imgElm = <HTMLImageElement> document.getElementById('finalPostcard');
+    if(this.imgElm != null){
+    console.log('test');
+      clearInterval(this.checkExist);
+      console.log(this.imgElm.src);
 
-    })
+      this.sharingVar.share(this.postcard.value.message,"Postcard: Greetings from the NCAR Visitor Center!",this.imgElm.src,"http://scied.ucar.edu/apps/cloud-guide")
+      .then(()=>{
+
+        },
+        ()=>{
+
+        });
+    }
+  }, 300);
+
+
+
 
 }
 

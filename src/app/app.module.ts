@@ -17,6 +17,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { TitleComponent } from '../components/titlebar/title.component';
 
 import { ElasticHeader}  from '../components/elastic-header/elastic-header';
+import { ImageDrawTextDirective } from '../components/image-draw/image-draw'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -44,7 +45,8 @@ export function myCustomAudioProviderFactory() {
     TranscriptPage,
     TabsPage,
     TitleComponent,
-    ElasticHeader
+    ElasticHeader,
+    ImageDrawTextDirective
   ],
   imports: [
     BrowserModule,
