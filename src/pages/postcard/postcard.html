@@ -17,19 +17,20 @@
   </div>
   <div padding class="postcard_content">
     <div *ngIf="!postcardBkgImage" class="bkg_image_container">
-      <p>First, select a background image</p>
+      <p>First, select an image</p>
         <img [src]="img" *ngFor="let img of bkg_imgs" (click)="selectBkgImg(img)">
     </div>
 
 
     <div *ngIf="!base64Image && postcardBkgImage" class="camera_container">
-      <p>Next, take a picture</p>
+      <p>Next, take a photograph</p>
       <button *ngIf="!base64Image" ion-button (click)="takePicture()" icon-right>{{'take_picture' | translate }} <ion-icon name="camera"></ion-icon></button>
     </div>
 
 
 
     <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText" class="text_container">
+      <p>Finally, write a message on your postcard.  Please limit your message to 200 characters</p>
       <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">
         <ion-label stacked>Message</ion-label>
         <ion-textarea formControlName="message" placeholder="Write your postcard message! Maximum 200 characters." class="message" [attr.maxlength]="200"></ion-textarea>
@@ -41,7 +42,8 @@
       <ion-card>
         <ion-row no-padding>
           <ion-col>
-            <button ion-button (click)="sendEmail()">{{ 'send_email' | translate }}</button>
+            <p>Here is your postcard!</p>
+            <button ion-button (click)="sendEmail()">{{ 'postcard_send' | translate }}</button>
           </ion-col>
         </ion-row>
       </ion-card>

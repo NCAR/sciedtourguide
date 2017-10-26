@@ -26,7 +26,6 @@ export class PostcardPage {
   width = this.platform.width()
   private postcard: FormGroup;
   checkExist;
-  image = 'http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png';
   imgElm:HTMLImageElement;
   bkg_imgs:any;
   postcardData:any = {'orientation': 'portrait', 'message':'', 'bkg':''};
@@ -34,7 +33,7 @@ export class PostcardPage {
   constructor( private formBuilder: FormBuilder, private platform:Platform, private camera: Camera, private sharingVar: SocialSharing, private sharedDataService: SharedDataService, private navCtrl: NavController, private navParams: NavParams, private translate: TranslateService, public sharedVars: SharedVars) {
     this.determineDimensions();
 
-    this.bkg_imgs = ['assets/images/postcards/cloud.jpg','assets/images/postcards/eclipse.jpg'];
+    this.bkg_imgs = ['assets/images/postcards/mesalab.jpg','assets/images/postcards/eclipse.jpg','assets/images/postcards/mammatus.jpg','assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
     // todo need to reset base64 on tab tab (return to home)
     this.options = {
       quality: 100,
@@ -95,7 +94,7 @@ selectBkgImg(src){
     }, (err) => {
       console.log('no image');
     });
-    
+
   }
 
 
