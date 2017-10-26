@@ -1,4 +1,5 @@
 page-postcard {
+
   .bkg_image_container {
     img {
       width: 30%;
@@ -11,6 +12,9 @@ page-postcard {
       margin-left:auto;
       margin-right:auto;
       border:1px solid black;
+    }
+    .preview {
+      width:50%;
     }
   }
   form {
