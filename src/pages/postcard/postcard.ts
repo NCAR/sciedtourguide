@@ -88,12 +88,16 @@ selectBkgImg(src){
   this.postcardBkgImage = true;
 }
   takePicture(){
+
     this.camera.getPicture(this.options).then((imageData) => {
         // imageData is a base64 encoded string
         this.base64Image = "data:image/jpeg;base64," + imageData;
     }, (err) => {
       console.log('no image');
     });
+
+
+
 
   }
 

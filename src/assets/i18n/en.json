@@ -16,7 +16,12 @@
   "retake_picture" : "Retake photo",
   "postcard_write" : "Write Postcard",
   "postcard_send" : "Send Postcard",
-
+  "postcard_step_one" : "First, select a background image.",
+  "postcard_step_two" : "Next, take a photo with your camera.",
+  "postcard_step_three" : "Finally, write your message.  Please limit to 140 characters or less.",
+  "postcard_message_label" : "Message",
+  "postcard_message_placeholder" : "Example: Hi Mom!  I just visited the NCAR Visitor Center and played with a cloud!",
+  "postcard_review" : "Here is your postcard.  Would you like send it?",
   "about": "About",
   "apptitle": "ML Tour",
   "weather": "Weather",

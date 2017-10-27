@@ -20,7 +20,7 @@ export class ImageDrawTextDirective {
       return;
     }
 
-
+    let logo_img = "assets/images/postcards/logos.jpg";
     let scaled_width;
     let scaled_height;
 
@@ -79,35 +79,51 @@ export class ImageDrawTextDirective {
         // get scaled down width and height for user image
         scaled_width = (canvas.width/2)-50;
         scaled_height = ((scaled_width * img.height)/img.width)-50;
-        context.drawImage(img, 50, ((canvas.height/2)-(scaled_height/2)), scaled_width, scaled_height);
+        context.drawImage(img, 50, ((canvas.height/2)-(scaled_height/2))-100, scaled_width, scaled_height);
+
+        // draw logo
+        let logoObject = document.createElement("img");
+        logoObject.onload = (data) => {
+          console.log('draw logo');
+          context.drawImage(logoObject, 0, canvas.height-logoObject.height, logoObject.width, logoObject.height);
+
+          // draw ML address
+          console.log('draw ml address');
+          context.font = "20px helvetica";
+          context.textAlign = 'left';
+          context.fillStyle = '#000000';
+          context.fillText("1850 Table Mesa Drive", canvas.width - 300, canvas.height - 150);
+          context.fillText("Boulder, Colorado 80305 ", canvas.width - 300, canvas.height - 125);
+          context.fillText("http://scied.ucar.edu/visit", canvas.width - 300, canvas.height - 100);
 
 
 
-
-        // draw transparent text bkg
-        console.log('draw text box');
-        context.fillStyle = 'rgba(225,225,225,0.5)';
-        let textbox = {'x': (canvas.width/2)+50, 'y': (canvas.height/2)+100, 'width': canvas.width - (canvas.width/2)-50, 'height': (canvas.height/2)-100};
-        let max_width = textbox.width - 50;
-        context.fillRect(textbox.x, textbox.y, textbox.width, textbox.height);
-
-
-        // draw message
-        console.log('draw message '+this.text);
-        context.font = "50px helvetica";
-        context.textAlign = 'left';
-        context.fillStyle = '#000000';
-        let lines = getLines(context,this.text,max_width);
-        let lines_y = textbox.y+100;
-        let line_height = 50;
-        lines.forEach(line => {
-          console.log(line);
-          context.fillText(line, scaled_width+150, lines_y, max_width);
-          lines_y += line_height;
-        });
+          // draw transparent text bkg
+          console.log('draw text box');
+          context.fillStyle = 'rgba(225,225,225,0.5)';
+          let textbox = {'x': (canvas.width/2)+50, 'y': (canvas.height/2), 'width': canvas.width - (canvas.width/2)-50, 'height': (canvas.height/2)-200};
+          let max_width = textbox.width - 50;
+          context.fillRect(textbox.x, textbox.y, textbox.width, textbox.height);
 
 
-      img.src = canvas.toDataURL();
+          // draw message
+          console.log('draw message '+this.text);
+          context.font = "50px helvetica";
+          context.textAlign = 'left';
+          context.fillStyle = '#000000';
+          let lines = getLines(context,this.text,max_width);
+          let lines_y = textbox.y+100;
+          let line_height = 50;
+          lines.forEach(line => {
+            console.log(line);
+            context.fillText(line, scaled_width+150, lines_y, max_width);
+            lines_y += line_height;
+          });
+
+
+          img.src = canvas.toDataURL();
+        }
+        logoObject.src = logo_img;
     }
 
     bkgObject.src = this.bkg;

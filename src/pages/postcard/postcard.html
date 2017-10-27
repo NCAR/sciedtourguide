@@ -6,34 +6,26 @@
   <div class="img_container" *ngIf="base64Image && postcardMessageText">
       <img [src]="base64Image" class="preview" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard">
   </div>
-  <div class="steps_container">
-    <div class="steps">
-      <div class="intro">You are on step: </div>
-      <div class="step one" [ngClass]="{'active' : (!postcardBkgImage)}">1</div>
-      <div class="step two" [ngClass]="{'active' : (postcardBkgImage && !base64Image)}">2</div>
-      <div class="step three" [ngClass]="{'active' : base64Image && postcardBkgImage && !postcardMessageText}">3</div>
-      <div class="step four" [ngClass]="{'active' : postcardMessageText}">4</div>
-    </div>
-  </div>
+
   <div padding class="postcard_content">
     <div *ngIf="!postcardBkgImage" class="bkg_image_container">
-      <p>First, select an image</p>
+      <p>{{ 'postcard_step_one' | translate }}</p>
         <img [src]="img" *ngFor="let img of bkg_imgs" (click)="selectBkgImg(img)">
     </div>
 
 
     <div *ngIf="!base64Image && postcardBkgImage" class="camera_container">
-      <p>Next, take a photograph</p>
+      <p>{{ 'postcard_step_two' | translate }}</p>
       <button *ngIf="!base64Image" ion-button (click)="takePicture()" icon-right>{{'take_picture' | translate }} <ion-icon name="camera"></ion-icon></button>
     </div>
 
 
 
     <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText" class="text_container">
-      <p>Finally, write a message on your postcard.  Please limit your message to 200 characters</p>
+      <p>{{ 'postcard_step_three' | translate }}</p>
       <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">
-        <ion-label stacked>Message</ion-label>
-        <ion-textarea formControlName="message" placeholder="Write your postcard message! Maximum 200 characters." class="message" [attr.maxlength]="200"></ion-textarea>
+        <ion-label stacked>{{ 'postcard_message_label' | translate }}</ion-label>
+        <ion-textarea formControlName="message" [placeholder]="'postcard_message_placeholder' | translate" class="message" [attr.maxlength]="200"></ion-textarea>
       <button ion-button type="submit" [disabled]="!postcard.valid">Review Postcard</button>
       </form>
     </div>
@@ -42,7 +34,7 @@
       <ion-card>
         <ion-row no-padding>
           <ion-col>
-            <p>Here is your postcard!</p>
+            <p>{{ 'postcard_review' | translate }}</p>
             <button ion-button (click)="sendEmail()">{{ 'postcard_send' | translate }}</button>
           </ion-col>
         </ion-row>
