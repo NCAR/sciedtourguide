@@ -54,7 +54,6 @@ export class ImageDrawTextDirective {
     canvas.width = 1600;
 
     // draw linear gradient background-color
-    console.log('draw background gradient');
     var my_gradient=context.createLinearGradient(0,0,canvas.width/2,0);
     my_gradient.addColorStop(0,"#003565");
     my_gradient.addColorStop(0.5,"#1C497A");
@@ -70,12 +69,9 @@ export class ImageDrawTextDirective {
     let bkgObject = document.createElement("img");
     bkgObject.onload = (data) => {
         // draw library image
-        console.log('draw lib image');
         context.drawImage(bkgObject, (canvas.width/2)+50, 0, canvas.width - ((canvas.width/2)+50), canvas.height);
 
         // draw user image
-
-        console.log('draw photo');
         // get scaled down width and height for user image
         scaled_width = (canvas.width/2)-50;
         scaled_height = ((scaled_width * img.height)/img.width)-50;
@@ -84,11 +80,9 @@ export class ImageDrawTextDirective {
         // draw logo
         let logoObject = document.createElement("img");
         logoObject.onload = (data) => {
-          console.log('draw logo');
           context.drawImage(logoObject, 0, canvas.height-logoObject.height, logoObject.width, logoObject.height);
 
           // draw ML address
-          console.log('draw ml address');
           context.font = "20px helvetica";
           context.textAlign = 'left';
           context.fillStyle = '#000000';
@@ -96,10 +90,7 @@ export class ImageDrawTextDirective {
           context.fillText("Boulder, Colorado 80305 ", canvas.width - 300, canvas.height - 125);
           context.fillText("http://scied.ucar.edu/visit", canvas.width - 300, canvas.height - 100);
 
-
-
           // draw transparent text bkg
-          console.log('draw text box');
           context.fillStyle = 'rgba(225,225,225,0.5)';
           let textbox = {'x': (canvas.width/2)+50, 'y': (canvas.height/2), 'width': canvas.width - (canvas.width/2)-50, 'height': (canvas.height/2)-200};
           let max_width = textbox.width - 50;
@@ -107,7 +98,6 @@ export class ImageDrawTextDirective {
 
 
           // draw message
-          console.log('draw message '+this.text);
           context.font = "50px helvetica";
           context.textAlign = 'left';
           context.fillStyle = '#000000';
@@ -115,13 +105,13 @@ export class ImageDrawTextDirective {
           let lines_y = textbox.y+100;
           let line_height = 50;
           lines.forEach(line => {
-            console.log(line);
             context.fillText(line, scaled_width+150, lines_y, max_width);
             lines_y += line_height;
           });
 
 
           img.src = canvas.toDataURL();
+          img.completed = true;
         }
         logoObject.src = logo_img;
     }
