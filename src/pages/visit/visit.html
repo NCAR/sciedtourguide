@@ -2,111 +2,94 @@
   <app-title [title]="pageTitle | translate"></app-title>
 </ion-header>
 
-<ion-content *ngIf="!selectedItem">
-  <ion-card>
-
-    <img src="assets/images/ncar.png">
-    <ion-card-content><p [innerHTML]="'visitor_intro' | translate"></p>
-      <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit')">
+<ion-content elastic-header>
+  <div class="background-image"></div>
+  <div class="main-content">
+    <ion-card>
+      <ion-card-content>
+        <p [innerHTML]="'visitor_intro' | translate"></p>
+        <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit')">
         <ion-icon name="information-circle"></ion-icon>
         {{ 'visitor_intro_button_text' | translate }}
       </button></ion-card-content>
-  </ion-card>
+    </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-icon name="pin" item-start large></ion-icon>
-      {{'visitor_address_title' | translate}}
-    </ion-card-header>
-    <ion-card-content>
-      <p [innerHtml]= "'visitor_address_content' | translate"></p>
-      <button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="pin" item-start large></ion-icon>
+        {{'visitor_address_title' | translate}}
+      </ion-card-header>
+      <ion-card-content>
+        <p [innerHtml]="'visitor_address_content' | translate"></p>
+        <button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
       <ion-icon name="navigate"></ion-icon>
       {{'visitor_address_content_button_text' | translate }}
     </button>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-icon name="clock" large item-start></ion-icon>
-      {{ 'visitor_hours_title' | translate }}
-    </ion-card-header>
-    <ion-card-content [innerHtml]="'visitor_hours_content' | translate ">
-    </ion-card-content>
-  </ion-card>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="clock" large item-start></ion-icon>
+        {{ 'visitor_hours_title' | translate }}
+      </ion-card-header>
+      <ion-card-content [innerHtml]="'visitor_hours_content' | translate ">
+      </ion-card-content>
+    </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-icon name="clock" large item-start></ion-icon>
-      {{ 'visitor_tours_title' | translate }}
-    </ion-card-header>
-    <ion-card-content><p [innerHtml]="'visitor_tours_content' | translate"></p>
-      <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="clock" large item-start></ion-icon>
+        {{ 'visitor_tours_title' | translate }}
+      </ion-card-header>
+      <ion-card-content>
+        <p [innerHtml]="'visitor_tours_content' | translate"></p>
+        <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
         <ion-icon name="information-circle"></ion-icon>
         {{ 'visitor_tours_content_button_text' | translate }}
       </button>
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-icon name="pizza" large item-start></ion-icon>
-      {{'visitor_cafeteria_title' | translate}}
-    </ion-card-header>
-    <ion-card-content [innerHtml]="'visitor_cafeteria_content' | translate">
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <img src="assets/images/accessible.jpg" class="custom_icon" /> {{ 'visitor_accessibility_title' | translate}}
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-        <button ion-item (click)="openPage($event, 'parking')">
-         {{ 'visitor_accessibility_parking' | translate}}
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-icon name="pizza" large item-start></ion-icon>
+        {{'visitor_cafeteria_title' | translate}}
+      </ion-card-header>
+      <ion-card-content [innerHtml]="'visitor_cafeteria_content' | translate">
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <img src="assets/images/accessible.jpg" class="custom_icon" /> {{ 'visitor_accessibility_title' | translate}}
+      </ion-card-header>
+      <ion-card-content class="accessible">
+        <p>{{'visitor_accessibility_content' | translate}}</p>
+        <button ion-item detail-none (click)="toggleAccessibleInformation('parking')">
+        <ion-icon [name]="icon_parking"></ion-icon>
+       {{ 'visitor_accessibility_parking' | translate}}
       </button>
-        <button ion-item (click)="openPage($event, 'elevators')">
-           {{ 'visitor_accessibility_elevators' | translate}}
+        <div class="content parking" *ngIf="show_accessibleParking">
+          <p [innerHtml]="'visitor_accessiblity_parking_intro'| translate"></p>
+          <h2 [innerHtml]="'visitor_accessibility_parking_title1' | translate"></h2>
+          <p [innerHtml]="'visitor_accessibility_parking_content1' | translate"></p>
+          <h2 [innerHtml]="'visitor_accessibility_parking_title2' | translate"></h2>
+          <p [innerHtml]="'visitor_accessibility_parking_content2' | translate"></p>
+        </div>
+        <button ion-item detail-none (click)="toggleAccessibleInformation('elevators')">
+         <ion-icon [name]="icon_elevators"></ion-icon>
+         {{ 'visitor_accessibility_elevators' | translate}}
         </button>
-        <button ion-item (click)="openPage($event, 'restrooms')">
-             {{ 'visitor_accessibility_restrooms' | translate}}
-          </button>
+        <div class="content elevators" *ngIf="show_accessibleElevators">
+          <p [innerHtml]="'visitor_accessibility_elevators_intro' | translate"></p>
+        </div>
+        <button ion-item detail-none (click)="toggleAccessibleInformation('restrooms')">
+           <ion-icon [name]="icon_restrooms"></ion-icon>
+           {{ 'visitor_accessibility_restrooms' | translate}}
+        </button>
 
-      </ion-list>
-
-      <p [innerHtml]="'visitor_accessibility_content' | translate"></p>
-       <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/accessibility-ncar-mesa-lab-visitor-center')">{{'visitor_accessibility_content_button_text'| translate}}</button>
-    </ion-card-content>
-  </ion-card>
-
-</ion-content>
-
-<ion-content *ngIf="selectedItem == 'parking'">
-  <ion-card>
-    <ion-card-content>
-      <ion-card-title>{{pageTitle | translate}}</ion-card-title>
-      <p [innerHtml]="'visitor_accessiblity_parking_intro'| translate"></p>
-        <ion-card-title [innerHtml]="'visitor_accessibility_parking_title1' | translate"></ion-card-title>
-        <p [innerHtml]="'visitor_accessibility_parking_content1' | translate"></p>
-        <ion-card-title [innerHtml]="'visitor_accessibility_parking_title2' | translate"></ion-card-title>
-        <p [innerHtml]="'visitor_accessibility_parking_content2' | translate"></p>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
-
-<ion-content *ngIf="selectedItem == 'elevators'">
-  <ion-card>
-    <ion-card-content>
-      <ion-card-title>{{pageTitle | translate}}</ion-card-title>
-      <p [innerHtml]="'visitor_accessibility_elevators_intro' | translate"></p>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
-
-<ion-content *ngIf="selectedItem == 'restrooms'">
-  <ion-card>
-    <ion-card-content>
-      <ion-card-title>{{pageTitle | translate}}</ion-card-title>
-      <p [innerHtml]="'visitor_accessibility_restrooms_intro' | translate"></p>
-    </ion-card-content>
-  </ion-card>
+        <div class="content restrooms" *ngIf="show_accessibleRestrooms">
+          <p [innerHtml]="'visitor_accessibility_restrooms_intro' | translate"></p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

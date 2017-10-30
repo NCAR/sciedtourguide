@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams} from 'ionic-angular';
+import { NavController} from 'ionic-angular';
 import { TranslateService } from 'ng2-translate';
 import { SharedVars } from '../../providers/shared-vars';
 
@@ -10,27 +10,65 @@ import { SharedVars } from '../../providers/shared-vars';
 export class VisitPage {
   selectedItem:any;
   pageTitle:any;
-  constructor(private navCtrl: NavController, private navParams: NavParams, private translate:TranslateService, public sharedVars:SharedVars) {
-    this.selectedItem = navParams.get('item');
+  show_accessibleParking = false;
+  show_accessibleElevators = false;
+  show_accessibleRestrooms = false;
+  icon_parking = 'ios-arrow-forward';
+  icon_elevators = 'ios-arrow-forward';
+  icon_restrooms = 'ios-arrow-forward';
+
+  constructor(private navCtrl: NavController, private translate:TranslateService, public sharedVars:SharedVars) {
+    this.pageTitle = 'visitor';
     sharedVars.trackView('Visitor Information');
-
-
-    switch(this.selectedItem) {
-      case 'parking':
-      case 'elevators':
-      case 'restrooms':
-        this.pageTitle = this.selectedItem;
-        break;
-      default:
-        this.pageTitle = 'visitor';
-
-    }
-
   }
-  openPage(event, item) {
-    this.navCtrl.push(VisitPage, {
-      item: item
-    });
+  toggleAccessibleInformation(value){
+    switch(value){
+      case 'parking':
+        if(this.show_accessibleParking == true){
+          this.show_accessibleParking = false;
+          this.icon_parking = 'ios-arrow-forward';
+        } else {
+          this.show_accessibleParking = true;
+          this.icon_parking = 'ios-arrow-down';
+        }
 
+        this.show_accessibleElevators = false;
+        this.show_accessibleRestrooms = false;
+        this.icon_elevators = 'ios-arrow-forward';
+        this.icon_restrooms = 'ios-arrow-forward';
+
+        break;
+
+      case 'elevators':
+        if(this.show_accessibleElevators == true){
+          this.show_accessibleElevators = false;
+          this.icon_elevators = 'ios-arrow-forward';
+        } else {
+          this.show_accessibleElevators = true;
+          this.icon_elevators = 'ios-arrow-down';
+        }
+        this.show_accessibleParking = false;
+        this.show_accessibleRestrooms = false;
+        this.icon_parking = 'ios-arrow-forward';
+        this.icon_restrooms = 'ios-arrow-forward';
+
+        break;
+
+      case 'restrooms':
+        if(this.show_accessibleRestrooms == true){
+          this.show_accessibleRestrooms = false;
+          this.icon_restrooms = 'ios-arrow-forward';
+        } else {
+          this.show_accessibleRestrooms = true;
+          this.icon_restrooms = 'ios-arrow-down';
+        }
+
+        this.show_accessibleParking = false;
+        this.show_accessibleElevators = false;
+        this.icon_parking = 'ios-arrow-forward';
+        this.icon_elevators = 'ios-arrow-forward';
+
+        break;
+    }
   }
 }
