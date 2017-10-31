@@ -26,6 +26,7 @@ import { IonicAudioModule, WebAudioProvider, CordovaMediaProvider, defaultAudioP
 
 import { IonicStorageModule } from '@ionic/storage';
 import { Http } from '@angular/http';
+import { ExhibitsDataProvider } from '../providers/exhibits-data/exhibits-data';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -77,7 +78,8 @@ export function myCustomAudioProviderFactory() {
     SharedVars,
     DataFileService,
     SharedDataService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ExhibitsDataProvider
   ]
 })
 export class AppModule {}

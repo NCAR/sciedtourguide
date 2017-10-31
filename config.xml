@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="edu.ucar.scied.mltour" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>sciedtour</name>
+    <name>NCAR Tour</name>
     <description>NCAR Visitor Center Tour Guide</description>
     <author email="scied@ucar.edu" href="http://scied.ucar.edu/">UCAR Center for Science Education</author>
     <content src="index.html" />
@@ -88,9 +88,6 @@
     <plugin name="cordova-plugin-device" spec="1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="^1.7.1" />
-    <plugin name="cordova-plugin-media" spec="^3.0.1">
-        <variable name="MICROPHONE_USAGE_DESCRIPTION" value=" " />
-    </plugin>
     <plugin name="cordova-plugin-x-socialsharing" spec="^5.2.1" />
     <plugin name="cordova-plugin-camera" spec="^2.4.1">
         <variable name="CAMERA_USAGE_DESCRIPTION" value=" " />

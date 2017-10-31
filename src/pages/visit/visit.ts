@@ -8,7 +8,7 @@ import { SharedVars } from '../../providers/shared-vars';
   templateUrl: 'visit.html'
 })
 export class VisitPage {
-  selectedItem:any;
+  bkgImg:String = 'assets/images/ncar.png';
   pageTitle:any;
   show_accessibleParking = false;
   show_accessibleElevators = false;
@@ -32,11 +32,6 @@ export class VisitPage {
           this.icon_parking = 'ios-arrow-down';
         }
 
-        this.show_accessibleElevators = false;
-        this.show_accessibleRestrooms = false;
-        this.icon_elevators = 'ios-arrow-forward';
-        this.icon_restrooms = 'ios-arrow-forward';
-
         break;
 
       case 'elevators':
@@ -47,10 +42,6 @@ export class VisitPage {
           this.show_accessibleElevators = true;
           this.icon_elevators = 'ios-arrow-down';
         }
-        this.show_accessibleParking = false;
-        this.show_accessibleRestrooms = false;
-        this.icon_parking = 'ios-arrow-forward';
-        this.icon_restrooms = 'ios-arrow-forward';
 
         break;
 
@@ -62,11 +53,6 @@ export class VisitPage {
           this.show_accessibleRestrooms = true;
           this.icon_restrooms = 'ios-arrow-down';
         }
-
-        this.show_accessibleParking = false;
-        this.show_accessibleElevators = false;
-        this.icon_parking = 'ios-arrow-forward';
-        this.icon_elevators = 'ios-arrow-forward';
 
         break;
     }

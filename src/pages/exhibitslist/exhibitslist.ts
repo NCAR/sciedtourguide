@@ -1,44 +1,52 @@
 import { Component } from '@angular/core';
-
+import { FormControl } from '@angular/forms';
+import { NavController} from 'ionic-angular';
 import { ContentPage } from '../content/content';
-
-import { SharedDataService } from '../../providers/shared-data-service';
 import { SharedVars } from '../../providers/shared-vars';
-import { ViewController, NavController, NavParams} from 'ionic-angular';
-import { TranslateService } from 'ng2-translate';
-
-
-
+import { ExhibitsDataProvider } from '../../providers/exhibits-data/exhibits-data';
+import 'rxjs/add/operator/debounceTime';
 
 @Component({
   selector: 'page-exhibitslist',
   templateUrl: 'exhibitslist.html'
 })
 export class ExhibitsListPage {
-  menu_list:any = [];
-  title = 'apptitle';
-  constructor(private sharedDataService:SharedDataService, private viewCtrl: ViewController, private navCtrl: NavController, private navParams: NavParams, private translate:TranslateService, public sharedVars:SharedVars) {
+  searchTerm: string = '';
+  searchControl: FormControl;
+  items:any;
+  timer:any;
+  searching: any = true;
+  title = 'exhibits_list';
 
+  constructor(private dataService: ExhibitsDataProvider, private navCtrl: NavController,public sharedVars:SharedVars) {
     sharedVars.trackView('Cloud List');
+    this.searchControl = new FormControl();
+
+    this.searchControl.valueChanges.debounceTime(700).subscribe(search => {
+      this.searching = false;
+
+      // need to poll for a flag to indicate that this is completed
+      this.timer = setInterval(() => {
+        if(this.dataService.f_dataReady == true){
+          this.setFilteredItems();
+          clearInterval(this.timer);
+        }
+      },300);
+    });
   }
 
-  /**
-  *
-  **/
-ionViewDidLoad(){
-  let dataPromise = this.sharedDataService.load();
+  onSearchInput(){
+    this.searching = true;
+  }
 
-  dataPromise.then(data => {
-      this.menu_list = data;
-  });
-
+  setFilteredItems() {
+    this.items = this.dataService.filterItems(this.searchTerm);
+    //console.log(this.items);
   }
 
   openPage(event, item) {
-        this.navCtrl.push(ContentPage, {
-          item: item
-        });
-
+    this.navCtrl.push(ContentPage, {
+        item: item
+    });
   }
-
 }
