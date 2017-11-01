@@ -5,7 +5,7 @@ import { MyApp } from './app.component';
 import { DataFileService } from '../providers/data-file-service';
 import { SharedVars } from '../providers/shared-vars';
 import { SharedDataService } from '../providers/shared-data-service';
-import { HttpModule, Http} from '@angular/http';
+import { HttpModule} from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule,TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';

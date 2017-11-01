@@ -19,7 +19,7 @@ export class ExhibitsListPage {
   title = 'exhibits_list';
 
   constructor(private dataService: ExhibitsDataProvider, private navCtrl: NavController,public sharedVars:SharedVars) {
-    sharedVars.trackView('Cloud List');
+    sharedVars.trackView('Exhibits List');
     this.searchControl = new FormControl();
 
     this.searchControl.valueChanges.debounceTime(700).subscribe(search => {

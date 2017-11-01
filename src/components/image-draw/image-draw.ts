@@ -1,13 +1,12 @@
 // https://plnkr.co/edit/BrbAoBlLcbDcx8iDXACv?p=preview
 import {Directive, HostListener, Input} from '@angular/core';
-import { Platform } from 'ionic-angular';
 
 @Directive({
  selector: '[draw-text]'
 })
 export class ImageDrawTextDirective {
 
-  constructor(private platform:Platform) {}
+  constructor() {}
 
     loaded = false;
     message = '';

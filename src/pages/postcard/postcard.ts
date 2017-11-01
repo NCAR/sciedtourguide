@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { SharedDataService } from '../../providers/shared-data-service';
 import { SharedVars } from '../../providers/shared-vars';
-import { NavController, NavParams, ToastController} from 'ionic-angular';
+import { ToastController} from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Camera, CameraOptions } from '@ionic-native/camera';
@@ -29,8 +28,9 @@ export class PostcardPage {
   bkg_imgs:any;
   postcardData:any = {'message':'', 'bkg':''};
 
-  constructor( private toastCtrl: ToastController, private formBuilder: FormBuilder, private platform:Platform, private camera: Camera, private sharingVar: SocialSharing, private sharedDataService: SharedDataService, private navCtrl: NavController, private navParams: NavParams, public sharedVars: SharedVars) {
+  constructor( private toastCtrl: ToastController, private formBuilder: FormBuilder, private platform:Platform, private camera: Camera, private sharingVar: SocialSharing,  public sharedVars: SharedVars) {
 
+    sharedVars.trackView('Postcards');
     this.bkg_imgs = ['assets/images/postcards/mesalab.jpg','assets/images/postcards/eclipse.jpg','assets/images/postcards/mammatus.jpg','assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
     // todo need to reset base64 on tab tab (return to home)
     this.options = {
@@ -89,6 +89,7 @@ export class PostcardPage {
       },3000);
   }
   closeInstructions(){
+    this.sharedVars.trackView('Postcards - Select a background');
     this.postcardInstructions = false;
   }
   resetFlags(){
@@ -104,16 +105,19 @@ export class PostcardPage {
   }
 
 reviewPostcard() {
+
+      this.sharedVars.trackView('Postcards - Review');
   this.postcardData.message = this.postcard.value.message;
   this.postcardMessageText = true;
   this.prepPostcard();
 }
 selectBkgImg(src){
+  this.sharedVars.trackView('Postcards - Type a message');
   this.postcardData.bkg = src;
   this.postcardBkgImage = true;
 }
   takePicture(){
-
+    this.sharedVars.trackView('Postcards - Take Photo');
     this.camera.getPicture(this.options).then((imageData) => {
         // imageData is a base64 encoded string
         this.base64Image = "data:image/jpeg;base64," + imageData;
@@ -130,6 +134,7 @@ selectBkgImg(src){
 
   otherShare(){
 
+        this.sharedVars.trackView('Postcards - Share');
   this.checkExist = setInterval(() => {
     this.imgElm = <HTMLImageElement> document.getElementById('finalPostcard');
     if(this.imgElm != null){

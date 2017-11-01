@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GoogleAnalytics } from '@ionic-native/google-analytics';
 import { SharedVars } from '../providers/shared-vars';
-import { DataFileService } from '../providers/data-file-service';
 import { TranslateService } from '@ngx-translate/core';
 
 import { TabsPage } from '../pages/tabs/tabs';
@@ -16,7 +15,7 @@ export class MyApp {
   rootPage:any = TabsPage;
   appVer:any = '1.0.1';
 
-  constructor(public ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService,  public sharedVars:SharedVars, private dataFileService:DataFileService) {
+  constructor(public ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService,  public sharedVars:SharedVars) {
     platform.ready().then(() => {
     // google
    // this.ga.debugMode()
