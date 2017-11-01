@@ -2,6 +2,27 @@ page-postcard {
   .hidden {
     display:none;
   }
+  .preview {
+  }
+  .preview_photo,
+  .preview_bkg,
+  .preview_content_container,
+  .preview_instructions_container {
+    display:table-cell;
+    vertical-align:top;
+  }
+  .preview_instructions_container {
+    padding-left:20px;
+  }
+  .preview_photo,
+  .preview_bkg {
+    width:5%;
+  }
+  .postcard_review{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+  }
   .bkg_image_container {
     img {
       width: 30%;

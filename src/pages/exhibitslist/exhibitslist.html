@@ -1,12 +1,17 @@
 <ion-header><app-title [title]="title | translate"></app-title></ion-header>
-<ion-content padding>
+<ion-content padding class="outer-content">
 
   <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()"></ion-searchbar>
   <div *ngIf="searching" class="spinner-container">
       <ion-spinner></ion-spinner>
   </div>
+  <ion-list>
   <ion-item-group *ngFor="let sections of items">
-      <ion-item-divider color="light">{{sections.name | translate }}</ion-item-divider>
-      <ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits)" tappable>{{exhibits.name | translate }}</ion-item>
+    <ion-list-header>
+      {{sections.name | translate }}
+    </ion-list-header>
+    <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits)" tappable><ion-label>{{exhibits.name | translate }}</ion-label>
+    </button>
   </ion-item-group>
+</ion-list>
 </ion-content>
