@@ -1,25 +1,24 @@
 import { Injectable } from '@angular/core';
 import { SharedDataService } from '../../providers/shared-data-service';
+import { TranslateService } from '@ngx-translate/core';
 import 'rxjs/add/operator/map';
 
-/*
-  Generated class for the ExhibitsDataProvider provider.
-
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
-*/
 @Injectable()
 export class ExhibitsDataProvider {
   originalData:any;
   f_dataReady:Boolean = false;
 
-  constructor(private sharedDataService:SharedDataService) {
+  constructor(private sharedDataService:SharedDataService, private translate: TranslateService) {
     this.originalData = [];
-
     let dataPromise = this.sharedDataService.load();
     dataPromise.then(data => {
       this.originalData = data;
       this.f_dataReady = true;
+    });
+  }
+  lookupTranslation(term){
+      this.translate.get(term).subscribe(result => {
+        console.log(result);
     });
   }
 
@@ -33,25 +32,38 @@ export class ExhibitsDataProvider {
     if(modifiedData.length){
       let rule = '^.*'+searchTerm.toLowerCase()+'.*$';
       let re = new RegExp(rule);
+      modifiedData.forEach( item => {
 
-      modifiedData.forEach(function(item){
           let a_subItems = [];
           let a_operating = item.children;
-          a_operating.forEach(function(subitem){
-            // TODO: need to get the content.title and content.description keys and look up the translation and find matches from that
+          a_operating.forEach(subitem => {
+            let f_found = false;
+            // checks for translated matches on the menu item title (not category)
+            this.translate.get(subitem.name).subscribe(result => {
+                if(re.test(result.toLowerCase())){
+                  a_subItems.push(subitem);
+                  f_found = true;
+                }
 
-            if(re.test(subitem.name.toLowerCase())){
-              a_subItems.push(subitem);
-            }
+                if(f_found == false){
+                  // if not positive from menu item title try with the item description
+                  this.translate.get(subitem.content.description).subscribe(result => {
+                    if(re.test(result.toLowerCase())){
+                      a_subItems.push(subitem);
+                      f_found = true;
+                    }
+                  });
+                }
+            });
+
           });
           if(a_subItems.length){
-
+            // if there are children, include the category are parent
             let newparent = item;
             item.children = a_subItems;
             a_items.push(newparent);
           }
-      })
-      console.log(a_items);
+      });
       return a_items;
 
     }

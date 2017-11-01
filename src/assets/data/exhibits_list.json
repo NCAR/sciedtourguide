@@ -48,7 +48,7 @@
                     {
                         "id": "DI00673",
                         "positionId": "1",
-                        "path": "assets/images/sections/clouds.jpg",
+                        "path": "assets/images/sections/hail.jpg",
                         "title": "",
                         "credit": "",
                         "description": "",
@@ -151,7 +151,7 @@
                     {
                         "id": "DI00673",
                         "positionId": "1",
-                        "path": "assets/images/sections/clouds.jpg",
+                        "path": "assets/images/sections/tornado.jpg",
                         "title": "",
                         "credit": "",
                         "description": "",
@@ -327,7 +327,7 @@
                   {
                       "id": "DI00673",
                       "positionId": "1",
-                      "path": "assets/images/sections/clouds.jpg",
+                      "path": "assets/images/sections/keeling.jpg",
                       "title": "",
                       "credit": "",
                       "description": "",
@@ -361,7 +361,7 @@
                 {
                     "id": "DI00673",
                     "positionId": "1",
-                    "path": "assets/images/sections/clouds.jpg",
+                    "path": "assets/images/sections/drought.jpg",
                     "title": "",
                     "credit": "",
                     "description": "",
@@ -389,13 +389,13 @@
             "id":"choosefuture",
             "name":"choosefuture",
             "content": {
-              "title": "content_chaos_title",
-              "description": "content_chaos_description",
+              "title": "content_choosefuture_title",
+              "description": "content_choosefuture_description",
               "img": [
                 {
                     "id": "DI00673",
                     "positionId": "1",
-                    "path": "assets/images/sections/clouds.jpg",
+                    "path": "assets/images/sections/bike.jpg",
                     "title": "",
                     "credit": "",
                     "description": "",
@@ -410,10 +410,10 @@
                     "id": "",
                     "positionId": "1",
                     "src": "assets/audio/beat.mp3",
-                    "title":"audio_chaos_title",
-                    "description":"audio_chaos_description",
+                    "title":"audio_choosefuture_title",
+                    "description":"audio_choosefuture_description",
                     "runningTime":"00:03",
-                    "transcriptId":"audio_chaos_transcript",
+                    "transcriptId":"audio_choosefuture_transcript",
                     "preload": "metadata"
                 }
               ]
@@ -429,7 +429,7 @@
                 {
                     "id": "DI00673",
                     "positionId": "1",
-                    "path": "assets/images/sections/clouds.jpg",
+                    "path": "assets/images/sections/glaciermelt.jpg",
                     "title": "",
                     "credit": "",
                     "description": "",
@@ -497,7 +497,7 @@
                 {
                     "id": "DI00673",
                     "positionId": "1",
-                    "path": "assets/images/sections/clouds.jpg",
+                    "path": "assets/images/sections/windfarm.jpg",
                     "title": "",
                     "credit": "",
                     "description": "",
@@ -721,7 +721,7 @@
               {
                   "id": "DI00673",
                   "positionId": "1",
-                  "path": "assets/images/sections/clouds.jpg",
+                  "path": "assets/images/sections/mlarchitecture.jpg",
                   "title": "",
                   "credit": "",
                   "description": "",

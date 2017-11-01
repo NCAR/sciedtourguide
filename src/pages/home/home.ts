@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { SharedVars } from '../../providers/shared-vars';
 
 @Component({
   selector: 'page-home',
@@ -8,9 +7,8 @@ import { SharedVars } from '../../providers/shared-vars';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, private sharedVars: SharedVars) {
+  constructor(public navCtrl: NavController) {
 
-        sharedVars.trackView('Map');
   }
 
 }

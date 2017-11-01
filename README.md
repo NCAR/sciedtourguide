@@ -7,21 +7,27 @@ Repo for the UCAR SciEd IonicV3 mobile application: Mesa Lab Tour Guide (working
 
 ## Requirements
 
-Cordova CLI: 6.5.0
+Cordova CLI: 7.1.0
 
-Ionic CLI Version: 2.2.3
+Ionic CLI Version: 3.16.0
 
-Ionic App Lib Version: 2.2.1
+Ionic Framework: ionic-angular 3.8.0
 
-ios-deploy version: 1.9.1
+Cordova Platforms: android 6.3.0 ios 4.5.3
 
-ios-sim version: 5.0.9
+Android SDK Tools: 26.0.1
+
+ios-deploy version: 1.9.2
+
+ios-sim version: 6.1.2
 
 OS: macOS Sierra
 
-Node Version: v6.9.1
+Node Version: v8.4.0
 
-Xcode version: Xcode 8.3.2 Build version 8E2002
+npm 5.5.1
+
+Xcode version: Xcode 9.1 Build version 9B55
 
 ## Instructions
 
@@ -29,9 +35,10 @@ Xcode version: Xcode 8.3.2 Build version 8E2002
 * copy repo files into project
 * install cordova-plugin-google-analytics 1.8.3 (https://ionicframework.com/docs/native/google-analytics/)
 * install cordova-plugin-inappbrowser 1.7.1 (https://ionicframework.com/docs/native/in-app-browser/)
-* install cordova-plugin-media 3.0.1 (https://ionicframework.com/docs/native/media/)
 * install cordova-plugin-camera 2.4.1 (https://ionicframework.com/docs/native/camera/)
 * install social-sharing 5.2.1 (http://ionicframework.com/docs/native/social-sharing/)
+* install ngx-translate (https://ionicframework.com/docs/developer-resources/ng2-translate/)
+* install ionic-audio (https://github.com/arielfaur/ionic-audio/tree/3.0)
 
 
 ## Maintainers/Sponsors

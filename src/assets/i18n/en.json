@@ -14,6 +14,7 @@
   "postcard_start_button" : "Get Started!",
   "postcard_send" : "Postcards",
   "postcard_send_button" : "Send my postcard",
+  "postcard_startover_button" : "Start Over",
   "postcard_step_one" : "First, select a background image.",
   "postcard_step_two" : "Next, take a photo with your camera.",
   "postcard_step_three" : "Finally, write your message.  Please limit to 140 characters or less.",
@@ -117,6 +118,12 @@
   "audio_atmosphere_mural_transcript": "",
 
 
+
+  "content_choosefuture_title": "Choose our future",
+  "content_choosefuture_description": "<p>The choices we make today will impact our planet tomorrow! The interactive Choose our Future game in this exhibit gives players feedback on how  choices made in daily life impact our carbon footprint. Learn how individual actions can impact the Earth’s global average temperature.</p>",
+  "audio_choosefuture_title": "",
+  "audio_choosefuture_description": "?",
+  "audio_choosefuture_transcript": "",
 
   "content_dropsonde_title": "",
   "content_dropsonde_description": "<p></p>",

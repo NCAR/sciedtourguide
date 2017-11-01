@@ -54,6 +54,7 @@ export class PostcardPage {
   }
   ionViewWillLeave(){
     this.resetFlags();
+
   }
 
   presentToast() {
@@ -126,7 +127,10 @@ selectBkgImg(src){
     });
 
   }
-
+  startOver(){
+    this.resetFlags();
+    this.presentToast();
+  }
 
   sendEmail() {
       this.otherShare();
@@ -143,8 +147,7 @@ selectBkgImg(src){
       this.sharingVar.share(this.postcard.value.message + " Learn more about the NCAR Mesa Lab Visitor Center at ","Postcard: Greetings from the NCAR Visitor Center!",this.imgElm.src,"http://scied.ucar.edu/visit")
         .then(()=>{
               // completion - post a message and then reset
-              this.resetFlags();
-              this.presentToast();
+
         });
       }
     });
