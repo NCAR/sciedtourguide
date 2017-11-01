@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController} from 'ionic-angular';
-import { TranslateService } from 'ng2-translate';
 import { SharedVars } from '../../providers/shared-vars';
 
 @Component({
@@ -17,7 +16,7 @@ export class VisitPage {
   icon_elevators = 'ios-arrow-forward';
   icon_restrooms = 'ios-arrow-forward';
 
-  constructor(private navCtrl: NavController, private translate:TranslateService, public sharedVars:SharedVars) {
+  constructor(private navCtrl: NavController, public sharedVars:SharedVars) {
     this.pageTitle = 'visitor';
     sharedVars.trackView('Visitor Information');
   }

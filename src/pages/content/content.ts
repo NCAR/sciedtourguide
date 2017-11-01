@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedDataService } from '../../providers/shared-data-service';
 import { SharedVars } from '../../providers/shared-vars';
-import { TranslateService } from 'ng2-translate';
 import { NavController, NavParams} from 'ionic-angular';
 
 
@@ -18,7 +17,7 @@ export class ContentPage {
   specialBtn:string;
 
 
-  constructor(private sharedDataService: SharedDataService, private navCtrl: NavController, private navParams: NavParams, private translate: TranslateService, public sharedVars: SharedVars) {
+  constructor(private sharedDataService: SharedDataService, private navCtrl: NavController, private navParams: NavParams,  public sharedVars: SharedVars) {
     this.selectedItem = navParams.get('item');
     this.specialBtn = 'audioBtn';
 

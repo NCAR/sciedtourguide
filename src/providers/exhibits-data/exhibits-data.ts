@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { TranslateService } from 'ng2-translate';
 import { SharedDataService } from '../../providers/shared-data-service';
 import 'rxjs/add/operator/map';
 
@@ -14,7 +13,7 @@ export class ExhibitsDataProvider {
   originalData:any;
   f_dataReady:Boolean = false;
 
-  constructor(private sharedDataService:SharedDataService, private translate:TranslateService) {
+  constructor(private sharedDataService:SharedDataService) {
     this.originalData = [];
 
     let dataPromise = this.sharedDataService.load();

@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { GoogleAnalytics } from '@ionic-native/google-analytics';
 import { SharedVars } from '../providers/shared-vars';
 import { DataFileService } from '../providers/data-file-service';
-import { TranslateService } from 'ng2-translate';
+import { TranslateService } from '@ngx-translate/core';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -31,10 +31,10 @@ export class MyApp {
       console.log(_error)
     })
 
-            this.translate.setDefaultLang('en');
+      this.translate.setDefaultLang('en');
 
-            let browserLang = this.translate.getBrowserLang();
-            this.translate.use(browserLang.match(/en/) ? browserLang : 'en');
+      let browserLang = this.translate.getBrowserLang();
+      this.translate.use(browserLang.match(/en/) ? browserLang : 'en');
 
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.

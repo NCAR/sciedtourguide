@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { SharedDataService } from '../../providers/shared-data-service';
 import { SharedVars } from '../../providers/shared-vars';
 import { ViewController, NavController, NavParams} from 'ionic-angular';
-import { TranslateService } from 'ng2-translate';
 import { AudioProvider } from 'ionic-audio';
 
 @Component({
@@ -16,7 +14,7 @@ myTracks: any[];
 allTracks: any[];
 selectedTrack: any;
 
-  constructor(private _audioProvider: AudioProvider,private sharedDataService:SharedDataService, private viewCtrl: ViewController, private navCtrl: NavController, private navParams: NavParams, private translate:TranslateService, public sharedVars:SharedVars) {
+  constructor(private _audioProvider: AudioProvider,private viewCtrl: ViewController, private navCtrl: NavController, private navParams: NavParams, public sharedVars:SharedVars) {
     this.selectedItem = navParams.get('item');
     this.myTracks = this.selectedItem.content.audio;
 

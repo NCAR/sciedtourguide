@@ -5,7 +5,10 @@ import { MyApp } from './app.component';
 import { DataFileService } from '../providers/data-file-service';
 import { SharedVars } from '../providers/shared-vars';
 import { SharedDataService } from '../providers/shared-data-service';
-import { TranslateModule,TranslateStaticLoader,TranslateLoader } from 'ng2-translate/ng2-translate';
+import { HttpModule, Http} from '@angular/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule,TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { ExhibitsListPage } from '../pages/exhibitslist/exhibitslist';
 import { PostcardPage } from '../pages/postcard/postcard';
@@ -23,14 +26,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GoogleAnalytics } from '@ionic-native/google-analytics';
 import { IonicAudioModule, WebAudioProvider, CordovaMediaProvider, defaultAudioProviderFactory } from 'ionic-audio';
-
 import { IonicStorageModule } from '@ionic/storage';
-import { Http } from '@angular/http';
 import { ExhibitsDataProvider } from '../providers/exhibits-data/exhibits-data';
 
-export function createTranslateLoader(http: Http) {
-    return new TranslateStaticLoader(http, 'assets/i18n', '.json');
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
+
 export function myCustomAudioProviderFactory() {
     return (window.hasOwnProperty('cordova')) ? new CordovaMediaProvider() : new WebAudioProvider();
 }
@@ -51,12 +53,16 @@ export function myCustomAudioProviderFactory() {
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-     TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [Http]
+    HttpModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
     }),
+    IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     IonicAudioModule.forRoot(defaultAudioProviderFactory)
   ],
