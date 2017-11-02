@@ -1,5 +1,5 @@
 <ion-header><app-title [title]="title | translate"></app-title></ion-header>
-<ion-content padding class="outer-content">
+<ion-content class="outer-content">
 
   <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()"></ion-searchbar>
   <div *ngIf="searching" class="spinner-container">
@@ -7,10 +7,14 @@
   </div>
   <ion-list>
   <ion-item-group *ngFor="let sections of items">
-    <ion-list-header>
+    <ion-list-header [ngClass]="sections.id">
       {{sections.name | translate }}
     </ion-list-header>
-    <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits)" tappable><ion-label>{{exhibits.name | translate }}</ion-label>
+    <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits)" tappable>
+      <ion-avatar item-start>
+            <img [src]="exhibits.content.img[0].path">
+          </ion-avatar>
+      <ion-label>{{exhibits.name | translate }}</ion-label>
     </button>
   </ion-item-group>
 </ion-list>

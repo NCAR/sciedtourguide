@@ -5,4 +5,30 @@ page-exhibitslist
            text-align: center;
            padding: 10px;
        }
+    ion-list-header{
+      &.weather {
+        background: blue url(../assets/images/sections/headers/weather.png) !important;
+      }
+      &.climate {
+        background: green url(../assets/images/sections/headers/climate.png) !important;
+      }
+      &.sun-earth {
+        background: orange url(../assets/images/sections/headers/sunearth.png) !important;
+      }
+      &.atmosphere {
+        background: lightblue url(../assets/images/sections/headers/atmosphere.png) !important;
+      }
+      &.supercomputers {
+        background: purple url(../assets/images/sections/headers/supercomputers.png) !important;
+      }
+      &.architecture {
+        background: red url(../assets/images/sections/headers/architecture.png) !important;
+      }
+      &.aq {
+        background: black url(../assets/images/sections/headers/aq.png) !important;
+      }
+      &.trail {
+        background: brown url(../assets/images/sections/headers/trail.png) !important;
+      }
+    }
 }
