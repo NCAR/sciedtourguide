@@ -5,6 +5,7 @@
   <div *ngIf="searching" class="spinner-container">
       <ion-spinner></ion-spinner>
   </div>
+  <button ion-button *ngIf="selectedItem || searchTerm" (click)="reset()" color="secondary" block>Reset List</button>
   <ion-list>
   <ion-item-group *ngFor="let sections of items">
     <ion-list-header [ngClass]="sections.id">

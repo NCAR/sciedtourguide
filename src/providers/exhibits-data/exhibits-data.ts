@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 export class ExhibitsDataProvider {
   originalData:any;
   f_dataReady:Boolean = false;
+  section_search:Boolean = false;
 
   constructor(private sharedDataService:SharedDataService, private translate: TranslateService) {
     this.originalData = [];
@@ -18,14 +19,23 @@ export class ExhibitsDataProvider {
   }
   lookupTranslation(term){
       this.translate.get(term).subscribe(result => {
-        console.log(result);
     });
   }
 
   filterItems(searchTerm){
+    this.section_search = false;
     // return all if searchTerm is empty
     if(searchTerm.trim() == ''){
       return this.originalData;
+    }
+    // check if this is a section searchTerm
+      let section_rule = '^section_';
+      let section_re = new RegExp(section_rule);
+    if(section_re.test(searchTerm)){
+        this.section_search = true;
+        searchTerm = searchTerm.replace('section_','');
+    } else {
+      this.section_search = false;
     }
     let modifiedData = JSON.parse(JSON.stringify(this.originalData));
     let a_items = [];
@@ -36,27 +46,36 @@ export class ExhibitsDataProvider {
 
           let a_subItems = [];
           let a_operating = item.children;
-          a_operating.forEach(subitem => {
-            let f_found = false;
-            // checks for translated matches on the menu item title (not category)
-            this.translate.get(subitem.name).subscribe(result => {
-                if(re.test(result.toLowerCase())){
-                  a_subItems.push(subitem);
-                  f_found = true;
-                }
+          if(this.section_search == false){
+            a_operating.forEach(subitem => {
+              let f_found = false;
+              // checks for translated matches on the menu item title (not category)
+              this.translate.get(subitem.name).subscribe(result => {
+                  if(re.test(result.toLowerCase())){
+                    a_subItems.push(subitem);
+                    f_found = true;
+                  }
 
-                if(f_found == false){
-                  // if not positive from menu item title try with the item description
-                  this.translate.get(subitem.content.description).subscribe(result => {
-                    if(re.test(result.toLowerCase())){
-                      a_subItems.push(subitem);
-                      f_found = true;
-                    }
-                  });
-                }
+                  if(f_found == false){
+                    // if not positive from menu item title try with the item description
+                    this.translate.get(subitem.content.description).subscribe(result => {
+                      if(re.test(result.toLowerCase())){
+                        a_subItems.push(subitem);
+                        f_found = true;
+                      }
+                    });
+                  }
+              });
+
             });
-
-          });
+          } else {
+            // just check if this is the right section, then grab all children
+            if(re.test(item.id)){
+                a_operating.forEach(subitem => {
+                    a_subItems.push(subitem);
+                });
+            }
+          }
           if(a_subItems.length){
             // if there are children, include the category are parent
             let newparent = item;
