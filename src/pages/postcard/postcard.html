@@ -58,7 +58,7 @@
 
         <ion-row no-padding class="postcard_review">
           <ion-col [ngClass]="postcardLoaded ? 'hidden' :''" style="text-align:center;">
-              <div class="loader"></div>
+              <ion-spinner></ion-spinner>
               <p>{{'postcard_loading' | translate }}</p>
           </ion-col>
           <ion-col  [ngClass]="postcardLoaded ? '' :'hidden'">
