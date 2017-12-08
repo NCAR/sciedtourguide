@@ -7,28 +7,28 @@ page-exhibitslist
        }
     ion-list-header{
       &.weather {
-        background: blue url(../assets/images/sections/headers/weather.png) !important;
+        background-color: #cc8a25 !important;
       }
       &.climate {
-        background: green url(../assets/images/sections/headers/climate.png) !important;
+        background: #629339 url(../assets/images/sections/headers/climate.png) !important;
       }
       &.sun-earth {
-        background: orange url(../assets/images/sections/headers/sunearth.png) !important;
+        background: #ae3d1f url(../assets/images/sections/headers/sunearth.png) !important;
       }
       &.atmosphere {
-        background: lightblue url(../assets/images/sections/headers/atmosphere.png) !important;
+        background: #000000 url(../assets/images/sections/headers/atmosphere.png) !important;
       }
       &.supercomputers {
-        background: purple url(../assets/images/sections/headers/supercomputers.png) !important;
+        background: #367e94 url(../assets/images/sections/headers/supercomputers.png) !important;
       }
       &.architecture {
-        background: red url(../assets/images/sections/headers/architecture.png) !important;
+        background: #b29c5f url(../assets/images/sections/headers/architecture.png) !important;
       }
       &.aq {
-        background: black url(../assets/images/sections/headers/aq.png) !important;
+        background: #98afcf url(../assets/images/sections/headers/aq.png) !important;
       }
       &.trail {
-        background: brown url(../assets/images/sections/headers/trail.png) !important;
+        background: #3b4e20 url(../assets/images/sections/headers/trail.png) !important;
       }
     }
 }
