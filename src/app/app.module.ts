@@ -13,7 +13,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ExhibitsListPage } from '../pages/exhibitslist/exhibitslist';
 import { PostcardPage } from '../pages/postcard/postcard';
 import { VisitPage } from '../pages/visit/visit';
-import { HomePage } from '../pages/home/home';
+import { MapPage } from '../pages/map/map';
+import { MapAccessPage } from '../pages/map/mapaccess';
+import { MapIndexPage } from '../pages/map/mapindex';
 import { ContentPage } from '../pages/content/content';
 import { TranscriptPage } from '../pages/transcript/transcript';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -43,7 +45,9 @@ export function myCustomAudioProviderFactory() {
     ExhibitsListPage,
     PostcardPage,
     VisitPage,
-    HomePage,
+    MapPage,
+    MapAccessPage,
+    MapIndexPage,
     ContentPage,
     TranscriptPage,
     TabsPage,
@@ -72,7 +76,9 @@ export function myCustomAudioProviderFactory() {
     ExhibitsListPage,
     PostcardPage,
     VisitPage,
-    HomePage,
+    MapPage,
+    MapAccessPage,
+    MapIndexPage,
     ContentPage,
     TranscriptPage,
     TabsPage

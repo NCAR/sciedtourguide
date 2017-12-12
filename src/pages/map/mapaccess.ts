@@ -2,22 +2,22 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, Gesture, Events, Content } from 'ionic-angular';
 import { ExhibitsListPage } from '../exhibitslist/exhibitslist';
+import { SharedVars } from '../../providers/shared-vars';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-map-access',
+  templateUrl: 'mapaccess.html'
 })
-export class HomePage {
+export class MapAccessPage {
 
   @ViewChild(Content) content: Content;
   @ViewChild('zoom') zoom: ElementRef;
 
-    constructor(private navCtrl: NavController, private events:Events) {
+    constructor(public sharedVars:SharedVars, private navCtrl: NavController, private events:Events) {
 
+      sharedVars.trackView('Map - Accessible');
     }
-  loadPage(item){
-    this.events.publish('change-tab', 0, item);
-  }
+
   pinchEvent(e){
     alert(e);
   }
@@ -56,7 +56,6 @@ export class HomePage {
     _gesture.on('pan', onPan);
     _gesture.on('panend', onPanend);
     _gesture.on('pancancel', onPanend);
-    // _gesture.on('tap', onTap);
     _gesture.on('pinch', onPinch);
     _gesture.on('pinchend', onPinchend);
     _gesture.on('pinchcancel', onPinchend);
@@ -69,18 +68,6 @@ export class HomePage {
       // remembers previous position to continue panning.
       last_x = x;
       last_y = y;
-    }
-    function onTap(ev) {
-      if (ev.tapCount === 2) {
-        let reset = false;
-        scale += .5;
-        if (scale > 2) {
-          scale = 1;
-          reset = true;
-        }
-        setBounds();
-        reset ? transform(max_x/2, max_y/2) : transform();
-      }
     }
     function onPinch(ev) {
       // formula to append scale to new scale
@@ -130,4 +117,8 @@ export class HomePage {
       elm.style.webkitTransform = `translate3d(${xx || x}px, ${yy || y}px, 0) scale3d(${scale}, ${scale}, 1)`;
     }
   }
+  ionViewWillLeave() {
+    // need to se
+   this.navCtrl.popToRoot();
+}
 }

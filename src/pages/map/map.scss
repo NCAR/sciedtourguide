@@ -1,23 +1,23 @@
-page-home {
+page-map {
 
   .scroll-content {
           overflow: hidden !important;
           touch-action: none !important;
       }
       .key {
-        position:absolute;
+        /*position:absolute;
         bottom:0px;
         padding:20px;
         width:100%;
         background-color:red;
+        */
+        display:none;
       }
       .zoom {
           width: 150% !important;
           height: 150% !important;
           touch-action: none !important;
           position: fixed;
-          margin-top:0px;
-          border:1px solid red;
           .some-item {
               touch-action: none !important;
           }

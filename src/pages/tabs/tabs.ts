@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ExhibitsListPage } from '../exhibitslist/exhibitslist';
 import { PostcardPage } from '../postcard/postcard';
 import { VisitPage } from '../visit/visit';
-import { HomePage } from '../home/home';
+import { MapIndexPage } from '../map/mapindex';
 import { ViewChild } from '@angular/core';
 import { Tabs, Events } from 'ionic-angular';
 
@@ -12,7 +12,7 @@ import { Tabs, Events } from 'ionic-angular';
 export class TabsPage {
   @ViewChild(Tabs) tabs: Tabs;
 
-  tab1Root = HomePage;
+  tab1Root = MapIndexPage;
   tab2Root = ExhibitsListPage;
 
   tab2Params = { item: "" };
@@ -25,4 +25,5 @@ export class TabsPage {
       this.tabs.select(tab);
     });
   }
+
 }

@@ -23,15 +23,15 @@ export class PostcardPage {
   width = this.platform.width()
   private postcard: FormGroup;
   checkExist;
-  postcardLoaded:Boolean = false;
-  imgElm:HTMLImageElement;
-  bkg_imgs:any;
-  postcardData:any = {'message':'', 'bkg':''};
+  postcardLoaded: Boolean = false;
+  imgElm: HTMLImageElement;
+  bkg_imgs: any;
+  postcardData: any = { 'message': '', 'bkg': '' };
 
-  constructor( private toastCtrl: ToastController, private formBuilder: FormBuilder, private platform:Platform, private camera: Camera, private sharingVar: SocialSharing,  public sharedVars: SharedVars) {
+  constructor(private toastCtrl: ToastController, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
 
     sharedVars.trackView('Postcards');
-    this.bkg_imgs = ['assets/images/postcards/mesalab.jpg','assets/images/postcards/eclipse.jpg','assets/images/postcards/mammatus.jpg','assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
+    this.bkg_imgs = ['assets/images/postcards/mesalab.jpg', 'assets/images/postcards/eclipse.jpg', 'assets/images/postcards/mammatus.jpg', 'assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
     // todo need to reset base64 on tab tab (return to home)
     this.options = {
       quality: 100,
@@ -44,15 +44,15 @@ export class PostcardPage {
       mediaType: this.camera.MediaType.PICTURE
     }
     this.postcard = this.formBuilder.group({
-          message: ['', Validators.required]
-        });
+      message: ['', Validators.required]
+    });
 
     this.platform.ready().then(() => {
 
     });
 
   }
-  ionViewWillLeave(){
+  ionViewWillLeave() {
     this.resetFlags();
 
   }
@@ -69,31 +69,31 @@ export class PostcardPage {
 
     toast.present();
   }
- stepBack(){
+  stepBack() {
     // determine what step we are on
 
-    if(this.postcardMessageText){
+    if (this.postcardMessageText) {
       this.postcardMessageText = null;
       this.postcardLoaded = false;
-    } else if(this.base64Image){
+    } else if (this.base64Image) {
       this.base64Image = null;
-    } else if(this.postcardBkgImage){
+    } else if (this.postcardBkgImage) {
       this.postcardBkgImage = null;
     }
 
- }
-
-
-  prepPostcard(){
-      setTimeout(()=>{
-        this.postcardLoaded = true;
-      },3000);
   }
-  closeInstructions(){
+
+
+  prepPostcard() {
+    setTimeout(() => {
+      this.postcardLoaded = true;
+    }, 3000);
+  }
+  closeInstructions() {
     this.sharedVars.trackView('Postcards - Select a background');
     this.postcardInstructions = false;
   }
-  resetFlags(){
+  resetFlags() {
     this.base64Image = null;
     this.postcardMessageText = null;
     this.postcardBkgImage = null;
@@ -105,50 +105,50 @@ export class PostcardPage {
     });
   }
 
-reviewPostcard() {
+  reviewPostcard() {
 
-      this.sharedVars.trackView('Postcards - Review');
-  this.postcardData.message = this.postcard.value.message;
-  this.postcardMessageText = true;
-  this.prepPostcard();
-}
-selectBkgImg(src){
-  this.sharedVars.trackView('Postcards - Type a message');
-  this.postcardData.bkg = src;
-  this.postcardBkgImage = true;
-}
-  takePicture(){
+    this.sharedVars.trackView('Postcards - Review');
+    this.postcardData.message = this.postcard.value.message;
+    this.postcardMessageText = true;
+    this.prepPostcard();
+  }
+  selectBkgImg(src) {
+    this.sharedVars.trackView('Postcards - Type a message');
+    this.postcardData.bkg = src;
+    this.postcardBkgImage = true;
+  }
+  takePicture() {
     this.sharedVars.trackView('Postcards - Take Photo');
     this.camera.getPicture(this.options).then((imageData) => {
-        // imageData is a base64 encoded string
-        this.base64Image = "data:image/jpeg;base64," + imageData;
+      // imageData is a base64 encoded string
+      this.base64Image = "data:image/jpeg;base64," + imageData;
     }, (err) => {
       console.log('no image');
     });
 
   }
-  startOver(){
+  startOver() {
     this.resetFlags();
     this.presentToast();
   }
 
   sendEmail() {
-      this.otherShare();
+    this.otherShare();
   }
 
-  otherShare(){
+  otherShare() {
 
-        this.sharedVars.trackView('Postcards - Share');
-  this.checkExist = setInterval(() => {
-    this.imgElm = <HTMLImageElement> document.getElementById('finalPostcard');
-    if(this.imgElm != null){
-      clearInterval(this.checkExist);
+    this.sharedVars.trackView('Postcards - Share');
+    this.checkExist = setInterval(() => {
+      this.imgElm = <HTMLImageElement>document.getElementById('finalPostcard');
+      if (this.imgElm != null) {
+        clearInterval(this.checkExist);
 
-      this.sharingVar.share(this.postcard.value.message + " Learn more about the NCAR Mesa Lab Visitor Center at ","Postcard: Greetings from the NCAR Visitor Center!",this.imgElm.src,"http://scied.ucar.edu/visit")
-        .then(()=>{
-              // completion - post a message and then reset
+        this.sharingVar.share(this.postcard.value.message + " Learn more about the NCAR Mesa Lab Visitor Center at ", "Postcard: Greetings from the NCAR Visitor Center!", this.imgElm.src, "http://scied.ucar.edu/visit")
+          .then(() => {
+            // completion - post a message and then reset
 
-        });
+          });
       }
     });
   }
