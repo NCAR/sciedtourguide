@@ -63,7 +63,7 @@
       </ion-card-header>
       <ion-card-content class="accessible">
         <p>{{'visitor_accessibility_content' | translate}}</p>
-        <button ion-item detail-none (click)="toggleAccessibleInformation('parking')">
+        <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('parking')">
         <ion-icon [name]="icon_parking"></ion-icon>
        {{ 'visitor_accessibility_parking' | translate}}
       </button>
@@ -74,14 +74,14 @@
           <h2 [innerHtml]="'visitor_accessibility_parking_title2' | translate"></h2>
           <p [innerHtml]="'visitor_accessibility_parking_content2' | translate"></p>
         </div>
-        <button ion-item detail-none (click)="toggleAccessibleInformation('elevators')">
+        <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('elevators')">
          <ion-icon [name]="icon_elevators"></ion-icon>
          {{ 'visitor_accessibility_elevators' | translate}}
         </button>
         <div class="content elevators" *ngIf="show_accessibleElevators">
           <p [innerHtml]="'visitor_accessibility_elevators_intro' | translate"></p>
         </div>
-        <button ion-item detail-none (click)="toggleAccessibleInformation('restrooms')">
+        <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('restrooms')">
            <ion-icon [name]="icon_restrooms"></ion-icon>
            {{ 'visitor_accessibility_restrooms' | translate}}
         </button>
@@ -89,6 +89,10 @@
         <div class="content restrooms" *ngIf="show_accessibleRestrooms">
           <p [innerHtml]="'visitor_accessibility_restrooms_intro' | translate"></p>
         </div>
+        <button ion-button icon-left (click)="loadMapPage('access')">
+        <ion-icon name="map"></ion-icon>
+        {{ 'visitor_map_accessibility' | translate }}
+      </button>
       </ion-card-content>
     </ion-card>
   </div>

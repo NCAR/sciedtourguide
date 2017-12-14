@@ -13,40 +13,40 @@ import 'rxjs/add/operator/debounceTime';
 export class ExhibitsListPage {
   searchTerm: string = '';
   searchControl: FormControl;
-  items:any;
-  timer:any;
+  items: any;
+  timer: any;
   searching: any = true;
   title = 'exhibits_list';
-  selectedItem:any = '';
+  selectedItem: any = '';
 
-  constructor(private events:Events, private dataService: ExhibitsDataProvider, private navParams: NavParams, private navCtrl: NavController,public sharedVars:SharedVars) {
+  constructor(private events: Events, private dataService: ExhibitsDataProvider, private navParams: NavParams, private navCtrl: NavController, public sharedVars: SharedVars) {
 
-    this.selectedItem = navParams.get('item');
+    this.selectedItem = this.navParams.get('item');
 
-    events.subscribe('change-tab', (tab, item) => {
+    this.events.subscribe('change-tab', (tab, item) => {
       this.selectedItem = item;
-        this.items = this.dataService.filterItems(this.selectedItem);
+      this.items = this.dataService.filterItems(this.selectedItem);
     });
     sharedVars.trackView('Exhibits List');
     this.searchControl = new FormControl();
-     this.searchControl.valueChanges.debounceTime(700).subscribe(search => {
+    this.searchControl.valueChanges.debounceTime(700).subscribe(search => {
       this.searching = false;
 
       // need to poll for a flag to indicate that this is completed
       this.timer = setInterval(() => {
-        if(this.dataService.f_dataReady == true){
-            this.setFilteredItems();
-            clearInterval(this.timer);
+        if (this.dataService.f_dataReady == true) {
+          this.setFilteredItems();
+          clearInterval(this.timer);
         }
-      },300);
+      }, 300);
     });
   }
- reset(){
-   this.selectedItem = '';
-   this.searchTerm = '';
-   this.setFilteredItems();
- }
-  onSearchInput(){
+  reset() {
+    this.selectedItem = '';
+    this.searchTerm = '';
+    this.setFilteredItems();
+  }
+  onSearchInput() {
     this.searching = true;
   }
 
@@ -57,7 +57,7 @@ export class ExhibitsListPage {
 
   openPage(event, item) {
     this.navCtrl.push(ContentPage, {
-        item: item
+      item: item
     });
   }
 }

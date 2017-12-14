@@ -13,15 +13,22 @@ export class TabsPage {
   @ViewChild(Tabs) tabs: Tabs;
 
   tab1Root = MapIndexPage;
-  tab2Root = ExhibitsListPage;
+  tab1Params = { item: "" };
 
+  tab2Root = ExhibitsListPage;
   tab2Params = { item: "" };
+
   tab3Root = PostcardPage;
   tab4Root = VisitPage;
 
   constructor(events: Events) {
     events.subscribe('change-tab', (tab, item) => {
       this.tab2Params.item = item;
+      this.tabs.select(tab);
+    });
+    events.subscribe('change-tab-map', (tab, item) => {
+      console.log(item);
+      this.tab1Params.item = item;
       this.tabs.select(tab);
     });
   }

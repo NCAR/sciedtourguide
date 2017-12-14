@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-
+import { Events} from 'ionic-angular';
 @Component({
   selector: 'page-visit',
   templateUrl: 'visit.html'
@@ -15,9 +15,13 @@ export class VisitPage {
   icon_elevators = 'ios-arrow-forward';
   icon_restrooms = 'ios-arrow-forward';
 
-  constructor(public sharedVars:SharedVars) {
+  constructor(public sharedVars:SharedVars, private events:Events) {
     this.pageTitle = 'visitor';
     sharedVars.trackView('Visitor Information');
+  }
+  loadMapPage(type){
+    console.log(type);
+    this.events.publish('change-tab-map', 1, type);
   }
   toggleAccessibleInformation(value){
     switch(value){
