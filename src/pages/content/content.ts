@@ -15,7 +15,7 @@ export class ContentPage {
     this.specialBtn = 'audioBtn';
     sharedVars.trackView('Content - '+this.selectedItem.id);
 
-    events.subscribe('reset-exhibits', (tab) => {
+    this.events.subscribe('reset-exhibits', (tab) => {
       this.navCtrl.popToRoot();
     });
   }
