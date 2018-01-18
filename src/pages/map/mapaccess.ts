@@ -1,7 +1,6 @@
 // from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { NavController, Gesture, Events, Content } from 'ionic-angular';
-import { ExhibitsListPage } from '../exhibitslist/exhibitslist';
+import { NavController, Gesture, Content } from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 
 @Component({
@@ -13,14 +12,12 @@ export class MapAccessPage {
   @ViewChild(Content) content: Content;
   @ViewChild('zoom') zoom: ElementRef;
 
-    constructor(public sharedVars:SharedVars, private navCtrl: NavController, private events:Events) {
+    constructor(public sharedVars:SharedVars, private navCtrl: NavController) {
 
       sharedVars.trackView('Map - Accessible');
     }
 
-  pinchEvent(e){
-    alert(e);
-  }
+
 
   ionViewDidEnter(): void {
     // Page must be fully rendered, ionViewDidLoad, doesnt work for this. Because it shows clientHeight without the margin of the header

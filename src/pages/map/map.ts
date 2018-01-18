@@ -1,7 +1,6 @@
 // from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { NavController, Gesture, Events, Content } from 'ionic-angular';
-import { ExhibitsListPage } from '../exhibitslist/exhibitslist';
+import { Gesture, Events, Content } from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 
 @Component({
@@ -16,16 +15,16 @@ export class MapPage {
   showMapReg: Boolean = false;
   showMapAccess: Boolean = false;
 
-    constructor(public sharedVars:SharedVars, private navCtrl: NavController, private events:Events) {
+  constructor(public sharedVars: SharedVars, private events: Events) {
+    this.sharedVars.trackView('Map - Interactive');
 
-      sharedVars.trackView('Map');
-    }
+  }
 
-  loadPage(item){
+  loadPage(item) {
     this.events.publish('reset-exhibits', 0);
     this.events.publish('change-tab', 0, item);
   }
-  pinchEvent(e){
+  pinchEvent(e) {
     alert(e);
   }
 
@@ -78,7 +77,7 @@ export class MapPage {
     }
     function onPinch(ev) {
       // formula to append scale to new scale
-      scale = base + (ev.scale * scale - scale)/scale
+      scale = base + (ev.scale * scale - scale) / scale
 
       setBounds();
       transform();
