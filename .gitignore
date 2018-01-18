@@ -16,3 +16,5 @@ src/service-worker.js
 .DS_Store
 Thumbs.db
 .tmp
+
+src/assets/images/appmap2.png
