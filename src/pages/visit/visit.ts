@@ -7,7 +7,6 @@ import { Events} from 'ionic-angular';
 })
 export class VisitPage {
   bkgImg:String = 'assets/images/ncar.png';
-  pageTitle:any;
   show_accessibleParking = false;
   show_accessibleElevators = false;
   show_accessibleRestrooms = false;
@@ -16,7 +15,6 @@ export class VisitPage {
   icon_restrooms = 'ios-arrow-forward';
 
   constructor(public sharedVars:SharedVars, private events:Events) {
-    this.pageTitle = 'visitor';
     sharedVars.trackView('Visitor Information');
   }
   loadMapPage(type){

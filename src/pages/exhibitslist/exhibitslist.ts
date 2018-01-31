@@ -55,9 +55,10 @@ export class ExhibitsListPage {
 
   }
 
-  openPage(event, item) {
+  openPage(event, item, parent) {
     this.navCtrl.push(ContentPage, {
-      item: item
+      item: item,
+      parent:parent
     });
   }
 }

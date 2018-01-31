@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
 import { NavParams} from 'ionic-angular';
 import { AudioProvider } from 'ionic-audio';
@@ -13,11 +13,13 @@ selectedItem:any;
 myTracks: any[];
 allTracks: any[];
 selectedTrack: any;
+parent:string;
 
   constructor(private _audioProvider: AudioProvider,private navParams: NavParams, public sharedVars:SharedVars) {
     this.selectedItem = this.navParams.get('item');
     this.myTracks = this.selectedItem.content.audio;
     sharedVars.trackView('Transcript - '+this.selectedItem.id);
+    this.parent = this.navParams.get('parent');
   }
 
   ionViewWillLeave() {

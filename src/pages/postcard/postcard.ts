@@ -16,7 +16,6 @@ export class PostcardPage {
 
   base64Image: string;
   options: CameraOptions;
-  postcardInstructions:Boolean = true;
   postcardMessageText:Boolean = false;
   postcardBkgImage:Boolean = false;
   height = this.platform.height();
@@ -77,6 +76,7 @@ export class PostcardPage {
       this.postcardLoaded = false;
     } else if (this.base64Image) {
       this.base64Image = null;
+      this.takePicture();
     } else if (this.postcardBkgImage) {
       this.postcardBkgImage = null;
     }
@@ -89,17 +89,12 @@ export class PostcardPage {
       this.postcardLoaded = true;
     }, 3000);
   }
-  closeInstructions() {
-    this.sharedVars.trackView('Postcards - Select a background');
-    this.postcardInstructions = false;
-  }
   resetFlags() {
     this.base64Image = null;
     this.postcardMessageText = null;
     this.postcardBkgImage = null;
     this.postcardLoaded = false;
     this.checkExist = false;
-    this.postcardInstructions = true;
     this.postcard = this.formBuilder.group({
       message: ['', Validators.required]
     });

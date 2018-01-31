@@ -10,8 +10,12 @@ export class TitleComponent {
   @Input() title: string;
   @Input() specialButton:string;
   @Input() selectedItem:any;
+  @Input() titlebarColor:string;
 
   constructor(private navCtrl: NavController) {
+    if(!this.titlebarColor){
+      this.titlebarColor = "primary";
+    }
   }
   goHome() {
     this.navCtrl.popToRoot();
@@ -27,7 +31,8 @@ export class TitleComponent {
   }
   openTranscript(event, item) {
     this.navCtrl.push(TranscriptPage, {
-      item: item
+      item: item,
+      parent: this.titlebarColor
     });
 
   }

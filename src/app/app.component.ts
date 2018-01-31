@@ -35,6 +35,14 @@ export class MyApp {
       let browserLang = this.translate.getBrowserLang();
       this.translate.use(browserLang.match(/en/) ? browserLang : 'en');
 
+
+      this.translate.get('content_cloud_title').subscribe(
+  value => {
+    // value is our translated string
+    console.log(value);
+  }
+)
+
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();

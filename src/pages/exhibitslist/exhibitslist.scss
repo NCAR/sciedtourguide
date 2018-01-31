@@ -7,28 +7,34 @@ page-exhibitslist
        }
     ion-list-header{
       &.weather {
-        background-color: #cc8a25 !important;
+        background-color: #F4A42E !important;
       }
       &.climate {
-        background-color: #629339 !important;
+        background-color: #77AD44 !important;
       }
-      &.sun-earth {
-        background-color: #ae3d1f !important;
+      &.sunearth {
+        background-color: #CD4927 !important;
       }
       &.atmosphere {
-        background-color: #000000 !important;
+        background-color: #664EA0 !important;
       }
       &.supercomputers {
-        background-color: #367e94 !important;
+        background-color: #4394AD !important;
       }
       &.architecture {
-        background-color: #b29c5f !important;
+        background-color: #D6B972 !important;
       }
       &.aq {
-        background-color: #98afcf !important;
+        background-color: #A8BDE2 !important;
       }
       &.trail {
-        background-color: #3b4e20 !important;
+        background-color: #4D612C !important;
+      }
+      &.art {
+        background-color: #5468B1 !important;
+      }
+      &.misc {
+        background-color: #A17099 !important;
       }
     }
 }

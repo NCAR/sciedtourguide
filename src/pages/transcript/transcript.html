@@ -1,4 +1,4 @@
-<ion-header><app-title [title]="selectedItem.content.title | translate"></app-title>
+<ion-header><app-title [title]="selectedItem.content.title | translate" [titlebarColor]="parent"></app-title>
 
     <ion-toolbar class="audio">
       <audio-track #audio *ngFor="let track of myTracks" [track]="track" (onFinish)="onTrackFinished($event)">

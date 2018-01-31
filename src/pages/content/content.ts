@@ -8,17 +8,23 @@ import { NavController, NavParams, Events} from 'ionic-angular';
 })
 export class ContentPage {
   selectedItem: any;
+  selectedParent:any;
   specialBtn:string;
+  titlebarColor:string;
 
   constructor(private navParams: NavParams, private navCtrl: NavController,  public sharedVars: SharedVars, private events: Events) {
     this.selectedItem = this.navParams.get('item');
+    this.selectedParent = this.navParams.get('parent');
     this.specialBtn = 'audioBtn';
     sharedVars.trackView('Content - '+this.selectedItem.id);
+
+    this.titlebarColor = this.selectedParent;
 
     this.events.subscribe('reset-exhibits', (tab) => {
       this.navCtrl.popToRoot();
     });
   }
+
 
 
 }

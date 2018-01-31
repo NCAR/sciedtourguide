@@ -1,173 +1,633 @@
 {
-  "welcome" : "NCAR Visitor Center",
+  "welcome": "NCAR Visitor Center",
   "audioBtnPlay": "Play Audio",
   "shareBtn": "Share",
   "backBtn": "Back",
   "transcript_link": "Audio",
-  "visitor": "Visitor Information",
-  "visitor_info" : "Visitor Info",
-  "map" : "Map",
-  "exhibits_list" : "Exhibits",
-  "postcard_camera_back": "Choose a different image",
-  "postcard_message_back": "Take a different photo",
-  "take_picture" : "Take a photo",
-  "retake_picture" : "Retake photo",
-  "postcard_write" : "Write Postcard",
-  "postcard_start_button" : "Get Started!",
-  "postcard_send" : "Postcards",
-  "postcard_send_button" : "Send my postcard",
-  "postcard_finish" : "Finish my postcard",
-  "postcard_startover_button" : "Start Over",
-  "postcard_step_one" : "First, select a background image.",
-  "postcard_step_two" : "This is your selected background image. You can can choose another background image or move to the next step and take a photo of yourself.",
-  "postcard_step_three" : "This is your photo.  Nice shot!  You can retake your photo or write your message.  Please limit to 140 characters or less.",
-  "postcard_message_label" : "Message",
-  "postcard_loading": "Creating your postcard...",
-  "postcard_message_placeholder" : "Example: Hi Mom!  I just visited the NCAR Visitor Center and played with a cloud!",
-  "postcard_review" : "Here is your postcard.  Would you like send it?",
-  "about": "About",
-  "apptitle": "ML Tour",
-  "weather": "Weather",
-  "clouds": "Clouds",
-  "severeweather": "Severe Weather",
-  "studyweather": "How we study weather",
-  "forecasting": "Forecasting",
-  "tornado": "Tornado",
-  "weatherclimate": "Weather and Climate",
-  "microburst": "Microburst",
-  "chaos": "Chaos",
-  "climate": "Climate",
-  "pastclimate": "Past Climate",
-  "studyclimate": "How we study climate",
-  "greenhousegases":"Greenhouse Gases",
-  "climatechange": "How climate is changing",
-  "choosefuture": "Choose our future",
-  "climatestories": "Climate Stories",
-  "futureclimate": "Future Climate",
-  "solutions": "Solutions",
-  "sun-earth": "Sun-Earth Connections",
-  "historymodeling": "History/Modeling",
-  "sunfeatures": "Features of the Sun",
-  "atmosphere": "Atmosphere",
-  "mural": "Mural",
-  "dropsonde": "Dropsonde",
-  "supercomputers": "Supercomputers",
-  "cray": "Cray",
-  "architecture": "architecture",
-  "mesalab": "Mesa Lab",
-  "aq": "Air Quality",
-  "ozonepm": "Ozone and Particulate Matter",
-  "ozonegarden": "Ozone Garden",
-  "trail": "Weather Trail",
-  "overview": "Overview",
-
- "content_weather_title":"Weather",
- "content_climate_title":"Climate",
- "content_atmosphere_title":"Atmosphere",
- "content_sun_earth_title":"Sun-Earth",
- "content_supercomputers_title":"Supercomputers",
- "content_architecture_title":"Architecture",
-
-  "content_cloud_title": "Clouds",
-  "content_cloud_description": "<p>Clouds form when air rises from the Earth’s surface. As this air rises, it cools, water vapor condenses on tiny particles in the atmosphere, and forms clouds. Check out the touchscreen under the windows to learn more about clouds, and look outside to identify the clouds you can see in the sky. </p>",
-  "audio_cloud_title": "About Clouds",
-  "audio_cloud_description": "What are clouds made of?",
-  "audio_cloud_transcript": "That's what makes life fun. That you can make these decisions. That you can create the world that you want. This painting comes right out of your heart. Talent is a pursued interest. That is to say, anything you practice you can do. The only thing worse than yellow snow is green snow. When things happen - enjoy them. They're little gifts. We want to use a lot pressure while using no pressure at all. Just take out whatever you don't want. It'll change your entire perspective. Clouds are free. They just float around the sky all day and have fun. Trees cover up a multitude of sins. If it's not what you want - stop and change it. Don't just keep going and expect it will get better. This is a happy place, little squirrels live here and play. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush. And just raise cain. You can't make a mistake. Anything that happens you can learn to use - and make something beautiful out of it. Let's put some happy little clouds in our world. Clouds are free they come and go as they please. Let your heart be your guide. When you buy that first tube of paint it gives you an artist license. Let's have a nice tree right here. I was blessed with a very steady hand; and it comes in very handy when you're doing these little delicate things.",
-  "map_download": "Download Map",
-  "map_interactive": "Interactive Map",
-  "map_access": "Accessibility Map",
-
-
-
-  "content_severe_weather_title": "Severe Weather",
-  "content_severe_weather_description": "<p>Severe weather includes tornadoes, thunderstorms, flooding, snowstorms, hurricanes, and severe winds. These dramatic events can impact human health and the economy.  Since 1980, the U.S. has had over 200 weather or climate related weather events that each caused damages reaching or exceeding one billion dollars.</p>",
-  "audio_severe_weather_title": "",
-  "audio_severe_weather_description": "?",
-  "audio_severe_weather_transcript": "",
-
-
-  "content_study_weather_title": "Instruments that Study Weather",
-  "content_study_weather_description": "<p>Anemometers are instruments that measure the speed of wind. Some anemometers also include a weather vane which shows which direction the wind is blowing. The highest wind speed ever recorded here at the NCAR Mesa Lab was a 147 mph gust on January 23, 1971.</p>",
-  "audio_study_weather_title": "",
-  "audio_study_weather_description": "?",
-  "audio_study_weather_transcript": "",
-
-  "content_forecasting_title": "Forecasting",
-  "content_forecasting_description": "<p>Weather forecasts influence our daily lives, helping us decide what to wear or when to take precautions due to upcoming severe weather. Weather forecasting models are used to predict weather in the near future. These forecasts are made by advanced computers, with analysis and interpretation done by meteorologists.</p>",
-  "audio_forecasting_title": "",
-  "audio_forecasting_description": "?",
-  "audio_forecasting_transcript": "",
-
-  "content_microburst_title": "Microburst",
-  "content_microburst_description": "<p>Microbursts are strong, vertical winds that suddenly form underneath thunderstorms. These downdrafts can have speeds over 100 mph. Microbursts are very dangerous for airplanes during takeoff or landing. To address this safety issue, in the 1980s NCAR scientists developed a microburst detection system that makes air travel much safer.</p>",
-  "audio_microburst_title": "",
-  "audio_microburst_description": "?",
-  "audio_microburst_transcript": "",
-
-
-
-  "content_past_climate_title": "Studying Past Climates",
-  "content_past_climate_description": "<p>How can we learn what Earth’s climate was like in ancient times before humans began writing about it? Some natural features provide clues about climates of the past. Tree rings of different widths tell us about growing conditions from year to year. Was it dry or wet? Cool or hot?</p>",
-  "audio_past_climate_title": "",
-  "audio_past_climate_description": "?",
-  "audio_past_climate_transcript": "",
-
-
-
-  "content_greenhouse_gases_title": "Studying Greenhouse Gases",
-  "content_greenhouse_gases_description": "<p>Charles David Keeling began measuring carbon dioxide (CO2) levels on Hawaii’s Mauna Loa Observatory in 1958. These measurements make up the Keeling Curve, which shows that CO2 values have increased from 330 to over 400 parts per million (ppm). Greenhouse gases such as CO2 trap heat in the atmosphere and warm the Earth’s temperature.</p>",
-  "audio_greenhouse_gases_title": "",
-  "audio_greenhouse_gases_description": "?",
-  "audio_greenhouse_gases_transcript": "",
-
-
-
-  "content_atmosphere_mural_title": "",
-  "content_atmosphere_mural_description": "<p></p>",
-  "audio_atmosphere_mural_title": "",
-  "audio_atmosphere_mural_description": "?",
-  "audio_atmosphere_mural_transcript": "",
-
-
-
-  "content_choosefuture_title": "Choose our future",
-  "content_choosefuture_description": "<p>The choices we make today will impact our planet tomorrow! The interactive Choose our Future game in this exhibit gives players feedback on how  choices made in daily life impact our carbon footprint. Learn how individual actions can impact the Earth’s global average temperature.</p>",
-  "audio_choosefuture_title": "",
-  "audio_choosefuture_description": "?",
-  "audio_choosefuture_transcript": "",
-
-  "content_dropsonde_title": "",
-  "content_dropsonde_description": "<p></p>",
-  "audio_dropsonde_title": "",
-  "audio_dropsonde_description": "?",
-  "audio_dropsonde_transcript": "",
-
-
-  "visitor_intro": "The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free.",
-  "visitor_intro_button_text":"Visitor website",
-  "visitor_address_title": "Address",
-  "visitor_address_content": "1850 Table Mesa Drive<br/>Boulder, Colorado 80305",
-  "visitor_address_content_button_text":"View directions",
-  "visitor_hours_title": "Visitor Center Hours",
-  "visitor_hours_content":"Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The visitor center is open every day except for two annual shut down days in the spring and fall. View our visitor website for updates when these shut downs are scheduled.</p>",
-  "visitor_tours_title": "Tours",
-  "visitor_tours_content": "Public tours, MWF: 12:00 pm",
-  "visitor_tours_content_button_text":"View tour information",
-  "visitor_cafeteria_title":"Cafeteria Hours",
-  "visitor_cafeteria_content":"Breakfast, 8:00 am - 9:30 am<br/>Lunch, 11:30 - 1:30 pm  <p>The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>",
-  "visitor_accessibility_title":"Accessibility",
-  "visitor_accessibility_parking": "Parking ",
-  "visitor_accessibility_elevators":"Elevators ",
-  "visitor_accessibility_restrooms":"Restrooms ",
-  "visitor_accessibility_content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  Our Visitor program is committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accomodations can be found on our visitor website.",
-  "visitor_accessibility_content_button_text":"View accessibility information",
-  "visitor_accessiblity_parking_intro":"NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.",
-  "visitor_accessibility_parking_title1":"Front driveway access",
-  "visitor_accessibility_parking_content1":"This is a secure driveway and entrance, therefore one must call NCAR (303.497.1139) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
-  "visitor_accessibility_parking_title2":"Accessible rear entrance",
-  "visitor_accessibility_parking_content2":"The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center.",
-  "visitor_accessibility_elevators_intro":"All exhibits and public areas are accessible by elevator.",
-  "visitor_accessibility_restrooms_intro":"A wheelchair accessible restroom is available on the second floor in the Climate Future exhibit area.",
-  "visitor_map_accessibility": "View accessibility map",
-   "second_floor": "SECOND FLOOR"
+  "toolbar":{
+    "exhibits":"Exhibits",
+    "map": "Map",
+    "postcards": "Postcards",
+    "visitor":"Visitor Info"
+  },
+  "postcard": {
+    "intro": {
+      "content": "<h1>Welcome to the postcard generator.</h1><p>Please follow the instructions provided to create your postcard.</p>"
+    },
+    "steps":{
+      "one":{
+        "instructions":{
+          "content":"First, select a background image."
+        }
+      },
+      "two" :{
+        "instructions":{
+          "content": "This is your selected background image. You can choose another background image or move to the next step and take a photo of yourself."
+        },
+        "buttons":{
+          "take_picture": "Take a photo",
+          "camera_back": "Choose a different image"
+        }
+      },
+      "three" :{
+        "instructions":{
+            "content": "This is your photo.  Nice shot!  You can retake your photo or write your message.  Please limit to 140 characters or less."
+        },
+        "message":{
+            "label": "Message",
+            "placeholder_text":"Example: Hi Mom!  I just visited the NCAR Visitor Center and played with a cloud!"
+        },
+        "buttons":{
+          "finish": "Finish my postcard",
+          "message_back": "Take a different photo"
+        }
+      },
+      "finished":{
+        "loading_text":"Creating your postcard...",
+        "review_text":"Here is your postcard.  Would you like send it?",
+        "buttons":{
+          "send":"Send my postcard",
+          "startover":"Start Over"
+        }
+      }
+    }
+  },
+  "map": {
+    "download": {
+      "button_text": "Download Map"
+    },
+    "interactive": {
+      "button_text": "Interactive Map"
+    },
+    "access": {
+      "button_text": "Accessibility Map"
+    },
+    "content":{
+      "floors":{
+        "2b":"FLOOR 2B",
+        "1b":"FLOOR 1B",
+        "first": "FIRST FLOOR",
+        "second": "SECOND FLOOR",
+        "mezzanine":"MEZZANINE"
+      },
+      "galleries":{
+        "exhibit":"Exhibit",
+        "aq":"Air Quality",
+        "air":"Air",
+        "quality":"Quality",
+        "weather": "Weather",
+        "weather_exhibit":"Weather Exhibit",
+        "trail":"Trail",
+        "atmosphere": "Atmosphere",
+        "library": "Library",
+        "climate":"Climate",
+        "ncars":"NCAR's",
+        "architecture":"Architecture",
+        "sunearth": "Sun-Earth",
+        "connections": "Connections",
+        "satellite":"Satellite",
+        "ozone" :"Ozone",
+        "garden":"Garden",
+        "supercomputing":"Supercomputing",
+        "area":"Area",
+        "cray":"The Cray-1A",
+        "supercomputer":"Supercomputer",
+        "gallery":"Gallery",
+        "art":"Art",
+        "science":"Science",
+        "cafeteria":"Cafeteria and",
+        "art_gallery":"Art Gallery",
+        "theater":"Theater"
+      },
+      "rooms" :{
+        "lobby":"LOBBY",
+        "front":"Front",
+        "desk":"Desk",
+        "ncar":"NCAR",
+        "security":"Security",
+        "classroom":"Classroom",
+        "main":"Main",
+        "seminar":"Seminar",
+        "room":"Room"
+      },
+      "wayfinding":{
+          "entrance":"entrance",
+          "tofloor1b":"To Floor 1B",
+          "tofirstfloor":"To 1st Floor",
+          "route":"Route to",
+          "mezzanine":"Mezzanine",
+          "tomezzanine":"To Mezzanine",
+          "tosecondfloor":"To 2nd Floor",
+          "topicnicarea":"To picnic area",
+          "firstfloorramp":"Ramp to 1st Floor",
+          "atm":"ATM",
+          "routetoelevator":"Route to elevator",
+          "ramptolobby":"Ramp to lobby",
+          "disabilityparking":"Disability parking spaces",
+          "ramp":"Ramp"
+      }
+    }
+  },
+  "visitor": {
+    "title": "Visitor Information",
+    "intro": {
+      "content": "The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free.",
+      "button_text": "Visitor website"
+    },
+    "address": {
+      "title": "Address",
+      "content": "1850 Table Mesa Drive<br/>Boulder, Colorado 80305",
+      "button_text": "View directions"
+    },
+    "hours": {
+      "title": "Visitor Center Hours",
+      "content": "Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The visitor center is open every day except for two annual shut down days in the spring and fall. View our visitor website for updates when these shut downs are scheduled.</p>"
+    },
+    "tours": {
+      "title": "Tours",
+      "content": "Public tours, MWF: 12:00 pm",
+      "button_text": "View tour information"
+    },
+    "cafeteria": {
+      "title": "Cafeteria Hours",
+      "content": "Breakfast, 8:00 am - 9:30 am<br/>Lunch, 11:30 - 1:30 pm  <p>The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>"
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  Our Visitor program is committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accomodations can be found on our visitor website.",
+      "button_text": "View accessibility information",
+      "parking": {
+        "title": "Parking",
+        "content": "NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.",
+        "title1": "Front driveway access",
+        "content1": "This is a secure driveway and entrance, therefore one must call NCAR (303.497.1139) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
+        "title2": "Accessible rear entrance",
+        "content2": "The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
+      },
+      "elevators": {
+        "title": "Elevators ",
+        "content": "All exhibits and public areas are accessible by elevator."
+      },
+      "restrooms": {
+        "title": "Restrooms ",
+        "content": "A wheelchair accessible restroom is available on the second floor in the Climate Future exhibit area."
+      },
+      "map": {
+        "button_text": "View accessibility map"
+      }
+    }
+  },
+  "weather": {
+    "title": "Weather",
+    "cloud": {
+      "content": {
+        "title": "Clouds",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "severewx": {
+      "content": {
+        "title": "Severe Weather",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "wxinstruments": {
+      "content": {
+        "title": "Weather Instruments",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "microburst": {
+      "content": {
+        "title": "Microburst",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "wxforecasting": {
+      "content": {
+        "title": "Weather Forecasting",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "tornado": {
+      "content": {
+        "title": "Tornado",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "wxclimate": {
+      "content": {
+        "title": "Weather and Climate",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "chaos": {
+      "content": {
+        "title": "Chaos",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    }
+  },
+  "climate": {
+    "title": "Climate",
+    "greenhousegases": {
+      "content": {
+        "title": "Greenhouse Gases",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "past": {
+      "content": {
+        "title": "Past Climates",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "change": {
+      "content": {
+        "title": "Our Changing Climate",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "choosefuture": {
+      "content": {
+        "title": "Choose Our Future",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "impacts": {
+      "content": {
+        "title": "Climate Impacts",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "future": {
+      "content": {
+        "title": "Future Climate Predictions",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "solutions": {
+      "content": {
+        "title": "Climate Solutions",
+        "description": "desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    }
+  },
+  "sunearth": {
+    "title": "Sun-Earth Connections",
+    "history": {
+      "content": {
+        "title": "History of Solar Research",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "observations": {
+      "content": {
+        "title": "Observing the Sun",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    }
+  },
+  "atmosphere": {
+    "title": "Atmosphere",
+    "layers": {
+      "content": {
+        "title": "Layers of the Atmosphere",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "dropsondes": {
+      "content": {
+        "title": "Dropsondes",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    }
+  },
+  "supercomputers": {
+    "title": "Supercomputers",
+    "supercomputer": {
+      "content": {
+        "title": "Supercomputers",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "cray": {
+      "content": {
+        "title": "The Cray-1A Supercomputer",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    }
+  },
+  "aq": {
+    "title": "Air Quality",
+    "aq": {
+      "content": {
+        "title": "Air Quality",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "garden": {
+      "content": {
+        "title": "Ozone Garden",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    }
+  },
+  "misc": {
+    "title": "Miscellaneous",
+    "cosmic": {
+      "content": {
+        "title": "COSMIC 2 Satellite",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "library": {
+      "content": {
+        "title": "The NCAR Library",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "architecture": {
+      "content": {
+        "title": "Architecture",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    },
+    "wxtrail": {
+      "content": {
+        "title": "The Weather Trail",
+        "description": "Cloud desc"
+      },
+      "img": {
+        "title": "img title",
+        "credit": "img credit",
+        "description": "img desc"
+      },
+      "audio": {
+        "title": "audio title",
+        "description": "audio desc",
+        "transcript": "transcript"
+      }
+    }
+  }
 }

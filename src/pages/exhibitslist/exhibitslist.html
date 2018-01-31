@@ -1,4 +1,5 @@
-<ion-header><app-title [title]="title | translate"></app-title></ion-header>
+<ion-header>
+  <app-title [title]="'toolbar.exhibits' | translate"></app-title></ion-header>
 <ion-content class="outer-content">
 
   <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()"></ion-searchbar>
@@ -11,9 +12,9 @@
     <ion-list-header [ngClass]="sections.id">
       {{sections.name | translate }}
     </ion-list-header>
-    <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits)" tappable>
+    <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits, sections.id)" tappable>
       <ion-avatar item-start>
-            <img [src]="exhibits.content.img[0].path">
+            <img [src]="exhibits.content.icon[0].path">
           </ion-avatar>
       <ion-label>{{exhibits.name | translate }}</ion-label>
     </button>
