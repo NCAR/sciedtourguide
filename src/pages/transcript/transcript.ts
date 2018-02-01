@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
 import { NavParams} from 'ionic-angular';
 import { AudioProvider } from 'ionic-audio';

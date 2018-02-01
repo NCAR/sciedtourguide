@@ -42,7 +42,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/hail.jpg",
+            "path": "assets/images/sections/severewx.jpg",
             "title": "weather.severewx.img.title",
             "credit": "weather.severewx.img.credit",
             "description": "weather.severewx.img.description",
@@ -70,12 +70,12 @@
         "id": "wxinstruments",
         "name": "weather.wxinstruments.content.title",
         "content": {
-          "title": "weather.wxinstruments..content.title",
+          "title": "weather.wxinstruments.content.title",
           "description": "weather.wxinstruments.content.description",
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/wxinstruments.jpg",
             "title": "weather.wxinstruments.img.title",
             "credit": "weather.wxinstruments.img.credit",
             "description": "weather.wxinstruments.img.description",
@@ -107,7 +107,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/microburst.jpg",
             "title": "weather.microburst.img.title",
             "credit": "weather.microburst.img.credit",
             "description": "weather.microburst.img.description",
@@ -203,7 +203,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/wxclimate.jpg",
             "title": "weather.wxclimate.img.title",
             "credit": "weather.wxclimate.img.credit",
             "description": "weather.wxclimate.img.description",
@@ -235,7 +235,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/chaos.jpg",
             "title": "weather.chaos.img.title",
             "credit": "weather.chaos.img.credit",
             "description": "weather.chaos.img.description",
@@ -303,7 +303,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/past_climate.jpg",
             "title": "climate.past.img.title",
             "credit": "climate.past.img.credit",
             "description": "climate.past.img.description",
@@ -336,7 +336,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/drought.jpg",
+            "path": "assets/images/sections/climatechange.jpg",
             "title": "climate.change.img.title",
             "credit": "climate.change.img.credit",
             "description": "climate.change.img.description",
@@ -361,17 +361,17 @@
       },
       {
         "id": "choosefuture",
-        "name": "climate.future.content.title",
+        "name": "climate.choosefuture.content.title",
         "content": {
-          "title": "climate.future.content.title",
-          "description": "climate.future.content.description",
+          "title": "climate.choosefuture.content.title",
+          "description": "climate.choosefuture.content.description",
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/bike.jpg",
-            "title": "climate.future.img.title",
-            "credit": "climate.future.img.credit",
-            "description": "climate.future.img.description",
+            "path": "assets/images/sections/choosefuture.jpg",
+            "title": "climate.choosefuture.img.title",
+            "credit": "climate.choosefuture.img.credit",
+            "description": "climate.choosefuture.img.description",
             "orientation": "vertical",
             "width": "1024",
             "height": "768"
@@ -383,10 +383,10 @@
             "id": "",
             "positionId": "1",
             "src": "assets/audio/beat.mp3",
-            "title": "climate.future.audio.title",
-            "description": "climate.future.audio.description",
+            "title": "climate.choosefuture.audio.title",
+            "description": "climate.choosefuture.audio.description",
             "runningTime": "00:03",
-            "transcriptId": "climate.future.audio.transcript",
+            "transcriptId": "climate.choosefuture.audio.transcript",
             "preload": "metadata"
           }]
         }
@@ -400,7 +400,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/glaciermelt.jpg",
+            "path": "assets/images/sections/impacts.jpg",
             "title": "climate.impacts.img.title",
             "credit": "climate.impacts.img.credit",
             "description": "climate.impacts.img.description",
@@ -425,17 +425,17 @@
       },
       {
         "id": "futureclimate",
-        "name": "climate.future.content.title",
+        "name": "climate.futureclimate.content.title",
         "content": {
-          "title": "climate.future.content.title",
-          "description": "climate.future.content.description",
+          "title": "climate.futureclimate.content.title",
+          "description": "climate.futureclimate.content.description",
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
-            "title": "climate.future.img.title",
-            "credit": "climate.future.img.credit",
-            "description": "climate.future.img.description",
+            "path": "assets/images/sections/future_climate.png",
+            "title": "climate.futureclimate.img.title",
+            "credit": "climate.futureclimate.img.credit",
+            "description": "climate.futureclimate.img.description",
             "orientation": "vertical",
             "width": "1024",
             "height": "768"
@@ -447,10 +447,10 @@
             "id": "",
             "positionId": "1",
             "src": "assets/audio/beat.mp3",
-            "title": "climate.future.audio.title",
-            "description": "climate.future.audio.description",
+            "title": "climate.futureclimate.audio.title",
+            "description": "climate.futureclimate.audio.description",
             "runningTime": "00:03",
-            "transcriptId": "climate.future.audio.transcript",
+            "transcriptId": "climate.futureclimate.audio.transcript",
             "preload": "metadata"
           }]
         }
@@ -464,7 +464,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/windfarm.jpg",
+            "path": "assets/images/sections/solutions.jpg",
             "title": "climate.solutions.img.title",
             "credit": "climate.solutions.img.credit",
             "description": "climate.solutions.img.description",
@@ -500,7 +500,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/sunearth.jpg",
             "title": "sunearth.history.img.title",
             "credit": "sunearth.history.img.credit",
             "description": "sunearth.history.img.description",
@@ -532,7 +532,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/sunspot.jpg",
             "title": "sunearth.observations.img.title",
             "credit": "sunearth.observations.img.credit",
             "description": "sunearth.observations.img.description",
@@ -568,7 +568,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/atmosphere.jpg",
             "title": "atmosphere.layers.img.title",
             "credit": "atmosphere.layers.img.credit",
             "description": "atmosphere.layers.img.description",
@@ -600,7 +600,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/dropsondes.jpg",
             "title": "atmosphere.dropsondes.img.title",
             "credit": "atmosphere.dropsondes.img.credit",
             "description": "atmosphere.dropsondes.img.description",
@@ -645,7 +645,7 @@
             "height": "768"
           }],
           "icon": [{
-            "path": "assets/icon/cray_bleed-01.jpg"
+            "path": "assets/icon/supercomputing_bleed-01.jpg"
           }],
           "audio": [{
             "id": "",
@@ -668,7 +668,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/cray.jpg",
             "title": "supercomputers.cray.img.title",
             "credit": "supercomputers.cray.img.credit",
             "description": "supercomputers.cray.img.description",
@@ -705,7 +705,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/aq.jpg",
             "title": "aq.aq.img.title",
             "credit": "aq.aq.img.credit",
             "description": "aq.aq.img.description",
@@ -737,7 +737,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/garden.jpg",
             "title": "aq.garden.img.title",
             "credit": "aq.garden.img.credit",
             "description": "aq.garden.img.description",
@@ -774,7 +774,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/cosmic.jpg",
             "title": "misc.cosmic.img.title",
             "credit": "misc.cosmic.img.credit",
             "description": "misc.cosmic.img.description",
@@ -806,7 +806,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/library.jpg",
             "title": "misc.library.img.title",
             "credit": "misc.library.img.credit",
             "description": "misc.library.img.description",
@@ -838,7 +838,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/architecture.jpg",
             "title": "misc.architecture.img.title",
             "credit": "misc.architecture.img.credit",
             "description": "misc.architecture.img.description",
@@ -870,7 +870,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/trail.jpg",
             "title": "misc.wxtrail.img.title",
             "credit": "misc.wxtrail.img.credit",
             "description": "misc.wxtrail.img.description",
