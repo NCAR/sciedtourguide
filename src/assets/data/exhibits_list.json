@@ -139,7 +139,7 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/forecasting.jpg",
+            "path": "assets/images/sections/wxforecast.jpg",
             "title": "weather.wxforecasting.img.title",
             "credit": "weather.wxforecasting.img.credit",
             "description": "weather.wxforecasting.img.description",
