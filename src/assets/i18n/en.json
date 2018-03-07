@@ -31,7 +31,12 @@
       },
       "three" :{
         "instructions":{
-            "content": "This is your photo.  Nice shot!  You can retake your photo or write your message.  Please limit to 140 characters or less."
+            "withimage": {
+              "content": "This is your photo.  Nice shot!  You can retake your photo or write your message.  Please limit to 140 characters or less."
+            },
+            "withoutimage": {
+              "content": "You didn't take an image! You can retake your photo or write your message.  Please limit to 140 characters or less."
+            }
         },
         "message":{
             "label": "Message",

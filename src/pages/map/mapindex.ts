@@ -24,9 +24,10 @@ export class MapIndexPage {
           break;
       }
     });
-
-
     sharedVars.trackView('Map - Index');
+  }
+  openPDF(){
+        this.sharedVars.launch('https://scied.ucar.edu/sites/default/files/images/event/sss_2017_map_and_schedule_0.pdf')
   }
   openPage(event, item) {
     switch (item) {
@@ -38,5 +39,4 @@ export class MapIndexPage {
         break;
     }
   }
-
 }

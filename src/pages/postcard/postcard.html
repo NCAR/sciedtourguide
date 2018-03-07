@@ -27,11 +27,12 @@
 
 
     <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText" class="text_container">
-      <div class="preview_content_container">
+      <div class="preview_content_container" *ngIf="photoFlag != false">
         <img [src]="base64Image" class="preview bkg">
       </div>
       <div class="preview_instructions_container">
-        <p>{{ 'postcard.steps.three.instructions.content' | translate }}</p>
+        <p *ngIf="photoFlag != false">{{ 'postcard.steps.three.instructions.withimage.content' | translate }}</p>
+        <p *ngIf="photoFlag == false">{{ 'postcard.steps.three.instructions.withoutimage.content' | translate }}</p>
         <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">
           <ion-label stacked>{{ 'postcard.steps.three.message.label' | translate }}</ion-label>
           <ion-textarea formControlName="message" [placeholder]="'postcard.steps.three.message.placeholder_text' | translate" class="message" [attr.maxlength]="140"></ion-textarea>
@@ -52,7 +53,7 @@
           </ion-col>
           <ion-col  [ngClass]="postcardLoaded ? '' :'hidden'">
             <ion-card class="img_container" *ngIf="base64Image && postcardMessageText">
-                <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard">
+                <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard" [photoFlag]="photoFlag">
           </ion-card>
             <p>{{ 'postcard.steps.finished.review_text' | translate }}</p>
             <button ion-button (click)="sendEmail()" icon-right>{{ 'postcard.steps.finished.buttons.send' | translate }} <ion-icon name="send"></ion-icon></button>

@@ -12,6 +12,7 @@ export class ImageDrawTextDirective {
     message = '';
     @Input() text: string;
     @Input() bkg: string;
+    @Input() photoFlag: Boolean;
     @HostListener('load', ['$event.target'])
 
   onLoad(img) {
@@ -60,10 +61,6 @@ export class ImageDrawTextDirective {
     context.fillStyle=my_gradient;
     context.fillRect(0,0,(canvas.width/2)+50, canvas.height);
 
-
-
-
-
     //load bkg img
     let bkgObject = document.createElement("img");
     bkgObject.onload = (data) => {
@@ -71,11 +68,13 @@ export class ImageDrawTextDirective {
         context.drawImage(bkgObject, (canvas.width/2)+50, 0, canvas.width - ((canvas.width/2)+50), canvas.height);
 
         // draw user image
-        // get scaled down width and height for user image
-        scaled_width = (canvas.width/2)-50;
-        scaled_height = ((scaled_width * img.height)/img.width)-50;
-        context.drawImage(img, 50, ((canvas.height/2)-(scaled_height/2))-100, scaled_width, scaled_height);
-
+        if(this.photoFlag != false){
+        console.log(img);
+          // get scaled down width and height for user image
+          scaled_width = (canvas.width/2)-50;
+          scaled_height = ((scaled_width * img.height)/img.width)-50;
+          context.drawImage(img, 50, ((canvas.height/2)-(scaled_height/2))-100, scaled_width, scaled_height);
+        }
         // draw logo
         let logoObject = document.createElement("img");
         logoObject.onload = (data) => {

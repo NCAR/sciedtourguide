@@ -27,7 +27,6 @@ export class TabsPage {
       this.tabs.select(tab);
     });
     events.subscribe('change-tab-map', (tab, item) => {
-      console.log(item);
       this.tab1Params.item = item;
       this.tabs.select(tab);
     });

@@ -2,23 +2,13 @@
   <app-title [title]="'toolbar.map' | translate"></app-title>
 </ion-header>
 <ion-content>
-
-
-
-  <ion-card class="card" tappable ion-button (click)="sharedVars.launch('https://scied.ucar.edu/sites/default/files/images/event/sss_2017_map_and_schedule_0.pdf')">
-
+  <ion-card class="card" tappable ion-button (click)="openPDF()">
     <div class="card-title">{{'map.download.button_text' | translate }}</div>
   </ion-card>
-
   <ion-card class="card" tappable ion-button (click)="openPage($event, 'mapreg')">
-
     <div class="card-title">{{'map.interactive.button_text' | translate }}</div>
   </ion-card>
-
   <ion-card class="card" tappable ion-button (click)="openPage($event, 'mapaccess')">
-
     <div class="card-title">{{'map.access.button_text' | translate }}</div>
   </ion-card>
-
-
 </ion-content>

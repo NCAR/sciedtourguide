@@ -138,6 +138,7 @@ shuffle(a) {
     }
 
      trackEvent(category, action, label) {
+       console.log(action+ " "+label);
          this.platform.ready().then(() => {
          let promise = this.getTracking();
          promise.then(data => {
@@ -148,6 +149,7 @@ shuffle(a) {
         });
     }
     trackView(title) {
+      console.log(title);
         this.platform.ready().then(() => {
         let promise = this.getTracking();
         promise.then(data => {

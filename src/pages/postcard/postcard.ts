@@ -13,8 +13,8 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 })
 
 export class PostcardPage {
-
   base64Image: string;
+  photoFlag:Boolean = false;
   options: CameraOptions;
   postcardMessageText:Boolean = false;
   postcardBkgImage:Boolean = false;
@@ -28,32 +28,26 @@ export class PostcardPage {
   postcardData: any = { 'message': '', 'bkg': '' };
 
   constructor(private toastCtrl: ToastController, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
-
-    sharedVars.trackView('Postcards');
-    this.bkg_imgs = ['assets/images/postcards/mesalab.jpg', 'assets/images/postcards/eclipse.jpg', 'assets/images/postcards/mammatus.jpg', 'assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
-    // todo need to reset base64 on tab tab (return to home)
-    this.options = {
-      quality: 100,
-      targetHeight: this.height,
-      targetWidth: this.width,
-      saveToPhotoAlbum: true,
-      correctOrientation: true,
-      destinationType: this.camera.DestinationType.DATA_URL,
-      encodingType: this.camera.EncodingType.JPEG,
-      mediaType: this.camera.MediaType.PICTURE
-    }
-    this.postcard = this.formBuilder.group({
-      message: ['', Validators.required]
-    });
-
     this.platform.ready().then(() => {
-
+      this.trackSteps(1);
+      this.bkg_imgs = ['assets/images/postcards/mesalab.jpg', 'assets/images/postcards/eclipse.jpg', 'assets/images/postcards/mammatus.jpg', 'assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
+      this.options = {
+        quality: 100,
+        targetHeight: this.height,
+        targetWidth: this.width,
+        saveToPhotoAlbum: true,
+        correctOrientation: true,
+        destinationType: this.camera.DestinationType.DATA_URL,
+        encodingType: this.camera.EncodingType.JPEG,
+        mediaType: this.camera.MediaType.PICTURE
+      }
+      this.postcard = this.formBuilder.group({
+        message: ['', Validators.required]
+      });
     });
-
   }
   ionViewWillLeave() {
     this.resetFlags();
-
   }
 
   presentToast() {
@@ -64,31 +58,53 @@ export class PostcardPage {
       cssClass: 'notice',
       dismissOnPageChange: true
     });
-
-
     toast.present();
   }
-  stepBack() {
-    // determine what step we are on
 
+  trackSteps(step, args = {'src':''}){
+      switch(step){
+        case 1:
+          this.sharedVars.trackView('Postcards - Choose Background');
+          break;
+        case 2:
+          this.sharedVars.trackView('Postcards - Background Image:'+ args.src);
+          break;
+        case 3:
+          this.sharedVars.trackView('Postcards - Take Photo');
+          break;
+        case 4:
+          this.sharedVars.trackView('Postcards - Write Message');
+          break;
+        case 5:
+          this.sharedVars.trackView('Postcards - Review');
+          break;
+        case 6:
+          this.sharedVars.trackView('Postcards - Share');
+          break;
+      }
+  }
+
+  stepBack() {
     if (this.postcardMessageText) {
+      this.trackSteps(4);
       this.postcardMessageText = null;
       this.postcardLoaded = false;
     } else if (this.base64Image) {
+      this.trackSteps(3);
       this.base64Image = null;
       this.takePicture();
     } else if (this.postcardBkgImage) {
+      this.trackSteps(1);
       this.postcardBkgImage = null;
     }
 
   }
 
-
-  prepPostcard() {
-    setTimeout(() => {
-      this.postcardLoaded = true;
-    }, 3000);
+  startOver() {
+    this.resetFlags();
+    this.presentToast();
   }
+
   resetFlags() {
     this.base64Image = null;
     this.postcardMessageText = null;
@@ -101,30 +117,35 @@ export class PostcardPage {
   }
 
   reviewPostcard() {
-
-    this.sharedVars.trackView('Postcards - Review');
+    this.trackSteps(5);
     this.postcardData.message = this.postcard.value.message;
     this.postcardMessageText = true;
     this.prepPostcard();
   }
+
+  prepPostcard() {
+    setTimeout(() => {
+      this.postcardLoaded = true;
+    }, 3000);
+  }
+
   selectBkgImg(src) {
-    this.sharedVars.trackView('Postcards - Type a message');
+    this.trackSteps(2,{'src':src});
     this.postcardData.bkg = src;
     this.postcardBkgImage = true;
   }
   takePicture() {
-    this.sharedVars.trackView('Postcards - Take Photo');
+    this.trackSteps(3);
     this.camera.getPicture(this.options).then((imageData) => {
       // imageData is a base64 encoded string
       this.base64Image = "data:image/jpeg;base64," + imageData;
+      this.photoFlag = true;
     }, (err) => {
       console.log('no image');
+      this.base64Image = "data:image/jpeg;base64,";
+      this.photoFlag = false;
     });
-
-  }
-  startOver() {
-    this.resetFlags();
-    this.presentToast();
+    this.trackSteps(4);
   }
 
   sendEmail() {
@@ -132,8 +153,7 @@ export class PostcardPage {
   }
 
   otherShare() {
-
-    this.sharedVars.trackView('Postcards - Share');
+    this.trackSteps(6);
     this.checkExist = setInterval(() => {
       this.imgElm = <HTMLImageElement>document.getElementById('finalPostcard');
       if (this.imgElm != null) {

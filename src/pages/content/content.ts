@@ -16,7 +16,6 @@ export class ContentPage {
     this.selectedItem = this.navParams.get('item');
     this.selectedParent = this.navParams.get('parent');
     this.specialBtn = 'audioBtn';
-    sharedVars.trackView('Content - '+this.selectedItem.id);
 
     this.titlebarColor = this.selectedParent;
 
@@ -24,7 +23,7 @@ export class ContentPage {
       this.navCtrl.popToRoot();
     });
   }
-
-
-
+  ionViewDidEnter(){
+    this.sharedVars.trackView('Content - '+this.selectedParent+':'+this.selectedItem.id);
+  }
 }

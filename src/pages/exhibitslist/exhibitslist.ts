@@ -20,14 +20,12 @@ export class ExhibitsListPage {
   selectedItem: any = '';
 
   constructor(private events: Events, private dataService: ExhibitsDataProvider, private navParams: NavParams, private navCtrl: NavController, public sharedVars: SharedVars) {
-
     this.selectedItem = this.navParams.get('item');
 
     this.events.subscribe('change-tab', (tab, item) => {
       this.selectedItem = item;
       this.items = this.dataService.filterItems(this.selectedItem);
     });
-    sharedVars.trackView('Exhibits List');
     this.searchControl = new FormControl();
     this.searchControl.valueChanges.debounceTime(700).subscribe(search => {
       this.searching = false;
@@ -41,9 +39,17 @@ export class ExhibitsListPage {
       }, 300);
     });
   }
+  ionViewDidEnter(){
+    if(this.selectedItem){
+      this.sharedVars.trackView('Exhibits List: '+this.selectedItem);
+    } else {
+      this.sharedVars.trackView('Exhibits List: All');
+    }
+  }
   reset() {
     this.selectedItem = '';
     this.searchTerm = '';
+    this.sharedVars.trackEvent("ExhibitsReset","click","Reset");
     this.setFilteredItems();
   }
   onSearchInput() {
@@ -52,7 +58,6 @@ export class ExhibitsListPage {
 
   setFilteredItems() {
     this.items = this.dataService.filterItems(this.searchTerm);
-
   }
 
   openPage(event, item, parent) {

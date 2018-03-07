@@ -6,13 +6,13 @@ import 'rxjs/Rx';
 
 export class DataFileService {
     data: any = null;
-    
+
     constructor(private http:Http) {
         this.data = null;
     }
-    
+
     load(file) {
-        
+
 
         // don't have the data yet
         return new Promise(resolve => {

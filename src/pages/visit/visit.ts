@@ -18,16 +18,17 @@ export class VisitPage {
     sharedVars.trackView('Visitor Information');
   }
   loadMapPage(type){
-    console.log(type);
     this.events.publish('change-tab-map', 1, type);
   }
   toggleAccessibleInformation(value){
     switch(value){
       case 'parking':
         if(this.show_accessibleParking == true){
+          this.sharedVars.trackEvent('AccessibilityInfo','toggle','Hide Parking');
           this.show_accessibleParking = false;
           this.icon_parking = 'ios-arrow-forward';
         } else {
+          this.sharedVars.trackEvent('AccessibilityInfo','toggle','Show Parking');
           this.show_accessibleParking = true;
           this.icon_parking = 'ios-arrow-down';
         }
@@ -36,9 +37,11 @@ export class VisitPage {
 
       case 'elevators':
         if(this.show_accessibleElevators == true){
+          this.sharedVars.trackEvent('AccessibilityInfo','toggle','Hide Elevators');
           this.show_accessibleElevators = false;
           this.icon_elevators = 'ios-arrow-forward';
         } else {
+          this.sharedVars.trackEvent('AccessibilityInfo','toggle','Show Elevators');
           this.show_accessibleElevators = true;
           this.icon_elevators = 'ios-arrow-down';
         }
@@ -47,9 +50,11 @@ export class VisitPage {
 
       case 'restrooms':
         if(this.show_accessibleRestrooms == true){
+          this.sharedVars.trackEvent('AccessibilityInfo','toggle','Hide Restrooms');
           this.show_accessibleRestrooms = false;
           this.icon_restrooms = 'ios-arrow-forward';
         } else {
+          this.sharedVars.trackEvent('AccessibilityInfo','toggle','Show Restrooms');
           this.show_accessibleRestrooms = true;
           this.icon_restrooms = 'ios-arrow-down';
         }

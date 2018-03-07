@@ -13,8 +13,8 @@
             "path": "assets/images/sections/clouds.jpg",
             "title": "weather.cloud.img.title",
             "credit": "weather.cloud.img.credit",
-            "description": "weather.cloud.img.description",
-            "orientation": "vertical",
+            "altText": "weather.cloud.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -45,8 +45,8 @@
             "path": "assets/images/sections/severewx.jpg",
             "title": "weather.severewx.img.title",
             "credit": "weather.severewx.img.credit",
-            "description": "weather.severewx.img.description",
-            "orientation": "vertical",
+            "altText": "weather.severewx.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -58,7 +58,7 @@
             "positionId": "1",
             "src": "assets/audio/severewx.mp3",
             "title": "weather.severewx.audio.title",
-            "description": "weather.severewx.audio.description",
+            "altText": "weather.severewx.audio.description",
             "runningTime": "00:03",
             "transcriptId": "weather.severewx.audio.transcript",
             "preload": "metadata"
@@ -78,8 +78,8 @@
             "path": "assets/images/sections/wxinstruments.jpg",
             "title": "weather.wxinstruments.img.title",
             "credit": "weather.wxinstruments.img.credit",
-            "description": "weather.wxinstruments.img.description",
-            "orientation": "vertical",
+            "altText": "weather.wxinstruments.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -110,8 +110,8 @@
             "path": "assets/images/sections/microburst.jpg",
             "title": "weather.microburst.img.title",
             "credit": "weather.microburst.img.credit",
-            "description": "weather.microburst.img.description",
-            "orientation": "vertical",
+            "altText": "weather.microburst.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -142,8 +142,8 @@
             "path": "assets/images/sections/wxforecast.jpg",
             "title": "weather.wxforecasting.img.title",
             "credit": "weather.wxforecasting.img.credit",
-            "description": "weather.wxforecasting.img.description",
-            "orientation": "vertical",
+            "altText": "weather.wxforecasting.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -174,8 +174,7 @@
             "path": "assets/images/sections/tornado.jpg",
             "title": "weather.tornado.img.title",
             "credit": "weather.tornado.img.credit",
-            "description": "weather.tornado.img.description",
-            "orientation": "vertical",
+            "altText": "weather.tornado.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -206,8 +205,7 @@
             "path": "assets/images/sections/wxclimate.jpg",
             "title": "weather.wxclimate.img.title",
             "credit": "weather.wxclimate.img.credit",
-            "description": "weather.wxclimate.img.description",
-            "orientation": "vertical",
+            "altText": "weather.wxclimate.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -238,8 +236,7 @@
             "path": "assets/images/sections/chaos.jpg",
             "title": "weather.chaos.img.title",
             "credit": "weather.chaos.img.credit",
-            "description": "weather.chaos.img.description",
-            "orientation": "vertical",
+            "altText": "weather.chaos.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -274,8 +271,7 @@
             "path": "assets/images/sections/keeling.jpg",
             "title": "climate.greenhousegases.img.title",
             "credit": "climate.greenhousegases.img.credit",
-            "description": "climate.greenhousegases.img.description",
-            "orientation": "vertical",
+            "altText": "climate.greenhousegases.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -306,8 +302,7 @@
             "path": "assets/images/sections/past_climate.jpg",
             "title": "climate.past.img.title",
             "credit": "climate.past.img.credit",
-            "description": "climate.past.img.description",
-            "orientation": "vertical",
+            "altText": "climate.past.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -339,8 +334,7 @@
             "path": "assets/images/sections/climatechange.jpg",
             "title": "climate.change.img.title",
             "credit": "climate.change.img.credit",
-            "description": "climate.change.img.description",
-            "orientation": "vertical",
+            "altText": "climate.change.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -371,8 +365,7 @@
             "path": "assets/images/sections/choosefuture.jpg",
             "title": "climate.choosefuture.img.title",
             "credit": "climate.choosefuture.img.credit",
-            "description": "climate.choosefuture.img.description",
-            "orientation": "vertical",
+            "altText": "climate.choosefuture.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -403,8 +396,7 @@
             "path": "assets/images/sections/impacts.jpg",
             "title": "climate.impacts.img.title",
             "credit": "climate.impacts.img.credit",
-            "description": "climate.impacts.img.description",
-            "orientation": "vertical",
+            "altText": "climate.impacts.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -435,8 +427,7 @@
             "path": "assets/images/sections/future_climate.png",
             "title": "climate.futureclimate.img.title",
             "credit": "climate.futureclimate.img.credit",
-            "description": "climate.futureclimate.img.description",
-            "orientation": "vertical",
+            "altText": "climate.futureclimate.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -467,8 +458,7 @@
             "path": "assets/images/sections/solutions.jpg",
             "title": "climate.solutions.img.title",
             "credit": "climate.solutions.img.credit",
-            "description": "climate.solutions.img.description",
-            "orientation": "vertical",
+            "altText": "climate.solutions.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -503,8 +493,7 @@
             "path": "assets/images/sections/sunearth.jpg",
             "title": "sunearth.history.img.title",
             "credit": "sunearth.history.img.credit",
-            "description": "sunearth.history.img.description",
-            "orientation": "vertical",
+            "altText": "sunearth.history.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -535,8 +524,7 @@
             "path": "assets/images/sections/sunspot.jpg",
             "title": "sunearth.observations.img.title",
             "credit": "sunearth.observations.img.credit",
-            "description": "sunearth.observations.img.description",
-            "orientation": "vertical",
+            "altText": "sunearth.observations.img.description",
             "width": "1024",
             "height": "768"
           }],
@@ -571,8 +559,8 @@
             "path": "assets/images/sections/atmosphere.jpg",
             "title": "atmosphere.layers.img.title",
             "credit": "atmosphere.layers.img.credit",
-            "description": "atmosphere.layers.img.description",
-            "orientation": "vertical",
+            "altText": "atmosphere.layers.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -603,8 +591,8 @@
             "path": "assets/images/sections/dropsondes.jpg",
             "title": "atmosphere.dropsondes.img.title",
             "credit": "atmosphere.dropsondes.img.credit",
-            "description": "atmosphere.dropsondes.img.description",
-            "orientation": "vertical",
+            "altText": "atmosphere.dropsondes.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -639,8 +627,8 @@
             "path": "assets/images/sections/clouds.jpg",
             "title": "supercomputers.supercomputer.img.title",
             "credit": "supercomputers.supercomputer.img.credit",
-            "description": "supercomputers.supercomputer.img.description",
-            "orientation": "vertical",
+            "altText": "supercomputers.supercomputer.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -671,8 +659,8 @@
             "path": "assets/images/sections/cray.jpg",
             "title": "supercomputers.cray.img.title",
             "credit": "supercomputers.cray.img.credit",
-            "description": "supercomputers.cray.img.description",
-            "orientation": "vertical",
+            "altText": "supercomputers.cray.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -708,8 +696,8 @@
             "path": "assets/images/sections/aq.jpg",
             "title": "aq.aq.img.title",
             "credit": "aq.aq.img.credit",
-            "description": "aq.aq.img.description",
-            "orientation": "vertical",
+            "altText": "aq.aq.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -740,8 +728,8 @@
             "path": "assets/images/sections/garden.jpg",
             "title": "aq.garden.img.title",
             "credit": "aq.garden.img.credit",
-            "description": "aq.garden.img.description",
-            "orientation": "vertical",
+            "altText": "aq.garden.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -777,8 +765,8 @@
             "path": "assets/images/sections/cosmic.jpg",
             "title": "misc.cosmic.img.title",
             "credit": "misc.cosmic.img.credit",
-            "description": "misc.cosmic.img.description",
-            "orientation": "vertical",
+            "altText": "misc.cosmic.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -809,8 +797,8 @@
             "path": "assets/images/sections/library.jpg",
             "title": "misc.library.img.title",
             "credit": "misc.library.img.credit",
-            "description": "misc.library.img.description",
-            "orientation": "vertical",
+            "altText": "misc.library.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -841,8 +829,8 @@
             "path": "assets/images/sections/architecture.jpg",
             "title": "misc.architecture.img.title",
             "credit": "misc.architecture.img.credit",
-            "description": "misc.architecture.img.description",
-            "orientation": "vertical",
+            "altText": "misc.architecture.img.description",
+
             "width": "1024",
             "height": "768"
           }],
@@ -873,8 +861,8 @@
             "path": "assets/images/sections/trail.jpg",
             "title": "misc.wxtrail.img.title",
             "credit": "misc.wxtrail.img.credit",
-            "description": "misc.wxtrail.img.description",
-            "orientation": "vertical",
+            "altText": "misc.wxtrail.img.description",
+
             "width": "1024",
             "height": "768"
           }],
