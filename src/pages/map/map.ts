@@ -15,10 +15,7 @@ export class MapPage {
   showMapReg: Boolean = false;
   showMapAccess: Boolean = false;
 
-  constructor(public sharedVars: SharedVars, private events: Events) {
-    this.sharedVars.trackView('Map - Interactive');
-
-  }
+  constructor(public sharedVars: SharedVars, private events: Events) {  }
 
   loadPage(item) {
     this.events.publish('reset-exhibits', 0);
@@ -29,6 +26,7 @@ export class MapPage {
   }
 
   ionViewDidEnter(): void {
+    this.sharedVars.trackView('Map - Interactive');
     // Page must be fully rendered, ionViewDidLoad, doesnt work for this. Because it shows clientHeight without the margin of the header
     this._pinchZoom(this.zoom.nativeElement, this.content);
   }

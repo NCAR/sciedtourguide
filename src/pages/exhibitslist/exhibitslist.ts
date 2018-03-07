@@ -49,11 +49,12 @@ export class ExhibitsListPage {
   reset() {
     this.selectedItem = '';
     this.searchTerm = '';
-    this.sharedVars.trackEvent("ExhibitsReset","click","Reset");
+    this.sharedVars.trackEvent("Exhibits","click","Reset");
     this.setFilteredItems();
   }
   onSearchInput() {
     this.searching = true;
+    this.sharedVars.trackEvent("Exhibits","Search",this.searchTerm);
   }
 
   setFilteredItems() {

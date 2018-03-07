@@ -12,14 +12,10 @@ export class MapAccessPage {
   @ViewChild(Content) content: Content;
   @ViewChild('zoom') zoom: ElementRef;
 
-    constructor(public sharedVars:SharedVars, private navCtrl: NavController) {
-
-      sharedVars.trackView('Map - Accessible');
-    }
-
-
+    constructor(public sharedVars:SharedVars, private navCtrl: NavController) { }
 
   ionViewDidEnter(): void {
+    this.sharedVars.trackView('Map - Accessible');
     // Page must be fully rendered, ionViewDidLoad, doesnt work for this. Because it shows clientHeight without the margin of the header
     this._pinchZoom(this.zoom.nativeElement, this.content);
   }

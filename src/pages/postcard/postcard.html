@@ -56,7 +56,7 @@
                 <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard" [photoFlag]="photoFlag">
           </ion-card>
             <p>{{ 'postcard.steps.finished.review_text' | translate }}</p>
-            <button ion-button (click)="sendEmail()" icon-right>{{ 'postcard.steps.finished.buttons.send' | translate }} <ion-icon name="send"></ion-icon></button>
+            <button ion-button (click)="otherShare()" icon-right>{{ 'postcard.steps.finished.buttons.send' | translate }} <ion-icon name="send"></ion-icon></button>
             <button ion-button (click)="startOver()" icon-left><ion-icon name="undo"></ion-icon> {{ 'postcard.steps.finished.buttons.startover' | translate }}</button>
           </ion-col>
         </ion-row>

@@ -29,7 +29,6 @@ export class PostcardPage {
 
   constructor(private toastCtrl: ToastController, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
     this.platform.ready().then(() => {
-      this.trackSteps(1);
       this.bkg_imgs = ['assets/images/postcards/mesalab.jpg', 'assets/images/postcards/eclipse.jpg', 'assets/images/postcards/mammatus.jpg', 'assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
       this.options = {
         quality: 100,
@@ -45,6 +44,10 @@ export class PostcardPage {
         message: ['', Validators.required]
       });
     });
+  }
+
+  ionViewDidEnter(){
+    this.trackSteps(1);
   }
   ionViewWillLeave() {
     this.resetFlags();
@@ -114,6 +117,7 @@ export class PostcardPage {
     this.postcard = this.formBuilder.group({
       message: ['', Validators.required]
     });
+    this.trackSteps(1);
   }
 
   reviewPostcard() {
@@ -146,10 +150,6 @@ export class PostcardPage {
       this.photoFlag = false;
     });
     this.trackSteps(4);
-  }
-
-  sendEmail() {
-    this.otherShare();
   }
 
   otherShare() {
