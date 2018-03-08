@@ -27,12 +27,11 @@
 
 
     <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText" class="text_container">
-      <div class="preview_content_container" *ngIf="photoFlag != false">
+      <div class="preview_content_container" *ngIf="base64Image">
         <img [src]="base64Image" class="preview bkg">
       </div>
       <div class="preview_instructions_container">
-        <p *ngIf="photoFlag != false">{{ 'postcard.steps.three.instructions.withimage.content' | translate }}</p>
-        <p *ngIf="photoFlag == false">{{ 'postcard.steps.three.instructions.withoutimage.content' | translate }}</p>
+        <p *ngIf="base64Image">{{ 'postcard.steps.three.instructions.withimage.content' | translate }}</p>
         <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">
           <ion-label stacked>{{ 'postcard.steps.three.message.label' | translate }}</ion-label>
           <ion-textarea formControlName="message" [placeholder]="'postcard.steps.three.message.placeholder_text' | translate" class="message" [attr.maxlength]="140"></ion-textarea>

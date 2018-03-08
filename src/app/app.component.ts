@@ -15,11 +15,19 @@ export class MyApp {
   rootPage:any = TabsPage;
   appVer:any = '1.0.1';
 
-  constructor(public ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService,  public sharedVars:SharedVars) {
+  constructor(private ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService,  public sharedVars:SharedVars) {
     platform.ready().then(() => {
+
     // google
    // this.ga.debugMode()
-    this.ga.startTrackerWithId("UA-66300420-3");
+    this.ga.startTrackerWithId("UA-66300420-3").then(() => {
+     console.log('Google analytics is ready now');
+        this.ga.trackView('test');
+     // Tracker is ready
+     // You can now track pages or set additional information such as AppVersion or UserId
+   })
+   .catch(e => console.log('Error starting GoogleAnalytics', e));
+
     this.ga.setAllowIDFACollection(false);
     this.ga.setAppVersion(this.appVer);
 

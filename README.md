@@ -34,11 +34,12 @@ Xcode version: Xcode 9.1 Build version 9B55
 * Start Ionic 3 tabs template (ionic start sciedtourguide tabs)
 * copy repo files into project
 * install cordova-plugin-google-analytics 1.8.3 (https://ionicframework.com/docs/native/google-analytics/)
-* install cordova-plugin-inappbrowser 1.7.1 (https://ionicframework.com/docs/native/in-app-browser/)
+* install cordova-plugin-inappbrowser 1.7.2 (https://ionicframework.com/docs/native/in-app-browser/)
 * install cordova-plugin-camera 2.4.1 (https://ionicframework.com/docs/native/camera/)
-* install social-sharing 5.2.1 (http://ionicframework.com/docs/native/social-sharing/)
-* install ngx-translate (https://ionicframework.com/docs/developer-resources/ng2-translate/)
-* install ionic-audio (https://github.com/arielfaur/ionic-audio/tree/3.0)
+* install social-sharing 5.3.2 (http://ionicframework.com/docs/native/social-sharing/)
+* install cordova-plugin-android-permissions (https://ionicframework.com/docs/native/android-permissions/)
+* install ngx-translate 1.0.0 (https://ionicframework.com/docs/developer-resources/ng2-translate/)
+* install ionic-audio 3.2.0 (https://github.com/arielfaur/ionic-audio/tree/3.0)
 
 
 ## Maintainers/Sponsors

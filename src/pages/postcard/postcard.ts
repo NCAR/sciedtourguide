@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { ToastController} from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { SocialSharing } from '@ionic-native/social-sharing';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 @Component({
   selector: 'page-postcard',
   templateUrl: 'postcard.html',
-  providers: [Camera, SocialSharing]
+  providers: [Camera, AndroidPermissions, SocialSharing]
 })
 
 export class PostcardPage {
   base64Image: string;
-  photoFlag:Boolean = false;
   options: CameraOptions;
-  postcardMessageText:Boolean = false;
-  postcardBkgImage:Boolean = false;
+  postcardMessageText: Boolean = false;
+  postcardBkgImage: Boolean = false;
   height = this.platform.height();
   width = this.platform.width()
   private postcard: FormGroup;
@@ -27,7 +27,7 @@ export class PostcardPage {
   bkg_imgs: any;
   postcardData: any = { 'message': '', 'bkg': '' };
 
-  constructor(private toastCtrl: ToastController, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
+  constructor(private toastCtrl: ToastController, private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
     this.platform.ready().then(() => {
       this.bkg_imgs = ['assets/images/postcards/mesalab.jpg', 'assets/images/postcards/eclipse.jpg', 'assets/images/postcards/mammatus.jpg', 'assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
       this.options = {
@@ -46,7 +46,7 @@ export class PostcardPage {
     });
   }
 
-  ionViewDidEnter(){
+  ionViewDidEnter() {
     this.trackSteps(1);
   }
   ionViewWillLeave() {
@@ -64,27 +64,27 @@ export class PostcardPage {
     toast.present();
   }
 
-  trackSteps(step, args = {'src':''}){
-      switch(step){
-        case 1:
-          this.sharedVars.trackView('Postcards - Choose Background');
-          break;
-        case 2:
-          this.sharedVars.trackView('Postcards - Background Image:'+ args.src);
-          break;
-        case 3:
-          this.sharedVars.trackView('Postcards - Take Photo');
-          break;
-        case 4:
-          this.sharedVars.trackView('Postcards - Write Message');
-          break;
-        case 5:
-          this.sharedVars.trackView('Postcards - Review');
-          break;
-        case 6:
-          this.sharedVars.trackView('Postcards - Share');
-          break;
-      }
+  trackSteps(step, args = { 'src': '' }) {
+    switch (step) {
+      case 1:
+        this.sharedVars.trackView('Postcards - Choose Background');
+        break;
+      case 2:
+        this.sharedVars.trackView('Postcards - Background Image:' + args.src);
+        break;
+      case 3:
+        this.sharedVars.trackView('Postcards - Take Photo');
+        break;
+      case 4:
+        this.sharedVars.trackView('Postcards - Write Message');
+        break;
+      case 5:
+        this.sharedVars.trackView('Postcards - Review');
+        break;
+      case 6:
+        this.sharedVars.trackView('Postcards - Share');
+        break;
+    }
   }
 
   stepBack() {
@@ -134,20 +134,40 @@ export class PostcardPage {
   }
 
   selectBkgImg(src) {
-    this.trackSteps(2,{'src':src});
+    this.trackSteps(2, { 'src': src });
     this.postcardData.bkg = src;
     this.postcardBkgImage = true;
   }
   takePicture() {
+    if(this.platform.is('android')){
+      this.platform.ready().then(
+        () => {
+          this.androidPermissions.hasPermission(this.androidPermissions.PERMISSION.CAMERA)
+            .then(status => {
+              if (status.hasPermission) {
+                this.useCamera();
+              } else {
+                this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
+                  .then(status => {
+                    if (status.hasPermission) this.useCamera();
+                  });
+              }
+            });
+        }
+      );
+    }
+    else {
+      this.useCamera();
+    }
+  }
+
+  useCamera() {
     this.trackSteps(3);
     this.camera.getPicture(this.options).then((imageData) => {
       // imageData is a base64 encoded string
       this.base64Image = "data:image/jpeg;base64," + imageData;
-      this.photoFlag = true;
     }, (err) => {
       console.log('no image');
-      this.base64Image = "data:image/jpeg;base64,";
-      this.photoFlag = false;
     });
     this.trackSteps(4);
   }

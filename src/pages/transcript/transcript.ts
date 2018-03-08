@@ -25,7 +25,11 @@ export class TranscriptPage {
     this.sharedVars.trackView('Transcript - '+this.parent+":"+this.selectedItem.id);
   }
   ionViewWillLeave() {
-    this.pauseSelectedTrack();
+    this._audioProvider.pause(this.selectedTrack);
+    if(this.track_playing == true){
+      this.sharedVars.trackEvent('Audio','navigation','Pause: '+this.selectedTrack);
+      this.track_playing = false;
+    }
   }
   ngAfterContentInit() {
     // get all tracks managed by AudioProvider so we can control playback via the API
@@ -35,7 +39,8 @@ export class TranscriptPage {
   playSelectedTrack() {
     // use AudioProvider to control selected track
     this._audioProvider.play(this.selectedTrack);
-    this.sharedVars.trackEvent('Audio','Audio','Play: '+this.selectedTrack);
+    console.log('here');
+    this.sharedVars.trackEvent('Audio','click','Play: '+this.selectedTrack);
     this.track_playing = true;
   }
 
@@ -43,14 +48,14 @@ export class TranscriptPage {
     // use AudioProvider to control selected track
     this._audioProvider.pause(this.selectedTrack);
     if(this.track_playing == true){
-      this.sharedVars.trackEvent('Audio','Audio','Pause: '+this.selectedTrack);
+      this.sharedVars.trackEvent('Audio','click','Pause: '+this.selectedTrack);
       this.track_playing = false;
     }
   }
 
   onTrackFinished(track: any) {
     if(this.track_playing == true){
-      this.sharedVars.trackEvent('Audio','Audio','Finished Playback: '+this.selectedTrack);
+      this.sharedVars.trackEvent('Audio','completed','Finished Playback: '+this.selectedTrack);
       console.log('Track finished', track);
     }
     this.track_playing = false;

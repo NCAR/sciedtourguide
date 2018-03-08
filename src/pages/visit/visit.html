@@ -67,7 +67,7 @@
         <ion-icon [name]="icon_parking"></ion-icon>
        {{ 'visitor.accessibility.parking.title' | translate}}
       </button>
-        <div class="content parking" *ngIf="show_accessibleParking">
+        <div class="content parking" *ngIf="show_accessibleParking" tappable>
           <p [innerHtml]="'visitor.accessibility.parking.content'| translate"></p>
           <h2 [innerHtml]="'visitor.accessibility.parking.title1' | translate"></h2>
           <p [innerHtml]="'visitor.accessibility.parking.content1' | translate"></p>
@@ -78,7 +78,7 @@
          <ion-icon [name]="icon_elevators"></ion-icon>
          {{ 'visitor.accessibility.elevators.title' | translate}}
         </button>
-        <div class="content elevators" *ngIf="show_accessibleElevators">
+        <div class="content elevators" *ngIf="show_accessibleElevators" tappable>
           <p [innerHtml]="'visitor.accessibility.elevators.content' | translate"></p>
         </div>
         <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('restrooms')">
@@ -86,7 +86,7 @@
            {{ 'visitor.accessibility.restrooms.title' | translate}}
         </button>
 
-        <div class="content restrooms" *ngIf="show_accessibleRestrooms">
+        <div class="content restrooms" *ngIf="show_accessibleRestrooms" tappable>
           <p [innerHtml]="'visitor.accessibility.restrooms.content' | translate"></p>
         </div>
         <button ion-button icon-left (click)="loadMapPage('access')">

@@ -22,7 +22,7 @@
       },
       "two" :{
         "instructions":{
-          "content": "This is your selected background image. You can choose another background image or move to the next step and take a photo of yourself."
+          "content": "This is your selected background image. You can choose another background image or move to the next step and take a photo of yourself.  Be sure you've given permission for the app to use your camera and photo gallery!"
         },
         "buttons":{
           "take_picture": "Take a photo",
@@ -33,9 +33,6 @@
         "instructions":{
             "withimage": {
               "content": "This is your photo.  Nice shot!  You can retake your photo or write your message.  Please limit to 140 characters or less."
-            },
-            "withoutimage": {
-              "content": "You didn't take an image! You can retake your photo or write your message.  Please limit to 140 characters or less."
             }
         },
         "message":{

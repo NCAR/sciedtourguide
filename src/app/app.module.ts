@@ -5,10 +5,10 @@ import { MyApp } from './app.component';
 import { DataFileService } from '../providers/data-file-service';
 import { SharedVars } from '../providers/shared-vars';
 import { SharedDataService } from '../providers/shared-data-service';
-import { HttpModule } from '@angular/http';
-import { HttpClientModule, HttpClient} from '@angular/common/http';
+import { HttpModule, Http } from '@angular/http';
 import { TranslateModule,TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 import { ExhibitsListPage } from '../pages/exhibitslist/exhibitslist';
 import { PostcardPage } from '../pages/postcard/postcard';
@@ -31,7 +31,7 @@ import { IonicAudioModule, WebAudioProvider, CordovaMediaProvider, defaultAudioP
 import { IonicStorageModule } from '@ionic/storage';
 import { ExhibitsDataProvider } from '../providers/exhibits-data/exhibits-data';
 
-export function createTranslateLoader(http: HttpClient) {
+export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
@@ -58,12 +58,11 @@ export function myCustomAudioProviderFactory() {
   imports: [
     BrowserModule,
     HttpModule,
-    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: (createTranslateLoader),
-        deps: [HttpClient]
+        deps: [Http]
       }
     }),
     IonicModule.forRoot(MyApp),
@@ -90,6 +89,7 @@ export function myCustomAudioProviderFactory() {
     SharedVars,
     DataFileService,
     SharedDataService,
+    AndroidPermissions,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ExhibitsDataProvider
   ]

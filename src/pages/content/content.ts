@@ -19,11 +19,12 @@ export class ContentPage {
 
     this.titlebarColor = this.selectedParent;
 
+      this.sharedVars.trackView('Content - '+this.selectedParent+':'+this.selectedItem.id);
+
     this.events.subscribe('reset-exhibits', (tab) => {
       this.navCtrl.popToRoot();
     });
   }
   ionViewDidEnter(){
-    this.sharedVars.trackView('Content - '+this.selectedParent+':'+this.selectedItem.id);
   }
 }
