@@ -1,6 +1,7 @@
 // from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, Gesture, Content } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 
 @Component({
@@ -11,13 +12,27 @@ export class MapAccessPage {
 
   @ViewChild(Content) content: Content;
   @ViewChild('zoom') zoom: ElementRef;
+  shownInstructions: Boolean = false;
 
-    constructor(public sharedVars:SharedVars, private navCtrl: NavController) { }
-
+  constructor(private toastCtrl: ToastController, public sharedVars:SharedVars, private navCtrl: NavController) { }
+    presentToast() {
+      const toast = this.toastCtrl.create({
+        message: 'Swipe to move map.',
+        duration: 3000,
+        position: 'top',
+        cssClass: 'notice',
+        dismissOnPageChange: true
+      });
+      toast.present();
+      this.shownInstructions = true;
+    }
   ionViewDidEnter(): void {
     this.sharedVars.trackView('Map - Accessible');
     // Page must be fully rendered, ionViewDidLoad, doesnt work for this. Because it shows clientHeight without the margin of the header
     this._pinchZoom(this.zoom.nativeElement, this.content);
+    if(this.shownInstructions == false){
+      this.presentToast();
+    }
   }
 
   private _pinchZoom(elm: HTMLElement, content: Content): void {

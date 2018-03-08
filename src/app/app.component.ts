@@ -22,9 +22,6 @@ export class MyApp {
    // this.ga.debugMode()
     this.ga.startTrackerWithId("UA-66300420-3").then(() => {
      console.log('Google analytics is ready now');
-        this.ga.trackView('test');
-     // Tracker is ready
-     // You can now track pages or set additional information such as AppVersion or UserId
    })
    .catch(e => console.log('Error starting GoogleAnalytics', e));
 

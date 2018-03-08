@@ -35,29 +35,8 @@ export class TranscriptPage {
     // get all tracks managed by AudioProvider so we can control playback via the API
     this.allTracks = this._audioProvider.tracks;
   }
-
-  playSelectedTrack() {
-    // use AudioProvider to control selected track
-    this._audioProvider.play(this.selectedTrack);
-    console.log('here');
-    this.sharedVars.trackEvent('Audio','click','Play: '+this.selectedTrack);
-    this.track_playing = true;
-  }
-
-  pauseSelectedTrack() {
-    // use AudioProvider to control selected track
-    this._audioProvider.pause(this.selectedTrack);
-    if(this.track_playing == true){
-      this.sharedVars.trackEvent('Audio','click','Pause: '+this.selectedTrack);
-      this.track_playing = false;
-    }
-  }
-
   onTrackFinished(track: any) {
-    if(this.track_playing == true){
-      this.sharedVars.trackEvent('Audio','completed','Finished Playback: '+this.selectedTrack);
-      console.log('Track finished', track);
-    }
+    this.sharedVars.trackEvent('Audio','completed',track.src);
     this.track_playing = false;
   }
 

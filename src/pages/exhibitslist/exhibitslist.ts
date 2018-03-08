@@ -54,7 +54,7 @@ export class ExhibitsListPage {
   }
   onSearchInput() {
     this.searching = true;
-    this.sharedVars.trackEvent("Exhibits","Search",this.searchTerm);
+    this.sharedVars.trackEvent("Exhibits","search",this.searchTerm);
   }
 
   setFilteredItems() {
