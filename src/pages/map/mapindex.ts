@@ -33,7 +33,8 @@ export class MapIndexPage {
   }
   openPage(event, item) {
     switch (item) {
-      case 'mapreg':
+      case 'mapreg':      
+        this.sharedVars.trackView('Map - Interactive');
         this.navCtrl.push(MapPage);
         break;
       case 'mapaccess':

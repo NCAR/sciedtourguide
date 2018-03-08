@@ -1,7 +1,6 @@
 // from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Gesture, Events, Content } from 'ionic-angular';
-import { ToastController } from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 
 @Component({
@@ -13,36 +12,21 @@ export class MapPage {
   @ViewChild(Content) content: Content;
   @ViewChild('zoom') zoom: ElementRef;
   showIndex: Boolean = true;
-  shownInstructions: Boolean = false;
   showMapReg: Boolean = false;
   showMapAccess: Boolean = false;
 
-  constructor(private toastCtrl: ToastController, public sharedVars: SharedVars, private events: Events) {  }
+  constructor(public sharedVars: SharedVars, private events: Events) {  }
 
   loadPage(item) {
     this.events.publish('reset-exhibits', 0);
     this.events.publish('change-tab', 0, item);
   }
 
-  presentToast() {
-    const toast = this.toastCtrl.create({
-      message: 'Swipe to move map.  Tap an exhibit location to view more information about that section.',
-      duration: 5000,
-      position: 'top',
-      cssClass: 'notice',
-      dismissOnPageChange: true
-    });
-    toast.present();
-    this.shownInstructions = true;
-  }
 
   ionViewDidEnter(): void {
     this.sharedVars.trackView('Map - Interactive');
     // Page must be fully rendered, ionViewDidLoad, doesnt work for this. Because it shows clientHeight without the margin of the header
     this._pinchZoom(this.zoom.nativeElement, this.content);
-    if(this.shownInstructions == false){
-      this.presentToast();
-    }
   }
 
   private _pinchZoom(elm: HTMLElement, content: Content): void {
@@ -63,9 +47,9 @@ export class MapPage {
     let max_y = original_y;
     let min_x = 0;
     let min_y = 0;
-    let x = 0;
+    let x = 100;
     let y = 0;
-    let last_x = 0;
+    let last_x = 100;
     let last_y = 0;
     let scale = 1;
     let base = scale;
@@ -95,7 +79,6 @@ export class MapPage {
       transform();
     }
     function onPinchend(ev) {
-      console.log('here');
       if (scale > 3) {
         scale = 3;
       }
