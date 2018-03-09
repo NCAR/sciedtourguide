@@ -10,7 +10,6 @@ import Hammer from 'hammerjs';
   templateUrl: 'map.html'
 })
 export class MapPage {
-  options: any;
   panZoom:any;
 
   constructor(public sharedVars: SharedVars, private events: Events, private navCtrl: NavController) {
@@ -19,14 +18,10 @@ export class MapPage {
 
   ngOnInit() {
     let eventsHandler;
-
         eventsHandler = {
-          haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel']
-        , init: function(options) {
-            var instance = options.instance
-              , initialScale = 1
-              , pannedX = 0
-              , pannedY = 0
+          haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
+          init: function(options) {
+            var instance = options.instance, initialScale = 1, pannedX = 0, pannedY = 0
 
             // Init Hammer
             // Listen only for pointer and touch events
@@ -78,13 +73,12 @@ export class MapPage {
         }
 
 
-    this.options = {
-      viewportSelector: '.svg',
+    let options = {
       controlIconsEnabled: false,
       customEventsHandler: eventsHandler
     };
 
-    this.panZoom = svgPanZoom('#svg', this.options);
+    this.panZoom = svgPanZoom('#svg', options);
 
   }
 

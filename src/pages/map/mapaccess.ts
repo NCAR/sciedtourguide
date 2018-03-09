@@ -10,7 +10,6 @@ import Hammer from 'hammerjs';
   templateUrl: 'mapaccess.html'
 })
 export class MapAccessPage {
-  options: any;
   panZoom:any;
 
   constructor(public sharedVars: SharedVars, private navCtrl: NavController) { }
@@ -73,13 +72,12 @@ export class MapAccessPage {
         }
 
 
-    this.options = {
-      viewportSelector: '.svg',
+    let options = {
       controlIconsEnabled: false,
       customEventsHandler: eventsHandler
     };
 
-    this.panZoom = svgPanZoom('#svg', this.options);
+    this.panZoom = svgPanZoom('#svg', options);
   }
   ionViewDidEnter(): void {
     this.sharedVars.trackView('Map - Accessible');
