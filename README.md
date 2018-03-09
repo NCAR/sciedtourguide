@@ -40,6 +40,8 @@ Xcode version: Xcode 9.1 Build version 9B55
 * install cordova-plugin-android-permissions (https://ionicframework.com/docs/native/android-permissions/)
 * install ngx-translate 1.0.0 (https://ionicframework.com/docs/developer-resources/ng2-translate/)
 * install ionic-audio 3.2.2 (https://github.com/arielfaur/ionic-audio/tree/3.0)
+* install svg-pan-zoom (https://www.npmjs.com/package/svg-pan-zoom)
+* install hammerjs 2.0.8 (https://www.npmjs.com/package/hammerjs)
 
 
 ## Maintainers/Sponsors
