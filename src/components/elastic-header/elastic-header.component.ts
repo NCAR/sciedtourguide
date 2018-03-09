@@ -14,9 +14,7 @@ export class ElasticHeader {
     lastScrollTop: any;
     ticking: any;
 
-    constructor(public element: ElementRef, public renderer: Renderer) {
-
-    }
+    constructor(public element: ElementRef, public renderer: Renderer) { }
 
     ngOnInit(){
 

@@ -21,7 +21,7 @@ import { TranscriptPage } from '../pages/transcript/transcript';
 import { TabsPage } from '../pages/tabs/tabs';
 import { TitleComponent } from '../components/titlebar/title.component';
 
-import { ElasticHeader}  from '../components/elastic-header/elastic-header';
+import { ElasticHeader}  from '../components/elastic-header/elastic-header.component';
 import { ImageDrawTextDirective } from '../components/image-draw/image-draw';
 
 import { StatusBar } from '@ionic-native/status-bar';
