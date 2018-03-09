@@ -341,8 +341,8 @@
         </svg>
     </div>
     <div class="controls">
-      <button ion-button color="secondary" id="zoom-in" (tap)="panZoom.zoomIn()">Zoom in</button>
-      <button ion-button color="secondary" id="zoom-out" (tap)="panZoom.zoomOut()">Zoom out</button>
+      <button ion-button color="secondary" id="zoom-in" (tap)="panZoom.zoomIn()" icon-right>Zoom in <ion-icon name="add-circle"></ion-icon></button>
+      <button ion-button color="secondary" id="zoom-out" (tap)="panZoom.zoomOut()" icon-right>Zoom out <ion-icon name="remove-circle"></ion-icon></button>
       <button ion-button color="danger" id="reset" (tap)="panZoom.resetZoom()">Reset</button>
     </div>
 </ion-content>
