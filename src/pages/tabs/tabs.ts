@@ -3,17 +3,20 @@ import { ExhibitsListPage } from '../exhibitslist/exhibitslist';
 import { PostcardPage } from '../postcard/postcard';
 import { VisitPage } from '../visit/visit';
 import { MapIndexPage } from '../map/mapindex';
+import { MapAccessPage } from '../map/mapaccess';
+import { MapPage } from '../map/map';
 import { ViewChild } from '@angular/core';
 import { Tabs, Events } from 'ionic-angular';
 
 @Component({
+  selector: 'tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
   @ViewChild(Tabs) tabs: Tabs;
 
   tab1Root = MapIndexPage;
-  tab1Params = { item: "" };
+  tab1Params = { item: ""};
 
   tab2Root = ExhibitsListPage;
   tab2Params = { item: "" };

@@ -15,15 +15,13 @@ export class MapIndexPage {
 
   constructor(public sharedVars: SharedVars, private navParams: NavParams, private navCtrl: NavController, private events: Events) {
     this.selectedItem = this.navParams.get('item');
-    this.events.subscribe('change-tab-map', (tab, item) => {
+
+    events.subscribe('change-tab-map', (tab, item) => {
       this.selectedItem = item;
-      switch (this.selectedItem) {
-        case 'access':
-          //load the accessible map
-          this.navCtrl.push(MapAccessPage);
-          break;
-      }
+      this.checkPageChange();
     });
+
+    this.checkPageChange();
   }
   ionViewDidEnter(){
     this.sharedVars.trackView('Map - Index');
@@ -33,13 +31,29 @@ export class MapIndexPage {
   }
   openPage(event, item) {
     switch (item) {
-      case 'mapreg':      
+      case 'mapreg':
         this.sharedVars.trackView('Map - Interactive');
         this.navCtrl.push(MapPage);
         break;
       case 'mapaccess':
         this.navCtrl.push(MapAccessPage);
         break;
+    }
+  }
+  checkPageChange(){
+    if(this.selectedItem != ''){
+
+      switch (this.selectedItem) {
+        case 'access':
+          //load the accessible map
+          this.navCtrl.push(MapAccessPage);
+          break;
+        default:
+          // load regular map
+          this.navCtrl.push(MapPage, {item: this.selectedItem});
+          break;
+
+      }
     }
   }
 }

@@ -4,10 +4,25 @@ page-map {
     width: 100%;
     height: 100%;
     border: 1px solid black;
-
   }
+
+  .highlighted-stop {
+   -webkit-animation: glow .5s infinite alternate;
+   animation: glow .5s infinite alternate;
+  }
+  @-webkit-keyframes glow {
+      to {
+          text-shadow: -1px 0 white, 0 0 25px yellow, 0 0 5px yellow;
+      }
+  }
+  @keyframes glow {
+      to {
+          text-shadow: -1px 0 white, 0 0 25px yellow, 0 0 5px yellow;
+      }
+  }
+
   .controls {
-    text-align:center;
+    text-align: center;
   }
 
   .cls-1 {
