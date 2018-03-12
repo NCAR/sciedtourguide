@@ -48,10 +48,10 @@ export class MapIndexPage {
           //load the accessible map
           this.navCtrl.push(MapAccessPage);
           break;
-        default:
+      //  default:
           // load regular map
-          this.navCtrl.push(MapPage, {item: this.selectedItem});
-          break;
+        //  this.navCtrl.push(MapPage, {item: this.selectedItem});
+        //  break;
 
       }
     }

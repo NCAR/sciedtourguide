@@ -24,6 +24,7 @@ export class ContentPage {
       this.navCtrl.popToRoot();
     });
   }
+  /**
   loadMap(item) {
     if(item == 'aq' ||
        item == "atmosphere" ||
@@ -34,4 +35,5 @@ export class ContentPage {
       console.log(item);
     this.events.publish('change-tab-map', 1, item);
   }
+  */
 }
