@@ -12,6 +12,7 @@ import Hammer from 'hammerjs';
 export class MapPage {
   panZoom: any;
   selectedItem: any = '';
+  highlightedStop: string = '';
 
   constructor(public sharedVars: SharedVars, private events: Events, private navParams: NavParams, private navCtrl: NavController) {}
 
@@ -83,7 +84,6 @@ export class MapPage {
   ionViewDidEnter(): void {
     this.sharedVars.trackView('Map - Interactive');
     this.selectedItem = this.navParams.get('item');
-    console.log(this.selectedItem);
     if(this.selectedItem != undefined){
       switch(this.selectedItem){
         case 'climate':
@@ -105,7 +105,6 @@ export class MapPage {
 
   }
   ionViewWillLeave() {
-    // need to se
     this.navCtrl.popToRoot();
   }
   loadPage(item) {

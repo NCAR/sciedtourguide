@@ -16,7 +16,7 @@ export class MapIndexPage {
   constructor(public sharedVars: SharedVars, private navParams: NavParams, private navCtrl: NavController, private events: Events) {
     this.selectedItem = this.navParams.get('item');
 
-    events.subscribe('change-tab-map', (tab, item) => {
+    this.events.subscribe('change-tab-map', (tab, item) => {
       this.selectedItem = item;
       this.checkPageChange();
     });

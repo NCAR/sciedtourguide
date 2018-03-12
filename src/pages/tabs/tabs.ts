@@ -3,8 +3,6 @@ import { ExhibitsListPage } from '../exhibitslist/exhibitslist';
 import { PostcardPage } from '../postcard/postcard';
 import { VisitPage } from '../visit/visit';
 import { MapIndexPage } from '../map/mapindex';
-import { MapAccessPage } from '../map/mapaccess';
-import { MapPage } from '../map/map';
 import { ViewChild } from '@angular/core';
 import { Tabs, Events } from 'ionic-angular';
 
