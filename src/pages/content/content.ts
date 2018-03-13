@@ -24,16 +24,9 @@ export class ContentPage {
       this.navCtrl.popToRoot();
     });
   }
-  /**
+
   loadMap(item) {
-    if(item == 'aq' ||
-       item == "atmosphere" ||
-       item == "supercomputers" ||
-       item == "misc"){
-      item = this.selectedItem.id;
-    }
-      console.log(item);
     this.events.publish('change-tab-map', 1, item);
   }
-  */
+
 }

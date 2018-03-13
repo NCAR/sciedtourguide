@@ -83,29 +83,7 @@ export class MapPage {
 
   ionViewDidEnter(): void {
     this.sharedVars.trackView('Map - Interactive');
-    this.selectedItem = this.navParams.get('item');
-    if(this.selectedItem != undefined){
-      switch(this.selectedItem){
-        case 'climate':
-          this.highlightedStop = 'climate_exhibit';
-          break;
-        case 'weather':
-            this.highlightedStop = 'weather_exhibit';
-            break;
-        default:
-            this.highlightedStop = this.selectedItem+'_exhibit';
-            break;
 
-      }
-
-
-      let elem: Element = document.getElementById(this.highlightedStop);
-      elem.classList.add('highlighted-stop');
-    }
-
-  }
-  ionViewWillLeave() {
-    this.navCtrl.popToRoot();
   }
   loadPage(item) {
     this.events.publish('reset-exhibits', 0);

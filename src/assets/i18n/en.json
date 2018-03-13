@@ -4,6 +4,7 @@
   "shareBtn": "Share",
   "backBtn": "Back",
   "transcript_link": "Audio",
+  "location": "Location",
   "toolbar":{
     "exhibits":"Exhibits",
     "map": "Map",
@@ -63,6 +64,15 @@
     },
     "access": {
       "button_text": "Accessibility Map"
+    },
+    "location": {
+      "2b":"Floor 2B",
+      "1b":"Floor 1B",
+      "first": "First Floor",
+      "second": "Second Floor",
+      "mezzanine":"Mezzanine",
+      "entrance":"Entrance",
+      "byTheater":"By the Theater"
     },
     "content":{
       "floors":{

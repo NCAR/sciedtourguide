@@ -6,21 +6,6 @@ page-map {
     border: 1px solid black;
   }
 
-  .highlighted-stop {
-   -webkit-animation: glow .5s infinite alternate;
-   animation: glow .5s infinite alternate;
-  }
-  @-webkit-keyframes glow {
-      to {
-          text-shadow: -1px 0 white, 0 0 25px yellow, 0 0 5px yellow;
-      }
-  }
-  @keyframes glow {
-      to {
-          text-shadow: -1px 0 white, 0 0 25px yellow, 0 0 5px yellow;
-      }
-  }
-
   .controls {
     text-align: center;
   }

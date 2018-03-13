@@ -20,7 +20,6 @@ export class MapIndexPage {
       this.selectedItem = item;
       this.checkPageChange();
     });
-
     this.checkPageChange();
   }
   ionViewDidEnter(){
@@ -42,16 +41,15 @@ export class MapIndexPage {
   }
   checkPageChange(){
     if(this.selectedItem != ''){
-
       switch (this.selectedItem) {
         case 'access':
           //load the accessible map
           this.navCtrl.push(MapAccessPage);
           break;
-      //  default:
+        default:
           // load regular map
-        //  this.navCtrl.push(MapPage, {item: this.selectedItem});
-        //  break;
+          this.navCtrl.push(MapPage);
+          break;
 
       }
     }

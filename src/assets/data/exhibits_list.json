@@ -4,6 +4,7 @@
     "children": [{
         "id": "clouds",
         "name": "weather.cloud.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.cloud.content.title",
           "description": "weather.cloud.content.description",
@@ -36,6 +37,7 @@
       {
         "id": "severeweather",
         "name": "weather.severewx.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.severewx.content.title",
           "description": "weather.severewx.content.description",
@@ -69,6 +71,7 @@
       {
         "id": "wxinstruments",
         "name": "weather.wxinstruments.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.wxinstruments.content.title",
           "description": "weather.wxinstruments.content.description",
@@ -101,6 +104,7 @@
       {
         "id": "microburst",
         "name": "weather.microburst.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.microburst.content.title",
           "description": "weather.microburst.content.description",
@@ -133,6 +137,7 @@
       {
         "id": "wxforecasting",
         "name": "weather.wxforecasting.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.wxforecasting.content.title",
           "description": "weather.wxforecasting.content.description",
@@ -165,6 +170,7 @@
       {
         "id": "tornado",
         "name": "weather.tornado.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.tornado.content.title",
           "description": "weather.tornado.content.description",
@@ -196,6 +202,7 @@
       {
         "id": "wxclimate",
         "name": "weather.wxclimate.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.wxclimate.content.title",
           "description": "weather.wxclimate.content.description",
@@ -227,6 +234,7 @@
       {
         "id": "chaos",
         "name": "weather.chaos.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "weather.chaos.content.title",
           "description": "weather.chaos.content.description",
@@ -262,6 +270,7 @@
     "children": [{
         "id": "greenhousegases",
         "name": "climate.greenhousegases.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "climate.greenhousegases.content.title",
           "description": "climate.greenhousegases.content.description",
@@ -293,6 +302,7 @@
       {
         "id": "pastclimate",
         "name": "climate.past.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "climate.past.content.title",
           "description": "climate.past.content.description",
@@ -325,6 +335,7 @@
       {
         "id": "climatechange",
         "name": "climate.change.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "climate.change.content.title",
           "description": "climate.change.content.description",
@@ -356,6 +367,7 @@
       {
         "id": "choosefuture",
         "name": "climate.choosefuture.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "climate.choosefuture.content.title",
           "description": "climate.choosefuture.content.description",
@@ -387,6 +399,7 @@
       {
         "id": "climatestories",
         "name": "climate.impacts.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "climate.impacts.content.title",
           "description": "climate.impacts.content.description",
@@ -418,6 +431,7 @@
       {
         "id": "futureclimate",
         "name": "climate.futureclimate.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "climate.futureclimate.content.title",
           "description": "climate.futureclimate.content.description",
@@ -449,6 +463,7 @@
       {
         "id": "solutions",
         "name": "climate.solutions.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "climate.solutions.content.title",
           "description": "climate.solutions.content.description",
@@ -484,6 +499,7 @@
     "children": [{
         "id": "history",
         "name": "sunearth.history.content.title",
+        "location":"map.location.mezzanine",
         "content": {
           "title": "sunearth.history.content.title",
           "description": "sunearth.history.content.description",
@@ -515,6 +531,7 @@
       {
         "id": "observations",
         "name": "sunearth.observations.content.title",
+        "location":"map.location.mezzanine",
         "content": {
           "title": "sunearth.observations.content.title",
           "description": "sunearth.observations.content.description",
@@ -550,6 +567,7 @@
     "children": [{
         "id": "layers",
         "name": "atmosphere.layers.content.title",
+        "location":"map.location.byTheater",
         "content": {
           "title": "atmosphere.layers.content.title",
           "description": "atmosphere.layers.content.description",
@@ -582,6 +600,7 @@
       {
         "id": "dropsonde",
         "name": "atmosphere.dropsondes.content.title",
+        "location":"location.secondfloor",
         "content": {
           "title": "atmosphere.dropsondes.content.title",
           "description": "atmosphere.dropsondes.content.description",
@@ -618,6 +637,7 @@
     "children": [{
         "id": "supercomputer",
         "name": "supercomputers.supercomputer.content.title",
+        "location":"map.location.1b",
         "content": {
           "title": "supercomputers.supercomputer.content.title",
           "description": "supercomputers.supercomputer.content.description",
@@ -650,6 +670,7 @@
       {
         "id": "cray",
         "name": "supercomputers.cray.content.title",
+        "location":"map.location.1b",
         "content": {
           "title": "supercomputers.cray.content.title",
           "description": "supercomputers.cray.content.description",
@@ -687,6 +708,7 @@
     "children": [{
         "id": "aq",
         "name": "aq.aq.content.title",
+        "location":"map.location.first",
         "content": {
           "title": "aq.aq.content.title",
           "description": "aq.aq.content.description",
@@ -719,6 +741,7 @@
       {
         "id": "garden",
         "name": "aq.garden.content.title",
+        "location":"map.location.entrance",
         "content": {
           "title": "aq.garden.content.title",
           "description": "aq.garden.content.description",
@@ -756,6 +779,7 @@
     "children": [{
         "id": "cosmic",
         "name": "misc.cosmic.content.title",
+        "location":"map.location.mezzanine",
         "content": {
           "title": "misc.cosmic.content.title",
           "description": "misc.cosmic.content.description",
@@ -788,6 +812,7 @@
       {
         "id": "library",
         "name": "misc.library.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "misc.library.content.title",
           "description": "misc.library.content.description",
@@ -820,6 +845,7 @@
       {
         "id": "architecture",
         "name": "misc.architecture.content.title",
+        "location":"map.location.mezzanine",
         "content": {
           "title": "misc.architecture.content.title",
           "description": "misc.architecture.content.description",
@@ -852,6 +878,7 @@
       {
         "id": "wxtrail",
         "name": "misc.wxtrail.content.title",
+        "location":"map.location.second",
         "content": {
           "title": "misc.wxtrail.content.title",
           "description": "misc.wxtrail.content.description",
