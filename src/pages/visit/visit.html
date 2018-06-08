@@ -9,27 +9,27 @@
       <ion-card-content>
         <p [innerHTML]="'visitor.intro.content' | translate"></p>
         <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit')">
-        <ion-icon name="information-circle"></ion-icon>
+        <ion-icon name="information-circle" aria-hidden="true"></ion-icon>
         {{ 'visitor.intro.button_text' | translate }}
       </button></ion-card-content>
     </ion-card>
 
     <ion-card>
       <ion-card-header>
-        <ion-icon name="pin" item-start large></ion-icon>
+        <ion-icon name="pin" item-start large aria-hidden="true"></ion-icon>
         {{'visitor.address.title' | translate}}
       </ion-card-header>
       <ion-card-content>
         <p [innerHtml]="'visitor.address.content' | translate"></p>
         <button ion-button icon-left (click)="sharedVars.launch('https://goo.gl/maps/rfNPnQzivMM2')">
-      <ion-icon name="navigate"></ion-icon>
+      <ion-icon name="navigate" aria-hidden="true"></ion-icon>
       {{'visitor.address.button_text' | translate }}
     </button>
       </ion-card-content>
     </ion-card>
     <ion-card>
       <ion-card-header>
-        <ion-icon name="clock" large item-start></ion-icon>
+        <ion-icon name="clock" large item-start aria-hidden="true"></ion-icon>
         {{ 'visitor.hours.title' | translate }}
       </ion-card-header>
       <ion-card-content [innerHtml]="'visitor.hours.content' | translate ">
@@ -38,20 +38,20 @@
 
     <ion-card>
       <ion-card-header>
-        <ion-icon name="clock" large item-start></ion-icon>
+        <ion-icon name="clock" large item-start aria-hidden="true"></ion-icon>
         {{ 'visitor.tours.title' | translate }}
       </ion-card-header>
       <ion-card-content>
         <p [innerHtml]="'visitor.tours.content' | translate"></p>
         <button ion-button icon-left (click)="sharedVars.launch('https://scied.ucar.edu/visit/ncar-public-tours')">
-        <ion-icon name="information-circle"></ion-icon>
+        <ion-icon name="information-circle" aria-hidden="true"></ion-icon>
         {{ 'visitor.tours.button_text' | translate }}
       </button>
       </ion-card-content>
     </ion-card>
     <ion-card>
       <ion-card-header>
-        <ion-icon name="pizza" large item-start></ion-icon>
+        <ion-icon name="pizza" large item-start aria-hidden="true"></ion-icon>
         {{'visitor.cafeteria.title' | translate}}
       </ion-card-header>
       <ion-card-content [innerHtml]="'visitor.cafeteria.content' | translate">
@@ -64,7 +64,7 @@
       <ion-card-content class="accessible">
         <p>{{'visitor.accessibility.content' | translate}}</p>
         <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('parking')">
-        <ion-icon [name]="icon_parking"></ion-icon>
+        <ion-icon [name]="icon_parking" aria-hidden="true"></ion-icon>
        {{ 'visitor.accessibility.parking.title' | translate}}
       </button>
         <div class="content parking" *ngIf="show_accessibleParking" tappable>
@@ -75,14 +75,14 @@
           <p [innerHtml]="'visitor.accessibility.parking.content2' | translate"></p>
         </div>
         <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('elevators')">
-         <ion-icon [name]="icon_elevators"></ion-icon>
+         <ion-icon [name]="icon_elevators" aria-hidden="true"></ion-icon>
          {{ 'visitor.accessibility.elevators.title' | translate}}
         </button>
         <div class="content elevators" *ngIf="show_accessibleElevators" tappable>
           <p [innerHtml]="'visitor.accessibility.elevators.content' | translate"></p>
         </div>
         <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('restrooms')">
-           <ion-icon [name]="icon_restrooms"></ion-icon>
+           <ion-icon [name]="icon_restrooms" aria-hidden="true"></ion-icon>
            {{ 'visitor.accessibility.restrooms.title' | translate}}
         </button>
 
@@ -90,7 +90,7 @@
           <p [innerHtml]="'visitor.accessibility.restrooms.content' | translate"></p>
         </div>
         <button ion-button icon-left (click)="loadMapPage('access')">
-        <ion-icon name="map"></ion-icon>
+        <ion-icon name="map" aria-hidden="true"></ion-icon>
         {{ 'visitor.accessibility.map.button_text' | translate }}
       </button>
       </ion-card-content>

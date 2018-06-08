@@ -2,7 +2,7 @@
     <ion-title>{{title | translate}}</ion-title>
     <ion-buttons end *ngIf="checkDisplay(title)">
        <button ion-button (click)="openTranscript($event, selectedItem)" *ngIf="checkButton() == 'audioBtn'">
-          {{ "transcript_link" | translate }} <img src="assets/images/audio_white.png" class="header_img_btn"/>
+          {{ "transcript_link" | translate }} <img src="assets/images/audio_white.png" class="header_img_btn" aria-hidden="true"/>
        </button>
    </ion-buttons>
 </ion-navbar>

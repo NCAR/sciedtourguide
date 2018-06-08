@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { ToastController } from 'ionic-angular';
 import { Platform } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Camera, CameraOptions } from '@ionic-native/camera';
@@ -26,10 +25,30 @@ export class PostcardPage {
   imgElm: HTMLImageElement;
   bkg_imgs: any;
   postcardData: any = { 'message': '', 'bkg': '' };
+  selectedImage = {"path":"", "altText": ""};
 
-  constructor(private toastCtrl: ToastController, private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
+  constructor(private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
     this.platform.ready().then(() => {
-      this.bkg_imgs = ['assets/images/postcards/mesalab.jpg', 'assets/images/postcards/eclipse.jpg', 'assets/images/postcards/mammatus.jpg', 'assets/images/postcards/cesm.jpg', 'assets/images/postcards/snowflake.jpg', 'assets/images/postcards/treerings.jpg'];
+      this.bkg_imgs = [
+                        { "path": "assets/images/postcards/mesalab.jpg",
+                          "altText": "postcard.image.mesalab.altText"
+                        },
+                        { "path": "assets/images/postcards/eclipse.jpg",
+                          "altText": "postcard.image.eclipse.altText"
+                        },
+                        { "path": "assets/images/postcards/mammatus.jpg",
+                          "altText": "postcard.image.mammatus.altText"
+                        },
+                        { "path": "assets/images/postcards/cesm.jpg",
+                          "altText": "postcard.image.cesm.altText"
+                        },
+                        { "path": "assets/images/postcards/snowflake.jpg",
+                          "altText": "postcard.image.snowflake.altText"
+                        },
+                        { "path": "assets/images/postcards/treerings.jpg",
+                          "altText": "postcard.image.treerings.altText"
+                        }
+                      ];
       this.options = {
         quality: 100,
         targetHeight: this.height,
@@ -53,16 +72,7 @@ export class PostcardPage {
     this.resetFlags();
   }
 
-  presentToast() {
-    const toast = this.toastCtrl.create({
-      message: 'Resetting postcard generator.',
-      duration: 3000,
-      position: 'top',
-      cssClass: 'notice',
-      dismissOnPageChange: true
-    });
-    toast.present();
-  }
+
 
   trackSteps(step, args = { 'src': '' }) {
     switch (step) {
@@ -105,13 +115,13 @@ export class PostcardPage {
 
   startOver() {
     this.resetFlags();
-    this.presentToast();
   }
 
   resetFlags() {
     this.base64Image = null;
     this.postcardMessageText = null;
     this.postcardBkgImage = null;
+    this.selectedImage = {"path":"", "altText": ""};
     this.postcardLoaded = false;
     this.checkExist = false;
     this.postcard = this.formBuilder.group({
@@ -134,8 +144,9 @@ export class PostcardPage {
   }
 
   selectBkgImg(src) {
-    this.trackSteps(2, { 'src': src });
-    this.postcardData.bkg = src;
+    this.trackSteps(2, { 'src': src.path });
+    this.postcardData.bkg = src.path;
+    this.selectedImage = {"path":src.path, "altText": src.altText};
     this.postcardBkgImage = true;
   }
   takePicture() {

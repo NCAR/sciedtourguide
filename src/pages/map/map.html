@@ -294,8 +294,8 @@
     </svg>
   </div>
   <div class="controls">
-    <button ion-button color="secondary" id="zoom-in" (tap)="panZoom.zoomIn()" icon-right>Zoom in <ion-icon name="add-circle"></ion-icon></button>
-    <button ion-button color="secondary" id="zoom-out" (tap)="panZoom.zoomOut()" icon-right>Zoom out <ion-icon name="remove-circle"></ion-icon></button>
-    <button ion-button color="danger" id="reset" (tap)="panZoom.resetZoom()">Reset</button>
+    <button ion-button color="secondary" id="zoom-in" (tap)="panZoom.zoomIn()" icon-right>{{'map.buttons.zoomin' | translate}} <ion-icon name="add-circle" aria-hidden="true"></ion-icon></button>
+    <button ion-button color="secondary" id="zoom-out" (tap)="panZoom.zoomOut()" icon-right>{{'map.buttons.zoomout' | translate}} <ion-icon name="remove-circle" aria-hidden="true"></ion-icon></button>
+    <button ion-button color="danger" id="reset" (tap)="panZoom.resetZoom()">{{'map.buttons.reset' | translate}}</button>
   </div>
 </ion-content>

@@ -2,19 +2,19 @@
   <app-title [title]="'toolbar.exhibits' | translate"></app-title></ion-header>
 <ion-content class="outer-content">
 
-  <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()"></ion-searchbar>
+  <ion-searchbar [(ngModel)]="searchTerm" [formControl]="searchControl" (ionInput)="onSearchInput()" placeholder="{{'filter_placeholder' | translate}}"></ion-searchbar>
   <div *ngIf="searching" class="spinner-container">
       <ion-spinner></ion-spinner>
   </div>
   <button ion-button *ngIf="selectedItem || searchTerm" (click)="reset()" color="secondary" block>Reset List</button>
   <ion-list>
   <ion-item-group *ngFor="let sections of items">
-    <ion-list-header [ngClass]="sections.id">
+    <ion-list-header [ngClass]="sections.id" aria-label="Category">
       {{sections.name | translate }}
     </ion-list-header>
     <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits, sections.id)" tappable>
       <ion-avatar item-start>
-            <img [src]="exhibits.content.icon[0].path">
+            <img [src]="exhibits.content.icon[0].path" aria-hidden="true">
           </ion-avatar>
       <ion-label>{{exhibits.name | translate }}</ion-label>
     </button>
