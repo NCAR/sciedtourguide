@@ -13,6 +13,7 @@
     "visitor":"Visitor Info"
   },
   "postcard": {
+    "camera_alt": "Your camera photo",
     "intro": {
       "content": "<h1>Welcome to the postcard generator.</h1><p>Please follow the instructions provided to create your postcard.</p>"
     },
@@ -198,7 +199,7 @@
         "title": "Parking",
         "content": "NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.",
         "title1": "Front driveway access",
-        "content1": "This is a secure driveway and entrance, therefore one must call NCAR (tel:303-497-1139) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
+        "content1": "This is a secure driveway and entrance, therefore one must call NCAR (<a href='tel:303-497-1139'>303-497-1139</a>) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
         "title2": "Accessible rear entrance",
         "content2": "The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
       },

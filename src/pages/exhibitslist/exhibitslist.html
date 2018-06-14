@@ -9,7 +9,7 @@
   <button ion-button *ngIf="selectedItem || searchTerm" (click)="reset()" color="secondary" block>Reset List</button>
   <ion-list>
   <ion-item-group *ngFor="let sections of items">
-    <ion-list-header [ngClass]="sections.id" aria-label="Category">
+    <ion-list-header [ngClass]="sections.id" aria-label="Categor">
       {{sections.name | translate }}
     </ion-list-header>
     <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits, sections.id)" tappable>

@@ -3,11 +3,12 @@
 
 
   <div padding class="postcard_content">
+
 <div *ngIf="!postcardBkgImage">
   <div [innerHTML]="'postcard.intro.content' | translate"></div>
     <div *ngIf="!postcardBkgImage" class="bkg_image_container">
       <p>{{ 'postcard.steps.one.instructions.content' | translate }}</p>
-        <img tappable *ngFor="let img of bkg_imgs" [src]="img.path" (click)="selectBkgImg(img)" [alt]="img.altText | translate" [title]="img.altText | translate">
+        <img tappable *ngFor="let img of bkg_imgs" [src]="img.path" (click)="selectBkgImg(img)" [alt]="img.altText | translate" [title]="img.altText | translate" role="button">
     </div>
 </div>
 
@@ -28,7 +29,7 @@
 
     <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText" class="text_container">
       <div class="preview_content_container" *ngIf="base64Image">
-        <img [src]="base64Image" class="preview bkg">
+        <img [src]="base64Image" class="preview bkg" alt="{{'postcard.camera_alt' | translate}}" />
       </div>
       <div class="preview_instructions_container">
         <p *ngIf="base64Image">{{ 'postcard.steps.three.instructions.withimage.content' | translate }}</p>
@@ -36,8 +37,8 @@
           <ion-label for="message" stacked>{{ 'postcard.steps.three.message.label' | translate }}</ion-label>
           <ion-textarea id="message" formControlName="message" [placeholder]="'postcard.steps.three.message.placeholder_text' | translate" class="message" [attr.maxlength]="140"></ion-textarea>
         <button ion-button type="submit" [disabled]="!postcard.valid" icon-right>{{'postcard.steps.three.buttons.finish' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>
-        </form>
         <button ion-button (click)="stepBack()" icon-left><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.three.buttons.message_back' | translate }}</button>
+        </form>
       </div>
 
 

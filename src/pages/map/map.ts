@@ -1,6 +1,6 @@
 // from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component } from '@angular/core';
-import { NavController, Events } from 'ionic-angular';
+import { Events } from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 import svgPanZoom from 'svg-pan-zoom';
 import Hammer from 'hammerjs';
@@ -14,7 +14,7 @@ export class MapPage {
   selectedItem: any = '';
   highlightedStop: string = '';
 
-  constructor(public sharedVars: SharedVars, private events: Events, private navCtrl: NavController) {}
+  constructor(public sharedVars: SharedVars, private events: Events) {}
 
   ngOnInit() {
     let eventsHandler;
@@ -84,9 +84,7 @@ export class MapPage {
   ionViewDidEnter(): void {
     this.sharedVars.trackView('Map - Interactive');
   }
-  ionViewWillLeave() {
-    this.navCtrl.popToRoot();
-  }
+
   loadPage(item) {
     this.events.publish('reset-exhibits', 0);
     this.events.publish('change-tab', 0, item);
