@@ -2,13 +2,13 @@
   <app-title [title]="'toolbar.map' | translate"></app-title>
 </ion-header>
 <ion-content>
-  <ion-card class="card" tappable ion-button (tap)="openPDF()">
+  <button class="card" (click)="openPDF()">
     <div class="card-title">{{'map.download.button_text' | translate }}</div>
-  </ion-card>
-  <ion-card class="card" tappable ion-button (tap)="openPage($event, 'mapreg')">
+  </button>
+  <button class="card" (click)="openPage($event, 'mapreg')">
     <div class="card-title">{{'map.interactive.button_text' | translate }}</div>
-  </ion-card>
-  <ion-card class="card" tappable ion-button (tap)="openPage($event, 'mapaccess')">
+  </button>
+  <button class="card" (click)="openPage($event, 'mapaccess')">
     <div class="card-title">{{'map.access.button_text' | translate }}</div>
-  </ion-card>
+  </button>
 </ion-content>

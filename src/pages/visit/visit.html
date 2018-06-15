@@ -59,6 +59,15 @@
     </ion-card>
     <ion-card>
       <ion-card-header>
+        <ion-icon name="man" large item-start aria-hidden="true"></ion-icon>
+          <ion-icon name="woman" large item-start aria-hidden="true"></ion-icon>
+        {{'visitor.restrooms.title' | translate}}
+      </ion-card-header>
+      <ion-card-content [innerHtml]="'visitor.restrooms.content' | translate">
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
         <img src="assets/images/accessible.jpg" class="custom_icon" /> {{ 'visitor.accessibility.title' | translate}}
       </ion-card-header>
       <ion-card-content class="accessible">

@@ -5,6 +5,7 @@
   "backBtn": "Back",
   "transcript_link": "Audio",
   "location": "Location",
+  "exhibit": "Exhibit ",
   "filter_placeholder": "Filter exhibits by topic",
   "toolbar":{
     "exhibits":"Exhibits",
@@ -90,7 +91,7 @@
       "button_text": "Interactive Map"
     },
     "access": {
-      "button_text": "Accessibility Map"
+      "button_text": "Wheelchair Map"
     },
     "location": {
       "2b":"Floor 2B",
@@ -98,74 +99,18 @@
       "first": "First Floor",
       "second": "Second Floor",
       "mezzanine":"Mezzanine",
-      "entrance":"Entrance",
-      "byTheater":"By the Theater"
+      "entrance":"Front Entrance"
     },
-    "content":{
-      "floors":{
-        "2b":"FLOOR 2B",
-        "1b":"FLOOR 1B",
-        "first": "FIRST FLOOR",
-        "second": "SECOND FLOOR",
-        "mezzanine":"MEZZANINE"
-      },
-      "galleries":{
-        "exhibit":"Exhibit",
-        "aq":"Air Quality",
-        "air":"Air",
-        "quality":"Quality",
-        "weather": "Weather",
-        "weather_exhibit":"Weather Exhibit",
-        "trail":"Trail",
-        "atmosphere": "Atmosphere",
-        "library": "Library",
-        "climate":"Climate",
-        "ncars":"NCAR's",
-        "architecture":"Architecture",
-        "sunearth": "Sun-Earth",
-        "connections": "Connections",
-        "satellite":"Satellite",
-        "ozone" :"Ozone",
-        "garden":"Garden",
-        "supercomputing":"Supercomputing",
-        "area":"Area",
-        "cray":"The Cray-1A",
-        "supercomputer":"Supercomputer",
-        "gallery":"Gallery",
-        "art":"Art",
-        "science":"Science",
-        "cafeteria":"Cafeteria and",
-        "art_gallery":"Art Gallery",
-        "theater":"Theater"
-      },
-      "rooms" :{
-        "lobby":"LOBBY",
-        "front":"Front",
-        "desk":"Desk",
-        "ncar":"NCAR",
-        "security":"Security",
-        "classroom":"Classroom",
-        "main":"Main",
-        "seminar":"Seminar",
-        "room":"Room"
-      },
-      "wayfinding":{
-          "entrance":"entrance",
-          "tofloor1b":"To Floor 1B",
-          "tofirstfloor":"To 1st Floor",
-          "route":"Route to",
-          "mezzanine":"Mezzanine",
-          "tomezzanine":"To Mezzanine",
-          "tosecondfloor":"To 2nd Floor",
-          "topicnicarea":"To picnic area",
-          "firstfloorramp":"Ramp to 1st Floor",
-          "atm":"ATM",
-          "routetoelevator":"Route to elevator",
-          "ramptolobby":"Ramp to lobby",
-          "disabilityparking":"Disability parking spaces",
-          "ramp":"Ramp"
+    "galleries":{
+        "aq":"Air Quality Exhibit",
+        "weather": "Weather Exhibit",
+        "climate": "Climate Exhibit",
+        "sunearth": "Sun-Earth Connections Exhibit",
+        "atmosphere": "Atmosphere Exhibits",
+        "supercomputers": "Supercomputing Exhibit",
+        "cosmic":"COSMIC Satelite Exhibit",
+        "misc":"Miscellaneous"
       }
-    }
   },
   "visitor": {
     "title": "Visitor Information",
@@ -189,7 +134,11 @@
     },
     "cafeteria": {
       "title": "Cafeteria Hours",
-      "content": "Breakfast, 8:00 am - 9:30 am<br/>Lunch, 11:30 - 1:30 pm  <p>The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>"
+      "content": "Breakfast, 8:00 am - 9:30 am<br/>Lunch, 11:30 - 1:30 pm  <p>The cafeteria is open weekdays only, except holidays. The cafeteria accepts cash and credit card.</p>"
+    },
+    "restrooms": {
+      "title": "Public Restrooms",
+      "content": "<strong>Men's Restroom</strong><p>Men's restrooms are located: <ul><li>On the north end of the first floor, directly across from the front desk</li><li>On the north end of the second floor, north of the Climate Futures exhibit</li><li>On the south end of the 2nd floor, in the hallway just north of the Library</li></ul></p><strong>Women's Restrooms</strong><p>Women's restrooms are located: <ul><li>On the south end of the 1st floor, in the hallway directly behind the theater</li><li>On the norht end of the 2nd floor, north of the Climate Futures exhibit</li><li>On the south end of the 2nd floor, down the hallway and to the right, behind the library</li></ul></p>"
     },
     "accessibility": {
       "title": "Accessibility",
@@ -198,21 +147,21 @@
       "parking": {
         "title": "Parking",
         "content": "NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.",
-        "title1": "Front driveway access",
+        "title1": "Wheelchair accessible front driveway access",
         "content1": "This is a secure driveway and entrance, therefore one must call NCAR (<a href='tel:303-497-1139'>303-497-1139</a>) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
-        "title2": "Accessible rear entrance",
+        "title2": "Wheelchair accessible rear entrance",
         "content2": "The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
       },
       "elevators": {
         "title": "Elevators ",
-        "content": "All exhibits and public areas are accessible by elevator."
+        "content": "All exhibits and public areas are accessible by elevator. Elevators are located on the north and south sides of the climate and weather exhibits.  Please inquire with the front desk if you need directions."
       },
       "restrooms": {
         "title": "Restrooms ",
-        "content": "A wheelchair accessible restroom is available on the second floor in the Climate Future exhibit area."
+        "content": "A wheelchair accessible restroom is available on the second floor, north of the Climate Future exhibit area."
       },
       "map": {
-        "button_text": "View accessibility map"
+        "button_text": "View wheelchair map"
       }
     }
   },

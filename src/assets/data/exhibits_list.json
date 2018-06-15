@@ -584,7 +584,7 @@
     "children": [{
         "id": "layers",
         "name": "atmosphere.layers.content.title",
-        "location":"map.location.byTheater",
+        "location":"map.location.first",
         "content": {
           "title": "atmosphere.layers.content.title",
           "description": "atmosphere.layers.content.description",
@@ -618,7 +618,7 @@
       {
         "id": "dropsonde",
         "name": "atmosphere.dropsondes.content.title",
-        "location":"location.secondfloor",
+        "location":"map.location.second",
         "content": {
           "title": "atmosphere.dropsondes.content.title",
           "description": "atmosphere.dropsondes.content.description",

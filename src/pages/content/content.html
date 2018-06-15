@@ -19,10 +19,17 @@
       </ion-row>
       <ion-row no-padding>
         <ion-col col-12>
-          <strong>{{'location' | translate}}:</strong> <span [innerHtml]="selectedItem.location | translate"></span>
+          <strong>{{'exhibit' | translate}}:</strong>
+          <span [innerHtml]="'map.galleries.'+selectedParent | translate"></span>
         </ion-col>
       </ion-row>
-      <button ion-button (tap)="loadMap(selectedParent)">View on map</button>
+      <ion-row no-padding>
+        <ion-col col-12>
+          <strong>{{'location' | translate}}:</strong>
+          <span [innerHtml]="selectedItem.location | translate"></span>
+        </ion-col>
+      </ion-row>
+      <button ion-button (click)="loadMap(selectedParent)">View on map</button>
     </ion-card-content>
 
   </ion-card>
