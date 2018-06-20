@@ -16,7 +16,8 @@
   "postcard": {
     "camera_alt": "Your camera photo",
     "intro": {
-      "content": "<h1>Welcome to the postcard generator.</h1><p>Please follow the instructions provided to create your postcard.</p>"
+      "title": "Postcard Generator",
+      "content": "<p>Please follow the instructions provided to create your postcard.</p>"
     },
     "image" : {
       "mesalab" : {
@@ -41,7 +42,7 @@
     "steps":{
       "one":{
         "instructions":{
-          "content":"First, select a background image."
+          "content":"First, tap an image to select a background."
         }
       },
       "two" :{
@@ -82,6 +83,10 @@
     "buttons":{
       "zoomin": "Zoom in",
       "zoomout": "Zoom out",
+      "panleft" : "Pan Left",
+      "panright" : "Pan Right",
+      "panup" : "Pan Up",
+      "pandown" : "Pan Down",
       "reset":"Reset"
     },
     "download": {

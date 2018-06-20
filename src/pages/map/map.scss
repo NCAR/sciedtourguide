@@ -1,25 +1,11 @@
 page-map {
 
-    font-family: Verdana;
   .zoom {
     position: fixed;
     width: 100%;
     height: 100%;
-    border: 1px solid black;
   }
 
-  .controls {
-    text-align: center;
-  }
-
-  .offscreen {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-}
 
   .st0{enable-background:new    ;}
   .st1{fill:#ABB6BB;}

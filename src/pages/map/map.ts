@@ -1,4 +1,3 @@
-// from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component } from '@angular/core';
 import { NavController, Events, ViewController } from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
@@ -18,7 +17,7 @@ export class MapPage {
 
   ngOnInit() {
     let eventsHandler;
-    this.viewCtrl.showBackButton(false);
+    //this.viewCtrl.showBackButton(false);
     eventsHandler = {
       haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel'],
       init: function(options) {
@@ -86,7 +85,7 @@ export class MapPage {
     this.sharedVars.trackView('Map - Interactive');
   }
   ionViewWillLeave() {
-    this.navCtrl.popToRoot();
+    //this.navCtrl.popToRoot();
   }
   loadPage(item) {
     this.events.publish('reset-exhibits', 0);

@@ -16,7 +16,7 @@ export class MapAccessPage {
   ngOnInit() {
     let eventsHandler;
 
-    this.viewCtrl.showBackButton(false);
+    //this.viewCtrl.showBackButton(false);
         eventsHandler = {
           haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel']
         , init: function(options) {
@@ -86,6 +86,6 @@ export class MapAccessPage {
   }
   ionViewWillLeave() {
     // need to se
-    this.navCtrl.popToRoot();
+    //this.navCtrl.popToRoot();
   }
 }

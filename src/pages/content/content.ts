@@ -25,8 +25,8 @@ export class ContentPage {
     });
   }
 
-  loadMap(item) {
+  /*loadMap(item) {
     this.events.publish('change-tab-map', 1, item);
   }
-
+*/
 }

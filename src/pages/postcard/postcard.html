@@ -1,16 +1,15 @@
-<ion-header><app-title [title]="'toolbar.postcards' | translate"></app-title></ion-header>
+<ion-header>
+  <app-title [title]="'toolbar.postcards' | translate"></app-title>
+</ion-header>
 <ion-content>
-
-
   <div padding class="postcard_content">
-
-<div *ngIf="!postcardBkgImage">
-  <div [innerHTML]="'postcard.intro.content' | translate"></div>
-    <div *ngIf="!postcardBkgImage" class="bkg_image_container">
-      <p>{{ 'postcard.steps.one.instructions.content' | translate }}</p>
+    <div *ngIf="!postcardBkgImage">
+      <div [innerHTML]="'postcard.intro.content' | translate"></div>
+      <div *ngIf="!postcardBkgImage" class="bkg_image_container">
+        <p>{{ 'postcard.steps.one.instructions.content' | translate }}</p>
         <img tappable *ngFor="let img of bkg_imgs" [src]="img.path" (click)="selectBkgImg(img)" [alt]="img.altText | translate" [title]="img.altText | translate" role="button">
+      </div>
     </div>
-</div>
 
     <div *ngIf="!base64Image && postcardBkgImage" class="camera_container">
       <div class="preview_container">
@@ -36,8 +35,8 @@
         <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">
           <ion-label for="message" stacked>{{ 'postcard.steps.three.message.label' | translate }}</ion-label>
           <ion-textarea id="message" formControlName="message" [placeholder]="'postcard.steps.three.message.placeholder_text' | translate" class="message" [attr.maxlength]="140"></ion-textarea>
-        <button ion-button type="submit" [disabled]="!postcard.valid" icon-right>{{'postcard.steps.three.buttons.finish' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>
-        <button ion-button (click)="stepBack()" icon-left><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.three.buttons.message_back' | translate }}</button>
+          <button ion-button type="submit" [disabled]="!postcard.valid" icon-right>{{'postcard.steps.three.buttons.finish' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>
+          <button ion-button (click)="stepBack()" icon-left><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.three.buttons.message_back' | translate }}</button>
         </form>
       </div>
 
@@ -46,20 +45,20 @@
 
     <div *ngIf="postcardMessageText">
 
-        <ion-row no-padding class="postcard_review">
-          <ion-col [ngClass]="postcardLoaded ? 'hidden' :''" style="text-align:center;">
-              <ion-spinner></ion-spinner>
-              <p>{{'postcard.steps.finished.loading_text' | translate }}</p>
-          </ion-col>
-          <ion-col  [ngClass]="postcardLoaded ? '' :'hidden'">
-            <ion-card class="img_container" *ngIf="base64Image && postcardMessageText">
-                <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard" [photoFlag]="photoFlag">
+      <ion-row no-padding class="postcard_review">
+        <ion-col [ngClass]="postcardLoaded ? 'hidden' :''" style="text-align:center;">
+          <ion-spinner></ion-spinner>
+          <p>{{'postcard.steps.finished.loading_text' | translate }}</p>
+        </ion-col>
+        <ion-col [ngClass]="postcardLoaded ? '' :'hidden'">
+          <ion-card class="img_container" *ngIf="base64Image && postcardMessageText">
+            <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard" [photoFlag]="photoFlag">
           </ion-card>
-            <p>{{ 'postcard.steps.finished.review_text' | translate }}</p>
-            <button ion-button (click)="otherShare()" icon-right>{{ 'postcard.steps.finished.buttons.send' | translate }} <ion-icon name="send" aria-hidden="true"></ion-icon></button>
-            <button ion-button (click)="startOver()" icon-left><ion-icon name="undo" aria-hidden="true"></ion-icon> {{ 'postcard.steps.finished.buttons.startover' | translate }}</button>
-          </ion-col>
-        </ion-row>
+          <p>{{ 'postcard.steps.finished.review_text' | translate }}</p>
+          <button ion-button (click)="otherShare()" icon-right>{{ 'postcard.steps.finished.buttons.send' | translate }} <ion-icon name="send" aria-hidden="true"></ion-icon></button>
+          <button ion-button (click)="startOver()" icon-left><ion-icon name="undo" aria-hidden="true"></ion-icon> {{ 'postcard.steps.finished.buttons.startover' | translate }}</button>
+        </ion-col>
+      </ion-row>
     </div>
   </div>
 </ion-content>

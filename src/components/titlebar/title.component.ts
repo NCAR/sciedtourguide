@@ -17,9 +17,7 @@ export class TitleComponent {
       this.titlebarColor = "primary";
     }
   }
-  goHome() {
-    this.navCtrl.popToRoot();
-  }
+
   checkDisplay(title) {
     if (title == 'apptitle') {
       return false;

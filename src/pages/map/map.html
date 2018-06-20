@@ -2,8 +2,6 @@
   <app-title [title]="'map.interactive.button_text' | translate"></app-title>
 </ion-header>
 <ion-content no-bounce>
-
-
   <div class="zoom">
   <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 viewBox="0 0 1536 1727.051" style="enable-background:new 0 0 1536 1727.051;" xml:space="preserve" width="100%" height="100%" aria-labelledby="mapTitle mapDesc" role="group">
@@ -2924,13 +2922,20 @@
   	</g>
   </g>
   </svg>
-
-
-
-  </div>
-  <div class="controls">
-    <button ion-button role="button" color="secondary" id="zoom-in" (click)="panZoom.zoomIn()" icon-right>{{'map.buttons.zoomin' | translate}} <ion-icon name="add-circle" aria-hidden="true"></ion-icon></button>
-    <button ion-button role="button" color="secondary" id="zoom-out" (click)="panZoom.zoomOut()" icon-right>{{'map.buttons.zoomout' | translate}} <ion-icon name="remove-circle" aria-hidden="true"></ion-icon></button>
-    <button ion-button role="button" color="danger" id="reset" (click)="panZoom.resetZoom()">{{'map.buttons.reset' | translate}}</button>
   </div>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button icon-only role="button" color="secondary" id="pan-left" (click)="panZoom.panBy({x:-50, y:0})" attr.aria-label="{{ 'map.buttons.panleft' | translate }}" ion-button><ion-icon name="arrow-dropleft-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="secondary" id="pan-left" (click)="panZoom.panBy({x:50, y:0})" attr.aria-label="{{ 'map.buttons.panright' | translate }}" ion-button><ion-icon name="arrow-dropright-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="secondary" id="pan-left" (click)="panZoom.panBy({x:0, y:-50})" attr.aria-label="{{ 'map.buttons.panup' | translate }}" ion-button><ion-icon name="arrow-dropup-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="secondary" id="pan-left" (click)="panZoom.panBy({x:0, y:50})" attr.aria-label="{{ 'map.buttons.pandown' | translate }}" ion-button><ion-icon name="arrow-dropdown-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="secondary" id="zoom-in" (click)="panZoom.zoomIn()" attr.aria-label="{{'map.buttons.zoomin' | translate}} " ion-button><ion-icon name="add-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="secondary" id="zoom-out" (click)="panZoom.zoomOut()" attr.aria-label="{{'map.buttons.zoomout' | translate}}" ion-button><ion-icon name="remove-circle" aria-hidden="true"></ion-icon></button>
+    </ion-buttons>
+    <ion-buttons end>
+      <button icon-only role="button" color="danger" id="reset" (click)="panZoom.resetZoom()" attr.aria-label="{{'map.buttons.reset' | translate}}" ion-button><ion-icon name="refresh" aria-hidden="true"></ion-icon></button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
