@@ -79,44 +79,6 @@
       }
     }
   },
-  "map": {
-    "buttons":{
-      "zoomin": "Zoom in",
-      "zoomout": "Zoom out",
-      "panleft" : "Pan Left",
-      "panright" : "Pan Right",
-      "panup" : "Pan Up",
-      "pandown" : "Pan Down",
-      "reset":"Reset"
-    },
-    "download": {
-      "button_text": "Download Map"
-    },
-    "interactive": {
-      "button_text": "Interactive Map"
-    },
-    "access": {
-      "button_text": "Wheelchair Map"
-    },
-    "location": {
-      "2b":"Floor 2B",
-      "1b":"Floor 1B",
-      "first": "First Floor",
-      "second": "Second Floor",
-      "mezzanine":"Mezzanine",
-      "entrance":"Front Entrance"
-    },
-    "galleries":{
-        "aq":"Air Quality Exhibit",
-        "weather": "Weather Exhibit",
-        "climate": "Climate Exhibit",
-        "sunearth": "Sun-Earth Connections Exhibit",
-        "atmosphere": "Atmosphere Exhibits",
-        "supercomputers": "Supercomputing Exhibit",
-        "cosmic":"COSMIC Satelite Exhibit",
-        "misc":"Miscellaneous"
-      }
-  },
   "visitor": {
     "title": "Visitor Information",
     "intro": {
@@ -621,6 +583,176 @@
         "description": "audio desc",
         "transcript": "transcript"
       }
+    }
+  },
+  "map": {
+    "buttons":{
+      "zoomin": "Zoom in",
+      "zoomout": "Zoom out",
+      "panleft" : "Pan Left",
+      "panright" : "Pan Right",
+      "panup" : "Pan Up",
+      "pandown" : "Pan Down",
+      "reset":"Reset"
+    },
+    "download": {
+      "button_text": "Download Map"
+    },
+    "interactive": {
+      "button_text": "Interactive Map"
+    },
+    "access": {
+      "button_text": "Wheelchair Map"
+    },
+    "location": {
+      "2b":"Floor 2B",
+      "1b":"Floor 1B",
+      "first": "First Floor",
+      "second": "Second Floor",
+      "mezzanine":"Mezzanine",
+      "entrance":"Front Entrance"
+    },
+    "galleries":{
+        "aq":"Air Quality Exhibit",
+        "weather": "Weather Exhibit",
+        "climate": "Climate Exhibit",
+        "sunearth": "Sun-Earth Connections Exhibit",
+        "atmosphere": "Atmosphere Exhibits",
+        "supercomputers": "Supercomputing Exhibit",
+        "cosmic":"COSMIC Satelite Exhibit",
+        "misc":"Miscellaneous"
+    },
+    "text": {
+      "title":"Zoomable map of the NCAR Mesa Lab Visitor Center",
+      "titleaccess":"Wheelchair accessibility map",
+      "desc":"An interative map of the NCAR Visitor Center. Use the buttons or swipe and pinch gestures to move the map around and to zoom in and out.",
+      "descaccess":"A map showing how to get to wheelchair accessible bathrooms and elevators inside of the NCAR Mesa Lab Visitor Center.",
+      "tofirstfloor": "To 1st Floor",
+      "tosecondfloor":"To 2nd Floor",
+      "tomezzanine":"To Mezzanine",
+      "routeto":"Route to",
+      "tofloor1b":"To Floor 1B",
+      "rampto1stfloor":"Ramp to 1st Floor",
+      "ramp":"Ramp",
+      "ramptolobby":"Ramp to lobby",
+      "topicnicarea":"To picnic area",
+      "routetoelevator":"Route to elevator",
+      "disabilityparking":"Disability parking spaces",
+      "mezzanine":"Mezzanine",
+      "secondfloor":"Second Floor",
+      "firstfloor":"First Floor",
+      "floor1b": "Floor 1B",
+      "floor2b":"Floor 2B",
+      "entrance":"entrance",
+      "theater":"Theater",
+      "satellite":"Satellite",
+      "ozone":"Ozone",
+      "garden":"Garden",
+      "classroom":"Classroom",
+      "cafeteria":"Cafeteria and ",
+      "art":"Art",
+      "science":"Science",
+      "gallery":"Gallery",
+      "weather":"Weather",
+      "exhibit":"Exhibit",
+      "trail":"Trail",
+      "air":"Air",
+      "quality":"Quality",
+      "ncar":"NCAR",
+      "security":"Security",
+      "front":"Front",
+      "desk":"Desk",
+      "lobby":"Lobby",
+      "sunearth":"Sun-Earth",
+      "connections":"Connections",
+      "main":"Main",
+      "seminar":"Seminar",
+      "room":"Room",
+      "climate":"Climate",
+      "atmosphere":"Atmosphere",
+      "library":"Library",
+      "ncars":"NCAR's",
+      "architecture":"Architecture",
+      "cray":"The Cray-1A",
+      "supercomputer":"Supercomputer",
+      "supercomputing":"Supercomputing",
+      "area":"Area"
+    },
+    "label":{
+      "wheelchairramp1":"Wheelchair ramp from mezzanine to 1st floor.  Take the ramp past the NCAR Architecture exhibit to the hallway.  Turn right then follow the hallway until you can turn right at NCAR security.",
+      "wheelchairentrance":"Wheelchair entrance from disability parking spaces - enter from floor 2B and take path to elevator",
+      "routetomezzanine":"Route to Mezzanine",
+      "ozonegarden":"Ozone Garden",
+      "classroom": "Classroom",
+      "cafeteria":"Cafeteria and Art Gallery",
+      "cafeterialoc":"Cafeteria and art gallery. Located on the 1st floor on the south side of the building",
+      "weathertrail":"Weather Trail",
+      "weathertrailloc":"Weather Trail exit. Located on the 2nd floor on the west side of the building",
+      "weatherexhibit":"Weather Exhibit",
+      "weatherexhibitloc":"Weather exhibit. Located on the 1st floor to the left of the front entrance",
+      "climateexhibit":"Climate Exhibit",
+      "climateexhibitloc":"Climate Exhibit. Located on the 2nd floor",
+      "security":"NCAR Security",
+      "securityloc":"NCAR Security. Located behind the front desk to the right of the entrance on the north side of the building",
+      "frontdesk":"Front Desk",
+      "frontdeskloc":"Front desk. Located to the right of the entrance on the north side of the building",
+      "aq":"Air Quality",
+      "architecture":"NCAR's Architecture",
+      "satelliteloc":"COSMIC Satellite exhibit. Located on the mezzanine",
+      "archloc":"NCAR's Architecture Exhibit. Located on the mezzanine, on the west between the satellite and sun-earth connections exhibit",
+      "supercomputing":"Supercomputing Area",
+      "supercomputer":"The Cray-1A Supercomputer",
+      "sunearth" :"Sun-Earth Connections",
+      "sunearthloc":"Sun-Earth Connections exhibit. Located on the mezzanine, north of the stairs",
+      "mainseminar":"Main Seminar Room",
+      "mainseminarloc":"Main Seminar Room.  Located on the mezzanine to the south",
+      "artsci":"Art Science",
+      "artscigallery":"Art Science Gallery",
+      "stairsclassroom":"West stairs from the 1st floor to the 2nd floor by the classroom.  Take 4 steps up to the landing, turn right, take 12 additional steps up to another landing, turn right, take 4 additional steps.",
+      "stairscentral2m":"Central stairs from 2nd floor to the mezzanine just west of the climate exhibit.  Take 13 steps down to the landing.  To go the 1st floor lobby, turn right, take 7 additional steps down.",
+      "stairscentralm1":"Central stairs from the mezzanine to the 1st floor lobby. Take 7 steps down.",
+      "stairscentral1m":"Central stairs from the 1st floor lobby to the mezzanine.  Go up 7 steps.  To proceed to the 2nd floor, turn left at the landing and take 13 additional steps up.",
+      "stairswest21":"West stairs from 2nd floor to 1st floor by the weather trail.  Take 4 steps down to the landing, turn left, take 12 steps down to another landing, turn left, take 4 additional steps",
+      "stairsnwarch":"Northwest stairs to floor 1B from mezzanine between the architecture and supercomputing exhibits. From the hallway railing, take 11 steps down to the landing, turn right, take 7 additional steps.",
+      "stairsnw1bm":"Northwest stairs from floor 1B to the mezzanine between the supercomputing and architecture exhibits.  Take 7 steps up to the landing, turn left, take 11 additional steps up to the next landing, turn right, walk along hallway until to you reach 4 additional steps.",
+      "stairssouththeater": "South stairs from the 1st floor to the second floor next to the theater. Take 6 steps up to the landing, turn right, 8 additional steps up to another landing, turn right, take 6 additional steps.",
+      "stairssouthcray": "South stairs from floor 1B to the 1st floor between the Cray-1A supercomputer and the weather exhibits.  Take 6 steps up to the landing, turn right, take 8 steps up to another landing, turn right, take 6 additional steps.",
+      "stairssouth11b":"South stairs from the 1st floor to floor 1B between the Cray-1A supercomputer and the weather exhibits.  Take 6 steps down to the landing, turn left, take 8 steps to another landing, turn left, take 6 additional steps.",
+      "stairssouth21":"South stairs from 2nd floor to 1st floor by the Atmosphere exhibit.  Take 6 steps down to the landing, turn left, take 8 additional steps to another landing, turn left, take 6 additional steps.",
+      "stairseast21":"East stairs from the 1st floor to the 2nd floor by the cafeteria.  Take 4 steps up to the landing, turn left, take 12 additional steps to another landing, turn left, take 4 additional steps.",
+      "stairseast12":"East stairs from 2nd floor to 1st floor behind the library. Take 4 steps down to the landing, turn right, take 12 additional steps to another landing, turn right, take 4 additional steps.",
+      "rampto1":"Ramp to 1st floor.  Take the ramp down, turn right at the end of the hallway, and turn right by the NCAR Security desk to return to the 1st floor exhibits.",
+      "artsci1":"Art-Science - 2nd floor gallery.  Located just before the weather trail exit.",
+      "artsci2":"Art-Science - 1st floor gallery. Located in the hallway west of the climate exhibit.",
+      "lobbyloc":"Lobby - located directly inside the front entrance",
+      "frontentrance":"Front Entrance",
+      "classroomloc":"Classroom. Located off the hallway between the back of the cafeteria and the art-science gallery on the 1st floor",
+      "theaterloc":"Theater. Located south of the climate exhibit just before the stairs to the Atmosphere exhibit",
+      "toweathertrail":"Go west outside the doors to the weather trail",
+      "atmloc":"ATM. located just outside the cafeteria entrance on the 1st floor on the south east side of the building",
+      "picnicloc":"Picnic Area. Located outside from the cafeteria entrance on the 1st floor on the south east side of the building",
+      "elevator1theater":"Elevator. 1st Floor. Located directly across from the theater next to the stairs",
+      "elevator1bcray":"Elevator. Floor 1B. Located directly west of the CRAY-1A supercomputer exhibit",
+      "elevator2library":"Elevator. 2nd floor. Located directly across from the library next to the stairs",
+      "elevator2climate":"Elevator. 2nd floor. Located in the hallway north of the climate exhibit",
+      "elevator1front":"Elevator. 1st floor. Located in the hallway north of the front desk",
+      "elevator1bsupercomputing":"Elevator. Floor 1B. Located in the hallway next to the supercomputing exhibit",
+      "brmen1front":"men's bathroom located on the 1st floor across from the front desk",
+      "brm2climate":"men's bathroom located on the 2nd floor north of the climate exhibit",
+      "brmen2library":"men's bathroom located on the 2nd floor in the hallway between the climate exhibit and library",
+      "brwomen2climate":"women's bathroom located on 2nd floor north of the climate exhibit",
+      "brwomen2library":"women's bathroom located on 2nd floor down the hallway behind the library",
+      "brwomen1theater":"women's bathroom located on the 1st floor in the hallway between the weather exhibit and the theater",
+      "braccess2":"accessible bathroom located on the 2nd floor north of the climate exhibit",
+      "braccess1":"accessible bathroom located on the 1st floor across from the front desk",
+      "atmos1loc":"Atmosphere exhibit. Located on the stairs between the 1st and second floors, south of the weather and climate exhibits",
+      "atmos2loca":"Atmosphere exhibit. Located on the stairs between the 1st and second floors, south of the weather and climate exhibits",
+      "libraryloc":"Library. Located on the 2nd floor just south of the Climate exhibit",
+      "aqloc":"Air Quality Exhibit. Located just to the left of the lobby on the 1st floor",
+      "gardenloc":"Ozone garden. Located outside, left of the front entrance",
+      "crayloc":"CRAY-1A Supercomputer exhibit. Located on Floor 1B down the stairs from the theater",
+      "supercomputingloc":"Supercomputing exhibit. Located on Floor 1B down the ramp from the Mezzanine"
+
     }
   }
 }
