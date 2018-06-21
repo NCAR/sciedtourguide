@@ -12,28 +12,29 @@ import { TabsPage } from '../pages/tabs/tabs';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = TabsPage;
-  appVer:any = '1.0.1';
+  rootPage: any = TabsPage;
+  appVer: any = '1.0.1';
 
-  constructor(private ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService,  public sharedVars:SharedVars) {
+  constructor(private ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService, public sharedVars: SharedVars) {
     platform.ready().then(() => {
+      statusBar.overlaysWebView(false);
+      statusBar.backgroundColorByHexString("#004779");
+      // google
+      // this.ga.debugMode()
+      this.ga.startTrackerWithId("UA-66300420-3").then(() => {
+        console.log('Google analytics is ready now');
+      })
+        .catch(e => console.log('Error starting GoogleAnalytics', e));
 
-    // google
-   // this.ga.debugMode()
-    this.ga.startTrackerWithId("UA-66300420-3").then(() => {
-     console.log('Google analytics is ready now');
-   })
-   .catch(e => console.log('Error starting GoogleAnalytics', e));
+      this.ga.setAllowIDFACollection(false);
+      this.ga.setAppVersion(this.appVer);
 
-    this.ga.setAllowIDFACollection(false);
-    this.ga.setAppVersion(this.appVer);
-
-    this.ga.enableUncaughtExceptionReporting(true)
-    .then((_success) => {
-      console.log(_success)
-    }).catch((_error) => {
-      console.log(_error)
-    })
+      this.ga.enableUncaughtExceptionReporting(true)
+        .then((_success) => {
+          console.log(_success)
+        }).catch((_error) => {
+          console.log(_error)
+        })
 
       this.translate.setDefaultLang('en');
 

@@ -1,6 +1,5 @@
 // from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component } from '@angular/core';
-import { NavController, ViewController } from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 import svgPanZoom from 'svg-pan-zoom';
 import Hammer from 'hammerjs';
@@ -12,11 +11,10 @@ import Hammer from 'hammerjs';
 export class MapAccessPage {
   panZoom:any;
 
-  constructor(public sharedVars: SharedVars, private navCtrl: NavController, private viewCtrl: ViewController) { }
+  constructor(public sharedVars: SharedVars) { }
   ngOnInit() {
     let eventsHandler;
 
-    //this.viewCtrl.showBackButton(false);
         eventsHandler = {
           haltEventListeners: ['touchstart', 'touchend', 'touchmove', 'touchleave', 'touchcancel']
         , init: function(options) {
@@ -83,9 +81,5 @@ export class MapAccessPage {
   ionViewDidEnter(): void {
     this.sharedVars.trackView('Map - Accessible');
 
-  }
-  ionViewWillLeave() {
-    // need to se
-    //this.navCtrl.popToRoot();
   }
 }
