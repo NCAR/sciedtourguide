@@ -18,8 +18,8 @@ export class TitleComponent {
     }
   }
 
-  checkDisplay(title) {
-    if (title == 'apptitle') {
+  checkDisplay(item) {
+    if (typeof item == "object" && typeof item.id == "string" && (item.id == "library" || item.id == "supercomputer")) {
       return false;
     }
     return true;

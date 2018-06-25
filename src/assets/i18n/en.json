@@ -137,7 +137,7 @@
     "cloud": {
       "content": {
         "title": "Clouds",
-        "description": "Cloud desc"
+        "description": "Our view of the sky is constantly changing as clouds form and evolve. Clouds form when air rises from the Earth’s surface and cools, causing water vapor to condense on tiny particles in the atmosphere. Take a look out the window to observe whether there are clouds in the sky!"
       },
       "img": {
         "title": "img title",
@@ -153,7 +153,7 @@
     "severewx": {
       "content": {
         "title": "Severe Weather",
-        "description": "desc"
+        "description": "Severe weather includes tornadoes, thunderstorms, snowstorms, hurricanes, and very strong winds. These dramatic events can impact human health and the economy. Between 1980 and 2016, over 200 weather- or climate-related events in the U.S. have caused damages that cost at least one billion dollars."
       },
       "img": {
         "title": "img title",
@@ -169,7 +169,7 @@
     "wxinstruments": {
       "content": {
         "title": "Weather Instruments",
-        "description": "desc"
+        "description": "Anemometers are instruments that measure the speed of wind. Some anemometers also include a weather vane to show which direction the wind is blowing. The highest wind speed ever recorded here at the NCAR Mesa Lab was a 147 mph gust on January 23, 1971!"
       },
       "img": {
         "title": "img title",
@@ -185,7 +185,7 @@
     "microburst": {
       "content": {
         "title": "Microburst",
-        "description": "desc"
+        "description": "Microbursts are powerful, downward winds that form very suddenly underneath thunderstorms. These downdrafts can have speeds over 100 mph! Because microbursts are a safety hazard for airplanes during takeoff or landing, NCAR scientists developed a microburst detection system in the 1980s that makes air travel much safer."
       },
       "img": {
         "title": "img title",
@@ -200,8 +200,8 @@
     },
     "wxforecasting": {
       "content": {
-        "title": "Weather Forecasting",
-        "description": "desc"
+        "title": "Forecasting",
+        "description": "Weather forecasts influence our daily lives, helping us decide what to wear or when to take precautions due to upcoming severe weather. Weather forecasting models are used to predict weather in the near future. These models are run on advanced computers, and then the results are analyzed and interpreted by meteorologists."
       },
       "img": {
         "title": "img title",
@@ -217,7 +217,7 @@
     "tornado": {
       "content": {
         "title": "Tornado",
-        "description": "desc"
+        "description": "The most violent of all severe storms, tornadoes are columns of air rotating dangerously fast. About 75% of the world’s tornadoes form in the United States, mainly in the spring and summer in an area in the central U.S. called Tornado Alley.  "
       },
       "img": {
         "title": "img title",
@@ -233,7 +233,7 @@
     "wxclimate": {
       "content": {
         "title": "Weather and Climate",
-        "description": "desc"
+        "description": "The graph of temperatures in Boulder on the Fourth of July shows how weather changes from year to year. Climate is the word scientists use for long-term trends in weather. Boulder’s climate tells us that the high temperature next year on July 4th will probably be somewhere between 80 and 95 degrees Fahrenheit. "
       },
       "img": {
         "title": "img title",
@@ -249,7 +249,7 @@
     "chaos": {
       "content": {
         "title": "Chaos",
-        "description": "desc"
+        "description": "This unusual pendulum illustrates the scientific concept of chaos. In chaotic systems. a very slight change in starting conditions affects what happens next. Weather is a chaotic system, which makes it hard to predict with complete accuracy. Spin the pendulum and try to predict its motion!"
       },
       "img": {
         "title": "img title",
@@ -268,7 +268,7 @@
     "greenhousegases": {
       "content": {
         "title": "Greenhouse Gases",
-        "description": "desc"
+        "description": "Charles David Keeling began measuring carbon dioxide (CO2) levels on Hawaii’s Mauna Loa Observatory in 1958. These measurements make up the Keeling Curve, which shows that CO2 values have increased from 330 to over 400 parts per million (ppm). Greenhouse gases, like CO2, trap heat in the atmosphere, warming the climate. "
       },
       "img": {
         "title": "img title",
@@ -284,7 +284,7 @@
     "past": {
       "content": {
         "title": "Past Climates",
-        "description": "desc"
+        "description": "How do we learn what Earth’s climate was like a thousand or a million years ago? There is evidence of past climates preserved in glaciers, corals, and ocean sediments. Tree rings of different widths tell us about growing conditions from year-to-year. Was it dry or wet? Cool or hot? "
       },
       "img": {
         "title": "img title",
@@ -300,7 +300,7 @@
     "change": {
       "content": {
         "title": "Our Changing Climate",
-        "description": "desc"
+        "description": "The Earth’s climate is changing. Global average temperature is warming due to an increase in greenhouse gases, which are released as we burn fossil fuels. Warmer temperatures are changing the character of storms, increasing the chance of drought and flooding in many areas of the world."
       },
       "img": {
         "title": "img title",
@@ -316,7 +316,7 @@
     "choosefuture": {
       "content": {
         "title": "Choose Our Future",
-        "description": "desc"
+        "description": "The choices we make today will impact our planet tomorrow! The interactive Choose Our Future game gives you feedback on how choices made in daily life impact your carbon footprint. Learn how your actions can impact the Earth’s global average temperature. "
       },
       "img": {
         "title": "img title",
@@ -332,7 +332,7 @@
     "impacts": {
       "content": {
         "title": "Climate Impacts",
-        "description": "desc"
+        "description": "The impacts of climate change are already occurring and will continue into the future. They affect people and places around the world in many different ways. As temperatures rise and patterns of precipitation change we face a multitude of challenges. Fortunately scientists, engineers, city planners, and others are working on solutions to keep people safe."
       },
       "img": {
         "title": "img title",
@@ -348,7 +348,7 @@
     "futureclimate": {
       "content": {
         "title": "Future Climate Predictions",
-        "description": "desc"
+        "description": "The global average temperature has been rising for more than a century. Earth will continue to warm in the years ahead unless humans dramatically reduce our emission of greenhouse gases. Using renewable energy sources, such as wind and solar power, instead of fossil fuels could help us achieve those reductions."
       },
       "img": {
         "title": "img title",
@@ -364,7 +364,7 @@
     "solutions": {
       "content": {
         "title": "Climate Solutions",
-        "description": "desc"
+        "description": "There are many ways to address the challenges associated with climate change. People all over the world are currently working on solutions at national, regional, and community levels in a variety of ways, such as decreasing carbon dioxide emissions and planning how to best deal with the impacts of climate change."
       },
       "img": {
         "title": "img title",
@@ -383,7 +383,7 @@
     "history": {
       "content": {
         "title": "History of Solar Research",
-        "description": "Cloud desc"
+        "description": "This mural provides the history of NCAR’s High Altitude Observatory (HAO) since its founding in the 1940s. In this timeline (with years listed along the bottom), HAO’s milestones appear across the center of the mural, with major space exploration events above, and technical advancements  below. "
       },
       "img": {
         "title": "img title",
@@ -399,7 +399,7 @@
     "observations": {
       "content": {
         "title": "Observing the Sun",
-        "description": "Cloud desc"
+        "description": "The beautiful displays of colorful lights in the sky that we know as the Northern Lights, or aurora, are caused by powerful magnetic disturbances on the Sun. Changes in the Sun’s intense magnetic field produce solar activity such as sunspots (like the one at the right), prominences, and Coronal Mass Ejections (CMEs), which disrupt Earth’s protective magnetosphere."
       },
       "img": {
         "title": "img title",
@@ -418,7 +418,7 @@
     "layers": {
       "content": {
         "title": "Layers of the Atmosphere",
-        "description": "Cloud desc"
+        "description": "Earth’s atmosphere extends hundreds of miles upward until it fades into outer space. However, more than 80% of the atmosphere’s mass and almost all clouds and weather occur in the lowest layers, within 10 miles of the ground. That is down around knee level on this mural! "
       },
       "img": {
         "title": "img title",
@@ -434,7 +434,7 @@
     "dropsondes": {
       "content": {
         "title": "Dropsondes",
-        "description": "Cloud desc"
+        "description": "Weather stations are great for recording data about the atmosphere at ground level. But how can scientists measure temperature, air pressure, humidity, and winds higher in the atmosphere? Dropsondes are instrument packages that are dropped from planes with small parachutes. They radio data back to scientists as they fall. "
       },
       "img": {
         "title": "img title",
@@ -469,7 +469,7 @@
     "cray": {
       "content": {
         "title": "The Cray-1A Supercomputer",
-        "description": "Cloud desc"
+        "description": "For decades, NCAR has been a pioneer in the use of supercomputers for weather and climate modeling. This Cray-1A supercomputer was a state-of-the-art machine when it arrived at NCAR in 1977. Designed by Seymour Cray, widely regarded as the father of supercomputing, this computer weighs over five tons and has one whole megabyte of memory! "
       },
       "img": {
         "title": "img title",
@@ -488,7 +488,7 @@
     "aq": {
       "content": {
         "title": "Air Quality",
-        "description": "Cloud desc"
+        "description": "Like the weather, air quality can change from day to day or even hour to hour, so it is important to collect frequent and accurate air pollution data. Air quality is poor when air pollution is high. Air pollution damages plants and causes respiratory problems for people.  "
       },
       "img": {
         "title": "img title",
@@ -504,7 +504,7 @@
     "garden": {
       "content": {
         "title": "Ozone Garden",
-        "description": "Cloud desc"
+        "description": "Ground-level ozone is the air pollutant that causes the most damage to plants. Some plants are particularly sensitive to ozone and develop visible symptoms of ozone damage on their leaves that look like tiny spots. This makes them useful biological indicators of high and dangerous levels of ground-level ozone during the growing season."
       },
       "img": {
         "title": "img title",
@@ -522,8 +522,8 @@
     "title": "Miscellaneous",
     "cosmic": {
       "content": {
-        "title": "COSMIC 2 Satellite",
-        "description": "Cloud desc"
+        "title": "COSMIC-2 Satellite",
+        "description": "The COSMIC satellite system uses a clever trick to study Earth’s atmosphere. Radio waves are beamed from one satellite to another and bend slightly as they pass through the atmosphere. Careful study of those radio waves reveals information about temperature, humidity, pressure, and other traits of the air at different heights and around the globe."
       },
       "img": {
         "title": "img title",
@@ -554,8 +554,8 @@
     },
     "architecture": {
       "content": {
-        "title": "Architecture",
-        "description": "Cloud desc"
+        "title": "NCAR's Architecture",
+        "description": "The NCAR Mesa Lab was designed by the renowned architect I.M Pei. Pei’s inspiration for this building came from Mesa Verde in southwest Colorado. Walter Orr Roberts, the first director of NCAR, spearheaded the effort to locate the building in Boulder. The Mesa Lab celebrated its 50th anniversary in 2017. "
       },
       "img": {
         "title": "img title",
@@ -571,7 +571,7 @@
     "wxtrail": {
       "content": {
         "title": "The Weather Trail",
-        "description": "Cloud desc"
+        "description": "The Weather Trail, a short loop trail, just 0.4 miles long, includes signs describing local weather and provides spectacular views of Boulder’s Flatirons. Check out the experimental wind turbines to the southeast, and you might even see downtown Denver on a clear day."
       },
       "img": {
         "title": "img title",

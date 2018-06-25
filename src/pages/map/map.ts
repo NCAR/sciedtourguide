@@ -71,7 +71,6 @@ export class MapPage {
       }
     }
 
-
     let options = {
       controlIconsEnabled: false,
       customEventsHandler: eventsHandler
