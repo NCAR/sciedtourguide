@@ -34,7 +34,8 @@
         <p *ngIf="base64Image">{{ 'postcard.steps.three.instructions.withimage.content' | translate }}</p>
         <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">
           <ion-label for="message" stacked>{{ 'postcard.steps.three.message.label' | translate }}</ion-label>
-          <ion-textarea id="message" formControlName="message" [placeholder]="'postcard.steps.three.message.placeholder_text' | translate" class="message" [attr.maxlength]="140"></ion-textarea>
+          <ion-textarea id="message" formControlName="message" [placeholder]="'postcard.steps.three.message.placeholder_text' | translate" class="message" [attr.maxlength]="140" (ionChange)="charsLeft()"></ion-textarea>
+          <p>Characters remaining: {{characters_left}}</p>
           <button ion-button type="submit" [disabled]="!postcard.valid" icon-right>{{'postcard.steps.three.buttons.finish' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>
           <button ion-button (click)="stepBack()" icon-left><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.three.buttons.message_back' | translate }}</button>
         </form>

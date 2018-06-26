@@ -24,6 +24,7 @@ export class PostcardPage {
   postcardLoaded: Boolean = false;
   imgElm: HTMLImageElement;
   bkg_imgs: any;
+  characters_left = 140;
   postcardData: any = { 'message': '', 'bkg': '' };
   selectedImage = {"path":"", "altText": ""};
 
@@ -115,6 +116,9 @@ export class PostcardPage {
 
   startOver() {
     this.resetFlags();
+  }
+  charsLeft(){
+    this.characters_left = 140 - this.postcard.value.message.length;
   }
 
   resetFlags() {
