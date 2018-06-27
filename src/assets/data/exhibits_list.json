@@ -24,12 +24,12 @@
             "altText": "weather.cloud.icon.description"
           }],
           "audio": [{
-            "id": "",
+            "id": "clouds",
             "positionId": "1",
-            "src": "assets/audio/clouds.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-Clouds.mp3",
             "title": "weather.cloud.audio.title",
             "description": "weather.cloud.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:17",
             "transcriptId": "weather.cloud.audio.transcript",
             "preload": "metadata"
           }]
@@ -60,10 +60,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/severewx.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-SevereWeather.mp3",
             "title": "weather.severewx.audio.title",
             "": "weather.severewx.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:29",
             "transcriptId": "weather.severewx.audio.transcript",
             "preload": "metadata"
           }]
@@ -95,10 +95,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/wxinstruments.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-WeatherInstruments.mp3",
             "title": "weather.wxinstruments.audio.title",
             "description": "weather.wxinstruments.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:30",
             "transcriptId": "weather.wxinstruments.audio.transcript",
             "preload": "metadata"
           }]
@@ -129,10 +129,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-Microburst.mp3",
             "title": "weather.microburst.audio.title",
             "description": "weather.microburst.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:19",
             "transcriptId": "weather.microburst.audio.transcript",
             "preload": "metadata"
           }]
@@ -163,10 +163,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-Forecasting.mp3",
             "title": "weather.wxforecasting.audio.title",
             "description": "weather.wxforecasting.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:34",
             "transcriptId": "weather.wxforecasting.audio.transcript",
             "preload": "metadata"
           }]
@@ -196,10 +196,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-Tornado.mp3",
             "title": "weather.tornado.audio.title",
             "description": "weather.tornado.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:25",
             "transcriptId": "weather.tornado.audio.transcript",
             "preload": "metadata"
           }]
@@ -229,10 +229,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-Weather_Climate.mp3",
             "title": "weather.wxclimate.audio.title",
             "description": "weather.wxclimate.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:16",
             "transcriptId": "weather.wxclimate.audio.transcript",
             "preload": "metadata"
           }]
@@ -262,10 +262,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-Chaos.mp3",
             "title": "weather.chaos.audio.title",
             "description": "weather.chaos.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:24",
             "transcriptId": "weather.chaos.audio.transcript",
             "preload": "metadata"
           }]
@@ -299,10 +299,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-GreenhouseGases.mp3",
             "title": "climate.greenhousegases.audio.title",
             "description": "climate.greenhousegases.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:42",
             "transcriptId": "climate.greenhousegases.audio.transcript",
             "preload": "metadata"
           }]
@@ -332,10 +332,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-PastClimates.mp3",
             "title": "climate.past.audio.title",
             "description": "climate.past.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:20",
             "transcriptId": "climate.past.audio.transcript",
             "preload": "metadata"
           }]
@@ -366,10 +366,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-OurChangingClimate.mp3",
             "title": "climate.change.audio.title",
             "description": "climate.change.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:30",
             "transcriptId": "climate.change.audio.transcript",
             "preload": "metadata"
           }]
@@ -399,10 +399,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-ChooseOurFuture.mp3",
             "title": "climate.choosefuture.audio.title",
             "description": "climate.choosefuture.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:23",
             "transcriptId": "climate.choosefuture.audio.transcript",
             "preload": "metadata"
           }]
@@ -432,10 +432,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-ClimateImpacts.mp3",
             "title": "climate.impacts.audio.title",
             "description": "climate.impacts.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:40",
             "transcriptId": "climate.impacts.audio.transcript",
             "preload": "metadata"
           }]
@@ -465,10 +465,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-FutureClimateProjections.mp3",
             "title": "climate.futureclimate.audio.title",
             "description": "climate.futureclimate.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:30",
             "transcriptId": "climate.futureclimate.audio.transcript",
             "preload": "metadata"
           }]
@@ -498,10 +498,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-ClimateSolutions.mp3",
             "title": "climate.solutions.audio.title",
             "description": "climate.solutions.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:37",
             "transcriptId": "climate.solutions.audio.transcript",
             "preload": "metadata"
           }]
@@ -535,10 +535,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/beat.mp3",
+            "src": "assets/audio/sections/NCAR-Misc-HistoryofSolarResearch.mp3",
             "title": "sunearth.history.audio.title",
             "description": "sunearth.history.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:33",
             "transcriptId": "sunearth.history.audio.transcript",
             "preload": "metadata"
           }]
@@ -568,10 +568,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/sun_observations.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-ObservingtheSun.mp3",
             "title": "sunearth.observations.audio.title",
             "description": "sunearth.observations.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:33",
             "transcriptId": "sunearth.observations.audio.transcript",
             "preload": "metadata"
           }]
@@ -606,10 +606,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/atmosphere_layers.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-LayersofAtmosphere.mp3",
             "title": "atmosphere.layers.audio.title",
             "description": "atmosphere.layers.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:29",
             "transcriptId": "atmosphere.layers.audio.transcript",
             "preload": "metadata"
           }]
@@ -640,10 +640,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/dropsondes.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-Dropsondes.mp3",
             "title": "atmosphere.dropsondes.audio.title",
             "description": "atmosphere.dropsondes.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:35",
             "transcriptId": "atmosphere.dropsondes.audio.transcript",
             "preload": "metadata"
           }]
@@ -678,10 +678,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/supercomputers.mp3",
+            "src": "assets/audio/sections/NCAR_Weather-supercomputers.mp3",
             "title": "supercomputers.supercomputer.audio.title",
             "description": "supercomputers.supercomputer.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:30",
             "transcriptId": "supercomputers.supercomputer.audio.transcript",
             "preload": "metadata"
           }]
@@ -712,10 +712,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/cray.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-Cray1ASuperComputer.mp3",
             "title": "supercomputers.cray.audio.title",
             "description": "supercomputers.cray.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:37",
             "transcriptId": "supercomputers.cray.audio.transcript",
             "preload": "metadata"
           }]
@@ -751,10 +751,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/aq.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-AirQuality.mp3",
             "title": "aq.aq.audio.title",
             "description": "aq.aq.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:33",
             "transcriptId": "aq.aq.audio.transcript",
             "preload": "metadata"
           }]
@@ -785,10 +785,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/ozone_garden.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-OzoneGarden.mp3",
             "title": "aq.garden.audio.title",
             "description": "aq.garden.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:29",
             "transcriptId": "aq.garden.audio.transcript",
             "preload": "metadata"
           }]
@@ -824,10 +824,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/cosmic.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-COSMIC2Satellite.mp3",
             "title": "misc.cosmic.audio.title",
             "description": "misc.cosmic.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:36",
             "transcriptId": "misc.cosmic.audio.transcript",
             "preload": "metadata"
           }]
@@ -858,10 +858,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/library.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-Library.mp3",
             "title": "misc.library.audio.title",
             "description": "misc.library.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:30",
             "transcriptId": "misc.library.audio.transcript",
             "preload": "metadata"
           }]
@@ -892,10 +892,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/architecture.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-NCARsArchitecture.mp3",
             "title": "misc.architecture.audio.title",
             "description": "misc.architecture.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:25",
             "transcriptId": "misc.architecture.audio.transcript",
             "preload": "metadata"
           }]
@@ -926,10 +926,10 @@
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/trail.mp3",
+            "src": "assets/audio/sections/NCAR_Misc-WeatherTrail.mp3",
             "title": "misc.wxtrail.audio.title",
             "description": "misc.wxtrail.audio.description",
-            "runningTime": "00:03",
+            "runningTime": "1:16",
             "transcriptId": "misc.wxtrail.audio.transcript",
             "preload": "metadata"
           }]

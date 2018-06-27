@@ -1,5 +1,7 @@
 page-transcript {
-
+  ion-card p {
+    margin-bottom:20px !important;
+  }
   audio-track-play .button-inner {
     width: 20px;
     height: 20px;
@@ -39,7 +41,7 @@ page-transcript {
     ion-thumbnail audio-track-play {
       min-width: 20px !important;
       min-height: 20px !important;
-      margin: 20px 15px 10px !important;
+      margin: 12px -20px 10px !important;
     }
 
     audio-track audio-track-progress-bar time + input[type="range"],
@@ -114,5 +116,6 @@ page-transcript {
 
   .audio-icon img {
     margin-top: 8px;
+    height: 40px;
   }
 }

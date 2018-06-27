@@ -5,32 +5,26 @@
 
 <ion-content>
 
-  <ion-card>
-    <ion-card-header>
-      {{ selectedItem.content.audio[0].title | translate }}
-    </ion-card-header>
-    <ion-card-content>
-      {{ selectedItem.content.audio[0].transcriptId | translate }}
-    </ion-card-content>
-  </ion-card>
+  <ion-card-header>
+    {{ selectedItem.content.audio[0].title | translate }}
+  </ion-card-header>
+  <ion-card-content [innerHTML]="selectedItem.content.audio[0].transcriptId | translate">
+  </ion-card-content>
 </ion-content>
 
 <ion-footer>
   <ion-toolbar class="audio">
     <audio-track #audio *ngFor="let track of myTracks" [track]="track" (onFinish)="onTrackFinished($event)">
-      <div class="audioInfo"><strong>{{track.title | translate}}</strong> <em>{{track.description | translate}}</em></div>
       <ion-grid>
         <ion-row>
           <ion-col col-2 class="audio-icon"><img src="assets/images/audio.png" /></ion-col>
-          <ion-col col-10>
-            <ion-item>
-              <audio-track-progress-bar dark duration progress [audioTrack]="audio"></audio-track-progress-bar>
-              <ion-thumbnail item-start>
-                <audio-track-play dark [audioTrack]="audio">
-                  <ion-spinner></ion-spinner>
-                </audio-track-play>
-              </ion-thumbnail>
-            </ion-item>
+          <ion-col col-10 class="audio-track">
+            <audio-track-progress-bar dark duration progress [audioTrack]="audio"></audio-track-progress-bar>
+            <ion-thumbnail item-start>
+              <audio-track-play dark [audioTrack]="audio">
+                <ion-spinner></ion-spinner>
+              </audio-track-play>
+            </ion-thumbnail>
           </ion-col>
         </ion-row>
       </ion-grid>

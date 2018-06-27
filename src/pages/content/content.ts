@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
 import { NavController, NavParams, Events} from 'ionic-angular';
+import { TranscriptPage } from '../../pages/transcript/transcript';
 
 @Component({
   selector: 'page-content',
@@ -16,7 +17,7 @@ export class ContentPage {
     this.selectedItem = this.navParams.get('item');
     this.selectedParent = this.navParams.get('parent');
     this.specialBtn = 'audioBtn';
-
+console.log(this.selectedItem.content.audio[0].runningTime);
     this.titlebarColor = this.selectedParent;
     this.sharedVars.trackView('Content - '+this.selectedParent+':'+this.selectedItem.id);
 
@@ -24,7 +25,19 @@ export class ContentPage {
       this.navCtrl.popToRoot();
     });
   }
+  openTranscript(event) {
+    this.navCtrl.push(TranscriptPage, {
+      item: this.selectedItem,
+      parent: this.titlebarColor
+    });
 
+  }
+  checkStatus() {
+    if (typeof this.selectedItem == "object" && typeof this.selectedItem.id == "string" && (this.selectedItem.id == "library" || this.selectedItem.id == "supercomputer")) {
+      return false;
+    }
+    return true;
+  }
   /*loadMap(item) {
     this.events.publish('change-tab-map', 1, item);
   }

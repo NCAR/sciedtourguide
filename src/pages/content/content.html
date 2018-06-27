@@ -1,34 +1,22 @@
 <ion-header>
-  <app-title [title]="selectedItem.content.title | translate" [specialButton]="specialBtn" [selectedItem]="selectedItem" [titlebarColor]="titlebarColor"></app-title>
+  <app-title [title]="selectedItem.content.title | translate" [selectedItem]="selectedItem" [titlebarColor]="titlebarColor"></app-title>
 </ion-header>
 
 <ion-content elastic-header>
-  <ion-card>
-    <img [src]="selectedItem.content.img[0].path" [alt]="selectedItem.content.img[0].altText | translate">
-    <ion-card-content>
-      <ion-row no-padding>
-        <ion-col col-12>
-          <ion-card-title [innerHtml]="selectedItem.content.title | translate"></ion-card-title>
-
-        </ion-col>
-      </ion-row>
-      <ion-row no-padding>
-        <ion-col col-12>
-          <div [innerHtml]="selectedItem.content.description | translate"></div>
-        </ion-col>
-      </ion-row>
-      <ion-row no-padding>
-        <ion-col col-12>
-          <strong>{{'location' | translate}}:</strong>
-          <span [innerHtml]="selectedItem.location | translate"></span>
-        </ion-col>
-      </ion-row>
-      <ion-row no-padding>
-        <ion-col col-12>
-          <strong>{{'exhibit' | translate}}:</strong>
-          <span [innerHtml]="'map.galleries.'+selectedParent | translate"></span>
-        </ion-col>
-      </ion-row>
-    </ion-card-content>
-  </ion-card>
+  <img [src]="selectedItem.content.img[0].path" [alt]="selectedItem.content.img[0].altText | translate">
+  <div [innerHtml]="selectedItem.content.description | translate" padding></div>
+  <div padding>
+    <strong>{{'location' | translate}}:</strong>
+    <span [innerHtml]="selectedItem.location | translate"></span>
+    <br/>
+    <strong>{{'exhibit' | translate}}:</strong>
+    <span [innerHtml]="'map.galleries.'+selectedParent | translate"></span>
+  </div>
 </ion-content>
+<ion-footer *ngIf="checkStatus()">
+  <ion-toolbar class="audio">
+    <ion-buttons>
+  <button ion-button (click)="openTranscript($event)"><img src="assets/images/audio.png"/> {{'transcript_link' | translate}} ({{selectedItem.content.audio[0].runningTime}})</button> 
+</ion-buttons>
+</ion-toolbar>
+</ion-footer>
