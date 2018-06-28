@@ -15,6 +15,7 @@ page-transcript {
   audio-track {
     audio-track-progress-bar {
       padding:10px 0px;
+      padding-top:15px;
     }
     .label-md {
       margin:0;
@@ -74,6 +75,7 @@ page-transcript {
     audio-track {
       ion-thumbnail audio-track-play {
         margin-top: 0;
+        padding-top:5px;
       }
 
       audio-track-progress-bar input[type=range] {

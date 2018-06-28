@@ -5,7 +5,7 @@
 <ion-content elastic-header>
   <img [src]="selectedItem.content.img[0].path" [alt]="selectedItem.content.img[0].altText | translate">
   <div [innerHtml]="selectedItem.content.description | translate" padding></div>
-  <div padding>
+  <div padding class="location">
     <strong>{{'location' | translate}}:</strong>
     <span [innerHtml]="selectedItem.location | translate"></span>
     <br/>
@@ -16,7 +16,7 @@
 <ion-footer *ngIf="checkStatus()">
   <ion-toolbar class="audio">
     <ion-buttons>
-  <button ion-button (click)="openTranscript($event)"><img src="assets/images/audio.png"/> {{'transcript_link' | translate}} ({{selectedItem.content.audio[0].runningTime}})</button> 
+  <button ion-button (click)="openTranscript($event)"><img src="assets/images/audio.png"/> {{'transcript_link' | translate}} ({{selectedItem.content.audio[0].runningTime}})</button>
 </ion-buttons>
 </ion-toolbar>
 </ion-footer>
