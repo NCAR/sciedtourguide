@@ -91,7 +91,7 @@ export class ImageDrawTextDirective {
           // draw transparent text bkg
           context.fillStyle = 'rgba(225,225,225,0.5)';
           let textbox = {'x': (canvas.width/2)+50, 'y': (canvas.height/2), 'width': canvas.width - (canvas.width/2)-50, 'height': (canvas.height/2)-200};
-          let max_width = textbox.width - 50;
+          let max_width = textbox.width - 90;
           context.fillRect(textbox.x, textbox.y, textbox.width, textbox.height);
 
 

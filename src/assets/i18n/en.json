@@ -458,7 +458,7 @@
     "supercomputer": {
       "content": {
         "title": "Supercomputers",
-        "description": "Cloud desc"
+        "description": "Viewing the exhibits in the Visitor Center of the NWSC is a wonderful way to spend a morning or afternoon. Enjoy a free, self-guided tour that offers an informative view of weather, climate, supercomputing and the broad spectrum of atmospheric research at a world-class science laboratory. Learn about current Earth science research spanning our planet's changing climate to the genesis of severe weather phenomena. Find out about computational science and see one of the fastest supercomputers in existence today."
       },
       "img": {
         "title": "img title",
@@ -544,7 +544,7 @@
     "library": {
       "content": {
         "title": "The NCAR Library",
-        "description": "The NCAR Archives Gallery is located on the second floor of the Mesa Lab in the library.  Ongoing exhibits include photographs and artifacts spanning the history of the institution. Visit the NCAR Archives website to learn more about the archives and explore their online exhibits.  "
+        "description": "The NCAR Library serves and supports Atmospheric, Solar and Earth scientists and their research at NCAR and throughout the broader UCAR community.  The Library is the home of The NCAR Archives Gallery and is located on the second floor of the Mesa Lab.  Ongoing and revolving exhibits include photographs and artifacts spanning the history of the institution.  Exhibits change approximately twice a year so stop by during your visit to discover new offerings."
       },
       "img": {
         "title": "img title",
@@ -615,7 +615,8 @@
       "first": "First Floor",
       "second": "Second Floor",
       "mezzanine":"Mezzanine",
-      "entrance":"Front Entrance"
+      "entrance":"Front Entrance",
+      "nwsc":"Cheyenne, WY"
     },
     "galleries":{
         "aq":"Air Quality Exhibit",

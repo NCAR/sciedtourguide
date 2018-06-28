@@ -656,14 +656,14 @@
     "children": [{
         "id": "supercomputer",
         "name": "supercomputers.supercomputer.content.title",
-        "location":"map.location.1b",
+        "location":"map.location.nwsc",
         "content": {
           "title": "supercomputers.supercomputer.content.title",
           "description": "supercomputers.supercomputer.content.description",
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/clouds.jpg",
+            "path": "assets/images/sections/supercomputer.jpg",
             "title": "supercomputers.supercomputer.img.title",
             "credit": "supercomputers.supercomputer.img.credit",
             "altText": "supercomputers.supercomputer.img.description",
