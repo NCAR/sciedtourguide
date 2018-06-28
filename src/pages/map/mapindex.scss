@@ -1,14 +1,17 @@
 page-map-index {
 
   .card {
-    background-color:red;
-    height:33%;
-    width:100%;
-    margin-bottom:1%;
+    background-color:#FF9624;
+    height:45%;
+    margin:2%;
     .card-title {
-      font-size:2.5em;
+      font-size:3em;
       color:#fff;
     }
+    .card-subtitle {
+      font-size:1.5em;
+      color:#fff;
+      margin-top:2%;
+    }
   }
-
 }

@@ -6,7 +6,7 @@
 <ion-content>
 
   <ion-card-header>
-    {{ selectedItem.content.audio[0].title | translate }}
+    {{ selectedItem.content.title | translate }}
   </ion-card-header>
   <ion-card-content [innerHTML]="selectedItem.content.audio[0].transcriptId | translate">
   </ion-card-content>

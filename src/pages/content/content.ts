@@ -17,7 +17,6 @@ export class ContentPage {
     this.selectedItem = this.navParams.get('item');
     this.selectedParent = this.navParams.get('parent');
     this.specialBtn = 'audioBtn';
-console.log(this.selectedItem.content.audio[0].runningTime);
     this.titlebarColor = this.selectedParent;
     this.sharedVars.trackView('Content - '+this.selectedParent+':'+this.selectedItem.id);
 
@@ -33,10 +32,10 @@ console.log(this.selectedItem.content.audio[0].runningTime);
 
   }
   checkStatus() {
-    if (typeof this.selectedItem == "object" && typeof this.selectedItem.id == "string" && (this.selectedItem.id == "library" || this.selectedItem.id == "supercomputer")) {
-      return false;
+    if (typeof this.selectedItem == "object" && typeof this.selectedItem.id == "string" && typeof this.selectedItem.content.audio == "object") {
+      return true;
     }
-    return true;
+    return false;
   }
   /*loadMap(item) {
     this.events.publish('change-tab-map', 1, item);

@@ -12,8 +12,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/clouds.jpg",
-            "title": "weather.cloud.img.title",
-            "credit": "weather.cloud.img.credit",
             "altText": "weather.cloud.img.description",
 
             "width": "1024",
@@ -46,8 +44,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/severewx.jpg",
-            "title": "weather.severewx.img.title",
-            "credit": "weather.severewx.img.credit",
             "altText": "weather.severewx.img.description",
 
             "width": "1024",
@@ -58,10 +54,8 @@
             "altText": "weather.severewx.icon.description"
           }],
           "audio": [{
-            "id": "",
             "positionId": "1",
             "src": "assets/audio/sections/NCAR_Weather-SevereWeather.mp3",
-            "title": "weather.severewx.audio.title",
             "": "weather.severewx.audio.description",
             "runningTime": "1:29",
             "transcriptId": "weather.severewx.audio.transcript",
@@ -81,8 +75,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/wxinstruments.jpg",
-            "title": "weather.wxinstruments.img.title",
-            "credit": "weather.wxinstruments.img.credit",
             "altText": "weather.wxinstruments.img.description",
 
             "width": "1024",
@@ -115,8 +107,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/microburst.jpg",
-            "title": "weather.microburst.img.title",
-            "credit": "weather.microburst.img.credit",
             "altText": "weather.microburst.img.description",
 
             "width": "1024",
@@ -149,8 +139,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/wxforecast.jpg",
-            "title": "weather.wxforecasting.img.title",
-            "credit": "weather.wxforecasting.img.credit",
             "altText": "weather.wxforecasting.img.description",
 
             "width": "1024",
@@ -183,8 +171,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/tornado.jpg",
-            "title": "weather.tornado.img.title",
-            "credit": "weather.tornado.img.credit",
             "altText": "weather.tornado.img.description",
             "width": "1024",
             "height": "768"
@@ -216,8 +202,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/wxclimate.jpg",
-            "title": "weather.wxclimate.img.title",
-            "credit": "weather.wxclimate.img.credit",
             "altText": "weather.wxclimate.img.description",
             "width": "1024",
             "height": "768"
@@ -249,8 +233,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/chaos.jpg",
-            "title": "weather.chaos.img.title",
-            "credit": "weather.chaos.img.credit",
             "altText": "weather.chaos.img.description",
             "width": "1024",
             "height": "768"
@@ -286,8 +268,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/keeling.jpg",
-            "title": "climate.greenhousegases.img.title",
-            "credit": "climate.greenhousegases.img.credit",
             "altText": "climate.greenhousegases.img.description",
             "width": "1024",
             "height": "768"
@@ -319,8 +299,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/past_climate.jpg",
-            "title": "climate.past.img.title",
-            "credit": "climate.past.img.credit",
             "altText": "climate.past.img.description",
             "width": "1024",
             "height": "768"
@@ -353,8 +331,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/climatechange.jpg",
-            "title": "climate.change.img.title",
-            "credit": "climate.change.img.credit",
             "altText": "climate.change.img.description",
             "width": "1024",
             "height": "768"
@@ -386,8 +362,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/choosefuture.jpg",
-            "title": "climate.choosefuture.img.title",
-            "credit": "climate.choosefuture.img.credit",
             "altText": "climate.choosefuture.img.description",
             "width": "1024",
             "height": "768"
@@ -419,8 +393,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/impacts.jpg",
-            "title": "climate.impacts.img.title",
-            "credit": "climate.impacts.img.credit",
             "altText": "climate.impacts.img.description",
             "width": "1024",
             "height": "768"
@@ -452,8 +424,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/future_climate.png",
-            "title": "climate.futureclimate.img.title",
-            "credit": "climate.futureclimate.img.credit",
             "altText": "climate.futureclimate.img.description",
             "width": "1024",
             "height": "768"
@@ -485,8 +455,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/solutions.jpg",
-            "title": "climate.solutions.img.title",
-            "credit": "climate.solutions.img.credit",
             "altText": "climate.solutions.img.description",
             "width": "1024",
             "height": "768"
@@ -522,8 +490,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/sunearth.jpg",
-            "title": "sunearth.history.img.title",
-            "credit": "sunearth.history.img.credit",
             "altText": "sunearth.history.img.description",
             "width": "1024",
             "height": "768"
@@ -555,8 +521,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/sunspot.jpg",
-            "title": "sunearth.observations.img.title",
-            "credit": "sunearth.observations.img.credit",
             "altText": "sunearth.observations.img.description",
             "width": "1024",
             "height": "768"
@@ -592,8 +556,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/atmosphere.jpg",
-            "title": "atmosphere.layers.img.title",
-            "credit": "atmosphere.layers.img.credit",
             "altText": "atmosphere.layers.img.description",
 
             "width": "1024",
@@ -626,8 +588,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/dropsondes.jpg",
-            "title": "atmosphere.dropsondes.img.title",
-            "credit": "atmosphere.dropsondes.img.credit",
             "altText": "atmosphere.dropsondes.img.description",
 
             "width": "1024",
@@ -664,8 +624,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/supercomputer.jpg",
-            "title": "supercomputers.supercomputer.img.title",
-            "credit": "supercomputers.supercomputer.img.credit",
             "altText": "supercomputers.supercomputer.img.description",
 
             "width": "1024",
@@ -674,16 +632,6 @@
           "icon": [{
             "path": "assets/icon/supercomputing_bleed-01.jpg",
             "altText": "supercomputers.supercomputer.icon.description"
-          }],
-          "audio": [{
-            "id": "",
-            "positionId": "1",
-            "src": "assets/audio/sections/NCAR_Weather-supercomputers.mp3",
-            "title": "supercomputers.supercomputer.audio.title",
-            "description": "supercomputers.supercomputer.audio.description",
-            "runningTime": "1:30",
-            "transcriptId": "supercomputers.supercomputer.audio.transcript",
-            "preload": "metadata"
           }]
         }
       },
@@ -698,8 +646,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/cray.jpg",
-            "title": "supercomputers.cray.img.title",
-            "credit": "supercomputers.cray.img.credit",
             "altText": "supercomputers.cray.img.description",
 
             "width": "1024",
@@ -737,8 +683,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/aq.jpg",
-            "title": "aq.aq.img.title",
-            "credit": "aq.aq.img.credit",
             "altText": "aq.aq.img.description",
 
             "width": "1024",
@@ -771,8 +715,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/garden.jpg",
-            "title": "aq.garden.img.title",
-            "credit": "aq.garden.img.credit",
             "altText": "aq.garden.img.description",
 
             "width": "1024",
@@ -810,8 +752,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/cosmic.jpg",
-            "title": "misc.cosmic.img.title",
-            "credit": "misc.cosmic.img.credit",
             "altText": "misc.cosmic.img.description",
 
             "width": "1024",
@@ -844,8 +784,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/library.jpg",
-            "title": "misc.library.img.title",
-            "credit": "misc.library.img.credit",
             "altText": "misc.library.img.description",
 
             "width": "1024",
@@ -854,16 +792,6 @@
           "icon": [{
             "path": "assets/icon/library_bleed-01.jpg",
             "altText": "misc.library.icon.description"
-          }],
-          "audio": [{
-            "id": "",
-            "positionId": "1",
-            "src": "assets/audio/sections/NCAR_Misc-Library.mp3",
-            "title": "misc.library.audio.title",
-            "description": "misc.library.audio.description",
-            "runningTime": "1:30",
-            "transcriptId": "misc.library.audio.transcript",
-            "preload": "metadata"
           }]
         }
       },
@@ -878,8 +806,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/architecture.jpg",
-            "title": "misc.architecture.img.title",
-            "credit": "misc.architecture.img.credit",
             "altText": "misc.architecture.img.description",
 
             "width": "1024",
@@ -912,8 +838,6 @@
             "id": "DI00673",
             "positionId": "1",
             "path": "assets/images/sections/trail.jpg",
-            "title": "misc.wxtrail.img.title",
-            "credit": "misc.wxtrail.img.credit",
             "altText": "misc.wxtrail.img.description",
 
             "width": "1024",
