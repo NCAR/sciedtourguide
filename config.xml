@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="edu.ucar.scied.ncartour" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="edu.ucar.scied.ncartour" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>NCAR Tour</name>
     <description>Virtual tour of the NCAR Mesa Lab Visitor Center</description>
-    <author email="sclark@ucar.edu" href="http://scied.ucar.edu/">UCAR Center for Science Education</author>
+    <author email="scied@ucar.edu" href="http://scied.ucar.edu/">UCAR Center for Science Education</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="*" />
@@ -89,7 +89,10 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.3.1" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-android-permissions" spec="~1.0.0" />
-    <plugin name="cordova-plugin-camera" spec="~4.0.3" />
+    <plugin name="cordova-plugin-camera" spec="~4.0.3">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="Uses the camera" />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Uses the photo library" />
+    </plugin>
     <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.0" />
     <plugin name="cordova-plugin-device" spec="~2.0.2" />
