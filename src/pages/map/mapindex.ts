@@ -44,10 +44,12 @@ export class MapIndexPage {
       switch (this.selectedItem) {
         case 'access':
           //load the accessible map
+          this.navCtrl.popToRoot();
           this.navCtrl.push(MapAccessPage);
           break;
         default:
           // load regular map
+          this.navCtrl.popToRoot();
           this.navCtrl.push(MapPage);
           break;
 
