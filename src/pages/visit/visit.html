@@ -109,7 +109,12 @@
         <ion-icon name="information-circle" large item-start aria-hidden="true"></ion-icon>
         {{'visitor.about.title' | translate}}
       </ion-card-header>
-      <ion-card-content [innerHtml]="'visitor.about.content' | translate">
+      <ion-card-content>
+        <span [innerHtml]="'visitor.about.content' | translate"></span>
+        <button ion-button icon-left (click)="sharedVars.launch('https://www2.ucar.edu/terms-of-use')">
+        <ion-icon name="information-circle" aria-hidden="true"></ion-icon>
+        {{ 'visitor.about.button_text' | translate }}
+      </button>
       </ion-card-content>
     </ion-card>
   </div>

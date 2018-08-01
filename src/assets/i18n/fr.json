@@ -3,279 +3,648 @@
   "audioBtnPlay": "Play Audio",
   "shareBtn": "Share",
   "backBtn": "Back",
-  "transcript_link": "Audio",
-  "visitor": "Visitor Information",
-  "visitor_info": "Visitor Info",
-  "map": "Map",
-  "exhibits_list": "Exhibits",
-  "postcard_camera_back": "Choose a different image",
-  "postcard_message_back": "Take a different photo",
-  "take_picture": "Take a photo",
-  "retake_picture": "Retake photo",
-  "postcard_write": "Write Postcard",
-  "postcard_start_button": "Get Started!",
-  "postcard_send": "Postcards",
-  "postcard_send_button": "Send my postcard",
-  "postcard_finish": "Finish my postcard",
-  "postcard_startover_button": "Start Over",
-  "postcard_step_one": "First, select a background image.",
-  "postcard_step_two": "This is your selected background image. You can can choose another background image or move to the next step and take a photo of yourself.",
-  "postcard_step_three": "This is your photo.  Nice shot!  You can retake your photo or write your message.  Please limit to 140 characters or less.",
-  "postcard_message_label": "Message",
-  "postcard_loading": "Creating your postcard...",
-  "postcard_message_placeholder": "Example: Hi Mom!  I just visited the NCAR Visitor Center and played with a cloud!",
-  "postcard_review": "Here is your postcard.  Would you like send it?",
-  "about": "About",
-  "apptitle": "ML Tour",
-  "map_download": "Download Map",
-  "map_interactive": "Interactive Map",
-  "map_access": "Accessibility Map",
-  "visitor_intro": "The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free.",
-  "visitor_intro_button_text": "Visitor website",
-  "visitor_address_title": "Address",
-  "visitor_address_content": "1850 Table Mesa Drive<br/>Boulder, Colorado 80305",
-  "visitor_address_content_button_text": "View directions",
-  "visitor_hours_title": "Visitor Center Hours",
-  "visitor_hours_content": "Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The visitor center is open every day except for two annual shut down days in the spring and fall. View our visitor website for updates when these shut downs are scheduled.</p>",
-  "visitor_tours_title": "Tours",
-  "visitor_tours_content": "Public tours, MWF: 12:00 pm",
-  "visitor_tours_content_button_text": "View tour information",
-  "visitor_cafeteria_title": "Cafeteria Hours",
-  "visitor_cafeteria_content": "Breakfast, 8:00 am - 9:30 am<br/>Lunch, 11:30 - 1:30 pm  <p>The cafeteria is open weekdays only, except holidays. The cafeteria accepts only cash.</p>",
-  "visitor_accessibility_title": "Accessibility",
-  "visitor_accessibility_parking": "Parking ",
-  "visitor_accessibility_elevators": "Elevators ",
-  "visitor_accessibility_restrooms": "Restrooms ",
-  "visitor_accessibility_content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  Our Visitor program is committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accomodations can be found on our visitor website.",
-  "visitor_accessibility_content_button_text": "View accessibility information",
-  "visitor_accessiblity_parking_intro": "NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.",
-  "visitor_accessibility_parking_title1": "Front driveway access",
-  "visitor_accessibility_parking_content1": "This is a secure driveway and entrance, therefore one must call NCAR (303.497.1139) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
-  "visitor_accessibility_parking_title2": "Accessible rear entrance",
-  "visitor_accessibility_parking_content2": "The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center.",
-  "visitor_accessibility_elevators_intro": "All exhibits and public areas are accessible by elevator.",
-  "visitor_accessibility_restrooms_intro": "A wheelchair accessible restroom is available on the second floor in the Climate Future exhibit area.",
-  "visitor_map_accessibility": "View accessibility map",
-  "second_floor": "SECOND FLOOR",
-  "content_weather_title": "Weather",
-  "content_cloud_title": "Clouds",
-  "content_cloud_description": "",
-  "img_cloud_title": "",
-  "img_cloud_credit": "",
-  "img_cloud_description": "",
-  "audio_cloud_title": "",
-  "audio_cloud_description": "",
-  "audio_cloud_transcript": "",
-  "content_severewx_title": "Clouds",
-  "content_severewx_description": "",
-  "img_severewx_title": "",
-  "img_severewx_credit": "",
-  "img_severewx_description": "",
-  "audio_severewx_title": "",
-  "audio_severewx_description": "",
-  "audio_severewx_transcript": "",
-  "content_wxinstruments_title": "Weather Instruments",
-  "content_wxinstruments_description": "",
-  "img_wxinstruments_title": "",
-  "img_wxinstruments_credit": "",
-  "img_wxinstruments_description": "",
-  "audio_wxinstruments_title": "",
-  "audio_wxinstruments_description": "",
-  "audio_wxinstruments_transcript": "",
-  "content_microburst_title": "Microburst",
-  "content_microburst_description": "",
-  "img_microburst_title": "",
-  "img_microburst_credit": "",
-  "img_microburst_description": "",
-  "audio_microburst_title": "",
-  "audio_microburst_description": "",
-  "audio_microburst_transcript": "",
-  "content_forecasting_title": "Microburst",
-  "content_forecasting_description": "",
-  "img_forecasting_title": "",
-  "img_forecasting_credit": "",
-  "img_forecasting_description": "",
-  "audio_forecasting_title": "",
-  "audio_forecasting_description": "",
-  "audio_forecasting_transcript": "",
-  "content_tornado_title": "Microburst",
-  "content_tornado_description": "",
-  "img_tornado_title": "",
-  "img_tornado_credit": "",
-  "img_tornado_description": "",
-  "audio_tornado_title": "",
-  "audio_tornado_description": "",
-  "audio_tornado_transcript": "",
-  "content_wxclimate_title": "Microburst",
-  "content_wxclimate_description": "",
-  "img_wxclimate_title": "",
-  "img_wxclimate_credit": "",
-  "img_wxclimate_description": "",
-  "audio_wxclimate_title": "",
-  "audio_wxclimate_description": "",
-  "audio_wxclimate_transcript": "",
-  "content_chaos_title": "Microburst",
-  "content_chaos_description": "",
-  "img_chaos_title": "",
-  "img_chaos_credit": "",
-  "img_chaos_description": "",
-  "audio_chaos_title": "",
-  "audio_chaos_description": "",
-  "audio_chaos_transcript": "",
-  "content_climate_title": "Climate",
-  "content_greenhouse_gases_title": "Greenhouse Gases",
-  "content_greenhouse_gases_description": "",
-  "img_greenhouse_gases_title": "",
-  "img_greenhouse_gases_credit": "",
-  "img_greenhouse_gases_description": "",
-  "audio_greenhouse_gases_title": "",
-  "audio_greenhouse_gases_description": "",
-  "audio_greenhouse_gases_transcript": "",
-  "content_past_climate_title": "Past Climates",
-  "content_past_climate_description": "",
-  "img_past_climate_title": "",
-  "img_past_climate_credit": "",
-  "img_past_climate_description": "",
-  "audio_past_climate_title": "",
-  "audio_past_climate_description": "",
-  "audio_past_climate_transcript": "",
-  "content_climate_change_title": "Our Changing Climate",
-  "content_climate_change_description": "",
-  "img_climate_change_title": "",
-  "img_climate_change_credit": "",
-  "img_climate_change_description": "",
-  "audio_climate_change_title": "",
-  "audio_climate_change_description": "",
-  "audio_climate_change_transcript": "",
-  "content_choose_future_title": "Choose Our Future",
-  "content_choose_future_description": "",
-  "img_choose_future_title": "",
-  "img_choose_future_credit": "",
-  "img_choose_future_description": "",
-  "audio_choose_future_title": "",
-  "audio_choose_future_description": "",
-  "audio_choose_future_transcript": "",
-  "content_climate_impacts_title": "Climate Impacts",
-  "content_climate_impacts_description": "",
-  "img_climate_impacts_title": "",
-  "img_climate_impacts_credit": "",
-  "img_climate_impacts_description": "",
-  "audio_climate_impacts_title": "",
-  "audio_climate_impacts_description": "",
-  "audio_climate_impacts_transcript": "",
-  "content_future_climate_title": "Future Climate Predictions",
-  "content_future_climate_description": "",
-  "img_future_climate_title": "",
-  "img_future_climate_credit": "",
-  "img_future_climate_description": "",
-  "audio_future_climate_title": "",
-  "audio_future_climate_description": "",
-  "audio_future_climate_transcript": "",
-  "content_climate_solutions_title": "Climate Solutions",
-  "content_climate_solutions_description": "",
-  "img_climate_solutions_title": "",
-  "img_climate_solutions_credit": "",
-  "img_climate_solutions_description": "",
-  "audio_climate_solutions_title": "",
-  "audio_climate_solutions_description": "",
-  "audio_climate_solutions_transcript": "",
-  "content_sun_earth_title": "Sun-Earth Connections",
-  "content_history_solar_title": "History of Solar Research",
-  "content_history_solar_description": "",
-  "img_history_solar_title": "",
-  "img_history_solar_credit": "",
-  "img_history_solar_description": "",
-  "audio_history_solar_title": "",
-  "audio_history_solar_description": "",
-  "audio_history_solar_transcript": "",
-  "content_sun_observations_title": "Observing the Sun",
-  "content_sun_observations_description": "",
-  "img_sun_observations_title": "",
-  "img_sun_observations_credit": "",
-  "img_sun_observations_description": "",
-  "audio_sun_observations_title": "",
-  "audio_sun_observations_description": "",
-  "audio_sun_observations_transcript": "",
-  "content_atmosphere_title": "Atmosphere",
-  "content_atmosphere_layers_title": "Layers of the Atmosphere",
-  "content_atmosphere_layers_description": "",
-  "img_atmosphere_layers_title": "",
-  "img_atmosphere_layers_credit": "",
-  "img_atmosphere_layers_description": "",
-  "audio_atmosphere_layers_title": "",
-  "audio_atmosphere_layers_description": "",
-  "audio_atmosphere_layers_transcript": "",
-  "content_dropsondes_title": "Dropsondes",
-  "content_dropsondes_description": "",
-  "img_dropsondes_title": "",
-  "img_dropsondes_credit": "",
-  "img_dropsondes_description": "",
-  "audio_dropsondes_title": "",
-  "audio_dropsondes_description": "",
-  "audio_dropsondes_transcript": "",
-  "content_aq_title": "Air Quality",
-  "content_aq_description": "",
-  "img_aq_title": "",
-  "img_aq_credit": "",
-  "img_aq_description": "",
-  "audio_aq_title": "",
-  "audio_aq_description": "",
-  "audio_aq_transcript": "",
-  "content_ozone_garden_title": "The Ozone Garden",
-  "content_ozone_garden_description": "",
-  "img_ozone_garden_title": "",
-  "img_ozone_garden_credit": "",
-  "img_ozone_garden_description": "",
-  "audio_ozone_garden_title": "",
-  "audio_ozone_garden_description": "",
-  "audio_ozone_garden_transcript": "",
-  "content_supercomputers_title": "Supercomputers",
-  "content_supercomputers_description": "",
-  "img_supercomputers_title": "",
-  "img_supercomputers_credit": "",
-  "img_supercomputers_description": "",
-  "audio_supercomputers_title": "",
-  "audio_supercomputers_description": "",
-  "audio_supercomputers_transcript": "",
-  "content_cray_title": "The Cray-1A Supercomputer",
-  "content_cray_description": "",
-  "img_cray_title": "",
-  "img_cray_credit": "",
-  "img_cray_description": "",
-  "audio_cray_title": "",
-  "audio_cray_description": "",
-  "audio_cray_transcript": "",
-  "content_misc_title": "Miscellaneous",
-  "content_cosmic_title": "COSMOC 2 Satellite",
-  "content_cosmic_description": "",
-  "img_cosmic_title": "",
-  "img_cosmic_credit": "",
-  "img_cosmic_description": "",
-  "audio_cosmic_title": "",
-  "audio_cosmic_description": "",
-  "audio_cosmic_transcript": "",
-  "content_trail_title": "The Weather Trail",
-  "content_trail_description": "",
-  "img_trail_title": "",
-  "img_trail_credit": "",
-  "img_trail_description": "",
-  "audio_trail_title": "",
-  "audio_trail_description": "",
-  "audio_trail_transcript": "",
-  "content_library_title": "The NCAR Library",
-  "content_library_description": "",
-  "img_library_title": "",
-  "img_library_credit": "",
-  "img_library_description": "",
-  "audio_library_title": "",
-  "audio_library_description": "",
-  "audio_library_transcript": "",
-  "content_architecture_title": "Architecture",
-  "content_architecture_description": "",
-  "img_architecture_title": "",
-  "img_architecture_credit": "",
-  "img_architecture_description": "",
-  "audio_architecture_title": "",
-  "audio_architecture_description": "",
-  "audio_architecture_transcript": "",
+  "transcript_link": "Listen to Audio Guide",
+  "running_time": "Running time",
+  "location": "Location",
+  "exhibit": "Exhibit ",
+  "filter_placeholder": "Filter exhibits by topic",
+  "toolbar": {
+    "exhibits": "Exhibits",
+    "map": "Map",
+    "postcards": "Postcards",
+    "visitor": "Visitor Info"
+  },
+  "postcard": {
+    "camera_alt": "Your camera photo",
+    "intro": {
+      "title": "Postcard Generator",
+      "content": "<p>Please follow the instructions provided to create your postcard.</p>"
+    },
+    "image": {
+      "mesalab": {
+        "altText": "The NCAR Mesa Lab."
+      },
+      "eclipse": {
+        "altText": "A total solar eclipse."
+      },
+      "mammatus": {
+        "altText": "A mammatus cloud at sunset."
+      },
+      "cesm": {
+        "altText": "Climate System model visualization."
+      },
+      "snowflake": {
+        "altText": "The crystaline structure of a 6-sided snowflake."
+      },
+      "treerings": {
+        "altText": "Tree rings."
+      }
+    },
+    "steps": {
+      "one": {
+        "instructions": {
+          "content": "First, tap an image to select a background."
+        }
+      },
+      "two": {
+        "instructions": {
+          "content": "This is your selected background image. You can choose another background image or move to the next step and take a photo of yourself.  Be sure you've given permission for the app to use your camera and photo gallery!"
+        },
+        "buttons": {
+          "take_picture": "Take a photo",
+          "camera_back": "Choose a different image"
+        }
+      },
+      "three": {
+        "instructions": {
+          "withimage": {
+            "content": "This is your photo.  Nice shot!  You can retake your photo or write your message.  Please limit to 140 characters or less."
+          }
+        },
+        "message": {
+          "label": "Message",
+          "placeholder_text": "Example: Hi Mom!  I just visited the NCAR Visitor Center and played with a cloud!"
+        },
+        "buttons": {
+          "finish": "Finish my postcard",
+          "message_back": "Take a different photo"
+        }
+      },
+      "finished": {
+        "loading_text": "Creating your postcard...",
+        "review_text": "Here is your postcard.  Would you like to send it?",
+        "buttons": {
+          "send": "Send my postcard",
+          "startover": "Start Over"
+        }
+      }
+    }
+  },
+  "visitor": {
+    "title": "Visitor Information",
+    "intro": {
+      "content": "The NCAR Visitor Center is located at the NCAR Mesa Lab in Boulder, Colorado. Admission is always free.",
+      "button_text": "Visitor website"
+    },
+    "address": {
+      "title": "Address",
+      "content": "1850 Table Mesa Drive<br/>Boulder, Colorado 80305",
+      "button_text": "View directions"
+    },
+    "hours": {
+      "title": "Visitor Center Hours",
+      "content": "Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The visitor center is open every day except for two annual shut down days in the spring and fall. Please view our visitor website prior to your visit for updated information.</p>"
+    },
+    "tours": {
+      "title": "Tours",
+      "content": "Public tours, MWF: 12:00 pm",
+      "button_text": "View tour information"
+    },
+    "cafeteria": {
+      "title": "Cafeteria Hours",
+      "content": "Breakfast, 8:00 am - 9:30 am<br/>Lunch, 11:30 - 1:30 pm  <p>The cafeteria is open weekdays only, except holidays. The cafeteria accepts cash and credit card.</p>"
+    },
+    "restrooms": {
+      "title": "Public Restrooms",
+      "content": "<strong>Men's Restroom</strong><p>Men's restrooms are located: <ul><li>On the north end of the first floor, directly across from the front desk</li><li>On the north end of the second floor, north of the Climate Futures exhibit</li><li>On the south end of the 2nd floor, in the hallway just north of the Library</li></ul></p><strong>Women's Restrooms</strong><p>Women's restrooms are located: <ul><li>On the south end of the 1st floor, in the hallway directly behind the theater</li><li>On the norht end of the 2nd floor, north of the Climate Futures exhibit</li><li>On the south end of the 2nd floor, down the hallway and to the right, behind the library</li></ul></p>"
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  Our Visitor program is committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accomodations can be found on our visitor website.",
+      "button_text": "View accessibility information",
+      "parking": {
+        "title": "Parking",
+        "content": "NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.",
+        "title1": "Wheelchair accessible front driveway access",
+        "content1": "This is a secure driveway and entrance, therefore one must call NCAR (<a href='tel:303-497-1139'>303-497-1139</a>) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
+        "title2": "Wheelchair accessible rear entrance",
+        "content2": "The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
+      },
+      "elevators": {
+        "title": "Elevators ",
+        "content": "All exhibits and public areas are accessible by elevator. Elevators are located on the north and south sides of the climate and weather exhibits.  Please inquire with the front desk if you need directions."
+      },
+      "restrooms": {
+        "title": "Restrooms ",
+        "content": "A wheelchair accessible restroom is available on the second floor, north of the Climate Future exhibit area."
+      },
+      "map": {
+        "button_text": "View wheelchair map"
+      }
+    },
+    "about": {
+      "title": "About this App",
+      "content": "<p>The NCAR Visitor Center Tour mobile app was developed by the UCAR Center for Science Education (UCAR SciEd). UCAR SciEd serves the geoscience community by amplifying and complementing the work of the National Science Foundation’s National Center for Atmospheric Research (NCAR) and University Corporation for Atmospheric Research (UCAR) member universities by reaching our audiences: K-12 educators, university faculty, students, and the public through excellence in educational programs and experiences.</p>",
+      "button_text":"View Terms of Use"
+    }
+  },
+  "weather": {
+    "title": "Weather",
+    "cloud": {
+      "content": {
+        "title": "Clouds",
+        "description": "Our view of the sky is constantly changing as clouds form and evolve. Clouds form when air rises from the Earth’s surface and cools, causing water vapor to condense on tiny particles in the atmosphere. Take a look out the window to see if there are clouds in the sky!"
+      },
+      "img": {
+        "description": "A towering cumulus cloud builds skyward."
+      },
+      "audio": {
+        "transcript": "<p>Take a look at the Sea of Clouds exhibit. Touch the clouds in the basin. How do they feel?</p><p>Small water droplets create the clouds in this exhibit. They’re made with a humidifier. In the atmosphere, clouds are also often made of small water droplets. Where air is colder, clouds can be made of ice crystals.</p><p>How do water and ice rise into the air and form clouds?</p><p>When water at the surface of oceans, lakes, and rivers is warmed by the Sun, some of it evaporates. It turns into water vapor, which is a gas.</p><p>Once in the atmosphere, water vapor rises to where the air is cooler. When the temperature drops, it will condense into liquid water droplets. If the air temperature is below freezing, ice crystals will form instead of liquid water.</p><p>The water droplets or ice crystals that make up clouds are so small and light that they stay aloft, floating in the air. But if they grow large and become heavy, they’ll fall to the ground as rain, sleet, or snow.</p><p>If you sweep your hands through the Sea of Clouds, you’ll change the shape of the clouds in the basin. Wind can cause the same thing to happen in the atmosphere. If you look up and see cirrus clouds forming in the sky, you’ll know that there are strong winds high in the atmosphere.</p>"
+      }
+    },
+    "severewx": {
+      "content": {
+        "title": "Severe Weather",
+        "description": "Tornadoes, thunderstorms, snowstorms, hurricanes, and very strong winds are all types of severe weather. These dramatic events can impact human health and the economy.  Between 1980 and 2016, more than 200 weather- or climate-related events in the United States have caused damages that cost at least $1 billion."
+      },
+      "img": {
+        "description": "Hundreds of hailstones, some as large as golfballs cover grassy ground."
+      },
+      "audio": {
+        "transcript": "<p>Wind, darkening clouds, and that unmistakable clap of thunder. When a thunderstorm rolls in, you know it. A common type of severe weather in Colorado, these storms cause lightning and intense rain. Sometimes they form icy precipitation called hail.</p><p>Hailstones are often the size of peas or marbles, but they can be much larger. In this exhibit, there’s a model of a hailstone that fell on September 3, 1970, in Coffeyville, Kansas. It was sent to NCAR Researcher Charlie Knight, who was studying hail. This hailstone was known as the world’s largest until 2010 when an even larger hailstone was found in Vivian, South Dakota.</p><p>Hail forms as air moves swiftly upward in thunderstorms, carrying moisture to higher altitudes. It’s cold up there, so the moisture freezes into ice. The ice is often tossed around within the storm, allowing it to grow from the size of a pea to the size of a golf ball, or even larger. Eventually hail falls to the ground, either because it gets so heavy it can’t be held up by the storm’s winds, or because the winds within the storm weaken.</p><p>Hail can damage crops, airplanes, homes, and vehicles. It can even cause injuries and fatalities. The car trunk in this exhibit was damaged by golf ball-sized hail that fell east of Denver in June 2012. Imagine how much damage larger hailstones could cause!</p>"
+      }
+    },
+    "wxinstruments": {
+      "content": {
+        "title": "Weather Instruments",
+        "description": "Weather instruments measure temperature, humidity, air pressure, and much more. Anemometers measure wind speed. Some also include a weather vane to show which direction the wind is blowing. The highest wind speed ever recorded here at the NCAR Mesa Lab was a 147 mph gust on January 23, 1971!"
+      },
+      "img": {
+        "description": "A barometer spins in the wind."
+      },
+      "audio": {
+        "transcript": "<p>What’s the weather like today? How cold is it outside? How fast did the wind blow? Weather instruments can help us answer these questions.</p><p>Thermometers measure temperature. Many thermometers are tubes filled with liquid. In warm weather, the liquid expands, filling more of the tube. The liquid contracts in cold weather.</p><p>A hygrometer measures humidity, which is the amount of moisture in the air. Measuring temperature and humidity is helpful because a hot day with high humidity will feel much hotter.</p><p>Barometers measure air pressure. This is the amount of force air molecules exert on a surface or object. They can be tightly packed as in a balloon, or loosely bouncing off it. Changing air pressure is often a sign that a change in the weather is coming.</p><p>Anemometers measure wind speed. They are often combined with wind vanes to show the direction the wind is blowing. Take a look at the types in this exhibit. One uses spinning cups. Another uses a rotating propeller. The cups and propeller rotate faster when wind speed is high. A sonic anemometer uses high-pitched, ultrasonic sound waves to measure wind speed and direction.</p><p>Instruments like these are often used in weather stations, but they also can be sent into the sky on weather balloons or planes. Radar detects rain, snow, or sleet from a distance while satellites can observe storms from space.</p>"
+      }
+    },
+    "microburst": {
+      "content": {
+        "title": "Microburst",
+        "description": "Microbursts are powerful, downward winds that form very suddenly underneath thunderstorms. These downdrafts can have speeds of more than 100 mph! Because microbursts are a safety hazard for airplanes during takeoff and landing, NCAR scientists developed a microburst detection system in the 1980s that makes air travel much safer."
+      },
+      "img": {
+         "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Squeeze the bulb on top of the water tank. Do you see the water flowing down and then swirling out at the bottom of the tank? This is a model of how air moves during a microburst.</p><p>Microbursts are powerful, downward winds that can form suddenly during thunderstorms. The wind moves from the storm clouds to the ground, sometimes at speeds of more than 100 miles per hour. Where it hits the ground, the wind blows outward in all directions. In a forest, it can knock down hundreds of trees. In a city or town, it can rip the roofs off buildings.</p><p>Imagine flying an airplane through the powerful, downward winds of a microburst. Imagine trying to land a plane in the swirling winds near the ground. Microbursts create dangerous conditions for aircraft, so NCAR researchers developed tools to help pilots avoid areas where downbursts are likely. In the seventies and eighties, they developed software to detect microburst winds using data from weather stations near airports.</p><p>More recently, they added data from Doppler radar. The tools they developed have dramatically reduced the danger. No major aircraft mishaps due to microbursts have occurred in the United States since 1994.</p>"
+      }
+    },
+    "wxforecasting": {
+      "content": {
+        "title": "Forecasting",
+        "description": "Weather forecasts influence our daily lives, helping us decide what to wear or when to take precautions when conditions call for severe weather. Weather forecasting models are used to predict weather in the near future. These models are run on advanced computers, and then the results are analyzed and interpreted by meteorologists."
+      },
+      "img": {
+         "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>“We’re expecting highs in the 60s today. Clouds will build in the afternoon, and then a storm may bring scattered showers tomorrow.”</p><p>When your local meteorologist shares a weather forecast, they tell you what to expect in the days ahead. But behind the scenes, there are scientists, computers, and tons of weather data that help make the forecast accurate.</p><p>To forecast weather, meteorologists add data about current weather conditions to a model that is run on a powerful supercomputer. They run the weather model hundreds of times. Each time the model predicts what the weather may be like up to ten days into the future. Each projection is a little bit different, requiring meteorologists to interpret hundreds of projections at a time. They calculate probabilities of different weather events and compare the results from the weather models to make a forecast.</p><p>As supercomputers have become more powerful, weather models have become more complex and can perform calculations faster. Better weather models have improved our ability to predict the weather accurately. Weather forecasts can never be completely perfect because of complexity and chaos in the natural world, but recent advancements show that forecasts can improve.</p><p>NCAR scientists developed the Weather Research and Forecasting model in the late nineties with the National Oceanic and Atmospheric Administration and other partners. Today, WRF is used by thousands of people around the world for forecasting and researching weather.</p>"
+      }
+    },
+    "tornado": {
+      "content": {
+        "title": "Tornado",
+        "description": "The most violent of all severe storms, tornadoes are columns of air rotating dangerously fast. About 75% of the world’s tornadoes form in the United States, mainly in the spring and summer along a Great Plains corridor called Tornado Alley."
+      },
+      "img": {
+        "description": "A tornado that touches the ground in southwestern Oklahoma on November 7, 2011.jpg"
+      },
+      "audio": {
+        "transcript": "<p>If the conditions are just right, you’ll see a funnel cloud form in the tornado exhibit. In nature, the most destructive and deadly tornadoes happen during severe thunderstorms known as supercells.</p><p>Tornadoes form in a supercell when the speed and often direction of the wind changes as altitude increases. The winds cause warm air moving upward to rotate. Cooler air blowing in gusts near the ground starts to rotate as well. It moves horizontally across the land but can be tilted vertically by the upward flow of warmer air. If the spinning air near the ground grows stronger as it tilts upward, a tornado can form.</p><p>Tornadoes can form anywhere, anytime; however, most occur in the United States during the spring and summer along a Great Plains corridor called Tornado Alley. The National Weather Service uses data from weather radar and information from trained storm spotters to decide when to issue tornado warnings.</p><p>The stronger a tornado’s winds, the more damage it can cause. The weakest tornadoes have wind speeds of at least 65 miles per hour, forceful enough to pull off roofs and break branches off trees. The strongest tornadoes have wind speeds of more than 200 miles per hour, which can completely destroy frame houses and send cars and trucks flying.</p>"
+      }
+    },
+    "wxclimate": {
+      "content": {
+        "title": "Weather and Climate",
+        "description": "The graph of temperatures in Boulder on the Fourth of July shows how weather changes from year to year. Climate is the word scientists use to describe changing weather conditions over time. Boulder’s climate tells us that the high temperature on July 4 next year and in years to come will probably be somewhere between 80 and 95 degrees Fahrenheit."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Give the blue orb a spin. Watch how the fluid within it moves. The air in our atmosphere flows like this fluid.</p><p>Weather patterns would be far simpler to understand and predict if we lived on a flat planet that was not spinning. Earth, however, is round and does spin.</p><p>Notice how horizontal bands of moving fluid form on the spinning globe. In Earth’s atmosphere, there are similar bands of moving air. On a large scale, the air in our atmosphere moves in a predictable pattern. For example, winds usually blow from east to west in subtropical regions and from west to east in the midlatitudes. Sailors relied upon these predictable winds for centuries.</p><p>The pattern of air flowing around the planet causes regions of the Earth to have different climates. For example, air, warmed by the Sun, is drawn upward at the equator. Warm, rising air causes clouds to form and rain to fall. This creates a region where temperatures are warm, rain is likely, and tropical rainforests flourish. Air is forced downward in regions at a latitude around 30° north and south of the equator, which creates a dry climate, like that of the Sahara Desert.</p>"
+      }
+    },
+    "chaos": {
+      "content": {
+        "title": "Chaos",
+        "description": "This unusual pendulum illustrates the scientific concept of chaos. In chaotic systems, a very slight change in starting conditions affects what happens next. Weather is a chaotic system, which makes it hard to predict with complete accuracy. Spin the pendulum and try to predict its motion!"
+      },
+      "img": {
+         "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>We can confidently predict that the Sun will rise tomorrow. But not everything in the universe is this predictable. Some phenomena of the natural world are extremely difficult to predict. Weather is one of them. Even with improved forecasting models, it is very difficult to correctly predict if it will rain next Tuesday. Forecasting weather is challenging because the atmosphere is a chaotic system.</p><p>The multi-armed pendulum in this exhibit is an example of a chaotic system. Give the knob a spin, count to ten, and then observe how the pendulum’s arms are moving. Spin it again in the same way. Does the motion of the arms look different with each spin?</p><p>If a system is predictable, we can run the same experiment time after time and expect to get pretty much the same results. Chaotic systems are different. Even a slight change in the starting conditions can have a significant impact on the final result. In the case of this pendulum, small differences in the way it’s spun cause large differences in the way the arms move over time.</p><p>Weather is far more chaotic than this pendulum. Slight changes in today’s humidity or wind speed can impact whether it will rain next Tuesday. So while we can predict that the Sun will rise tomorrow, the chaos of the atmosphere makes it much harder to forecast what the weather has in store.</p>"
+      }
+    }
+  },
+  "climate": {
+    "title": "Climate",
+    "greenhousegases": {
+      "content": {
+        "title": "Greenhouse Gases",
+        "description": "Charles David Keeling began measuring carbon dioxide (CO2) levels at Hawaii’s Mauna Loa Observatory in 1958. These measurements make up the Keeling Curve, which shows that CO2 values have increased from 330 to more than 400 parts per million (ppm). Greenhouse gases like CO2 trap heat in the atmosphere, warming the climate."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Life is able to thrive on Earth because the temperature is not too hot or too cold. The Earth’s atmosphere acts like a blanket because some gases in the air absorb heat. These gases are called greenhouse gases.</p><p>The most common greenhouse gases in our atmosphere are water vapor, carbon dioxide, methane, nitrous oxide, and ozone. Without greenhouse gases, Earth’s average temperature would be well below freezing. Instead, our planet is a comfortable 59 degrees Fahrenheit on average. But there can be too much of a good thing. On Venus, excessive greenhouse gases have pushed the average temperature to 865°F, four times as hot as boiling water.</p><p>On Earth, levels of greenhouse gases have been rising over the past 150 years, mainly because burning fossil fuels has released carbon dioxide into the air. Greenhouse gases also are emitted from leaks at natural gas wells and pipelines, agriculture, and cement making. Look at the graphic in this exhibit that shows carbon dioxide levels measured over time at three locations, including right here at NCAR. In most places, carbon dioxide levels fluctuate with seasonal changes in northern forests, in urban and natural environments, and even from night to day. But while a place like Boulder, Colorado, sees more variation, the air rolling in from the Pacific Ocean above Hawaii’s Mauna Loa volcano is relatively unaffected by these variations, making it a good indicator of average global levels of carbon dioxide.</p>"
+      }
+    },
+    "past": {
+      "content": {
+        "title": "Past Climates",
+        "description": "How do we learn what Earth’s climate was like a thousand or a million years ago? There is evidence of past climates preserved in glaciers, corals, and ocean sediments. Tree rings of different widths tell us about growing conditions from year to year. Was it dry or wet? Cool or hot?"
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>It takes some detective work to figure out what Earth’s climate was like hundreds, thousands, or even millions of years ago.</p><p>To find out what climate was like decades or centuries ago, scientists can use records like harvest reports and the timing of seasonal festivals. To find out what climate was like before people kept records, scientists study natural phenomena called “proxies.”</p><p>Proxies record data about past climates. Growth rings in tree trunks, like those in the ponderosa pine example in this exhibit, are a type of proxy. The width of each ring tells you about the length of the growing season and the region’s climate. Trees produce wider rings when they have a long growing season with warm temperatures and moisture.</p><p>Ice cores extracted from glaciers and ice caps can also help us understand what climate was like in the past. Take a look at the model. The ice is layered because it forms as snow falls on the glacier. Layers near the top of the core are younger than those below. The chemistry of the ice reveals information about Earth’s temperature, as does the pollen, dust, and other particles trapped in the ice. Air also gets trapped as little bubbles, allowing us to measure how much carbon dioxide was in the atmosphere at times in the past.</p>"
+      }
+    },
+    "change": {
+      "content": {
+        "title": "Our Changing Climate",
+        "description": "The Earth’s climate is changing. Global average temperature is warming due to an increase in greenhouse gases, which are released as we burn fossil fuels. Warmer temperatures are changing the character of storms, increasing the chance of drought and flooding in many parts of the world."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Earth’s average temperature has increased by about 2°F since 1900. And the rate of warming is speeding up. Since 1970, Earth’s average temperature has been warming about a third of a degree per decade. Some places are warming faster than others.</p><p>The source of a warming planet is us. When we burn fossil fuels to generate electricity at home or power our cars, we release greenhouse gases into the atmosphere. Industries emit greenhouse gases, and so does agriculture.</p><p>Four out of five of the greenhouse gas molecules we emit into the air are carbon dioxide. Each molecule is invisible and small—just a single carbon atom connected to two oxygen atoms. But we make a lot of it, so much that each year we add about forty billion tons of carbon dioxide into the atmosphere. That’s heavier than a million and a half versions of the Titanic. And because the carbon dioxide molecules emitted by burning fossil fuels have a different structure than those that are naturally released into the air, we can measure our impact.</p><p>As Earth’s temperature warms, more water evaporates into the air, which can cause drought in areas that don’t have water to spare, like the Southwest United States. More evaporated water also increases the possibility of extreme rainfall and floods. Overall, wet areas are getting wetter while dry areas are getting drier.</p>"
+      }
+    },
+    "choosefuture": {
+      "content": {
+        "title": "Choose Our Future",
+        "description": "The choices we make today will impact our planet tomorrow! The interactive Choose Our Future game gives you feedback on how choices made in daily life impact your carbon footprint. Learn how your actions can impact the Earth’s global average temperature. "
+      },
+      "img": {
+         "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Will the climate continue warming in the future? Will we be able to keep the amount of warming below dangerous levels? The answers to these questions depend on the choices we make today.</p><p>The Choose Our Future game lets you explore how different choices affect climate change. It uses research developed by an NCAR scientist to identify the emission rates of various activities.</p><p>Do you use public transportation, ride a bike, or drive a car to get from place to place? Would you choose a road trip vacation or fly to another country? What types of food do you eat? Where does your home’s energy come from? All of these choices, and many more, impact the amount of greenhouse gases, like carbon dioxide, in the atmosphere.</p><p>To play the game, simply slide your hand over one choice in each category, say transportation, as they light up. The game keeps track of all your choices, and once you’ve finished, the lights on the back of the board will show the impact that your choices would have on Earth’s temperature if everyone in the country made the same choices. You might be surprised by the results. Note that this game focuses on the choices we make as individuals. Companies and governments also make decisions that impact climate change. Consider what your workplace and government could do to curb emissions as well.</p>"
+      }
+    },
+    "impacts": {
+      "content": {
+        "title": "Climate Impacts",
+        "description": "The impacts of climate change are already occurring and will continue into the future. They affect people and places around the world in many different ways. As temperatures rise and patterns of precipitation change, we face a multitude of challenges. Fortunately scientists, engineers, city planners, and others are working on solutions to keep people safe."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Adding greenhouse gases to our atmosphere does not only change the planet’s temperature, it also changes the land, ice, oceans, and life on Earth. This is because our planet is an interconnected system. As John Muir once wrote, “when we try to pick out anything by itself, we find it hitches to everything else in the Universe.”</p><p>In this section of the exhibit, you’ll find profiles of specific impacts of climate change, how parts of the planet are affected, and how people’s lives are changed. Some places are more vulnerable than others and the impact more severe; however, these changes affect all of us.</p><p>There are changes to the land as climate change affects patterns of precipitation. In some areas, too little rainfall is causing drought; in other areas, too much is causing floods.</p><p>The ocean is also affected. Melting glaciers and warming seawater are causing sea levels to rise. Ocean chemistry also is changing as carbon dioxide dissolves into seawater. Increasingly acidic oceans make it difficult for marine life to thrive.</p><p>Some animals and plants are able to migrate or adapt as climate changes; others are in jeopardy. Scientists estimate that a quarter of all mammals, a third of corals, and a fifth of all reptiles are heading for extinction. Climate change jeopardizes human health, too. Severe heat waves, changes in the distribution of diseases, and floods and droughts that decrease water quality all make it difficult for people to thrive.</p>"
+      }
+    },
+    "futureclimate": {
+      "content": {
+        "title": "Future Climate Predictions",
+        "description": "The global average temperature has been rising for more than a century. Earth will continue to warm in the years ahead unless we dramatically reduce our emission of greenhouse gases. Using renewable energy sources, such as wind and solar power, instead of fossil fuels could help us achieve those reductions."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>As we continue to emit more and more carbon dioxide and other greenhouse gases into Earth’s atmosphere year after year, their heat-trapping effect grows stronger. As a result, the average global temperature has been steadily creeping upward.</p><p>Average global temperature is the average over the whole planet, from the equator to the poles, over land and sea, and throughout all months and seasons of the year. The average helps scientists decipher overall trends to learn how the planet’s temperature is changing. Today’s climate models are quite good at predicting the average global temperature for the coming decades and even into the next century. They also make it possible to project future temperature and rainfall patterns for specific regions of the world.</p><p>Take a look at the graph of global average surface temperature change. It shows two possible futures. The upper, red line shows global temperature rising by about four degrees Celsius by the end of the century if we continue to emit large amounts of greenhouse gases. The lower, blue line shows how global temperature could be kept to a much more tolerable level, around 1°C, if we dramatically reduce emissions within a few years. Widespread adoption of renewable energy, such as wind and solar power, could help us drastically reduce greenhouse gas emissions and steer us onto the path of a milder temperature rise.</p>"
+      }
+    },
+    "solutions": {
+      "content": {
+        "title": "Climate Solutions",
+        "description": "There are many ways to address the challenges associated with climate change. People all over the world are currently working on solutions at national, regional, and community levels. There are a variety of ways to address climate change, such as decreasing carbon dioxide emissions and planning how to best deal with the impacts of climate change."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Climate change can feel insurmountable, but it’s not impossible to make lasting changes. Acting now will be far less costly than if we wait. Two ways to address climate change now are mitigation and adaptation.</p><p>Think of a bathtub full of water with a faucet that has not been turned off. It starts to overflow. To prevent more water from overflowing, you turn off the faucet. With climate change, turning off the greenhouse gas “tap” is called mitigation.</p><p>Mitigating climate change means keeping greenhouse gases out of the air. This may include switching to energy sources that don’t emit gases to the atmosphere and developing technologies to remove greenhouse gases from the atmosphere. Some mitigation techniques include building better mass transit systems, getting more energy from renewables, and using climate-friendly building materials.</p><p>Back to the bathtub analogy. The water that overflowed the tub is now all over the floor. It’s a mess, so you get out a mop and bucket and clean it up. With climate change, cleaning up the mess is called adaptation.</p><p>Adaptation means we make adjustments to cope with the effects of climate change. Some adaptation techniques include planting drought-resistant crops, building floating houses or houses on stilts, and implementing ways to conserve water.</p><p>Mitigation is a more proactive approach to addressing climate change, while adaptation is necessary in order to respond to impacts that are already happening. Both are important ways to deal with climate change.</p>"
+      }
+    }
+  },
+  "sunearth": {
+    "title": "Sun-Earth Connections",
+    "history": {
+      "content": {
+        "title": "History of Solar Research",
+        "description": "This mural provides the history of NCAR’s High Altitude Observatory (HAO) since its founding in the 1940s. In this timeline (with years listed along the bottom), HAO’s milestones appear across the center of the mural, with major space exploration events above, and technical advancements below."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Blasts of radiation from the Sun enter the Earth’s atmosphere to create the awe-inspiring aurora. The science behind natural phenomena like this eluded earlier generations. The history of how researchers have learned about our Sun and its impact on Earth is a story of science, technology, and computing. The mural in the Sun-Earth exhibit has a timeline that tells this story.</p><p>The mural highlights the work of the High Altitude Observatory, NCAR’s first scientific division. HAO scientists study the Sun, Earth’s magnetic field, space weather, and the upper atmosphere where the northern lights produce spectacular, colorful shows.</p><p>In the 1940s, HAO scientists began making observations of the Sun from the mountains of Colorado. Today, they observe the Sun from the Mauna Loa Solar Observatory in Hawaii.</p><p>The central section of the mural highlights some of HAO’s major accomplishments. The top notes milestones in space exploration that relate to the work of HAO, such as observations of the Sun and the magnetic fields of Earth and other planets. Near the bottom of the mural are other major scientific and technical breakthroughs for context. The orange line graphs the number of sunspots through the years. An 11-year sunspot cycle relates to the Sun’s magnetic activity.</p><p>Want to know more? The touchscreen at the left has extensive information about all of the milestones displayed on the mural.</p>"
+      }
+    },
+    "observations": {
+      "content": {
+        "title": "Observing the Sun",
+        "description": "The beautiful displays of colorful lights in the sky that we know as the northern lights, or aurora, are caused by powerful magnetic disturbances on the Sun. Changes in the Sun’s intense magnetic field produce solar activity such as sunspots (like the one at the right), prominences, and Coronal Mass Ejections (CMEs), which disrupt Earth’s protective magnetosphere. "
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>This set of images tells the tale of space weather storms, from their origin at the Sun to their impacts on Earth. Powerful magnetic fields, both at the Sun and around Earth, play a central role in this story of Sun-Earth connections.</p><p>The image in the center of the top row is a close-up of a sunspot formed by powerful magnetic disturbances on the Sun’s surface. This image was created by a computer model at NCAR’s High Altitude Observatory.</p><p>The magnetically disturbed regions around sunspots sometimes cause solar prominences, as shown in the upper left image. Prominences are enormous loops of electrically charged gas, known as plasma, that flow along the magnetic field in the Sun’s atmosphere. When a prominence is unstable, it can snap like a rubber band, bursting into space as a blast of radiation called a Coronal Mass Ejection. A CME, as shown in the image in the upper right, can travel hundreds of kilometers per second.</p><p>If the blast from a CME heads toward Earth, our planet’s magnetic field, shown in the lower left image, deflects most of the radiation. However, some of the radiation enters at Earth’s magnetic poles, blasting into the atmosphere and lighting up the sky. These blasts of radiation create the aurora, or northern and southern lights. The photo in the lower right shows an especially powerful aurora in 2003 that was visible in the sky above the NCAR Mesa Lab.</p>"
+      }
+    }
+  },
+  "atmosphere": {
+    "title": "Atmosphere",
+    "layers": {
+      "content": {
+        "title": "Layers of the Atmosphere",
+        "description": "Earth’s atmosphere extends hundreds of miles upward until it fades into outer space. However, more than 80% of the atmosphere’s mass and almost all clouds and weather occur in the lowest layers, within 10 miles of the ground. On this mural, that’s about one third the height of an average 10-year-old and down around knee level for adults! "
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>The mural in this exhibit shows what happens in each layer of our atmosphere within about 200 miles of the Earth’s surface. For scale, look at the height of Pikes Peak in the lower left, one of Colorado’s highest mountains.</p><p>At the base of the mural, you’ll find the troposphere, which is the lowest layer. While it’s only a small part of our atmosphere, extending about 10 kilometers or 33,000 feet above sea level, it’s very important. About 80% of our air is in the troposphere. It’s where you’ll find clouds, storms, wind, and other types of weather.</p><p>Above the troposphere is the stratosphere. It’s where weather balloons and some planes fly. The ozone layer that shields Earth from harsh ultraviolet radiation is within the stratosphere.</p><p>Higher, the mesosphere is home to rare and colorful noctilucent clouds and bizarre types of lightning called elves and sprites.</p><p>Even higher still is the vast realm of the thermosphere, host to the light shows of the aurora, also known as the northern lights. The thermosphere contains the electrically charged regions of the ionosphere. Above 60 miles, the air is so thin that satellites can orbit within the thermosphere.</p><p>Earth’s atmosphere gradually fades into outer space in a region called the exosphere. The exosphere is thousands of miles above the surface of our planet, where air molecules are scarce.</p>"
+      }
+    },
+    "dropsondes": {
+      "content": {
+        "title": "Dropsondes",
+        "description": "Weather stations are great for recording data about the atmosphere at ground level. But how can scientists measure temperature, air pressure, humidity, and winds higher in the atmosphere? Dropsondes are instrument packages that are dropped from planes with small parachutes. They radio  data back to scientists as they fall, helping them make more accurate weather predictions. "
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>A tube filled with weather instruments is attached to a small parachute. It’s released from a plane and slowly falls to the ground, collecting weather data as it travels through the atmosphere. This is called a dropsonde.</p><p>As dropsondes travel through the atmosphere, the data they collect is radioed to scientists and weather forecasters. It helps us understand conditions in the atmosphere at various heights above the ground, which can be helpful for weather prediction. For example, hurricane-hunting planes eject dropsondes into hurricanes, allowing weather forecasters to get readings from within those fierce storms and make more accurate forecasts.</p><p>A standard dropsonde records data about temperature, humidity, air pressure, and wind speed and direction. Specialized dropsondes can also carry sensors that analyze air chemistry, such as the amount of carbon dioxide, at various heights in the atmosphere.</p><p>Dropsondes were invented here at NCAR in the 1970s. Improvements since then have made dropsondes smaller, lighter, more capable, and less expensive. The parachute is specially deisgned so that the instruments fall at a steady speed collecting data along the way. While dropsonde technology was originally developed solely for scientific use, NCAR has since licensed it to a company that produces and sells dropsondes for commercial use. Initially designed to be dropped from airplanes, some dropsondes now are released from drone aircraft operated by NASA.</p>"
+      }
+    }
+  },
+  "supercomputers": {
+    "title": "Supercomputers",
+    "supercomputer": {
+      "content": {
+        "title": "Supercomputers",
+        "description": "Viewing the exhibits in the Visitor Center of the NWSC is a wonderful way to spend a morning or afternoon. Enjoy a free, self-guided tour that offers an informative view of weather, climate, supercomputing and the broad spectrum of atmospheric research at a world-class science laboratory. Learn about current Earth science research spanning our planet's changing climate to the genesis of severe weather phenomena. Find out about computational science and see one of the fastest supercomputers in existence today."
+      },
+      "img": {
+        "description": "img desc"
+      }
+    },
+    "cray": {
+      "content": {
+        "title": "The Cray-1A Supercomputer",
+        "description": "For decades, NCAR has been a pioneer in the use of supercomputers for weather and climate modeling. This Cray-1A supercomputer was a state-of-the-art machine when it arrived at NCAR in 1977. Designed by Seymour Cray, widely regarded as the father of supercomputing, this computer weighs over five tons and was capable of using up to 32 megabytes of memory! "
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>NCAR has been operating supercomputers to study weather, climate, and the Sun since the 1970s. In 1977, NCAR purchased this Cray-1A supercomputer, which was much faster than previous supercomputers and better adapted to the needs of the scientific community than other computers at the time. Seymour Cray, who founded Cray Research, the company that designed this computer, is considered by many to be the father of supercomputing.</p><p>The Cray-1A weighs more than five tons and was capable of using up to 32 megabytes of memory when it was new, more than any other computer in the world at the time. Although it represented a breakthrough in supercomputing performance and was considered quite the speed demon in its day, your cell phone is much faster and more powerful than this giant.</p><p>The unusual C-shaped design of the computer’s housing helped the machine shed excess heat, allowed for shorter wires to improve performance, and made it possible for technicians to get inside and service the computer from both sides when problems arose. When the computer was built, professional knitters were hired to install the wiring; their dexterity and small hands were needed to organize wires inside the housing. The padded benches around the machine cover and hide the computer’s power supplies.</p><p>The Cray-1A helped scientists make advances in weather and climate models from 1977 until early 1989. Today, NCAR supercomputers are housed in the NCAR-Wyoming Supercomputer Center near Cheyenne.</p>"
+      }
+    }
+  },
+  "aq": {
+    "title": "Air Quality",
+    "aq": {
+      "content": {
+        "title": "Air Quality",
+        "description": "Like the weather, air quality can change from day to day or even hour to hour, so it is important to collect frequent and accurate air pollution data. Air quality is poor when air pollution is high. Air pollution damages plants and causes respiratory problems for people.  "
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>There are many types of air pollution. Some of it can be seen. Some of it is invisible. All types of air pollution have a negative impact on air quality.</p><p>The tablet in this exhibit displays local levels of two types of air pollution: particulates and ground-level ozone.</p><p>Particulates are tiny particles in the atmosphere. Some particulates come from natural sources like forest fires, lightning strikes, and erupting volcanoes. Others come from human activities such as driving cars, burning coal for energy, and factory production. Particulates are dangerous to human health, causing breathing problems and contributing to lung disease.</p><p>High in the atmosphere, ozone shields us from solar radiation, but at ground-level, ozone is air pollution. It’s invisible and dangerous. When inhaled, ozone causes the tissue within our lungs to become irritated like a sunburn. Ground-level ozone forms when sunlight interacts with chemical compounds in the air. While some of the chemicals that form ozone occur naturally, many more are released from burning fossil fuels. Because ozone requires sunlight to form, levels are lowest at night and then rise during sunny days.</p><p>In addition to impacting air quality, ground-level ozone is harmful to plants. If you are visiting NCAR between spring and fall, visit the ozone garden growing just outside the main doors and learn more about ozone’s impact on plants.</p>"
+      }
+    },
+    "garden": {
+      "content": {
+        "title": "Ozone Garden",
+        "description": "Ground-level ozone is the air pollutant that causes the most damage to plants. Some plants are particularly sensitive to ozone and develop visible symptoms of ozone damage on their leaves. This makes them useful biological indicators of high and dangerous levels of ground-level ozone during the growing season."
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Take a step outside the main doors of the NCAR Mesa Lab. Here you’ll find the ozone garden. It contains plants that are particularly vulnerable to ground-level ozone. This garden is part of a national network used to study and raise awareness of ground-level ozone.</p><p>Ozone seeps into plants through pores on the underside of leaves. It then damages the parts of the leaves that are responsible for photosynthesis, which is how plants make their own food using sunlight, carbon dioxide, and water. Plants damaged by ozone are compromised in their ability to make food, which can stunt their growth and limit the amount of carbon dioxide they take out of the atmosphere.</p><p>The leaves of ozone-sensitive plants will show damage after ozone levels have been high for a few weeks. Stipples, which are dark dots on leaves, are the first sign of ozone damage. If you’re visiting NCAR during the summer, you may be able to observe these changes. Do you see stipples on plants in the ozone garden? You can distinguish ozone damage from other types because stipples are only on the tops of leaves and only appear between leaf veins. As ozone damage becomes more severe, you’ll find dead or yellow patches on the leaves.</p><p>High ground-level ozone pollution is common along the Front Range of Colorado during summer months. We can help reduce ozone pollution by cutting down on our use of fossil fuels.</p>"
+      }
+    }
+  },
+  "misc": {
+    "title": "Miscellaneous",
+    "cosmic": {
+      "content": {
+        "title": "COSMIC-2 Satellite",
+        "description": "The COSMIC satellite system uses a clever trick to study Earth’s atmosphere. Radio waves are beamed from one satellite to another and bend slightly as they pass through the atmosphere. Careful study of those radio waves reveals information about temperature, humidity, pressure, and other traits of the air at different heights and around the globe."
+      },
+      "img": {
+         "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Monitoring what’s happening in the atmosphere helps us make better weather forecasts, understand climate change, and learn how solar energy affects our planet. Some data about the atmosphere is collected at weather stations on the ground or using instruments carried into the sky by balloons. Other data about our atmosphere is collected using satellites.</p><p>In this exhibit you’ll find a scale model of a COSMIC satellite. COSMIC satellites orbit Earth and collect data about water vapor, temperature, and air pressure. Even full size, COSMIC satellites are small–only about 40 inches wide.</p><p>To deliver the data they collect, COSMIC satellites beam radio waves through the atmosphere to another satellite. Radio waves bend as they pass through the atmosphere. By measuring the angle that waves bend, scientists can determine the air pressure, humidity, and temperature. This makes it possible to monitor the atmosphere at various heights and in places that are far from ground-based weather stations, like the middle of oceans.</p><p>COSMIC is an acronym for the Constellation Observing System for Meteorology, Ionosphere, and Climate. The program is a collaboration between the United States and Taiwan and is based at UCAR. Thousands of researchers from many nations use COSMIC data. The first set of six COSMIC satellites, launched in 2006, tripled the amount of data collected about our atmosphere. A new set of six satellites, called COSMIC-2, launched in 2018, will help us learn even more.</p>"
+      }
+    },
+    "library": {
+      "content": {
+        "title": "The NCAR Library",
+        "description": "The NCAR Library serves and supports Atmospheric, Solar and Earth scientists and their research at NCAR and throughout the broader UCAR community.  The Library is the home of The NCAR Archives Gallery and is located on the second floor of the Mesa Lab.  Ongoing and revolving exhibits include photographs and artifacts spanning the history of the institution.  Exhibits change approximately twice a year so stop by during your visit to discover new offerings."
+      },
+      "img": {
+        "description": "img desc"
+      }
+    },
+    "architecture": {
+      "content": {
+        "title": "NCAR's Architecture",
+        "description": "The NCAR Mesa Lab was designed by the renowned Architect I. M. Pei. Pei’s inspiration for this building came from Mesa Verde in southwest Colorado. Walter Orr Roberts, the first director of NCAR, spearheaded the effort to locate the building in Boulder. The Mesa Lab celebrated its 50th anniversary in 2017. "
+      },
+      "img": {
+         "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>When Architect I. M. Pei designed the NCAR Mesa Lab, he set out to create a place where scientists with different expertise could come together to study the Earth as a system. He designed the hallways as a bit of a maze to encourage scientists to run into each other and collaborate. Pei’s inspiration for the design came from the Ancestral Puebloan, or Anasazi, cliff dwellings at Mesa Verde National Park in southwest Colorado. The model of the Mesa Lab in this exhibit was developed by Pei’s architecture firm.</p><p>Before NCAR, Pei had been designing buildings for urban areas. This location provided new opportunities. To design a lab that would fit with the location, he had to get to know the environment. He hiked the mesa and even slept on the mesa.</p><p>Pei has said that his favorite part of the design is not the building itself, but the road leading up to it. He called the road a grand gesture that would welcome people gradually then surprise them with expansive views.</p><p>The Mesa Lab is constructed of concrete made with local stone. This helps the building blend in with the Flatirons, the rock features to the west.</p><p>The Mesa Lab was built in 1961 after the residents of Boulder voted and granted special permission for it to be located above 5,750 feet in elevation, an area where development is restricted.</p>"
+      }
+    },
+    "wxtrail": {
+      "content": {
+        "title": "The Weather Trail",
+        "description": "The NCAR Weather Trail, a short loop of just 0.4 miles, includes signs describing interesting local weather phenomena and provides spectacular views of Boulder’s Flatirons. Check out the experimental wind turbines to the southeast. You might even see downtown Denver on a clear day. Enjoy your walk!"
+      },
+      "img": {
+        "description": "img desc"
+      },
+      "audio": {
+        "transcript": "<p>Take a stroll outside on the NCAR Weather Trail for fantastic views and interpretive signs about weather. This loop is less than a half-mile long.</p><p>Signs along the trail describe interesting weather phenomena like cold fronts, snow, wind, and fire and drought. Some occur everywhere; others are only found where the Rocky Mountains meet the Great Plains. Ever wonder why sunsets over the mountains are often so photo-worthy? These spectacular, sunlit cloud formations, called mountain waves, are created by weather patterns unique to the Front Range.</p><p>While the trail’s interpretive signs focus on weather, there’s more to see. Downtown Denver and the wind turbines at the National Renewable Energy Lab’s testing facility are to the south.  Boulder is to the east, and the rock outcrops known as the Flatirons are west.</p><p>The idea for the Weather Trail was inspired by a similar walk in Switzerland. An NCAR employee who encountered the Swiss trail brought the idea back to Boulder, and the NCAR Weather Trail was born.</p><p>Trail maps are available in the lobby of the NCAR Mesa Lab. If you’d like to take a longer hike, you can connect from the Weather Trail to Boulder’s extensive trail system. Enjoy your walk!</p>"
+      }
+    }
+  },
+  "map": {
+    "buttons": {
+      "zoomin": "Zoom in",
+      "zoomout": "Zoom out",
+      "panleft": "Pan Left",
+      "panright": "Pan Right",
+      "panup": "Pan Up",
+      "pandown": "Pan Down",
+      "reset": "Reset"
+    },
+    "interactive": {
+      "button_text": "Interactive Map",
+      "button_desc": "An interactive map showing all of the exhibit areas, restrooms, elevators, and stairs."
+    },
+    "access": {
+      "button_text": "Wheelchair Map",
+      "button_desc": "A map that shows how to access the building entrances and elevators with a wheelchair."
+    },
+    "location": {
+      "2b": "Floor 2B",
+      "1b": "Floor 1B",
+      "first": "First Floor",
+      "second": "Second Floor",
+      "mezzanine": "Mezzanine",
+      "entrance": "Front Entrance",
+      "nwsc": "Cheyenne, WY"
+    },
+    "galleries": {
+      "aq": "Air Quality Exhibit",
+      "weather": "Weather Exhibit",
+      "climate": "Climate Exhibit",
+      "sunearth": "Sun-Earth Connections Exhibit",
+      "atmosphere": "Atmosphere Exhibits",
+      "supercomputers": "Supercomputing Exhibit",
+      "cosmic": "COSMIC Satelite Exhibit",
+      "misc": "Miscellaneous"
+    },
+    "text": {
+      "title": "Zoomable map of the NCAR Mesa Lab Visitor Center",
+      "titleaccess": "Wheelchair accessibility map",
+      "desc": "An interative map of the NCAR Visitor Center. Use the buttons or swipe and pinch gestures to move the map around and to zoom in and out.",
+      "descaccess": "A map showing how to get to wheelchair accessible bathrooms and elevators inside of the NCAR Mesa Lab Visitor Center.",
+      "tofirstfloor": "To 1st Floor",
+      "tosecondfloor": "To 2nd Floor",
+      "tomezzanine": "To Mezzanine",
+      "routeto": "Route to",
+      "tofloor1b": "To Floor 1B",
+      "rampto1stfloor": "Ramp to 1st Floor",
+      "ramp": "Ramp",
+      "ramptolobby": "Ramp to lobby",
+      "topicnicarea": "To picnic area",
+      "routetoelevator": "Route to elevator",
+      "disabilityparking": "Disability parking spaces",
+      "mezzanine": "Mezzanine",
+      "secondfloor": "Second Floor",
+      "firstfloor": "First Floor",
+      "floor1b": "Floor 1B",
+      "floor2b": "Floor 2B",
+      "entrance": "entrance",
+      "theater": "Theater",
+      "satellite": "Satellite",
+      "ozone": "Ozone",
+      "garden": "Garden",
+      "classroom": "Classroom",
+      "cafeteria": "Cafeteria and ",
+      "art": "Art",
+      "science": "Science",
+      "gallery": "Gallery",
+      "weather": "Weather",
+      "exhibit": "Exhibit",
+      "trail": "Trail",
+      "air": "Air",
+      "quality": "Quality",
+      "ncar": "NCAR",
+      "security": "Security",
+      "front": "Front",
+      "desk": "Desk",
+      "lobby": "Lobby",
+      "sunearth": "Sun-Earth",
+      "connections": "Connections",
+      "main": "Main",
+      "seminar": "Seminar",
+      "room": "Room",
+      "climate": "Climate",
+      "atmosphere": "Atmosphere",
+      "library": "Library",
+      "ncars": "NCAR's",
+      "architecture": "Architecture",
+      "cray": "The Cray-1A",
+      "supercomputer": "Supercomputer",
+      "supercomputing": "Supercomputing",
+      "area": "Area"
+    },
+    "label": {
+      "wheelchairramp1": "Wheelchair ramp from mezzanine to 1st floor.  Take the ramp past the NCAR Architecture exhibit to the hallway.  Turn right then follow the hallway until you can turn right at NCAR security.",
+      "wheelchairentrance": "Wheelchair entrance from disability parking spaces - enter from floor 2B and take path to elevator",
+      "routetomezzanine": "Route to Mezzanine",
+      "ozonegarden": "Ozone Garden",
+      "classroom": "Classroom",
+      "cafeteria": "Cafeteria and Art Gallery",
+      "cafeterialoc": "Cafeteria and art gallery. Located on the 1st floor on the south side of the building",
+      "weathertrail": "Weather Trail",
+      "weathertrailloc": "Weather Trail exit. Located on the 2nd floor on the west side of the building",
+      "weatherexhibit": "Weather Exhibit",
+      "weatherexhibitloc": "Weather exhibit. Located on the 1st floor to the left of the front entrance",
+      "climateexhibit": "Climate Exhibit",
+      "climateexhibitloc": "Climate Exhibit. Located on the 2nd floor",
+      "security": "NCAR Security",
+      "securityloc": "NCAR Security. Located behind the front desk to the right of the entrance on the north side of the building",
+      "frontdesk": "Front Desk",
+      "frontdeskloc": "Front desk. Located to the right of the entrance on the north side of the building",
+      "aq": "Air Quality",
+      "architecture": "NCAR's Architecture",
+      "satelliteloc": "COSMIC Satellite exhibit. Located on the mezzanine",
+      "archloc": "NCAR's Architecture Exhibit. Located on the mezzanine, on the west between the satellite and sun-earth connections exhibit",
+      "supercomputing": "Supercomputing Area",
+      "supercomputer": "The Cray-1A Supercomputer",
+      "sunearth": "Sun-Earth Connections",
+      "sunearthloc": "Sun-Earth Connections exhibit. Located on the mezzanine, north of the stairs",
+      "mainseminar": "Main Seminar Room",
+      "mainseminarloc": "Main Seminar Room.  Located on the mezzanine to the south",
+      "artsci": "Art Science",
+      "artscigallery": "Art Science Gallery",
+      "stairsclassroom": "West stairs from the 1st floor to the 2nd floor by the classroom.  Take 4 steps up to the landing, turn right, take 12 additional steps up to another landing, turn right, take 4 additional steps.",
+      "stairscentral2m": "Central stairs from 2nd floor to the mezzanine just west of the climate exhibit.  Take 13 steps down to the landing.  To go the 1st floor lobby, turn right, take 7 additional steps down.",
+      "stairscentralm1": "Central stairs from the mezzanine to the 1st floor lobby. Take 7 steps down.",
+      "stairscentral1m": "Central stairs from the 1st floor lobby to the mezzanine.  Go up 7 steps.  To proceed to the 2nd floor, turn left at the landing and take 13 additional steps up.",
+      "stairswest21": "West stairs from 2nd floor to 1st floor by the weather trail.  Take 4 steps down to the landing, turn left, take 12 steps down to another landing, turn left, take 4 additional steps",
+      "stairsnwarch": "Northwest stairs to floor 1B from mezzanine between the architecture and supercomputing exhibits. From the hallway railing, take 11 steps down to the landing, turn right, take 7 additional steps.",
+      "stairsnw1bm": "Northwest stairs from floor 1B to the mezzanine between the supercomputing and architecture exhibits.  Take 7 steps up to the landing, turn left, take 11 additional steps up to the next landing, turn right, walk along hallway until to you reach 4 additional steps.",
+      "stairssouththeater": "South stairs from the 1st floor to the second floor next to the theater. Take 6 steps up to the landing, turn right, 8 additional steps up to another landing, turn right, take 6 additional steps.",
+      "stairssouthcray": "South stairs from floor 1B to the 1st floor between the Cray-1A supercomputer and the weather exhibits.  Take 6 steps up to the landing, turn right, take 8 steps up to another landing, turn right, take 6 additional steps.",
+      "stairssouth11b": "South stairs from the 1st floor to floor 1B between the Cray-1A supercomputer and the weather exhibits.  Take 6 steps down to the landing, turn left, take 8 steps to another landing, turn left, take 6 additional steps.",
+      "stairssouth21": "South stairs from 2nd floor to 1st floor by the Atmosphere exhibit.  Take 6 steps down to the landing, turn left, take 8 additional steps to another landing, turn left, take 6 additional steps.",
+      "stairseast21": "East stairs from the 1st floor to the 2nd floor by the cafeteria.  Take 4 steps up to the landing, turn left, take 12 additional steps to another landing, turn left, take 4 additional steps.",
+      "stairseast12": "East stairs from 2nd floor to 1st floor behind the library. Take 4 steps down to the landing, turn right, take 12 additional steps to another landing, turn right, take 4 additional steps.",
+      "rampto1": "Ramp to 1st floor.  Take the ramp down, turn right at the end of the hallway, and turn right by the NCAR Security desk to return to the 1st floor exhibits.",
+      "artsci1": "Art-Science - 2nd floor gallery.  Located just before the weather trail exit.",
+      "artsci2": "Art-Science - 1st floor gallery. Located in the hallway west of the climate exhibit.",
+      "lobbyloc": "Lobby - located directly inside the front entrance",
+      "frontentrance": "Front Entrance",
+      "classroomloc": "Classroom. Located off the hallway between the back of the cafeteria and the art-science gallery on the 1st floor",
+      "theaterloc": "Theater. Located south of the climate exhibit just before the stairs to the Atmosphere exhibit",
+      "toweathertrail": "Go west outside the doors to the weather trail",
+      "atmloc": "ATM. located just outside the cafeteria entrance on the 1st floor on the south east side of the building",
+      "picnicloc": "Picnic Area. Located outside from the cafeteria entrance on the 1st floor on the south east side of the building",
+      "elevator1theater": "Elevator. 1st Floor. Located directly across from the theater next to the stairs",
+      "elevator1bcray": "Elevator. Floor 1B. Located directly west of the CRAY-1A supercomputer exhibit",
+      "elevator2library": "Elevator. 2nd floor. Located directly across from the library next to the stairs",
+      "elevator2climate": "Elevator. 2nd floor. Located in the hallway north of the climate exhibit",
+      "elevator1front": "Elevator. 1st floor. Located in the hallway north of the front desk",
+      "elevator1bsupercomputing": "Elevator. Floor 1B. Located in the hallway next to the supercomputing exhibit",
+      "brmen1front": "men's bathroom located on the 1st floor across from the front desk",
+      "brm2climate": "men's bathroom located on the 2nd floor north of the climate exhibit",
+      "brmen2library": "men's bathroom located on the 2nd floor in the hallway between the climate exhibit and library",
+      "brwomen2climate": "women's bathroom located on 2nd floor north of the climate exhibit",
+      "brwomen2library": "women's bathroom located on 2nd floor down the hallway behind the library",
+      "brwomen1theater": "women's bathroom located on the 1st floor in the hallway between the weather exhibit and the theater",
+      "braccess2": "accessible bathroom located on the 2nd floor north of the climate exhibit",
+      "braccess1": "accessible bathroom located on the 1st floor across from the front desk",
+      "atmos1loc": "Atmosphere exhibit. Located on the stairs between the 1st and second floors, south of the weather and climate exhibits",
+      "atmos2loca": "Atmosphere exhibit. Located on the stairs between the 1st and second floors, south of the weather and climate exhibits",
+      "libraryloc": "Library. Located on the 2nd floor just south of the Climate exhibit",
+      "aqloc": "Air Quality Exhibit. Located just to the left of the lobby on the 1st floor",
+      "gardenloc": "Ozone garden. Located outside, left of the front entrance",
+      "crayloc": "CRAY-1A Supercomputer exhibit. Located on Floor 1B down the stairs from the theater",
+      "supercomputingloc": "Supercomputing exhibit. Located on Floor 1B down the ramp from the Mezzanine"
+
+    }
+  }
 }
