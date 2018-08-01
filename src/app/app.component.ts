@@ -13,7 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 })
 export class MyApp {
   rootPage: any = TabsPage;
-  appVer: any = '1.0.1';
+  appVer: any = '1.0.0';
 
   constructor(private ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService, public sharedVars: SharedVars) {
     platform.ready().then(() => {

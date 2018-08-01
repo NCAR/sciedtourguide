@@ -25,9 +25,10 @@ export class TranscriptPage {
     this.sharedVars.trackView('Transcript - '+this.parent+":"+this.selectedItem.id);
   }
   ionViewWillLeave() {
-    this._audioProvider.pause(this.selectedTrack);
     if(this.track_playing == true){
-      this.sharedVars.trackEvent('Audio','navigation','Pause: '+this.selectedTrack);
+      this.selectedTrack = this._audioProvider.tracks[this._audioProvider.current];
+      this._audioProvider.pause();
+      this.sharedVars.trackEvent('Audio','navigation-pause',this.selectedTrack.src);
       this.track_playing = false;
     }
   }
@@ -38,6 +39,17 @@ export class TranscriptPage {
   onTrackFinished(track: any) {
     this.sharedVars.trackEvent('Audio','completed',track.src);
     this.track_playing = false;
+  }
+  trackEvent(track: any)  {
+     if ( this.track_playing == true )
+     {
+       this.sharedVars.trackEvent('Audio','pause',this.selectedTrack.src);
+       this.track_playing = false;
+     } else if(this.track_playing == false){
+       this.selectedTrack = this._audioProvider.tracks[this._audioProvider.current];
+       this.sharedVars.trackEvent('Audio','play',this.selectedTrack.src);
+       this.track_playing = true;
+     }
   }
 
 }
