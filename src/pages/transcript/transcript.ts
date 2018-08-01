@@ -37,7 +37,7 @@ export class TranscriptPage {
     this.allTracks = this._audioProvider.tracks;
   }
   onTrackFinished(track: any) {
-    this.sharedVars.trackEvent('Audio','completed',track.src);
+    this.sharedVars.trackEvent('Audio','completed',this.selectedTrack.src);
     this.track_playing = false;
   }
   trackEvent(track: any)  {
