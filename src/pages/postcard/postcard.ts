@@ -182,7 +182,7 @@ export class PostcardPage {
       // imageData is a base64 encoded string
       this.base64Image = "data:image/jpeg;base64," + imageData;
     }, (err) => {
-      console.log('no image');
+
     });
     this.trackSteps(4);
   }
