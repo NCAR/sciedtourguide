@@ -3,7 +3,7 @@ import { Directive, ElementRef, Renderer } from '@angular/core';
 @Directive({
   selector: '[elastic-header]'
 })
-export class ElasticHeader {
+export class ElasticHeaderComponent {
 
     scrollerHandle: any;
     header: any;

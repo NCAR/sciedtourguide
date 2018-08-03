@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { NavController, NavParams, Events} from 'ionic-angular';
-import { TranscriptPage } from '../../pages/transcript/transcript';
+import { IonicPage, NavController, NavParams, Events} from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-content',
   templateUrl: 'content.html'
@@ -25,7 +25,7 @@ export class ContentPage {
     });
   }
   openTranscript(event) {
-    this.navCtrl.push(TranscriptPage, {
+    this.navCtrl.push('TranscriptPage', {
       item: this.selectedItem,
       parent: this.titlebarColor
     });

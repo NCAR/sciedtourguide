@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { Events} from 'ionic-angular';
+import { IonicPage, Events} from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 import svgPanZoom from 'svg-pan-zoom';
 import Hammer from 'hammerjs';
 
+@IonicPage()
 @Component({
   selector: 'page-map',
   templateUrl: 'map.html'

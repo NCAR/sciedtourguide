@@ -4,7 +4,7 @@ import {Directive, HostListener, Input} from '@angular/core';
 @Directive({
  selector: '[draw-text]'
 })
-export class ImageDrawTextDirective {
+export class ImageDrawComponent {
 
   constructor() {}
 
@@ -69,7 +69,6 @@ export class ImageDrawTextDirective {
 
         // draw user image
         if(this.photoFlag != false){
-        console.log(img);
           // get scaled down width and height for user image
           scaled_width = (canvas.width/2)-50;
           scaled_height = ((scaled_width * img.height)/img.width)-50;

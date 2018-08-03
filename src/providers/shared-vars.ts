@@ -140,7 +140,7 @@ shuffle(a) {
          promise.then(data => {
            if(data == true){
              this.ga.trackEvent(category, action, label);
-             console.log(action+ " "+label);
+             //console.log(action+ " "+label);
            }
          });
         });
@@ -151,7 +151,7 @@ shuffle(a) {
         promise.then(data => {
           if(data == true){
               this.ga.trackView(title);
-              console.log(title);
+              //console.log(title);
           }
         });
     });

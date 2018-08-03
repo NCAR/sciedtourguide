@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { NavParams} from 'ionic-angular';
+import { IonicPage, NavParams} from 'ionic-angular';
 import { AudioProvider } from 'ionic-audio';
 
+@IonicPage()
 @Component({
   selector: 'page-transcript',
   templateUrl: 'transcript.html'

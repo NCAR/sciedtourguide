@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { Platform } from 'ionic-angular';
+import { IonicPage, Platform } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 
+@IonicPage()
 @Component({
   selector: 'page-postcard',
   templateUrl: 'postcard.html',
@@ -182,7 +183,7 @@ export class PostcardPage {
       // imageData is a base64 encoded string
       this.base64Image = "data:image/jpeg;base64," + imageData;
     }, (err) => {
-      console.log('no image');
+
     });
     this.trackSteps(4);
   }
