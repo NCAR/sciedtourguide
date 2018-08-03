@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { IonicPage, Platform } from 'ionic-angular';
+import { AlertController, IonicPage, Platform } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { SocialSharing } from '@ionic-native/social-sharing';
@@ -29,7 +29,7 @@ export class PostcardPage {
   postcardData: any = { 'message': '', 'bkg': '' };
   selectedImage = {"path":"", "altText": ""};
 
-  constructor(private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
+  constructor(private alertCtrl: AlertController, private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
     this.platform.ready().then(() => {
       this.bkg_imgs = [
                         { "path": "assets/images/postcards/mesalab.jpg",
@@ -158,14 +158,23 @@ export class PostcardPage {
     if(this.platform.is('android')){
       this.platform.ready().then(
         () => {
-          this.androidPermissions.hasPermission(this.androidPermissions.PERMISSION.CAMERA)
+          this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA)
             .then(status => {
-              if (status.hasPermission) {
+              if (status.checkPermission) {
                 this.useCamera();
               } else {
                 this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
                   .then(status => {
-                    if (status.hasPermission) this.useCamera();
+                    if (status.hasPermission) {
+                      this.useCamera();
+                    } else {
+                      let alert = this.alertCtrl.create({
+                        title: "Please grant permissions",
+                        message: "You must enable the camera to take a photo",
+                        buttons: ['Dismiss']
+                      });
+                      alert.present();
+                    }
                   });
               }
             });
