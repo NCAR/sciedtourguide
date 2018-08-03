@@ -4,7 +4,10 @@ import { SharedVars } from '../../providers/shared-vars';
 import svgPanZoom from 'svg-pan-zoom';
 import Hammer from 'hammerjs';
 
-@IonicPage()
+@IonicPage({
+  name: 'MapPage',
+  priority:'high'
+})
 @Component({
   selector: 'page-map',
   templateUrl: 'map.html'

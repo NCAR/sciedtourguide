@@ -1,20 +1,32 @@
 page-map-index {
 
   .card {
-    background-color:#FF9624;
+    //background-color:#FF9624;
     height:45%;
+    width:90%;
     margin:5% 5% 0 5%;
     border-radius: 25px;
     padding:10px;
 
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d1871f+16,dba320+36,e5ae22+65,ff9624+89 */
+    background: #d1871f; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #d1871f 16%, #dba320 36%, #e5ae22 65%, #ff9624 89%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #d1871f 16%,#dba320 36%,#e5ae22 65%,#ff9624 89%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #d1871f 16%,#dba320 36%,#e5ae22 65%,#ff9624 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1871f', endColorstr='#ff9624',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
     .card-title {
       font-size:3em;
       color:#fff;
+      margin:auto auto;
     }
     .card-subtitle {
       font-size:1.5em;
       color:#fff;
       margin-top:2%;
+      max-width:75%;
+      margin:2% auto;
     }
   }
 }
