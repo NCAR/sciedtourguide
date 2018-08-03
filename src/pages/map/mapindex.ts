@@ -1,10 +1,9 @@
 // from: https://github.com/p-sebastian/ionic2-pinchzoom
 import { Component } from '@angular/core';
-import { NavController, NavParams, Events} from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events} from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
-import { MapPage } from './map';
-import { MapAccessPage } from './mapaccess';
 
+@IonicPage()
 @Component({
   selector: 'page-map-index',
   templateUrl: 'mapindex.html'
@@ -32,10 +31,10 @@ export class MapIndexPage {
     switch (item) {
       case 'mapreg':
         this.sharedVars.trackView('Map - Interactive');
-        this.navCtrl.push(MapPage);
+        this.navCtrl.push('MapPage');
         break;
       case 'mapaccess':
-        this.navCtrl.push(MapAccessPage);
+        this.navCtrl.push('MapAccessPage');
         break;
     }
   }
@@ -45,12 +44,12 @@ export class MapIndexPage {
         case 'access':
           //load the accessible map
           this.navCtrl.popToRoot();
-          this.navCtrl.push(MapAccessPage);
+          this.navCtrl.push('MapAccessPage');
           break;
         default:
           // load regular map
           this.navCtrl.popToRoot();
-          this.navCtrl.push(MapPage);
+          this.navCtrl.push('MapPage');
           break;
 
       }

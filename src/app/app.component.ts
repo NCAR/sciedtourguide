@@ -6,13 +6,11 @@ import { GoogleAnalytics } from '@ionic-native/google-analytics';
 import { SharedVars } from '../providers/shared-vars';
 import { TranslateService } from '@ngx-translate/core';
 
-import { TabsPage } from '../pages/tabs/tabs';
-
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage: any = TabsPage;
+  rootPage: any = 'TabsPage';
   appVer: any = '1.0.0';
 
   constructor(private ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService, public sharedVars: SharedVars) {

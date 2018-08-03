@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { Events} from 'ionic-angular';
+import { IonicPage, Events} from 'ionic-angular';
+
+@IonicPage()
 @Component({
   selector: 'page-visit',
   templateUrl: 'visit.html'

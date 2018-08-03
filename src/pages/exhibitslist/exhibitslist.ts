@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { NavController, NavParams, Events} from 'ionic-angular';
-import { ContentPage } from '../content/content';
+import { IonicPage, NavController, NavParams, Events} from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 import { ExhibitsDataProvider } from '../../providers/exhibits-data/exhibits-data';
 import 'rxjs/add/operator/debounceTime';
 
+@IonicPage()
 @Component({
   selector: 'page-exhibitslist',
   templateUrl: 'exhibitslist.html'
@@ -62,7 +62,7 @@ export class ExhibitsListPage {
   }
 
   openPage(event, item, parent) {
-    this.navCtrl.push(ContentPage, {
+    this.navCtrl.push('ContentPage', {
       item: item,
       parent:parent
     });

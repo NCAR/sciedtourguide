@@ -4,7 +4,7 @@ import {Directive, HostListener, Input} from '@angular/core';
 @Directive({
  selector: '[draw-text]'
 })
-export class ImageDrawTextDirective {
+export class ImageDrawComponent {
 
   constructor() {}
 

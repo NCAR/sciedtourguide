@@ -16,5 +16,4 @@ src/service-worker.js
 .DS_Store
 Thumbs.db
 .tmp
-
-.sourcemaps/main.js.map
+.sourcemaps

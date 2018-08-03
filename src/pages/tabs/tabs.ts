@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
-import { ExhibitsListPage } from '../exhibitslist/exhibitslist';
-import { PostcardPage } from '../postcard/postcard';
-import { VisitPage } from '../visit/visit';
-import { MapIndexPage } from '../map/mapindex';
 import { ViewChild } from '@angular/core';
-import { Tabs, Events } from 'ionic-angular';
+import { IonicPage, Tabs, Events } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'tabs',
   templateUrl: 'tabs.html'
@@ -13,14 +10,14 @@ import { Tabs, Events } from 'ionic-angular';
 export class TabsPage {
   @ViewChild(Tabs) tabs: Tabs;
 
-  tab1Root = MapIndexPage;
+  tab1Root = 'MapIndexPage';
   tab1Params = { item: ""};
 
-  tab2Root = ExhibitsListPage;
+  tab2Root = 'ExhibitsListPage';
   tab2Params = { item: "" };
 
-  tab3Root = PostcardPage;
-  tab4Root = VisitPage;
+  tab3Root = 'PostcardPage';
+  tab4Root = 'VisitPage';
 
   constructor(events: Events) {
     events.subscribe('change-tab', (tab, item) => {
