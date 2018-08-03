@@ -6,7 +6,10 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 
-@IonicPage()
+@IonicPage({
+  name: 'PostcardPage',
+  priority:'low'
+})
 @Component({
   selector: 'page-postcard',
   templateUrl: 'postcard.html',
@@ -165,26 +168,23 @@ export class PostcardPage {
             err => {
               this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA).then(
                 result => {
-                  if (result.hasPermission) {
-                    this.useCamera();
-                  } else {
-                    let alert = this.alertCtrl.create({
-                      title: "Please grant camera permissions",
-                      message: "You must enable the camera to take a photo.  Please do this in your device settings.",
-                      buttons: ['Dismiss']
-                    });
-                    alert.present();
-                  }
+                  this.useCamera();
+                },
+                err => {
+                      let alert = this.alertCtrl.create({
+                        title: "Please grant camera permissions",
+                        message: "You must enable the camera to take a photo.  Please do this in your device settings.",
+                        buttons: ['Dismiss']
+                      });
+                      alert.present();
+                  });
                 });
             });
 
-            this.androidPermissions.requestPermissions([this.androidPermissions.PERMISSION.CAMERA, this.androidPermissions.PERMISSION.GET_ACCOUNTS]);
+            this.androidPermissions.requestPermissions([this.androidPermissions.PERMISSION.CAMERA]);
+        } else {
+          this.useCamera();
         }
-      );
-    }
-    else {
-      this.useCamera();
-    }
   }
 
   useCamera() {

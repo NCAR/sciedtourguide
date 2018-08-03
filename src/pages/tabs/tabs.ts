@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { IonicPage, Tabs, Events } from 'ionic-angular';
 
-@IonicPage()
+@IonicPage({
+  name: 'TabsPage',
+  priority:'high'
+})
 @Component({
   selector: 'tabs',
   templateUrl: 'tabs.html'
