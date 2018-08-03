@@ -33,7 +33,9 @@ export function createTranslateLoader(http: Http) {
         deps: [Http]
       }
     }),
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      preloadModules: true
+    }),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],

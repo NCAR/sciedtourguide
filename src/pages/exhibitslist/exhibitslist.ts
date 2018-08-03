@@ -5,7 +5,10 @@ import { SharedVars } from '../../providers/shared-vars';
 import { ExhibitsDataProvider } from '../../providers/exhibits-data/exhibits-data';
 import 'rxjs/add/operator/debounceTime';
 
-@IonicPage()
+@IonicPage({
+  name: 'ExhibitsListPage',
+  priority:'high'
+})
 @Component({
   selector: 'page-exhibitslist',
   templateUrl: 'exhibitslist.html'

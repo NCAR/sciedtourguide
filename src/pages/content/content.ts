@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
 import { IonicPage, NavController, NavParams, Events} from 'ionic-angular';
 
-@IonicPage()
+@IonicPage({
+  name: 'ContentPage',
+  priority:'high'
+})
 @Component({
   selector: 'page-content',
   templateUrl: 'content.html'

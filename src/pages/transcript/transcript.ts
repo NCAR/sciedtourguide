@@ -3,7 +3,10 @@ import { SharedVars } from '../../providers/shared-vars';
 import { IonicPage, NavParams} from 'ionic-angular';
 import { AudioProvider } from 'ionic-audio';
 
-@IonicPage()
+@IonicPage({
+  name: 'TranscriptPage',
+  priority:'low'
+})
 @Component({
   selector: 'page-transcript',
   templateUrl: 'transcript.html'
