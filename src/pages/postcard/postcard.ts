@@ -158,26 +158,27 @@ export class PostcardPage {
     if(this.platform.is('android')){
       this.platform.ready().then(
         () => {
-          this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA)
-            .then(status => {
-              if (status.checkPermission) {
-                this.useCamera();
-              } else {
-                this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
-                  .then(status => {
-                    if (status.hasPermission) {
-                      this.useCamera();
-                    } else {
-                      let alert = this.alertCtrl.create({
-                        title: "Please grant permissions",
-                        message: "You must enable the camera to take a photo",
-                        buttons: ['Dismiss']
-                      });
-                      alert.present();
-                    }
-                  });
-              }
+          this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
+            result => {
+              this.useCamera();
+            },
+            err => {
+              this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA).then(
+                result => {
+                  if (result.hasPermission) {
+                    this.useCamera();
+                  } else {
+                    let alert = this.alertCtrl.create({
+                      title: "Please grant camera permissions",
+                      message: "You must enable the camera to take a photo.  Please do this in your device settings.",
+                      buttons: ['Dismiss']
+                    });
+                    alert.present();
+                  }
+                });
             });
+
+            this.androidPermissions.requestPermissions([this.androidPermissions.PERMISSION.CAMERA, this.androidPermissions.PERMISSION.GET_ACCOUNTS]);
         }
       );
     }
