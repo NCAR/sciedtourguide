@@ -6,7 +6,10 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 
-@IonicPage()
+@IonicPage({
+  name: 'PostcardPage',
+  priority: 'low'
+})
 @Component({
   selector: 'page-postcard',
   templateUrl: 'postcard.html',
@@ -27,30 +30,36 @@ export class PostcardPage {
   bkg_imgs: any;
   characters_left = 140;
   postcardData: any = { 'message': '', 'bkg': '' };
-  selectedImage = {"path":"", "altText": ""};
+  selectedImage = { "path": "", "altText": "" };
 
   constructor(private alertCtrl: AlertController, private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
     this.platform.ready().then(() => {
       this.bkg_imgs = [
-                        { "path": "assets/images/postcards/mesalab.jpg",
-                          "altText": "postcard.image.mesalab.altText"
-                        },
-                        { "path": "assets/images/postcards/eclipse.jpg",
-                          "altText": "postcard.image.eclipse.altText"
-                        },
-                        { "path": "assets/images/postcards/mammatus.jpg",
-                          "altText": "postcard.image.mammatus.altText"
-                        },
-                        { "path": "assets/images/postcards/cesm.jpg",
-                          "altText": "postcard.image.cesm.altText"
-                        },
-                        { "path": "assets/images/postcards/snowflake.jpg",
-                          "altText": "postcard.image.snowflake.altText"
-                        },
-                        { "path": "assets/images/postcards/treerings.jpg",
-                          "altText": "postcard.image.treerings.altText"
-                        }
-                      ];
+        {
+          "path": "assets/images/postcards/mesalab.jpg",
+          "altText": "postcard.image.mesalab.altText"
+        },
+        {
+          "path": "assets/images/postcards/eclipse.jpg",
+          "altText": "postcard.image.eclipse.altText"
+        },
+        {
+          "path": "assets/images/postcards/mammatus.jpg",
+          "altText": "postcard.image.mammatus.altText"
+        },
+        {
+          "path": "assets/images/postcards/cesm.jpg",
+          "altText": "postcard.image.cesm.altText"
+        },
+        {
+          "path": "assets/images/postcards/snowflake.jpg",
+          "altText": "postcard.image.snowflake.altText"
+        },
+        {
+          "path": "assets/images/postcards/treerings.jpg",
+          "altText": "postcard.image.treerings.altText"
+        }
+      ];
       this.options = {
         quality: 100,
         targetHeight: this.height,
@@ -118,7 +127,7 @@ export class PostcardPage {
   startOver() {
     this.resetFlags();
   }
-  charsLeft(){
+  charsLeft() {
     this.characters_left = 140 - this.postcard.value.message.length;
   }
 
@@ -126,7 +135,7 @@ export class PostcardPage {
     this.base64Image = null;
     this.postcardMessageText = null;
     this.postcardBkgImage = null;
-    this.selectedImage = {"path":"", "altText": ""};
+    this.selectedImage = { "path": "", "altText": "" };
     this.postcardLoaded = false;
     this.checkExist = false;
     this.postcard = this.formBuilder.group({
@@ -151,11 +160,11 @@ export class PostcardPage {
   selectBkgImg(src) {
     this.trackSteps(2, { 'src': src.path });
     this.postcardData.bkg = src.path;
-    this.selectedImage = {"path":src.path, "altText": src.altText};
+    this.selectedImage = { "path": src.path, "altText": src.altText };
     this.postcardBkgImage = true;
   }
   takePicture() {
-    if(this.platform.is('android')){
+    if (this.platform.is('android')) {
       this.platform.ready().then(
         () => {
           this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
@@ -165,24 +174,11 @@ export class PostcardPage {
             err => {
               this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA).then(
                 result => {
-                  if (result.hasPermission) {
-                    this.useCamera();
-                  } else {
-                    let alert = this.alertCtrl.create({
-                      title: "Please grant camera permissions",
-                      message: "You must enable the camera to take a photo.  Please do this in your device settings.",
-                      buttons: ['Dismiss']
-                    });
-                    alert.present();
-                  }
+                  this.useCamera();
                 });
             });
-
-            this.androidPermissions.requestPermissions([this.androidPermissions.PERMISSION.CAMERA, this.androidPermissions.PERMISSION.GET_ACCOUNTS]);
-        }
-      );
-    }
-    else {
+        });
+    } else {
       this.useCamera();
     }
   }

@@ -3,7 +3,10 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Events} from 'ionic-angular';
 import { SharedVars } from '../../providers/shared-vars';
 
-@IonicPage()
+@IonicPage({
+  name: 'MapIndexPage',
+  priority:'high'
+})
 @Component({
   selector: 'page-map-index',
   templateUrl: 'mapindex.html'
