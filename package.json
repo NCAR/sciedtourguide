@@ -60,6 +60,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "^3.1.11",
+    "@ionic/lab": "1.0.8",
     "typescript": "^2.9.2"
   },
   "description": "NCAR Mesa Lab Tour Application",
