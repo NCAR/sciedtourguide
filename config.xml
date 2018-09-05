@@ -1,13 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="edu.ucar.scied.ncartour" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="edu.ucar.scied.ncartour" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>NCAR Tour</name>
     <description>Virtual tour of the NCAR Mesa Lab Visitor Center</description>
     <author email="scied@ucar.edu" href="http://scied.ucar.edu/">UCAR Center for Science Education</author>
     <content src="index.html" />
-    <access origin="*" />
-    <allow-navigation href="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+    <access origin="http://www.ucar.edu" />
+    <access origin="https://www.ucar.edu" />
+    <access origin="http://scied.ucar.edu" />
+    <access origin="https://scied.ucar.edu" />
+    <access origin="content:///*" />
+    <allow-navigation href="*://*.www.ucar.edu/*" />
+    <allow-navigation href="*://*.scied.ucar.edu/*" />
+    <allow-intent href="*://*.www.ucar.edu/*" />
+    <allow-intent href="*://*.scied.ucar.edu/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="fb:*" />

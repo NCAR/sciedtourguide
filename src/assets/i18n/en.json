@@ -326,8 +326,11 @@
     },
     "survey":{
       "content":{
-        "title": "Tell us what you think!!",
-        "description":"If you visited our Climate Exhibit today, we'd appreciate your feedback."
+        "title": "Help us improve the exhibit!",
+        "description":"We are evaluating the 2nd floor Climate Exhibit, so please be sure to tell us what you think. Your feedback matters!"
+      },
+      "img": {
+        "description": "Tell us what you think!"
       }
     }
   },

@@ -480,7 +480,15 @@
         "name": "climate.survey.content.title",
         "content": {
           "title": "climate.survey.content.title",
-          "description": "climate.survey.content.description"
+          "description": "climate.survey.content.description",
+          "img": [{
+            "id": "DI00673",
+            "positionId": "1",
+            "path": "assets/images/sections/survey.jpg",
+            "altText": "climate.survey.img.description",
+            "width": "1024",
+            "height": "768"
+          }]
         }
       }
     ]
