@@ -5,6 +5,9 @@ page-exhibitslist
            text-align: center;
            padding: 10px;
        }
+       .highlight {
+         color:red;
+       }
     ion-list-header{
       &.weather {
         background-color: #F4A42E !important;

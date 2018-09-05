@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedVars } from '../../providers/shared-vars';
-import { AlertController, IonicPage, Platform } from 'ionic-angular';
+import { IonicPage, Platform } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { SocialSharing } from '@ionic-native/social-sharing';
@@ -32,7 +32,7 @@ export class PostcardPage {
   postcardData: any = { 'message': '', 'bkg': '' };
   selectedImage = { "path": "", "altText": "" };
 
-  constructor(private alertCtrl: AlertController, private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
+  constructor(private androidPermissions: AndroidPermissions, private formBuilder: FormBuilder, private platform: Platform, private camera: Camera, private sharingVar: SocialSharing, public sharedVars: SharedVars) {
     this.platform.ready().then(() => {
       this.bkg_imgs = [
         {

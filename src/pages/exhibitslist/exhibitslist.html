@@ -14,9 +14,9 @@
       </ion-list-header>
       <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits, sections.id)" tappable>
       <ion-avatar item-start>
-            <img [src]="exhibits.content.icon[0].path" aria-hidden="true">
+            <img [src]="exhibits.content.icon[0].path" aria-hidden="true" *ngIf="exhibits.content.icon">
           </ion-avatar>
-      <ion-label>{{exhibits.name | translate }}</ion-label>
+      <ion-label [ngClass]="{'highlight': exhibits.id=='survey'}">{{exhibits.name | translate }}</ion-label>
     </button>
     </ion-item-group>
   </ion-list>
