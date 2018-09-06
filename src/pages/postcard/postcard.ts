@@ -201,7 +201,7 @@ export class PostcardPage {
       if (this.imgElm != null) {
         clearInterval(this.checkExist);
 
-        this.sharingVar.share(this.postcard.value.message + " Learn more about the NCAR Mesa Lab Visitor Center at ", "Postcard: Greetings from the NCAR Visitor Center!", this.imgElm.src, "http://scied.ucar.edu/visit")
+        this.sharingVar.share(this.postcard.value.message + " Learn more about the NCAR Mesa Lab Visitor Center at http://scied.ucar.edu/visit", "Postcard: Greetings from the NCAR Visitor Center!", this.imgElm.src, "http://scied.ucar.edu/visit")
           .then(() => {
             // completion - post a message and then reset
 
