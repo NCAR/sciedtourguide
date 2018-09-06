@@ -18,8 +18,8 @@
         </div>
         <div class="preview_instructions_container">
           <p>{{ 'postcard.steps.two.instructions.content' | translate }}</p>
-          <button ion-button (click)="takePicture()" icon-right>{{'postcard.steps.two.buttons.take_picture' | translate }} <ion-icon name="camera" aria-hidden="true"></ion-icon></button>
-          <button ion-button (click)="stepBack()" icon-left><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.two.buttons.camera_back' | translate }}</button>
+          <button ion-button (click)="takePicture()" icon-right class="active">{{'postcard.steps.two.buttons.take_picture' | translate }} <ion-icon name="camera" aria-hidden="true"></ion-icon></button>
+          <button ion-button (click)="stepBack()" icon-left class="active"><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.two.buttons.camera_back' | translate }}</button>
         </div>
       </div>
     </div>
@@ -36,8 +36,9 @@
           <ion-label for="message" stacked>{{ 'postcard.steps.three.message.label' | translate }}</ion-label>
           <ion-textarea id="message" formControlName="message" [placeholder]="'postcard.steps.three.message.placeholder_text' | translate" class="message" [attr.maxlength]="140" (ionChange)="charsLeft()"></ion-textarea>
           <p>Characters remaining: {{characters_left}}</p>
-          <button ion-button type="submit" [disabled]="!postcard.valid" icon-right>{{'postcard.steps.three.buttons.finish' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>
-          <button ion-button (click)="stepBack()" icon-left><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.three.buttons.message_back' | translate }}</button>
+          <p [class.hidden]="postcard.valid" class="warning">Please write a message before sending your postcard.</p>
+          <button ion-button type="submit" [disabled]="!postcard.valid" icon-right [class.inactive]="!postcard.value" [class.active]="postcard.valid">{{'postcard.steps.three.buttons.finish' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>
+          <button ion-button (click)="stepBack()" icon-left class="active"><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{'postcard.steps.three.buttons.message_back' | translate }}</button>
         </form>
       </div>
 
@@ -56,8 +57,8 @@
             <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard" [photoFlag]="photoFlag">
           </ion-card>
           <p>{{ 'postcard.steps.finished.review_text' | translate }}</p>
-          <button ion-button (click)="otherShare()" icon-right>{{ 'postcard.steps.finished.buttons.send' | translate }} <ion-icon name="send" aria-hidden="true"></ion-icon></button>
-          <button ion-button (click)="startOver()" icon-left><ion-icon name="undo" aria-hidden="true"></ion-icon> {{ 'postcard.steps.finished.buttons.startover' | translate }}</button>
+          <button ion-button (click)="otherShare()" icon-right class="active">{{ 'postcard.steps.finished.buttons.send' | translate }} <ion-icon name="send" aria-hidden="true"></ion-icon></button>
+          <button ion-button (click)="startOver()" icon-left class="active"><ion-icon name="undo" aria-hidden="true"></ion-icon> {{ 'postcard.steps.finished.buttons.startover' | translate }}</button>
         </ion-col>
       </ion-row>
     </div>
