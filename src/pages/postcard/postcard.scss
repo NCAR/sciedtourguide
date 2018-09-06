@@ -65,4 +65,19 @@ page-postcard {
     stroke: #444;
     fill: #222;
   }
+
+  button {
+    &.active {
+      background-color:#77AD44;
+    }
+    &.inactive{
+      background-color: #CCCCCC;
+    }
+  }
+  .hidden {
+    display:none;
+  }
+  .warning {
+    color:#CD4927;
+  }
 }
