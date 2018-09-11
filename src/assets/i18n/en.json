@@ -393,22 +393,10 @@
     "supercomputer": {
       "content": {
         "title": "Supercomputers",
-        "description": "Viewing the exhibits in the Visitor Center of the NWSC is a wonderful way to spend a morning or afternoon. Enjoy a free, self-guided tour that offers an informative view of weather, climate, supercomputing and the broad spectrum of atmospheric research at a world-class science laboratory. Learn about current Earth science research spanning our planet's changing climate to the genesis of severe weather phenomena. Find out about computational science and see one of the fastest supercomputers in existence today."
+        "description": "Viewing the exhibits in the Visitor Center of the NCAR-Wyoming Supercomputing Center (NWSC) is a wonderful way to spend a morning or afternoon. Enjoy a free, self-guided tour that offers an informative view of weather, climate, supercomputing and the broad spectrum of atmospheric research at a world-class science laboratory. Learn about current Earth science research spanning our planet's changing climate to the genesis of severe weather phenomena. Find out about computational science and see one of the fastest supercomputers in existence today."
       },
       "img": {
         "description": "Entrance sign for the NCAR-Wyoming Supercomputing Center in Cheyenne, WY."
-      }
-    },
-    "cray": {
-      "content": {
-        "title": "The Cray-1A Supercomputer",
-        "description": "For decades, NCAR has been a pioneer in the use of supercomputers for weather and climate modeling. This Cray-1A supercomputer was a state-of-the-art machine when it arrived at NCAR in 1977. Designed by Seymour Cray, widely regarded as the father of supercomputing, this computer weighs over five tons and was capable of using up to 32 megabytes of memory! "
-      },
-      "img": {
-        "description": "An NCAR Staff member using the CRAY-1A supercomputer in the late 1970s."
-      },
-      "audio": {
-        "transcript": "<p>NCAR has been operating supercomputers to study weather, climate, and the Sun since the 1970s. In 1977, NCAR purchased this Cray-1A supercomputer, which was much faster than previous supercomputers and better adapted to the needs of the scientific community than other computers at the time. Seymour Cray, who founded Cray Research, the company that designed this computer, is considered by many to be the father of supercomputing.</p><p>The Cray-1A weighs more than five tons and was capable of using up to 32 megabytes of memory when it was new, more than any other computer in the world at the time. Although it represented a breakthrough in supercomputing performance and was considered quite the speed demon in its day, your cell phone is much faster and more powerful than this giant.</p><p>The unusual C-shaped design of the computer’s housing helped the machine shed excess heat, allowed for shorter wires to improve performance, and made it possible for technicians to get inside and service the computer from both sides when problems arose. When the computer was built, professional knitters were hired to install the wiring; their dexterity and small hands were needed to organize wires inside the housing. The padded benches around the machine cover and hide the computer’s power supplies.</p><p>The Cray-1A helped scientists make advances in weather and climate models from 1977 until early 1989. Today, NCAR supercomputers are housed in the NCAR-Wyoming Supercomputer Center near Cheyenne.</p>"
       }
     }
   },
@@ -507,7 +495,6 @@
     },
     "location": {
       "2b": "Floor 2B",
-      "1b": "Floor 1B",
       "first": "First Floor",
       "second": "Second Floor",
       "mezzanine": "Mezzanine",
@@ -533,7 +520,6 @@
       "tosecondfloor": "To 2nd Floor",
       "tomezzanine": "To Mezzanine",
       "routeto": "Route to",
-      "tofloor1b": "To Floor 1B",
       "rampto1stfloor": "Ramp to 1st Floor",
       "ramp": "Ramp",
       "ramptolobby": "Ramp to lobby",
@@ -543,7 +529,6 @@
       "mezzanine": "Mezzanine",
       "secondfloor": "Second Floor",
       "firstfloor": "First Floor",
-      "floor1b": "Floor 1B",
       "floor2b": "Floor 2B",
       "entrance": "entrance",
       "theater": "Theater",
@@ -575,7 +560,6 @@
       "library": "Library",
       "ncars": "NCAR's",
       "architecture": "Architecture",
-      "cray": "The Cray-1A",
       "supercomputer": "Supercomputer",
       "supercomputing": "Supercomputing",
       "area": "Area"
@@ -603,7 +587,6 @@
       "satelliteloc": "COSMIC Satellite exhibit. Located on the mezzanine",
       "archloc": "NCAR's Architecture Exhibit. Located on the mezzanine, on the west between the satellite and sun-earth connections exhibit",
       "supercomputing": "Supercomputing Area",
-      "supercomputer": "The Cray-1A Supercomputer",
       "sunearth": "Sun-Earth Connections",
       "sunearthloc": "Sun-Earth Connections exhibit. Located on the mezzanine, north of the stairs",
       "mainseminar": "Main Seminar Room",
@@ -615,11 +598,7 @@
       "stairscentralm1": "Central stairs from the mezzanine to the 1st floor lobby. Take 7 steps down.",
       "stairscentral1m": "Central stairs from the 1st floor lobby to the mezzanine.  Go up 7 steps.  To proceed to the 2nd floor, turn left at the landing and take 13 additional steps up.",
       "stairswest21": "West stairs from 2nd floor to 1st floor by the weather trail.  Take 4 steps down to the landing, turn left, take 12 steps down to another landing, turn left, take 4 additional steps",
-      "stairsnwarch": "Northwest stairs to floor 1B from mezzanine between the architecture and supercomputing exhibits. From the hallway railing, take 11 steps down to the landing, turn right, take 7 additional steps.",
-      "stairsnw1bm": "Northwest stairs from floor 1B to the mezzanine between the supercomputing and architecture exhibits.  Take 7 steps up to the landing, turn left, take 11 additional steps up to the next landing, turn right, walk along hallway until to you reach 4 additional steps.",
       "stairssouththeater": "South stairs from the 1st floor to the second floor next to the theater. Take 6 steps up to the landing, turn right, 8 additional steps up to another landing, turn right, take 6 additional steps.",
-      "stairssouthcray": "South stairs from floor 1B to the 1st floor between the Cray-1A supercomputer and the weather exhibits.  Take 6 steps up to the landing, turn right, take 8 steps up to another landing, turn right, take 6 additional steps.",
-      "stairssouth11b": "South stairs from the 1st floor to floor 1B between the Cray-1A supercomputer and the weather exhibits.  Take 6 steps down to the landing, turn left, take 8 steps to another landing, turn left, take 6 additional steps.",
       "stairssouth21": "South stairs from 2nd floor to 1st floor by the Atmosphere exhibit.  Take 6 steps down to the landing, turn left, take 8 additional steps to another landing, turn left, take 6 additional steps.",
       "stairseast21": "East stairs from the 1st floor to the 2nd floor by the cafeteria.  Take 4 steps up to the landing, turn left, take 12 additional steps to another landing, turn left, take 4 additional steps.",
       "stairseast12": "East stairs from 2nd floor to 1st floor behind the library. Take 4 steps down to the landing, turn right, take 12 additional steps to another landing, turn right, take 4 additional steps.",
@@ -634,11 +613,9 @@
       "atmloc": "ATM. located just outside the cafeteria entrance on the 1st floor on the south east side of the building",
       "picnicloc": "Picnic Area. Located outside from the cafeteria entrance on the 1st floor on the south east side of the building",
       "elevator1theater": "Elevator. 1st Floor. Located directly across from the theater next to the stairs",
-      "elevator1bcray": "Elevator. Floor 1B. Located directly west of the CRAY-1A supercomputer exhibit",
       "elevator2library": "Elevator. 2nd floor. Located directly across from the library next to the stairs",
       "elevator2climate": "Elevator. 2nd floor. Located in the hallway north of the climate exhibit",
       "elevator1front": "Elevator. 1st floor. Located in the hallway north of the front desk",
-      "elevator1bsupercomputing": "Elevator. Floor 1B. Located in the hallway next to the supercomputing exhibit",
       "brmen1front": "men's bathroom located on the 1st floor across from the front desk",
       "brm2climate": "men's bathroom located on the 2nd floor north of the climate exhibit",
       "brmen2library": "men's bathroom located on the 2nd floor in the hallway between the climate exhibit and library",
@@ -651,10 +628,7 @@
       "atmos2loca": "Atmosphere exhibit. Located on the stairs between the 1st and second floors, south of the weather and climate exhibits",
       "libraryloc": "Library. Located on the 2nd floor just south of the Climate exhibit",
       "aqloc": "Air Quality Exhibit. Located just to the left of the lobby on the 1st floor",
-      "gardenloc": "Ozone garden. Located outside, left of the front entrance",
-      "crayloc": "CRAY-1A Supercomputer exhibit. Located on Floor 1B down the stairs from the theater",
-      "supercomputingloc": "Supercomputing exhibit. Located on Floor 1B down the ramp from the Mezzanine"
-
+      "gardenloc": "Ozone garden. Located outside, left of the front entrance"
     }
   }
 }
