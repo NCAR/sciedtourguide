@@ -626,65 +626,8 @@
         }
       }
     ]
-  }, {
-    "id": "supercomputers",
-    "name": "supercomputers.title",
-    "children": [{
-        "id": "supercomputer",
-        "name": "supercomputers.supercomputer.content.title",
-        "location":"map.location.nwsc",
-        "content": {
-          "title": "supercomputers.supercomputer.content.title",
-          "description": "supercomputers.supercomputer.content.description",
-          "img": [{
-            "id": "DI00673",
-            "positionId": "1",
-            "path": "assets/images/sections/supercomputer.jpg",
-            "altText": "supercomputers.supercomputer.img.description",
-
-            "width": "1024",
-            "height": "768"
-          }],
-          "icon": [{
-            "path": "assets/icon/supercomputing_bleed-01.jpg",
-            "altText": "supercomputers.supercomputer.icon.description"
-          }]
-        }
-      },
-      {
-        "id": "cray",
-        "name": "supercomputers.cray.content.title",
-        "location":"map.location.1b",
-        "content": {
-          "title": "supercomputers.cray.content.title",
-          "description": "supercomputers.cray.content.description",
-          "img": [{
-            "id": "DI00673",
-            "positionId": "1",
-            "path": "assets/images/sections/cray.jpg",
-            "altText": "supercomputers.cray.img.description",
-
-            "width": "1024",
-            "height": "768"
-          }],
-          "icon": [{
-            "path": "assets/icon/cray_bleed-01.jpg",
-            "altText": "supercomputers.cray.icon.description"
-          }],
-          "audio": [{
-            "id": "",
-            "positionId": "1",
-            "src": "assets/audio/sections/NCAR_Misc-Cray1ASuperComputer.mp3",
-            "title": "supercomputers.cray.audio.title",
-            "description": "supercomputers.cray.audio.description",
-            "runningTime": "1:37",
-            "transcriptId": "supercomputers.cray.audio.transcript",
-            "preload": "metadata"
-          }]
-        }
-      }
-    ]
   },
+
   {
     "id": "aq",
     "name": "aq.title",
@@ -872,6 +815,32 @@
             "runningTime": "1:16",
             "transcriptId": "misc.wxtrail.audio.transcript",
             "preload": "metadata"
+          }]
+        }
+      }
+    ]
+  },{
+    "id": "supercomputers",
+    "name": "supercomputers.title",
+    "children": [{
+        "id": "supercomputer",
+        "name": "supercomputers.supercomputer.content.title",
+        "location":"map.location.nwsc",
+        "content": {
+          "title": "supercomputers.supercomputer.content.title",
+          "description": "supercomputers.supercomputer.content.description",
+          "img": [{
+            "id": "DI00673",
+            "positionId": "1",
+            "path": "assets/images/sections/supercomputer.jpg",
+            "altText": "supercomputers.supercomputer.img.description",
+
+            "width": "1024",
+            "height": "768"
+          }],
+          "icon": [{
+            "path": "assets/icon/supercomputing_bleed-01.jpg",
+            "altText": "supercomputers.supercomputer.icon.description"
           }]
         }
       }
