@@ -94,7 +94,7 @@
     },
     "hours": {
       "title": "Visitor Center Hours",
-      "content": "Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The visitor center is open every day except for two annual shut down days in the spring and fall. Please view our visitor website prior to your visit for updated information.</p>"
+      "content": "Weekdays: 8:00 am - 5:00 pm  <br/> Weekends: 9:00 am - 4:00 pm  <br/> Holidays: 9:00 am - 4:00 pm  <p>The Visitor Center is open every day except for two annual shut down days in the spring and fall. Please view our visitor website prior to your visit for updated information.</p>"
     },
     "tours": {
       "title": "Tours",
@@ -107,19 +107,21 @@
     },
     "restrooms": {
       "title": "Public Restrooms",
-      "content": "<strong>Men's Restroom</strong><p>Men's restrooms are located: <ul><li>On the north end of the first floor, directly across from the front desk</li><li>On the north end of the second floor, north of the Climate Futures exhibit</li><li>On the south end of the 2nd floor, in the hallway just north of the Library</li></ul></p><strong>Women's Restrooms</strong><p>Women's restrooms are located: <ul><li>On the south end of the 1st floor, in the hallway directly behind the theater</li><li>On the norht end of the 2nd floor, north of the Climate Futures exhibit</li><li>On the south end of the 2nd floor, down the hallway and to the right, behind the library</li></ul></p>"
+      "content": "<strong>Men's Restroom</strong><p>Men's restrooms are located: <ul><li>On the north end of the first floor, directly across from the front desk</li><li>On the north end of the second floor, north of the climate exhibit</li><li>On the south end of the 2nd floor, in the hallway just north of the Library</li></ul></p><strong>Women's Restrooms</strong><p>Women's restrooms are located: <ul><li>On the south end of the 1st floor, in the hallway directly behind the theater</li><li>On the north end of the 2nd floor, north of the climate exhibit</li><li>On the south end of the 2nd floor, down the hallway and to the right, behind the library</li></ul></p>"
     },
     "accessibility": {
       "title": "Accessibility",
-      "content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  Our Visitor program is committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accomodations can be found on our visitor website.",
+      "content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  We are committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accomodations can be found on our visitor website.",
       "button_text": "View accessibility information",
       "parking": {
         "title": "Parking",
-        "content": "NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.",
+        "content": "NCAR's Mesa Lab Visitor Center offers two entrances for those with mobility impairments and their companions.  A map of accessible parking information is provided on a sign at the northwest end of the main parking lot.",
         "title1": "Wheelchair accessible front driveway access",
         "content1": "This is a secure driveway and entrance, therefore one must call NCAR (<a href='tel:303-497-1139'>303-497-1139</a>) in advance to gain access to the two accessible parking spaces or to drop visitors off at the main entrance.",
-        "title2": "Wheelchair accessible rear entrance",
-        "content2": "The second option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
+        "title2": "Main parking lot",
+        "content2": "Several accessible parking spots are in the northwest end of the main parking lot.  Take the sidewalk along the main road to the entrance.",
+        "title3": "Wheelchair accessible rear entrance",
+        "content3": "An alternative options is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
       },
       "elevators": {
         "title": "Elevators ",
@@ -127,10 +129,10 @@
       },
       "restrooms": {
         "title": "Restrooms ",
-        "content": "A wheelchair accessible restroom is available on the second floor, north of the Climate Future exhibit area."
+        "content": "An accessible bathroom is available on the second floor, north of the climate exhibit."
       },
       "map": {
-        "button_text": "View wheelchair map"
+        "button_text": "View accessibility map"
       }
     },
     "about": {
@@ -490,8 +492,8 @@
       "button_desc": "An interactive map showing all of the exhibit areas, restrooms, elevators, and stairs."
     },
     "access": {
-      "button_text": "Wheelchair Map",
-      "button_desc": "A map that shows how to access the building entrances and elevators with a wheelchair."
+      "button_text": "Accessibility Map",
+      "button_desc": "A map that shows how to access the building entrances and elevators when using mobility aids."
     },
     "location": {
       "2b": "Floor 2B",
@@ -513,7 +515,7 @@
     },
     "text": {
       "title": "Zoomable map of the NCAR Mesa Lab Visitor Center",
-      "titleaccess": "Wheelchair accessibility map",
+      "titleaccess": "Accessibility map",
       "desc": "An interative map of the NCAR Visitor Center. Use the buttons or swipe and pinch gestures to move the map around and to zoom in and out.",
       "descaccess": "A map showing how to get to wheelchair accessible bathrooms and elevators inside of the NCAR Mesa Lab Visitor Center.",
       "tofirstfloor": "To 1st Floor",
@@ -566,7 +568,7 @@
     },
     "label": {
       "wheelchairramp1": "Wheelchair ramp from mezzanine to 1st floor.  Take the ramp past the NCAR Architecture exhibit to the hallway.  Turn right then follow the hallway until you can turn right at NCAR security.",
-      "wheelchairentrance": "Wheelchair entrance from disability parking spaces - enter from floor 2B and take path to elevator",
+      "wheelchairentrance": "Wheelchair entrance from accessibility parking spaces - enter from floor 2B and take path to elevator",
       "routetomezzanine": "Route to Mezzanine",
       "ozonegarden": "Ozone Garden",
       "classroom": "Classroom",
