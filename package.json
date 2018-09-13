@@ -1,12 +1,12 @@
 {
   "name": "sciedtourguide",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "UCAR Center for Science Education",
   "homepage": "http://scied.ucar.edu",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
+    "build": "ionic-app-scripts build --prod",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve"
