@@ -82,6 +82,8 @@
           <p [innerHtml]="'visitor.accessibility.parking.content1' | translate"></p>
           <h2 [innerHtml]="'visitor.accessibility.parking.title2' | translate"></h2>
           <p [innerHtml]="'visitor.accessibility.parking.content2' | translate"></p>
+          <h2 [innerHtml]="'visitor.accessibility.parking.title3' | translate"></h2>
+          <p [innerHtml]="'visitor.accessibility.parking.content3' | translate"></p>
         </div>
         <button ion-item detail-none class="togglebutton" (click)="toggleAccessibleInformation('elevators')">
          <ion-icon [name]="icon_elevators" aria-hidden="true"></ion-icon>
@@ -111,7 +113,7 @@
       </ion-card-header>
       <ion-card-content>
         <span [innerHtml]="'visitor.about.content' | translate"></span>
-        <button ion-button icon-left (click)="sharedVars.launch('https://www2.ucar.edu/terms-of-use')">
+        <button ion-button icon-left (click)="sharedVars.launch('https://www.ucar.edu/terms-of-use')">
         <ion-icon name="information-circle" aria-hidden="true"></ion-icon>
         {{ 'visitor.about.button_text' | translate }}
       </button>
