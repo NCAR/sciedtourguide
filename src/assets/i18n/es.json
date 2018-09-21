@@ -121,7 +121,7 @@
         "title2": "Main parking lot",
         "content2": "Several accessible parking spots are in the northwest end of the main parking lot.  Take the sidewalk along the main road to the entrance.",
         "title3": "Wheelchair accessible rear entrance",
-        "content3": "An alternative options is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
+        "content3": "An alternative option is to park in the accessible parking area at the back (south side) of the building directly next to our delivery dock. Please buzz the intercom located next to the inside door and our security staff will facilitate your entrance. (Please feel free to ask via the intercom for a staff escort to meet you at this entrance if desired.) All doors in this area are automatic. Once inside, follow the green dots to the elevator. Enter the elevator, press \"G\" for Ground Level, and it will transport you to the first floor of our Visitor Center."
       },
       "elevators": {
         "title": "Elevators ",
@@ -137,7 +137,7 @@
     },
     "about": {
       "title": "About this App",
-      "content": "<p>The NCAR Visitor Center Tour mobile app was developed by the UCAR Center for Science Education (UCAR SciEd). UCAR SciEd serves the geoscience community by amplifying and complementing the work of the National Science Foundation’s National Center for Atmospheric Research (NCAR) and University Corporation for Atmospheric Research (UCAR) member universities by reaching our audiences: K-12 educators, university faculty, students, and the public through excellence in educational programs and experiences.</p>",
+      "content": "<p>The NCAR Mesa Lab Visitor Center Tour mobile app was developed by the UCAR Center for Science Education (UCAR SciEd). UCAR SciEd serves the geoscience community by amplifying and complementing the work of the National Science Foundation’s National Center for Atmospheric Research (NCAR) and University Corporation for Atmospheric Research (UCAR) member universities by reaching our audiences: K-12 educators, university faculty, students, and the public through excellence in educational programs and experiences.</p>",
       "button_text":"View Terms of Use"
     }
   },
