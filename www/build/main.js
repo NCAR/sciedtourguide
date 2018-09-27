@@ -230,11 +230,11 @@ var map = {
 		6
 	],
 	"../pages/postcard/postcard.module": [
-		698,
+		697,
 		3
 	],
 	"../pages/tabs/tabs.module": [
-		697,
+		698,
 		5
 	],
 	"../pages/transcript/transcript.module": [
@@ -490,10 +490,13 @@ var ExhibitsDataProvider = /** @class */ (function () {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(368);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module__ = __webpack_require__(372);
 
 
-Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+
+Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* enableProdMode */])();
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
 /***/ }),
@@ -572,8 +575,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/map/mapaccess.module#MapAccessPageModule', name: 'MapAccessPage', segment: 'mapaccess', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/map/mapindex.module#MapIndexPageModule', name: 'MapIndexPage', segment: 'mapindex', priority: 'high', defaultHistory: [] },
-                        { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/postcard/postcard.module#PostcardPageModule', name: 'PostcardPage', segment: 'postcard', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/transcript/transcript.module#TranscriptPageModule', name: 'TranscriptPage', segment: 'transcript', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/visit/visit.module#VisitPageModule', name: 'VisitPage', segment: 'visit', priority: 'low', defaultHistory: [] }
                     ]

@@ -47,11 +47,7 @@ Xcode version: Xcode 9.4.1
 Update version in 3 places
 * config.xml
 * package.json
-* en.json -> About (and any other languages)
 
-Update target Channel in 2 places
-* package.json
-* config.xml
 
 ## Maintainers/Sponsors
 

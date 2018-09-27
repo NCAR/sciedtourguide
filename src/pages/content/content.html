@@ -5,7 +5,7 @@
 <ion-content elastic-header>
   <img [src]="selectedItem.content.img[0].path" [alt]="selectedItem.content.img[0].altText | translate" *ngIf="selectedItem.content.img">
   <div [innerHtml]="selectedItem.content.description | translate" padding></div>
-  <button *ngIf="selectedItem.id == 'survey'" ion-button (click)="sharedVars.launch('https://www.surveymonkey.com/r/climate_exhibit')" style="margin-left:15px;">Tell us what you think!</button>
+  <button *ngIf="selectedItem.id == 'survey'" ion-button (tap)="sharedVars.launch('https://www.surveymonkey.com/r/climate_exhibit')" style="margin-left:15px;">Tell us what you think!</button>
   <div padding class="location" *ngIf="selectedItem.location">
     <strong>{{'location' | translate}}:</strong>
     <span [innerHtml]="selectedItem.location | translate"></span>
@@ -17,7 +17,7 @@
 <ion-footer *ngIf="checkStatus()">
   <ion-toolbar class="audio">
     <ion-buttons>
-  <button ion-button (click)="openTranscript($event)"><img src="assets/images/audio.png"/> {{'transcript_link' | translate}} ({{selectedItem.content.audio[0].runningTime}})</button>
+  <button ion-button (tap)="openTranscript($event)"><img src="assets/images/audio.png"/> {{'transcript_link' | translate}} ({{selectedItem.content.audio[0].runningTime}})</button>
 </ion-buttons>
 </ion-toolbar>
 </ion-footer>

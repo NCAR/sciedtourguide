@@ -20,7 +20,7 @@
           <ion-col col-2 class="audio-icon"><img src="assets/images/audio.png" /></ion-col>
           <ion-col col-10 class="audio-track">
             <audio-track-progress-bar dark duration progress [audioTrack]="audio"></audio-track-progress-bar>
-            <ion-thumbnail item-start (click)="trackEvent()">
+            <ion-thumbnail item-start (tap)="trackEvent()">
               <audio-track-play dark [audioTrack]="audio">
                 <ion-spinner></ion-spinner>
               </audio-track-play>

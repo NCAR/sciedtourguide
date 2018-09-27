@@ -6,13 +6,13 @@
   <div *ngIf="searching" class="spinner-container">
     <ion-spinner></ion-spinner>
   </div>
-  <button ion-button *ngIf="selectedItem || searchTerm" (click)="reset()" color="positive" block>Reset List</button>
+  <button ion-button *ngIf="selectedItem || searchTerm" (tap)="reset()" color="positive" block>Reset List</button>
   <ion-list>
     <ion-item-group *ngFor="let sections of items">
       <ion-list-header [ngClass]="sections.id" aria-label="Categor">
         {{sections.name | translate }}
       </ion-list-header>
-      <button ion-item *ngFor="let exhibits of sections.children" (click)="openPage($event, exhibits, sections.id)" tappable>
+      <button ion-item *ngFor="let exhibits of sections.children" (tap)="openPage($event, exhibits, sections.id)" tappable>
       <ion-avatar item-start>
             <img [src]="exhibits.content.icon[0].path" aria-hidden="true" *ngIf="exhibits.content.icon">
           </ion-avatar>

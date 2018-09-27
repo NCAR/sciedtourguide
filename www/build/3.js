@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 698:
+/***/ 697:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,10 +8,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostcardPageModule", function() { return PostcardPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__postcard__ = __webpack_require__(726);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__postcard__ = __webpack_require__(725);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titlebar_title_module__ = __webpack_require__(701);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_image_draw_image_draw_module__ = __webpack_require__(729);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_image_draw_image_draw_module__ = __webpack_require__(728);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -137,7 +137,7 @@ var TitleComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 726:
+/***/ 725:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -146,8 +146,8 @@ var TitleComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_shared_vars__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(727);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(728);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__ = __webpack_require__(726);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__ = __webpack_require__(727);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_android_permissions__ = __webpack_require__(366);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -348,7 +348,7 @@ var PostcardPage = /** @class */ (function () {
     };
     PostcardPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-postcard',template:/*ion-inline-start:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/postcard/postcard.html"*/'<ion-header>\n  <app-title [title]="\'toolbar.postcards\' | translate"></app-title>\n</ion-header>\n<ion-content>\n  <div padding class="postcard_content">\n    <div *ngIf="!postcardBkgImage">\n      <div [innerHTML]="\'postcard.intro.content\' | translate"></div>\n      <div *ngIf="!postcardBkgImage" class="bkg_image_container">\n        <p>{{ \'postcard.steps.one.instructions.content\' | translate }}</p>\n        <img tappable *ngFor="let img of bkg_imgs" [src]="img.path" (click)="selectBkgImg(img)" [alt]="img.altText | translate" [title]="img.altText | translate" role="button">\n      </div>\n    </div>\n\n    <div *ngIf="!base64Image && postcardBkgImage" class="camera_container">\n      <div class="preview_container">\n        <div class="preview_content_container">\n          <img [src]="selectedImage.path" class="preview bkg" [alt]="selectedImage.altText | translate" [title]="selectedImage.altText | translate">\n        </div>\n        <div class="preview_instructions_container">\n          <p>{{ \'postcard.steps.two.instructions.content\' | translate }}</p>\n          <button ion-button (click)="takePicture()" icon-right class="active">{{\'postcard.steps.two.buttons.take_picture\' | translate }} <ion-icon name="camera" aria-hidden="true"></ion-icon></button>\n          <button ion-button (click)="stepBack()" icon-left class="active"><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{\'postcard.steps.two.buttons.camera_back\' | translate }}</button>\n        </div>\n      </div>\n    </div>\n\n\n\n    <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText" class="text_container">\n      <div class="preview_content_container" *ngIf="base64Image">\n        <img [src]="base64Image" class="preview bkg" alt="{{\'postcard.camera_alt\' | translate}}" />\n      </div>\n      <div class="preview_instructions_container">\n        <p *ngIf="base64Image">{{ \'postcard.steps.three.instructions.withimage.content\' | translate }}</p>\n        <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">\n          <ion-label for="message" stacked>{{ \'postcard.steps.three.message.label\' | translate }}</ion-label>\n          <ion-textarea id="message" formControlName="message" [placeholder]="\'postcard.steps.three.message.placeholder_text\' | translate" class="message" [attr.maxlength]="140" (ionChange)="charsLeft()"></ion-textarea>\n          <p>Characters remaining: {{characters_left}}</p>\n          <p [class.hidden]="postcard.valid" class="warning">Please write a message before sending your postcard.</p>\n          <button ion-button type="submit" [disabled]="!postcard.valid" icon-right [class.inactive]="!postcard.value" [class.active]="postcard.valid">{{\'postcard.steps.three.buttons.finish\' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>\n          <button ion-button (click)="stepBack()" icon-left class="active"><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{\'postcard.steps.three.buttons.message_back\' | translate }}</button>\n        </form>\n      </div>\n\n\n    </div>\n\n    <div *ngIf="postcardMessageText">\n\n      <ion-row no-padding class="postcard_review">\n        <ion-col [ngClass]="postcardLoaded ? \'hidden\' :\'\'" style="text-align:center;">\n          <ion-spinner></ion-spinner>\n          <p>{{\'postcard.steps.finished.loading_text\' | translate }}</p>\n        </ion-col>\n        <ion-col [ngClass]="postcardLoaded ? \'\' :\'hidden\'">\n          <ion-card class="img_container" *ngIf="base64Image && postcardMessageText">\n            <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard" [photoFlag]="photoFlag">\n          </ion-card>\n          <p>{{ \'postcard.steps.finished.review_text\' | translate }}</p>\n          <button ion-button (click)="otherShare()" icon-right class="active">{{ \'postcard.steps.finished.buttons.send\' | translate }} <ion-icon name="send" aria-hidden="true"></ion-icon></button>\n          <button ion-button (click)="startOver()" icon-left class="active"><ion-icon name="undo" aria-hidden="true"></ion-icon> {{ \'postcard.steps.finished.buttons.startover\' | translate }}</button>\n        </ion-col>\n      </ion-row>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/postcard/postcard.html"*/,
+            selector: 'page-postcard',template:/*ion-inline-start:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/postcard/postcard.html"*/'<ion-header>\n  <app-title [title]="\'toolbar.postcards\' | translate"></app-title>\n</ion-header>\n<ion-content>\n  <div padding class="postcard_content">\n    <div *ngIf="!postcardBkgImage">\n      <div [innerHTML]="\'postcard.intro.content\' | translate"></div>\n      <div *ngIf="!postcardBkgImage" class="bkg_image_container">\n        <p>{{ \'postcard.steps.one.instructions.content\' | translate }}</p>\n        <img tappable *ngFor="let img of bkg_imgs" [src]="img.path" (tap)="selectBkgImg(img)" [alt]="img.altText | translate" [title]="img.altText | translate" role="button">\n      </div>\n    </div>\n\n    <div *ngIf="!base64Image && postcardBkgImage" class="camera_container">\n      <div class="preview_container">\n        <div class="preview_content_container">\n          <img [src]="selectedImage.path" class="preview bkg" [alt]="selectedImage.altText | translate" [title]="selectedImage.altText | translate">\n        </div>\n        <div class="preview_instructions_container">\n          <p>{{ \'postcard.steps.two.instructions.content\' | translate }}</p>\n          <button ion-button (tap)="takePicture()" icon-right class="active">{{\'postcard.steps.two.buttons.take_picture\' | translate }} <ion-icon name="camera" aria-hidden="true"></ion-icon></button>\n          <button ion-button (tap)="stepBack()" icon-left class="active"><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{\'postcard.steps.two.buttons.camera_back\' | translate }}</button>\n        </div>\n      </div>\n    </div>\n\n\n\n    <div *ngIf="base64Image && postcardBkgImage && !postcardMessageText" class="text_container">\n      <div class="preview_content_container" *ngIf="base64Image">\n        <img [src]="base64Image" class="preview bkg" alt="{{\'postcard.camera_alt\' | translate}}" />\n      </div>\n      <div class="preview_instructions_container">\n        <p *ngIf="base64Image">{{ \'postcard.steps.three.instructions.withimage.content\' | translate }}</p>\n        <form [formGroup]="postcard" (ngSubmit)="reviewPostcard()">\n          <ion-label for="message" stacked>{{ \'postcard.steps.three.message.label\' | translate }}</ion-label>\n          <ion-textarea id="message" formControlName="message" [placeholder]="\'postcard.steps.three.message.placeholder_text\' | translate" class="message" [attr.maxlength]="140" (ionChange)="charsLeft()"></ion-textarea>\n          <p>Characters remaining: {{characters_left}}</p>\n          <p [class.hidden]="postcard.valid" class="warning">Please write a message before sending your postcard.</p>\n          <button ion-button type="submit" [disabled]="!postcard.valid" icon-right [class.inactive]="!postcard.value" [class.active]="postcard.valid">{{\'postcard.steps.three.buttons.finish\' | translate }} <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon></button>\n          <button ion-button (tap)="stepBack()" icon-left class="active"><ion-icon name="backspace" aria-hidden="true"></ion-icon> {{\'postcard.steps.three.buttons.message_back\' | translate }}</button>\n        </form>\n      </div>\n\n\n    </div>\n\n    <div *ngIf="postcardMessageText">\n\n      <ion-row no-padding class="postcard_review">\n        <ion-col [ngClass]="postcardLoaded ? \'hidden\' :\'\'" style="text-align:center;">\n          <ion-spinner></ion-spinner>\n          <p>{{\'postcard.steps.finished.loading_text\' | translate }}</p>\n        </ion-col>\n        <ion-col [ngClass]="postcardLoaded ? \'\' :\'hidden\'">\n          <ion-card class="img_container" *ngIf="base64Image && postcardMessageText">\n            <img [src]="base64Image" [text]="postcardData.message" [bkg]="postcardData.bkg" draw-text crossOrigin id="finalPostcard" [photoFlag]="photoFlag">\n          </ion-card>\n          <p>{{ \'postcard.steps.finished.review_text\' | translate }}</p>\n          <button ion-button (tap)="otherShare()" icon-right class="active">{{ \'postcard.steps.finished.buttons.send\' | translate }} <ion-icon name="send" aria-hidden="true"></ion-icon></button>\n          <button ion-button (tap)="startOver()" icon-left class="active"><ion-icon name="undo" aria-hidden="true"></ion-icon> {{ \'postcard.steps.finished.buttons.startover\' | translate }}</button>\n        </ion-col>\n      </ion-row>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/postcard/postcard.html"*/,
             providers: [__WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_6__ionic_native_android_permissions__["a" /* AndroidPermissions */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__ionic_native_android_permissions__["a" /* AndroidPermissions */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_1__providers_shared_vars__["a" /* SharedVars */]])
@@ -360,7 +360,7 @@ var PostcardPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 727:
+/***/ 726:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -635,7 +635,7 @@ var Camera = (function (_super) {
 
 /***/ }),
 
-/***/ 728:
+/***/ 727:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1237,14 +1237,14 @@ var SocialSharing = (function (_super) {
 
 /***/ }),
 
-/***/ 729:
+/***/ 728:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImageDrawComponentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__image_draw_component__ = __webpack_require__(730);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__image_draw_component__ = __webpack_require__(729);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1277,7 +1277,7 @@ var ImageDrawComponentModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 730:
+/***/ 729:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

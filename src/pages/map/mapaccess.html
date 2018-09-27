@@ -984,15 +984,15 @@
 <ion-footer>
   <ion-toolbar>
     <ion-buttons start>
-      <button icon-only role="button" color="positive" id="pan-left" (click)="panZoom.panBy({x:-50, y:0})" attr.aria-label="{{ 'map.buttons.panleft' | translate }}" ion-button><ion-icon name="arrow-dropleft-circle" aria-hidden="true"></ion-icon></button>
-      <button icon-only role="button" color="positive" id="pan-left" (click)="panZoom.panBy({x:50, y:0})" attr.aria-label="{{ 'map.buttons.panright' | translate }}" ion-button><ion-icon name="arrow-dropright-circle" aria-hidden="true"></ion-icon></button>
-      <button icon-only role="button" color="positive" id="pan-left" (click)="panZoom.panBy({x:0, y:-50})" attr.aria-label="{{ 'map.buttons.panup' | translate }}" ion-button><ion-icon name="arrow-dropup-circle" aria-hidden="true"></ion-icon></button>
-      <button icon-only role="button" color="positive" id="pan-left" (click)="panZoom.panBy({x:0, y:50})" attr.aria-label="{{ 'map.buttons.pandown' | translate }}" ion-button><ion-icon name="arrow-dropdown-circle" aria-hidden="true"></ion-icon></button>
-      <button icon-only role="button" color="positive" id="zoom-in" (click)="panZoom.zoomIn()" attr.aria-label="{{'map.buttons.zoomin' | translate}} " ion-button><ion-icon name="add-circle" aria-hidden="true"></ion-icon></button>
-      <button icon-only role="button" color="positive" id="zoom-out" (click)="panZoom.zoomOut()" attr.aria-label="{{'map.buttons.zoomout' | translate}}" ion-button><ion-icon name="remove-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="positive" id="pan-left" (tap)="panZoom.panBy({x:-50, y:0})" attr.aria-label="{{ 'map.buttons.panleft' | translate }}" ion-button><ion-icon name="arrow-dropleft-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="positive" id="pan-left" (tap)="panZoom.panBy({x:50, y:0})" attr.aria-label="{{ 'map.buttons.panright' | translate }}" ion-button><ion-icon name="arrow-dropright-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="positive" id="pan-left" (tap)="panZoom.panBy({x:0, y:-50})" attr.aria-label="{{ 'map.buttons.panup' | translate }}" ion-button><ion-icon name="arrow-dropup-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="positive" id="pan-left" (tap)="panZoom.panBy({x:0, y:50})" attr.aria-label="{{ 'map.buttons.pandown' | translate }}" ion-button><ion-icon name="arrow-dropdown-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="positive" id="zoom-in" (tap)="panZoom.zoomIn()" attr.aria-label="{{'map.buttons.zoomin' | translate}} " ion-button><ion-icon name="add-circle" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="positive" id="zoom-out" (tap)="panZoom.zoomOut()" attr.aria-label="{{'map.buttons.zoomout' | translate}}" ion-button><ion-icon name="remove-circle" aria-hidden="true"></ion-icon></button>
     </ion-buttons>
     <ion-buttons end>
-      <button icon-only role="button" color="danger" id="reset" (click)="panZoom.reset()" attr.aria-label="{{'map.buttons.reset' | translate}}" ion-button><ion-icon name="refresh" aria-hidden="true"></ion-icon></button>
+      <button icon-only role="button" color="danger" id="reset" (tap)="panZoom.reset()" attr.aria-label="{{'map.buttons.reset' | translate}}" ion-button><ion-icon name="refresh" aria-hidden="true"></ion-icon></button>
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>
