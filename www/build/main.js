@@ -238,11 +238,11 @@ var map = {
 		5
 	],
 	"../pages/transcript/transcript.module": [
-		699,
+		700,
 		0
 	],
 	"../pages/visit/visit.module": [
-		700,
+		699,
 		4
 	]
 };
@@ -546,7 +546,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 function createTranslateLoader(http) {
-    return new __WEBPACK_IMPORTED_MODULE_9__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, './assets/i18n/', '.json');
+    return new __WEBPACK_IMPORTED_MODULE_9__ngx_translate_http_loader__["a" /* TranslateHttpLoader */](http, 'assets/i18n/', '.json');
 }
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -577,8 +577,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/map/mapindex.module#MapIndexPageModule', name: 'MapIndexPage', segment: 'mapindex', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/postcard/postcard.module#PostcardPageModule', name: 'PostcardPage', segment: 'postcard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'high', defaultHistory: [] },
-                        { loadChildren: '../pages/transcript/transcript.module#TranscriptPageModule', name: 'TranscriptPage', segment: 'transcript', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/visit/visit.module#VisitPageModule', name: 'VisitPage', segment: 'visit', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/visit/visit.module#VisitPageModule', name: 'VisitPage', segment: 'visit', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/transcript/transcript.module#TranscriptPageModule', name: 'TranscriptPage', segment: 'transcript', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_14__ionic_storage__["a" /* IonicStorageModule */].forRoot()

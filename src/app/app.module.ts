@@ -16,7 +16,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { ExhibitsDataProvider } from '../providers/exhibits-data/exhibits-data';
 
 export function createTranslateLoader(http: Http) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
 }
 
 @NgModule({
