@@ -1,6 +1,6 @@
 {
   "name": "sciedtourguide",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "author": "UCAR Center for Science Education",
   "homepage": "http://scied.ucar.edu",
   "private": true,
@@ -82,7 +82,7 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic": {
         "APP_ID": "c8680ac1",
-        "CHANNEL_NAME": "Master",
+        "CHANNEL_NAME": "Production",
         "UPDATE_METHOD": "background",
         "WARN_DEBUG": "false",
         "UPDATE_API": "https://api.ionicjs.com",

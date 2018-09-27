@@ -230,11 +230,11 @@ var map = {
 		6
 	],
 	"../pages/postcard/postcard.module": [
-		697,
+		698,
 		3
 	],
 	"../pages/tabs/tabs.module": [
-		698,
+		697,
 		5
 	],
 	"../pages/transcript/transcript.module": [
@@ -572,8 +572,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/map/mapaccess.module#MapAccessPageModule', name: 'MapAccessPage', segment: 'mapaccess', priority: 'high', defaultHistory: [] },
                         { loadChildren: '../pages/map/mapindex.module#MapIndexPageModule', name: 'MapIndexPage', segment: 'mapindex', priority: 'high', defaultHistory: [] },
-                        { loadChildren: '../pages/postcard/postcard.module#PostcardPageModule', name: 'PostcardPage', segment: 'postcard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'high', defaultHistory: [] },
+                        { loadChildren: '../pages/postcard/postcard.module#PostcardPageModule', name: 'PostcardPage', segment: 'postcard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/transcript/transcript.module#TranscriptPageModule', name: 'TranscriptPage', segment: 'transcript', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/visit/visit.module#VisitPageModule', name: 'VisitPage', segment: 'visit', priority: 'low', defaultHistory: [] }
                     ]

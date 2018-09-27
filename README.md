@@ -44,6 +44,14 @@ Xcode version: Xcode 9.4.1
 * install svg-pan-zoom (https://www.npmjs.com/package/svg-pan-zoom)
 * install hammerjs (https://www.npmjs.com/package/hammerjs)
 
+Update version in 3 places
+* config.xml
+* package.json
+* en.json -> About (and any other languages)
+
+Update target Channel in 2 places
+* package.json
+* config.xml
 
 ## Maintainers/Sponsors
 
