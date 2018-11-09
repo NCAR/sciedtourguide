@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 700:
+/***/ 699:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranscriptPageModule", function() { return TranscriptPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__transcript__ = __webpack_require__(734);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__transcript__ = __webpack_require__(731);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_audio__ = __webpack_require__(714);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_titlebar_title_module__ = __webpack_require__(701);
@@ -1276,7 +1276,7 @@ var CordovaAudioTrack = (function () {
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_audio_time_pipe__ = __webpack_require__(718);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_audio_module__ = __webpack_require__(735);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_audio_module__ = __webpack_require__(732);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__ionic_audio_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_audio_playlist_item_directive__ = __webpack_require__(719);
 /* unused harmony namespace reexport */
@@ -1862,7 +1862,7 @@ var AudioPlaylistItemDirective = (function () {
 
 /***/ }),
 
-/***/ 734:
+/***/ 731:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1898,10 +1898,9 @@ var TranscriptPage = /** @class */ (function () {
         this.sharedVars.trackView('Transcript - ' + this.parent + ":" + this.selectedItem.id);
     };
     TranscriptPage.prototype.ionViewWillLeave = function () {
+        this._audioProvider.pause();
         if (this.track_playing == true) {
-            this.selectedTrack = this._audioProvider.tracks[this._audioProvider.current];
-            this._audioProvider.pause();
-            this.sharedVars.trackEvent('Audio', 'navigation-pause', this.selectedTrack.src);
+            this.sharedVars.trackEvent('Audio', 'navigation-pause', this.selectedItem.id);
             this.track_playing = false;
         }
     };
@@ -1910,17 +1909,16 @@ var TranscriptPage = /** @class */ (function () {
         this.allTracks = this._audioProvider.tracks;
     };
     TranscriptPage.prototype.onTrackFinished = function (track) {
-        this.sharedVars.trackEvent('Audio', 'completed', this.selectedTrack.src);
+        this.sharedVars.trackEvent('Audio', 'completed', this.selectedItem.id);
         this.track_playing = false;
     };
     TranscriptPage.prototype.trackEvent = function (track) {
         if (this.track_playing == true) {
-            this.sharedVars.trackEvent('Audio', 'pause', this.selectedTrack.src);
+            this.sharedVars.trackEvent('Audio', 'pause', this.selectedItem.id);
             this.track_playing = false;
         }
         else if (this.track_playing == false) {
-            this.selectedTrack = this._audioProvider.tracks[this._audioProvider.current];
-            this.sharedVars.trackEvent('Audio', 'play', this.selectedTrack.src);
+            this.sharedVars.trackEvent('Audio', 'play', this.selectedItem.id);
             this.track_playing = true;
         }
     };
@@ -1937,7 +1935,7 @@ var TranscriptPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 735:
+/***/ 732:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

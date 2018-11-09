@@ -16,7 +16,6 @@ export class TranscriptPage {
   track_playing:Boolean = false;
   myTracks: any[];
   allTracks: any[];
-  selectedTrack: any;
   parent:string;
 
   constructor(private _audioProvider: AudioProvider,private navParams: NavParams, public sharedVars:SharedVars) {
@@ -29,10 +28,9 @@ export class TranscriptPage {
     this.sharedVars.trackView('Transcript - '+this.parent+":"+this.selectedItem.id);
   }
   ionViewWillLeave() {
+    this._audioProvider.pause();
     if(this.track_playing == true){
-      this.selectedTrack = this._audioProvider.tracks[this._audioProvider.current];
-      this._audioProvider.pause();
-      this.sharedVars.trackEvent('Audio','navigation-pause',this.selectedTrack.src);
+      this.sharedVars.trackEvent('Audio','navigation-pause',this.selectedItem.id);
       this.track_playing = false;
     }
   }
@@ -41,17 +39,17 @@ export class TranscriptPage {
     this.allTracks = this._audioProvider.tracks;
   }
   onTrackFinished(track: any) {
-    this.sharedVars.trackEvent('Audio','completed',this.selectedTrack.src);
+    this.sharedVars.trackEvent('Audio','completed',this.selectedItem.id);
     this.track_playing = false;
   }
   trackEvent(track: any)  {
+
      if ( this.track_playing == true )
      {
-       this.sharedVars.trackEvent('Audio','pause',this.selectedTrack.src);
+       this.sharedVars.trackEvent('Audio','pause',this.selectedItem.id);
        this.track_playing = false;
      } else if(this.track_playing == false){
-       this.selectedTrack = this._audioProvider.tracks[this._audioProvider.current];
-       this.sharedVars.trackEvent('Audio','play',this.selectedTrack.src);
+       this.sharedVars.trackEvent('Audio','play',this.selectedItem.id);
        this.track_playing = true;
      }
   }
