@@ -11,7 +11,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class MyApp {
   rootPage: any = 'TabsPage';
-  appVer: any = '1.1.6';
+  appVer: any = '1.1.8';
 
   constructor(private ga: GoogleAnalytics, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private translate: TranslateService, public sharedVars: SharedVars) {
     platform.ready().then(() => {
