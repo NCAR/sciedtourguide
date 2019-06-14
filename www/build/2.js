@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 694:
+/***/ 695:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,9 +8,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapPageModule", function() { return MapPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__map__ = __webpack_require__(722);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__map__ = __webpack_require__(725);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titlebar_title_module__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titlebar_title_module__ = __webpack_require__(703);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,14 +44,14 @@ var MapPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 701:
+/***/ 703:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitleComponentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__title_component__ = __webpack_require__(702);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__title_component__ = __webpack_require__(704);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87,7 +87,7 @@ var TitleComponentModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 702:
+/***/ 704:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -134,10 +134,10 @@ var TitleComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 703:
+/***/ 705:
 /***/ (function(module, exports, __webpack_require__) {
 
-var Utils = __webpack_require__(704)
+var Utils = __webpack_require__(706)
   , _browser = 'unknown'
   ;
 
@@ -359,7 +359,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 704:
+/***/ 706:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -637,24 +637,24 @@ function requestTimeout(timeout) {
 
 /***/ }),
 
-/***/ 706:
+/***/ 708:
 /***/ (function(module, exports, __webpack_require__) {
 
-var SvgPanZoom = __webpack_require__(707);
+var SvgPanZoom = __webpack_require__(709);
 
 module.exports = SvgPanZoom;
 
 
 /***/ }),
 
-/***/ 707:
+/***/ 709:
 /***/ (function(module, exports, __webpack_require__) {
 
-var Wheel = __webpack_require__(708)
-, ControlIcons = __webpack_require__(709)
-, Utils = __webpack_require__(704)
-, SvgUtils = __webpack_require__(703)
-, ShadowViewport = __webpack_require__(710)
+var Wheel = __webpack_require__(710)
+, ControlIcons = __webpack_require__(711)
+, Utils = __webpack_require__(706)
+, SvgUtils = __webpack_require__(705)
+, ShadowViewport = __webpack_require__(712)
 
 var SvgPanZoom = function(svg, options) {
   this.init(svg, options)
@@ -1424,7 +1424,7 @@ module.exports = svgPanZoom;
 
 /***/ }),
 
-/***/ 708:
+/***/ 710:
 /***/ (function(module, exports) {
 
 // uniwheel 0.1.2 (customized)
@@ -1573,10 +1573,10 @@ module.exports = (function(){
 
 /***/ }),
 
-/***/ 709:
+/***/ 711:
 /***/ (function(module, exports, __webpack_require__) {
 
-var SvgUtils = __webpack_require__(703);
+var SvgUtils = __webpack_require__(705);
 
 module.exports = {
   enable: function(instance) {
@@ -1705,11 +1705,11 @@ module.exports = {
 
 /***/ }),
 
-/***/ 710:
+/***/ 712:
 /***/ (function(module, exports, __webpack_require__) {
 
-var SvgUtils = __webpack_require__(703)
-  , Utils = __webpack_require__(704)
+var SvgUtils = __webpack_require__(705)
+  , Utils = __webpack_require__(706)
   ;
 
 var ShadowViewport = function(viewport, options){
@@ -2050,7 +2050,7 @@ module.exports = function(viewport, options){
 
 /***/ }),
 
-/***/ 711:
+/***/ 713:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*! Hammer.JS - v2.0.7 - 2016-04-22
@@ -4686,9 +4686,9 @@ var freeGlobal = (typeof window !== 'undefined' ? window : (typeof self !== 'und
 freeGlobal.Hammer = Hammer;
 
 if (true) {
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
         return Hammer;
-    }.call(exports, __webpack_require__, exports, module),
+    }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 } else if (typeof module != 'undefined' && module.exports) {
     module.exports = Hammer;
@@ -4701,7 +4701,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 722:
+/***/ 725:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4709,9 +4709,9 @@ if (true) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_vars__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_svg_pan_zoom__ = __webpack_require__(706);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_svg_pan_zoom__ = __webpack_require__(708);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_svg_pan_zoom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_svg_pan_zoom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_hammerjs__ = __webpack_require__(711);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_hammerjs__ = __webpack_require__(713);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_hammerjs__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

@@ -4,7 +4,8 @@
   "loading": "Loading...",
   "shareBtn": "Share",
   "backBtn": "Back",
-  "transcript_link": "Listen to Audio Guide",
+  "audio_link": "Audio Guide",
+  "video_link": "Video",
   "running_time": "Running time",
   "location": "Location",
   "exhibit": "Exhibit ",
@@ -251,6 +252,22 @@
         "description": "Graph showing CO2 levels in Earth’s atmosphere between 1960-2015."
       },
       "audio": {
+        "transcript": "<p>Life is able to thrive on Earth because the temperature is not too hot or too cold. The Earth’s atmosphere acts like a blanket because some gases in the air absorb heat. These gases are called greenhouse gases.</p><p>The most common greenhouse gases in our atmosphere are water vapor, carbon dioxide, methane, nitrous oxide, and ozone. Without greenhouse gases, Earth’s average temperature would be well below freezing. Instead, our planet is a comfortable 59 degrees Fahrenheit on average. But there can be too much of a good thing. On Venus, excessive greenhouse gases have pushed the average temperature to 865°F, four times as hot as boiling water.</p><p>On Earth, levels of greenhouse gases have been rising over the past 150 years, mainly because burning fossil fuels has released carbon dioxide into the air. Greenhouse gases also are emitted from leaks at natural gas wells and pipelines, agriculture, and cement making. Look at the graphic in this exhibit that shows carbon dioxide levels measured over time at three locations, including right here at NCAR. In most places, carbon dioxide levels fluctuate with seasonal changes in northern forests, in urban and natural environments, and even from night to day. But while a place like Boulder, Colorado, sees more variation, the air rolling in from the Pacific Ocean above Hawaii’s Mauna Loa volcano is relatively unaffected by these variations, making it a good indicator of average global levels of carbon dioxide.</p>"
+      }
+    },
+    "soundingclimate": {
+      "content": {
+        "title": "Sounding Climate",
+        "description": "Charles David Keeling began measuring carbon dioxide (CO2) levels at Hawaii’s Mauna Loa Observatory in 1958. These measurements make up the Keeling Curve, which shows that CO2 values have increased from 330 to more than 400 parts per million (ppm). Greenhouse gases like CO2 trap heat in the atmosphere, warming the climate."
+      },
+      "img": {
+        "description": "Graph showing CO2 levels in Earth’s atmosphere between 1960-2015."
+      },
+      "audio": {
+        "transcript": "<p>Life is able to thrive on Earth because the temperature is not too hot or too cold. The Earth’s atmosphere acts like a blanket because some gases in the air absorb heat. These gases are called greenhouse gases.</p><p>The most common greenhouse gases in our atmosphere are water vapor, carbon dioxide, methane, nitrous oxide, and ozone. Without greenhouse gases, Earth’s average temperature would be well below freezing. Instead, our planet is a comfortable 59 degrees Fahrenheit on average. But there can be too much of a good thing. On Venus, excessive greenhouse gases have pushed the average temperature to 865°F, four times as hot as boiling water.</p><p>On Earth, levels of greenhouse gases have been rising over the past 150 years, mainly because burning fossil fuels has released carbon dioxide into the air. Greenhouse gases also are emitted from leaks at natural gas wells and pipelines, agriculture, and cement making. Look at the graphic in this exhibit that shows carbon dioxide levels measured over time at three locations, including right here at NCAR. In most places, carbon dioxide levels fluctuate with seasonal changes in northern forests, in urban and natural environments, and even from night to day. But while a place like Boulder, Colorado, sees more variation, the air rolling in from the Pacific Ocean above Hawaii’s Mauna Loa volcano is relatively unaffected by these variations, making it a good indicator of average global levels of carbon dioxide.</p>"
+      },
+      "video": {
+        "title": "About Sounding Climate",
         "transcript": "<p>Life is able to thrive on Earth because the temperature is not too hot or too cold. The Earth’s atmosphere acts like a blanket because some gases in the air absorb heat. These gases are called greenhouse gases.</p><p>The most common greenhouse gases in our atmosphere are water vapor, carbon dioxide, methane, nitrous oxide, and ozone. Without greenhouse gases, Earth’s average temperature would be well below freezing. Instead, our planet is a comfortable 59 degrees Fahrenheit on average. But there can be too much of a good thing. On Venus, excessive greenhouse gases have pushed the average temperature to 865°F, four times as hot as boiling water.</p><p>On Earth, levels of greenhouse gases have been rising over the past 150 years, mainly because burning fossil fuels has released carbon dioxide into the air. Greenhouse gases also are emitted from leaks at natural gas wells and pipelines, agriculture, and cement making. Look at the graphic in this exhibit that shows carbon dioxide levels measured over time at three locations, including right here at NCAR. In most places, carbon dioxide levels fluctuate with seasonal changes in northern forests, in urban and natural environments, and even from night to day. But while a place like Boulder, Colorado, sees more variation, the air rolling in from the Pacific Ocean above Hawaii’s Mauna Loa volcano is relatively unaffected by these variations, making it a good indicator of average global levels of carbon dioxide.</p>"
       }
     },

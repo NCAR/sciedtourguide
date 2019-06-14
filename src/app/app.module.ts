@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AndroidPermissions } from '@ionic-native/android-permissions';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 import { GoogleAnalytics } from '@ionic-native/google-analytics';
 import { IonicStorageModule } from '@ionic/storage';
 import { ExhibitsDataProvider } from '../providers/exhibits-data/exhibits-data';
@@ -44,6 +45,7 @@ export function createTranslateLoader(http: Http) {
   ],
   providers: [
     StatusBar,
+    ScreenOrientation,
     SplashScreen,
     GoogleAnalytics,
     SharedVars,

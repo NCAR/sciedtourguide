@@ -258,6 +258,46 @@
     "id": "climate",
     "name": "climate.title",
     "children": [{
+        "id": "soundingclimate",
+        "name": "climate.soundingclimate.content.title",
+        "location":"map.location.second",
+        "content": {
+          "title": "climate.soundingclimate.content.title",
+          "description": "climate.soundingclimate.content.description",
+          "img": [{
+            "id": "DI00673",
+            "positionId": "1",
+            "path": "assets/images/sections/keeling.jpg",
+            "altText": "climate.soundingclimate.img.description",
+            "width": "1024",
+            "height": "768"
+          }],
+          "icon": [{
+            "path": "assets/icon/greenhouse_gases_bleed-01.jpg",
+            "altText": "climate.soundingclimate.icon.description"
+          }],
+          "audio": [{
+            "id": "",
+            "positionId": "1",
+            "src": "assets/audio/sections/NCAR_Climate-GreenhouseGases.mp3",
+            "title": "climate.soundingclimate.audio.title",
+            "description": "climate.soundingclimate.audio.description",
+            "runningTime": "1:42",
+            "transcriptId": "climate.soundingclimate.audio.transcript",
+            "preload": "metadata"
+          }],
+          "video": [{
+            "id": "",
+            "positionId": "1",
+            "src": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+            "title": "climate.soundingclimate.video.title",
+            "description": "climate.soundingclimate.video.description",
+            "runningTime": "1:02",
+            "transcriptId": "climate.soundingclimate.video.transcript",
+            "preload": "metadata"
+          }]
+        }
+      },{
         "id": "greenhousegases",
         "name": "climate.greenhousegases.content.title",
         "location":"map.location.second",

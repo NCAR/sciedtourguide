@@ -1,16 +1,16 @@
 webpackJsonp([8],{
 
-/***/ 693:
+/***/ 697:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentPageModule", function() { return ContentPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MapIndexPageModule", function() { return MapIndexPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__content__ = __webpack_require__(721);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapindex__ = __webpack_require__(727);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titlebar_title_module__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_titlebar_title_module__ = __webpack_require__(703);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -22,36 +22,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ContentPageModule = /** @class */ (function () {
-    function ContentPageModule() {
+var MapIndexPageModule = /** @class */ (function () {
+    function MapIndexPageModule() {
     }
-    ContentPageModule = __decorate([
+    MapIndexPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__content__["a" /* ContentPage */],
+                __WEBPACK_IMPORTED_MODULE_2__mapindex__["a" /* MapIndexPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_4__components_titlebar_title_module__["a" /* TitleComponentModule */],
                 __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__["b" /* TranslateModule */].forChild(),
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__content__["a" /* ContentPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__mapindex__["a" /* MapIndexPage */]),
             ],
         })
-    ], ContentPageModule);
-    return ContentPageModule;
+    ], MapIndexPageModule);
+    return MapIndexPageModule;
 }());
 
-//# sourceMappingURL=content.module.js.map
+//# sourceMappingURL=mapindex.module.js.map
 
 /***/ }),
 
-/***/ 701:
+/***/ 703:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitleComponentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__title_component__ = __webpack_require__(702);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__title_component__ = __webpack_require__(704);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -87,7 +87,7 @@ var TitleComponentModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 702:
+/***/ 704:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -134,14 +134,14 @@ var TitleComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 721:
+/***/ 727:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContentPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapIndexPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_shared_vars__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_vars__ = __webpack_require__(157);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -151,47 +151,68 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+// from: https://github.com/p-sebastian/ionic2-pinchzoom
 
 
 
-var ContentPage = /** @class */ (function () {
-    function ContentPage(navParams, navCtrl, sharedVars, events) {
+var MapIndexPage = /** @class */ (function () {
+    function MapIndexPage(sharedVars, navParams, navCtrl, events) {
         var _this = this;
+        this.sharedVars = sharedVars;
         this.navParams = navParams;
         this.navCtrl = navCtrl;
-        this.sharedVars = sharedVars;
         this.events = events;
+        this.selectedItem = '';
         this.selectedItem = this.navParams.get('item');
-        this.selectedParent = this.navParams.get('parent');
-        this.specialBtn = 'audioBtn';
-        this.titlebarColor = this.selectedParent;
-        this.sharedVars.trackView('Content - ' + this.selectedParent + ':' + this.selectedItem.id);
-        this.events.subscribe('reset-exhibits', function (tab) {
-            _this.navCtrl.popToRoot();
+        this.events.subscribe('change-tab-map', function (tab, item) {
+            _this.selectedItem = item;
+            _this.checkPageChange();
         });
+        this.checkPageChange();
     }
-    ContentPage.prototype.openTranscript = function (event) {
-        this.navCtrl.push('TranscriptPage', {
-            item: this.selectedItem,
-            parent: this.titlebarColor
-        });
+    MapIndexPage.prototype.ionViewDidEnter = function () {
+        this.sharedVars.trackView('Map - Index');
     };
-    ContentPage.prototype.checkStatus = function () {
-        if (typeof this.selectedItem == "object" && typeof this.selectedItem.id == "string" && typeof this.selectedItem.content.audio == "object") {
-            return true;
+    MapIndexPage.prototype.openPDF = function () {
+        this.sharedVars.launch('https://scied.ucar.edu/sites/default/files/images/event/sss_2017_map_and_schedule_0.pdf');
+    };
+    MapIndexPage.prototype.openPage = function (event, item) {
+        switch (item) {
+            case 'mapreg':
+                this.sharedVars.trackView('Map - Interactive');
+                this.navCtrl.push('MapPage');
+                break;
+            case 'mapaccess':
+                this.navCtrl.push('MapAccessPage');
+                break;
         }
-        return false;
     };
-    ContentPage = __decorate([
+    MapIndexPage.prototype.checkPageChange = function () {
+        if (this.selectedItem != '') {
+            switch (this.selectedItem) {
+                case 'access':
+                    //load the accessible map
+                    this.navCtrl.popToRoot();
+                    this.navCtrl.push('MapAccessPage');
+                    break;
+                default:
+                    // load regular map
+                    this.navCtrl.popToRoot();
+                    this.navCtrl.push('MapPage');
+                    break;
+            }
+        }
+    };
+    MapIndexPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-content',template:/*ion-inline-start:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/content/content.html"*/'<ion-header>\n  <app-title [title]="selectedItem.content.title | translate" [selectedItem]="selectedItem" [titlebarColor]="titlebarColor"></app-title>\n</ion-header>\n\n<ion-content elastic-header>\n  <img [src]="selectedItem.content.img[0].path" [alt]="selectedItem.content.img[0].altText | translate" *ngIf="selectedItem.content.img">\n  <div [innerHtml]="selectedItem.content.description | translate" padding></div>\n  <button *ngIf="selectedItem.id == \'survey\'" ion-button (tap)="sharedVars.launch(\'https://www.surveymonkey.com/r/climate_exhibit\')" style="margin-left:15px;">Tell us what you think!</button>\n  <div padding class="location" *ngIf="selectedItem.location">\n    <strong>{{\'location\' | translate}}:</strong>\n    <span [innerHtml]="selectedItem.location | translate"></span>\n    <br/>\n    <strong>{{\'exhibit\' | translate}}:</strong>\n    <span [innerHtml]="\'map.galleries.\'+selectedParent | translate"></span>\n  </div>\n</ion-content>\n<ion-footer *ngIf="checkStatus()">\n  <ion-toolbar class="audio">\n    <ion-buttons>\n  <button ion-button (tap)="openTranscript($event)"><img src="assets/images/audio.png"/> {{\'transcript_link\' | translate}} ({{selectedItem.content.audio[0].runningTime}})</button>\n</ion-buttons>\n</ion-toolbar>\n</ion-footer>\n'/*ion-inline-end:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/content/content.html"*/
+            selector: 'page-map-index',template:/*ion-inline-start:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/map/mapindex.html"*/'<ion-header>\n  <app-title [title]="\'toolbar.map\' | translate"></app-title>\n</ion-header>\n<ion-content>\n  <button class="card" (tap)="openPage($event, \'mapreg\')">\n    <div class="card-title">{{\'map.interactive.button_text\' | translate }}</div>\n      <div class="card-subtitle">{{\'map.interactive.button_desc\' | translate }}</div>\n  </button>\n  <button class="card" (tap)="openPage($event, \'mapaccess\')">\n\n    <div class="card-title">{{\'map.access.button_text\' | translate }}</div>\n      <div class="card-subtitle">{{\'map.access.button_desc\' | translate }}</div>\n  </button>\n</ion-content>\n'/*ion-inline-end:"/Users/sclark/Documents/Development/mobile/ionic/sciedtourguide/src/pages/map/mapindex.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1__providers_shared_vars__["a" /* SharedVars */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* Events */]])
-    ], ContentPage);
-    return ContentPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_shared_vars__["a" /* SharedVars */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Events */]])
+    ], MapIndexPage);
+    return MapIndexPage;
 }());
 
-//# sourceMappingURL=content.js.map
+//# sourceMappingURL=mapindex.js.map
 
 /***/ })
 

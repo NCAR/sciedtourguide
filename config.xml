@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="edu.ucar.scied.ncartour" version="1.1.8" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="edu.ucar.scied.ncartour" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>NCAR Tour</name>
     <description>Virtual tour of the NCAR Mesa Lab Visitor Center</description>
     <author email="scied@ucar.edu" href="http://scied.ucar.edu/">UCAR Center for Science Education</author>
@@ -111,6 +111,8 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^3.0.0">
         <variable name="ANDROID_SUPPORT_ANNOTATIONS_VERSION" value="27.+" />
     </plugin>
+    <plugin name="com.moust.cordova.videoplayer" spec="https://github.com/moust/cordova-plugin-videoplayer.git" />
+    <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
     <engine name="ios" spec="4.5.5" />
     <engine name="android" spec="7.0.0" />
 </widget>

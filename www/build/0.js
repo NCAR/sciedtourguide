@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 699:
+/***/ 700:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,10 +9,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranscriptPageModule", function() { return TranscriptPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__transcript__ = __webpack_require__(731);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__transcript__ = __webpack_require__(734);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_audio__ = __webpack_require__(714);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_titlebar_title_module__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_audio__ = __webpack_require__(716);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_titlebar_title_module__ = __webpack_require__(703);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -51,14 +51,14 @@ var TranscriptPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 701:
+/***/ 703:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitleComponentModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__title_component__ = __webpack_require__(702);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__title_component__ = __webpack_require__(704);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ngx_translate_core__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -94,7 +94,7 @@ var TitleComponentModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 702:
+/***/ 704:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -141,7 +141,7 @@ var TitleComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 705:
+/***/ 707:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -150,8 +150,8 @@ var TitleComponent = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return WebAudioProvider; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CordovaMediaProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_web_track__ = __webpack_require__(712);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_audio_cordova_track__ = __webpack_require__(713);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_web_track__ = __webpack_require__(714);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_audio_cordova_track__ = __webpack_require__(715);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -478,7 +478,7 @@ var CordovaMediaProvider = (function (_super) {
 
 /***/ }),
 
-/***/ 712:
+/***/ 714:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -864,7 +864,7 @@ var WebAudioTrack = (function () {
 
 /***/ }),
 
-/***/ 713:
+/***/ 715:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1255,30 +1255,30 @@ var CordovaAudioTrack = (function () {
 
 /***/ }),
 
-/***/ 714:
+/***/ 716:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__ = __webpack_require__(705);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__ = __webpack_require__(707);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__["c"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_web_track__ = __webpack_require__(712);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_web_track__ = __webpack_require__(714);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_audio_cordova_track__ = __webpack_require__(713);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_audio_cordova_track__ = __webpack_require__(715);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_audio_track_component__ = __webpack_require__(715);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_audio_track_component__ = __webpack_require__(717);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_audio_track_progress_component__ = __webpack_require__(716);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_audio_track_progress_component__ = __webpack_require__(718);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_audio_track_play_component__ = __webpack_require__(717);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_audio_track_play_component__ = __webpack_require__(719);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_audio_time_pipe__ = __webpack_require__(718);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_audio_time_pipe__ = __webpack_require__(720);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_audio_module__ = __webpack_require__(732);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_audio_module__ = __webpack_require__(735);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__ionic_audio_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_audio_playlist_item_directive__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_audio_playlist_item_directive__ = __webpack_require__(721);
 /* unused harmony namespace reexport */
 
 
@@ -1293,14 +1293,14 @@ var CordovaAudioTrack = (function () {
 
 /***/ }),
 
-/***/ 715:
+/***/ 717:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AudioTrackComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__ = __webpack_require__(705);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_web_track__ = __webpack_require__(712);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_audio_cordova_track__ = __webpack_require__(713);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_audio_providers__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_web_track__ = __webpack_require__(714);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_audio_cordova_track__ = __webpack_require__(715);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(1);
 
 
@@ -1504,7 +1504,7 @@ var AudioTrackComponent = (function () {
 
 /***/ }),
 
-/***/ 716:
+/***/ 718:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1634,7 +1634,7 @@ var AudioTrackProgressBarComponent = (function () {
 
 /***/ }),
 
-/***/ 717:
+/***/ 719:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1735,7 +1735,7 @@ var AudioTrackPlayComponent = (function () {
 
 /***/ }),
 
-/***/ 718:
+/***/ 720:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1793,13 +1793,13 @@ var AudioTimePipe = (function () {
 
 /***/ }),
 
-/***/ 719:
+/***/ 721:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AudioPlaylistItemDirective; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_providers__ = __webpack_require__(705);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_audio_providers__ = __webpack_require__(707);
 
 
 /**
@@ -1862,7 +1862,7 @@ var AudioPlaylistItemDirective = (function () {
 
 /***/ }),
 
-/***/ 731:
+/***/ 734:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1870,7 +1870,7 @@ var AudioPlaylistItemDirective = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_shared_vars__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_audio__ = __webpack_require__(714);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_audio__ = __webpack_require__(716);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1935,7 +1935,7 @@ var TranscriptPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 732:
+/***/ 735:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1944,12 +1944,12 @@ var TranscriptPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_audio_track_component__ = __webpack_require__(715);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_audio_track_progress_component__ = __webpack_require__(716);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_audio_track_play_component__ = __webpack_require__(717);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_audio_time_pipe__ = __webpack_require__(718);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_audio_providers__ = __webpack_require__(705);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_audio_playlist_item_directive__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_audio_track_component__ = __webpack_require__(717);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_audio_track_progress_component__ = __webpack_require__(718);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_audio_track_play_component__ = __webpack_require__(719);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_audio_time_pipe__ = __webpack_require__(720);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_audio_providers__ = __webpack_require__(707);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_audio_playlist_item_directive__ = __webpack_require__(721);
 
 
 

@@ -4872,7 +4872,7 @@ textarea::-webkit-input-placeholder {
   padding-left: 2px;
 }
 
-textarea:-ms-input-placeholder {
+textarea::-moz-placeholder {
   padding-left: 2px;
 }
 
@@ -68695,7 +68695,7 @@ page-map-access .cls-108, page-map-access .cls-120, page-map-access .cls-126 {
 }
 
 page-map-access .cls-109 {
-  letter-spacing: -0.12em;
+  letter-spacing: -0.02em;
 }
 
 page-map-access .cls-110 {
@@ -69092,6 +69092,10 @@ page-transcript .runningTime {
 page-transcript .audio-icon img {
   margin-top: 8px;
   height: 40px;
+}
+
+page-video-player video {
+  width: 100%;
 }
 
 page-visit .background-image {
