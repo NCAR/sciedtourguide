@@ -258,13 +258,13 @@
     "soundingclimate": {
       "content": {
         "title": "Sounding Climate",
-        "description": "Charles David Keeling began measuring carbon dioxide (CO2) levels at Hawaii’s Mauna Loa Observatory in 1958. These measurements make up the Keeling Curve, which shows that CO2 values have increased from 330 to more than 400 parts per million (ppm). Greenhouse gases like CO2 trap heat in the atmosphere, warming the climate."
+        "description": "Did you know that it is possible to hear climate change data? Scientists monitor changes in global precipitation, temperature, amounts of sea ice, carbon dioxide levels, and many other factors, to predict the effects of climate change on our planet. Using a technique called sonification, scientists and artists work together to interpret climate data using sound."
       },
       "img": {
         "description": "Graph showing CO2 levels in Earth’s atmosphere between 1960-2015."
       },
       "audio": {
-        "transcript": "<p>Life is able to thrive on Earth because the temperature is not too hot or too cold. The Earth’s atmosphere acts like a blanket because some gases in the air absorb heat. These gases are called greenhouse gases.</p><p>The most common greenhouse gases in our atmosphere are water vapor, carbon dioxide, methane, nitrous oxide, and ozone. Without greenhouse gases, Earth’s average temperature would be well below freezing. Instead, our planet is a comfortable 59 degrees Fahrenheit on average. But there can be too much of a good thing. On Venus, excessive greenhouse gases have pushed the average temperature to 865°F, four times as hot as boiling water.</p><p>On Earth, levels of greenhouse gases have been rising over the past 150 years, mainly because burning fossil fuels has released carbon dioxide into the air. Greenhouse gases also are emitted from leaks at natural gas wells and pipelines, agriculture, and cement making. Look at the graphic in this exhibit that shows carbon dioxide levels measured over time at three locations, including right here at NCAR. In most places, carbon dioxide levels fluctuate with seasonal changes in northern forests, in urban and natural environments, and even from night to day. But while a place like Boulder, Colorado, sees more variation, the air rolling in from the Pacific Ocean above Hawaii’s Mauna Loa volcano is relatively unaffected by these variations, making it a good indicator of average global levels of carbon dioxide.</p>"
+        "transcript": "<p>The Community Earth System Model (CESM) is a tool for understanding Earth’s climate. But how can viewing scientific data through an artistic lens enhance our ability to see, and hear, climate change through time?</p><p>In Sounding Climate, data from the CESM are represented by instruments using a process called sonification. With the keys of a piano, you hear the sound of carbon dioxide concentrations. The watery sounds of the marimba represent changes in precipitation. Temperature is represented by the clarinet and the percentage of sea ice by the staccato plucking of violin strings.</p><p>Touch the play button to hear and see climate change data from 1920 to 2100. The six maps show possible futures, each resulting from tiny changes in the starting conditions of the CESM to reflect natural variability in the climate system. Listen carefully — do you hear differences in pitch as we move forward in time? The piano notes become higher pitched as carbon dioxide in the atmosphere increases. Lower pitched notes reflect a decrease, as seen with sea ice data. What do you notice happening to the temperature data as we enter the future?</p><p>While we cannot precisely know what the climate of the future will “sound” like, scientists are certain that increasing the amount of carbon dioxide in the atmosphere will continue to cause the climate to warm. Natural processes such as volcanic activity or solar variability also influence the climate, however the human influence, namely burning fossil fuels, is the main cause of current warming. Climate change affects some places more than others, such as in the Arctic where the rate of ice melt has tripled since the 1980s. Touch different locations on the map to experience the changing climate.</p>"
       },
       "video": {
         "title": "About Sounding Climate",
@@ -575,6 +575,7 @@
       "seminar": "Seminar",
       "room": "Room",
       "climate": "Climate",
+      "sounding": "Sounding",
       "atmosphere": "Atmosphere",
       "library": "Library",
       "ncars": "NCAR's",
@@ -592,6 +593,7 @@
       "cafeteria": "Cafeteria and Art Gallery",
       "cafeterialoc": "Cafeteria and art gallery. Located on the 1st floor on the south side of the building",
       "weathertrail": "Weather Trail",
+      "soundingclimateloc": "Sounding Climate",
       "weathertrailloc": "Weather Trail exit. Located on the 2nd floor on the west side of the building",
       "weatherexhibit": "Weather Exhibit",
       "weatherexhibitloc": "Weather exhibit. Located on the 1st floor to the left of the front entrance",
@@ -614,8 +616,8 @@
       "artscigallery": "Art Science Gallery",
       "stairsclassroom": "West stairs from the 1st floor to the 2nd floor by the classroom.  Take 4 steps up to the landing, turn right, take 12 additional steps up to another landing, turn right, take 4 additional steps.",
       "stairscentral2m": "Central stairs from 2nd floor to the mezzanine just west of the climate exhibit.  Take 13 steps down to the landing.  To go the 1st floor lobby, turn right, take 7 additional steps down.",
-      "stairscentralm1": "Central stairs from the mezzanine to the 1st floor lobby. Take 7 steps down.",
-      "stairscentral1m": "Central stairs from the 1st floor lobby to the mezzanine.  Go up 7 steps.  To proceed to the 2nd floor, turn left at the landing and take 13 additional steps up.",
+      "stairscentralm1": "Central stairs to the mezzanine to the 1st floor lobby. Take 7 steps up. To proceed to the 2nd floor, turn left at the landing and take 13 additional steps up.",
+      "stairscentral1m": "Central stairs from the mezzanine to the 1st floor lobby.  Go down 7 steps.",
       "stairswest21": "West stairs from 2nd floor to 1st floor by the weather trail.  Take 4 steps down to the landing, turn left, take 12 steps down to another landing, turn left, take 4 additional steps",
       "stairssouththeater": "South stairs from the 1st floor to the second floor next to the theater. Take 6 steps up to the landing, turn right, 8 additional steps up to another landing, turn right, take 6 additional steps.",
       "stairssouth21": "South stairs from 2nd floor to 1st floor by the Atmosphere exhibit.  Take 6 steps down to the landing, turn left, take 8 additional steps to another landing, turn left, take 6 additional steps.",

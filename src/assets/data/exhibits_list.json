@@ -267,19 +267,19 @@
           "img": [{
             "id": "DI00673",
             "positionId": "1",
-            "path": "assets/images/sections/keeling.jpg",
+            "path": "assets/images/sections/sonification.jpg",
             "altText": "climate.soundingclimate.img.description",
             "width": "1024",
             "height": "768"
           }],
           "icon": [{
-            "path": "assets/icon/greenhouse_gases_bleed-01.jpg",
+            "path": "assets/icon/sounding_climate_bleed-01.jpg",
             "altText": "climate.soundingclimate.icon.description"
           }],
           "audio": [{
             "id": "",
             "positionId": "1",
-            "src": "assets/audio/sections/NCAR_Climate-GreenhouseGases.mp3",
+            "src": "assets/audio/sections/NCAR_Climate-SoundingClimate.mp3",
             "title": "climate.soundingclimate.audio.title",
             "description": "climate.soundingclimate.audio.description",
             "runningTime": "1:42",
