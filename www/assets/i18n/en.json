@@ -112,7 +112,7 @@
     },
     "accessibility": {
       "title": "Accessibility",
-      "content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  We are committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accomodations can be found on our visitor website.",
+      "content": "The NCAR Mesa Lab Visitor Center is committed to opening its doors to everyone, including those with disabilities along with their families and friends.  We are committed to ensuring an inclusive environment which promotes learning and enjoyment for visitors with diverse interests, abilities, and needs.  Additional information about our accessibility accommodations can be found on our visitor website.",
       "button_text": "View accessibility information",
       "parking": {
         "title": "Parking",
@@ -403,7 +403,7 @@
         "description": "A dropsonde in the sky and a dropsonde hanging in the NCAR Mesa Lab Visitor Center."
       },
       "audio": {
-        "transcript": "<p>A tube filled with weather instruments is attached to a small parachute. It’s released from a plane and slowly falls to the ground, collecting weather data as it travels through the atmosphere. This is called a dropsonde.</p><p>As dropsondes travel through the atmosphere, the data they collect is radioed to scientists and weather forecasters. It helps us understand conditions in the atmosphere at various heights above the ground, which can be helpful for weather prediction. For example, hurricane-hunting planes eject dropsondes into hurricanes, allowing weather forecasters to get readings from within those fierce storms and make more accurate forecasts.</p><p>A standard dropsonde records data about temperature, humidity, air pressure, and wind speed and direction. Specialized dropsondes can also carry sensors that analyze air chemistry, such as the amount of carbon dioxide, at various heights in the atmosphere.</p><p>Dropsondes were invented here at NCAR in the 1970s. Improvements since then have made dropsondes smaller, lighter, more capable, and less expensive. The parachute is specially deisgned so that the instruments fall at a steady speed collecting data along the way. While dropsonde technology was originally developed solely for scientific use, NCAR has since licensed it to a company that produces and sells dropsondes for commercial use. Initially designed to be dropped from airplanes, some dropsondes now are released from drone aircraft operated by NASA.</p>"
+        "transcript": "<p>A tube filled with weather instruments is attached to a small parachute. It’s released from a plane and slowly falls to the ground, collecting weather data as it travels through the atmosphere. This is called a dropsonde.</p><p>As dropsondes travel through the atmosphere, the data they collect is radioed to scientists and weather forecasters. It helps us understand conditions in the atmosphere at various heights above the ground, which can be helpful for weather prediction. For example, hurricane-hunting planes eject dropsondes into hurricanes, allowing weather forecasters to get readings from within those fierce storms and make more accurate forecasts.</p><p>A standard dropsonde records data about temperature, humidity, air pressure, and wind speed and direction. Specialized dropsondes can also carry sensors that analyze air chemistry, such as the amount of carbon dioxide, at various heights in the atmosphere.</p><p>Dropsondes were invented here at NCAR in the 1970s. Improvements since then have made dropsondes smaller, lighter, more capable, and less expensive. The parachute is specially designed so that the instruments fall at a steady speed collecting data along the way. While dropsonde technology was originally developed solely for scientific use, NCAR has since licensed it to a company that produces and sells dropsondes for commercial use. Initially designed to be dropped from airplanes, some dropsondes now are released from drone aircraft operated by NASA.</p>"
       }
     }
   },
@@ -457,7 +457,7 @@
          "description": "Models of COSMIC satellites in orbit."
       },
       "audio": {
-        "transcript": "<p>Monitoring what’s happening in the atmosphere helps us make better weather forecasts, understand climate change, and learn how solar energy affects our planet. Some data about the atmosphere is collected at weather stations on the ground or using instruments carried into the sky by balloons. Other data about our atmosphere is collected using satellites.</p><p>In this exhibit you’ll find a scale model of a COSMIC satellite. COSMIC satellites orbit Earth and collect data about water vapor, temperature, and air pressure. Even full size, COSMIC satellites are small–only about 40 inches wide.</p><p>To deliver the data they collect, COSMIC satellites beam radio waves through the atmosphere to another satellite. Radio waves bend as they pass through the atmosphere. By measuring the angle that waves bend, scientists can determine the air pressure, humidity, and temperature. This makes it possible to monitor the atmosphere at various heights and in places that are far from ground-based weather stations, like the middle of oceans.</p><p>COSMIC is an acronym for the Constellation Observing System for Meteorology, Ionosphere, and Climate. The program is a collaboration between the United States and Taiwan and is based at UCAR. Thousands of researchers from many nations use COSMIC data. The first set of six COSMIC satellites, launched in 2006, tripled the amount of data collected about our atmosphere. A new set of six satellites, called COSMIC-2, launched in 2018, will help us learn even more.</p>"
+        "transcript": "<p>Monitoring what’s happening in the atmosphere helps us make better weather forecasts, understand climate change, and learn how solar energy affects our planet. Some data about the atmosphere is collected at weather stations on the ground or using instruments carried into the sky by balloons. Other data about our atmosphere is collected using satellites.</p><p>In this exhibit you’ll find a scale model of a COSMIC satellite. COSMIC satellites orbit Earth and collect data about water vapor, temperature, and air pressure. Even full size, COSMIC satellites are small–only about 40 inches wide.</p><p>To deliver the data they collect, COSMIC satellites beam radio waves through the atmosphere to another satellite. Radio waves bend as they pass through the atmosphere. By measuring the angle that waves bend, scientists can determine the air pressure, humidity, and temperature. This makes it possible to monitor the atmosphere at various heights and in places that are far from ground-based weather stations, like the middle of oceans.</p><p>COSMIC is an acronym for the Constellation Observing System for Meteorology, Ionosphere, and Climate. The program is a collaboration between the United States and Taiwan and is based at UCAR. Thousands of researchers from many nations use COSMIC data. The first set of six COSMIC satellites, launched in 2006, tripled the amount of data collected about our atmosphere. A new set of six satellites, called COSMIC-2, launched in 2019, will help us learn even more.</p>"
       }
     },
     "library": {
@@ -532,9 +532,93 @@
     },
     "text": {
       "title": "Zoomable map of the NCAR Mesa Lab Visitor Center",
-      "titleaccess": "Accessibility map",
+      "titleaccess": "Mobile Accessibility map",
       "desc": "An interative map of the NCAR Visitor Center. Use the buttons or swipe and pinch gestures to move the map around and to zoom in and out.",
       "descaccess": "A map showing how to get to wheelchair accessible bathrooms and elevators inside of the NCAR Mesa Lab Visitor Center.",
+      "weathertrail":{
+        "line1": "Weather",
+        "line2":"Trail"
+      },
+      "soundingclimate":{
+        "line1": "Sounding",
+        "line2": "Climate"
+      },
+      "climateexhibit":{
+        "line1":"Climate",
+        "line2":"Exhibit"
+      },
+      "weatherexhibit":{
+        "line1":"Weather Exhibit"
+      },
+      "sunearth":{
+        "line1":"Sun-Earth",
+        "line2":"Connections"
+      },
+      "ncararchitecture":{
+        "line1":"NCAR's",
+        "line2":"Architecture"
+      },
+      "atmosphere":{
+        "line1":"Atmosphere"
+      },
+      "library":{
+        "line1":"Library"
+      },
+      "satellite":{
+        "line1":"Satellite"
+      },
+      "aq":{
+        "line1":"Air",
+        "line2":"Quality"
+      },
+      "ozonegarden":{
+        "line1":"Ozone",
+        "line2":"Garden"
+      },
+      "theater":{
+        "line1":"Theater"
+      },
+      "frontdesk":{
+        "line1":"Front",
+        "line2":"Desk"
+      },
+      "security":{
+        "line1":"NCAR",
+        "line2":"Security"
+      },
+      "cafeteria":{
+        "line1":"Cafeteria and",
+        "line2":"Art Gallery"
+      },
+      "artsci":{
+        "line1":"Art",
+        "line2":"Science",
+        "line3":"Gallery"
+      },
+      "classroom":{
+        "line1":"Classroom"
+      },
+      "seminarroom":{
+        "line1":"Main",
+        "line2":"Seminar",
+        "line3":"Room"
+      },
+      "lobby":{
+        "line1":"LOBBY"
+      },
+      "firstfloor":{
+        "line1":"FIRST FLOOR"
+      },
+      "secondfloor":{
+        "line1":"SECOND FLOOR"
+      },
+      "mezzanine":{
+        "line1":"mezzanine"
+      },
+      "entrance":{
+        "line1": "entrance"
+      },
+      "floor2b":"FLOOR 2B",
       "tofirstfloor": "To 1st Floor",
       "tosecondfloor": "To 2nd Floor",
       "tomezzanine": "To Mezzanine",
@@ -544,45 +628,7 @@
       "ramptolobby": "Ramp to lobby",
       "topicnicarea": "To picnic area",
       "routetoelevator": "Route to elevator",
-      "disabilityparking": "Disability parking spaces",
-      "mezzanine": "Mezzanine",
-      "secondfloor": "Second Floor",
-      "firstfloor": "First Floor",
-      "floor2b": "Floor 2B",
-      "entrance": "entrance",
-      "theater": "Theater",
-      "satellite": "Satellite",
-      "ozone": "Ozone",
-      "garden": "Garden",
-      "classroom": "Classroom",
-      "cafeteria": "Cafeteria and ",
-      "art": "Art",
-      "science": "Science",
-      "gallery": "Gallery",
-      "weather": "Weather",
-      "exhibit": "Exhibit",
-      "trail": "Trail",
-      "air": "Air",
-      "quality": "Quality",
-      "ncar": "NCAR",
-      "security": "Security",
-      "front": "Front",
-      "desk": "Desk",
-      "lobby": "Lobby",
-      "sunearth": "Sun-Earth",
-      "connections": "Connections",
-      "main": "Main",
-      "seminar": "Seminar",
-      "room": "Room",
-      "climate": "Climate",
-      "sounding": "Sounding",
-      "atmosphere": "Atmosphere",
-      "library": "Library",
-      "ncars": "NCAR's",
-      "architecture": "Architecture",
-      "supercomputer": "Supercomputer",
-      "supercomputing": "Supercomputing",
-      "area": "Area"
+      "disabilityparking": "Disability parking spaces"
     },
     "label": {
       "wheelchairramp1": "Wheelchair ramp from mezzanine to 1st floor.  Take the ramp past the NCAR Architecture exhibit to the hallway.  Turn right then follow the hallway until you can turn right at NCAR security.",

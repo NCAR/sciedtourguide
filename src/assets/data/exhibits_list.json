@@ -273,7 +273,7 @@
             "height": "768"
           }],
           "icon": [{
-            "path": "assets/icon/sounding_climate_bleed-01.jpg",
+            "path": "assets/icon/soundingclimate_bleed-01.jpg",
             "altText": "climate.soundingclimate.icon.description"
           }],
           "audio": [{
@@ -282,7 +282,7 @@
             "src": "assets/audio/sections/NCAR_Climate-SoundingClimate.mp3",
             "title": "climate.soundingclimate.audio.title",
             "description": "climate.soundingclimate.audio.description",
-            "runningTime": "1:42",
+            "runningTime": "1:59",
             "transcriptId": "climate.soundingclimate.audio.transcript",
             "preload": "metadata"
           }],

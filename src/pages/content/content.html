@@ -20,7 +20,7 @@
       <button ion-button (tap)="openAudio($event)"><img src="assets/images/audio.png"/> {{'audio_link' | translate}} ({{selectedItem.content.audio[0].runningTime}})</button>
     </ion-buttons>
     <ion-buttons end>
-        <button ion-button (tap)="openVideo($event)" icon-start><ion-icon name="videocam"></ion-icon> {{'video_link' | translate}} ({{selectedItem.content.video[0].runningTime}})</button>
+        <button ion-button (tap)="openVideo($event)" icon-start *ngIf="selectedItem.content.video"><ion-icon name="videocam"></ion-icon> {{'video_link' | translate}} ({{selectedItem.content.video[0].runningTime}})</button>
     </ion-buttons>
 </ion-toolbar>
 </ion-footer>
